@@ -394,19 +394,19 @@ This class is inherited from and extended by Arena2.TextureFile, Arena2.ImgFile,
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.BaseImageFile.GetColor32(DaggerfallConnect.DFBitmap%2CSystem.Int32%2CSystem.Int32%2CDaggerfallConnect.Utility.DFSize%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.BaseImageFile.GetColor32(DaggerfallConnect.DFBitmap%2CSystem.Int32%2CSystem.Int32%2CDaggerfallConnect.Utility.DFSize%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/BaseImageFile.cs/#L232">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/BaseImageFile.cs/#L233">View Source</a>
   </span>
   <a id="DaggerfallConnect_Arena2_BaseImageFile_GetColor32_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetColor32*"></a>
-  <h4 id="DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetColor32(DaggerfallConnect.DFBitmap,System.Int32,System.Int32,DaggerfallConnect.Utility.DFSize@)">GetColor32(DFBitmap, Int32, Int32, out DFSize)</h4>
+  <h4 id="DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetColor32(DaggerfallConnect.DFBitmap,System.Int32,System.Int32,DaggerfallConnect.Utility.DFSize@,System.Int32,System.Int32)">GetColor32(DFBitmap, Int32, Int32, out DFSize, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a Color32 array for engine.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color32[] GetColor32(DFBitmap srcBitmap, int alphaIndex, int border, out DFSize sizeOut)</code></pre>
+    <pre><code class="lang-csharp hljs">public Color32[] GetColor32(DFBitmap srcBitmap, int alphaIndex, int border, out DFSize sizeOut, int emissionIndex = -1, int customAlphaValue = 255)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -441,6 +441,17 @@ This class is inherited from and extended by Arena2.TextureFile, Arena2.ImgFile,
         <td><span class="parametername">sizeOut</span></td>
         <td><p>Receives image dimensions with borders included.</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">emissionIndex</span></td>
+        <td><p>Force matching emissive index to non-transparent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">customAlphaValue</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -657,7 +668,7 @@ This class is inherited from and extended by Arena2.TextureFile, Arena2.ImgFile,
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_BaseImageFile_GetFireWallColors32_UnityEngine_Color32____System_Int32_System_Int32_UnityEngine_Color_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.BaseImageFile.GetFireWallColors32(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CUnityEngine.Color%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/BaseImageFile.cs/#L301">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/BaseImageFile.cs/#L350">View Source</a>
   </span>
   <a id="DaggerfallConnect_Arena2_BaseImageFile_GetFireWallColors32_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetFireWallColors32*"></a>
   <h4 id="DaggerfallConnect_Arena2_BaseImageFile_GetFireWallColors32_UnityEngine_Color32____System_Int32_System_Int32_UnityEngine_Color_System_Single_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetFireWallColors32(UnityEngine.Color32[]@,System.Int32,System.Int32,UnityEngine.Color,System.Single)">GetFireWallColors32(ref Color32[], Int32, Int32, Color, Single)</h4>
@@ -821,10 +832,90 @@ This class is inherited from and extended by Arena2.TextureFile, Arena2.ImgFile,
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_BaseImageFile_GetSpectralEmissionColors32_DaggerfallConnect_DFBitmap_UnityEngine_Color32___System_Int32_System_Int32_UnityEngine_Color_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.BaseImageFile.GetSpectralEmissionColors32(DaggerfallConnect.DFBitmap%2CUnityEngine.Color32%5B%5D%2CSystem.Int32%2CSystem.Int32%2CUnityEngine.Color%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/BaseImageFile.cs/#L313">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_BaseImageFile_GetSpectralEmissionColors32_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetSpectralEmissionColors32*"></a>
+  <h4 id="DaggerfallConnect_Arena2_BaseImageFile_GetSpectralEmissionColors32_DaggerfallConnect_DFBitmap_UnityEngine_Color32___System_Int32_System_Int32_UnityEngine_Color_UnityEngine_Color_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetSpectralEmissionColors32(DaggerfallConnect.DFBitmap,UnityEngine.Color32[],System.Int32,System.Int32,UnityEngine.Color,UnityEngine.Color)">GetSpectralEmissionColors32(DFBitmap, Color32[], Int32, Int32, Color, Color)</h4>
+  <div class="markdown level1 summary"><p>Gets a Color32 array as emission map for spectral textures (glowing eyes).
+Needs extra handling for borders as spectral textures might be atlased.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color32[] GetSpectralEmissionColors32(DFBitmap srcBitmap, Color32[] albedoColors, int borderSize, int eyesEmissionIndex, Color eyeEmission, Color otherEmission)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><span class="parametername">srcBitmap</span></td>
+        <td><p>Source bitmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Color32.html">Color32</a>[]</td>
+        <td><span class="parametername">albedoColors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">borderSize</span></td>
+        <td><p>Size of border for atlased textures.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">eyesEmissionIndex</span></td>
+        <td><p>Index to receive emission colour.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Color.html">Color</a></td>
+        <td><span class="parametername">eyeEmission</span></td>
+        <td><p>Amount of emission to apply to other parts of body (black=none, white=full).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Color.html">Color</a></td>
+        <td><span class="parametername">otherEmission</span></td>
+        <td><p>Amount of emission to apply to other parts of body (black=none, white=full).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Color32.html">Color32</a>[]</td>
+        <td><p>Color32 array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_BaseImageFile_GetWindowColors32_DaggerfallConnect_DFBitmap_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.BaseImageFile.GetWindowColors32(DaggerfallConnect.DFBitmap%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/BaseImageFile.cs/#L275">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/BaseImageFile.cs/#L277">View Source</a>
   </span>
   <a id="DaggerfallConnect_Arena2_BaseImageFile_GetWindowColors32_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetWindowColors32*"></a>
   <h4 id="DaggerfallConnect_Arena2_BaseImageFile_GetWindowColors32_DaggerfallConnect_DFBitmap_System_Int32_" data-uid="DaggerfallConnect.Arena2.BaseImageFile.GetWindowColors32(DaggerfallConnect.DFBitmap,System.Int32)">GetWindowColors32(DFBitmap, Int32)</h4>

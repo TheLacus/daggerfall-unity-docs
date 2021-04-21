@@ -166,16 +166,11 @@ These are generally ordered from low-level through to high-level encounters.</p>
       <h4><a class="xref" href="DaggerfallWorkshop.Utility.RDBLayout.html">RDBLayout</a></h4>
       <section><p>Helper for laying out RDB (dungeon block) data in scene.</p>
 </section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Utility.RetroPresentation.html">RetroPresentation</a></h4>
+      <section><p>Presents final retro rendering to viewport.</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Utility.RetroRenderer.html">RetroRenderer</a></h4>
-      <section><p>Simple behaviour just to blit a render texture into an empty viewport camera.
-Does all the setup required or disables self when retro mode not enabled.
-Retro 320x200 rendering works as follows when enabled:</p>
-<ul>
-<li>Main camera and SkyRig camera are set to use RetroTarget 320x200 render texture.</li>
-<li>RetroCamera is a stationary viewport camera with culling mask of nothing.</li>
-<li>RetroTarget output is set as the SourceRenderTexture on this behaviour.</li>
-<li>OnRenderImage will blit 320x200 output to RetroCamera.</li>
-</ul>
+      <section><p>Manages settings for retro mode rendering.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Utility.RMBLayout.html">RMBLayout</a></h4>
       <section><p>Helper for laying out RMB (city block) data in scene.</p>
