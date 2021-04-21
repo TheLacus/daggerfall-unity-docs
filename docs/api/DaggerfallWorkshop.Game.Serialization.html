@@ -141,7 +141,10 @@ Each save game will have a screenshot and multiple files.</p>
       <section><p>Implements Player serialization. Should be attached to Player GameObject.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SerializableStateManager.html">SerializableStateManager</a></h4>
-      <section></section>
+      <section><p>Manages stateful game objects (implementations of <a class="xref" href="DaggerfallWorkshop.Game.Serialization.ISerializableGameObject.html">ISerializableGameObject</a>).
+Used by <a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.html">SaveLoadManager</a> to serialize scene state.
+Uses a scene cache to persist building interiors and player owned areas.</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Serialization.TravelMapSaveData.html">TravelMapSaveData</a></h4>
       <section></section>
     <h3 id="interfaces">Interfaces
@@ -155,7 +158,15 @@ LoadID cannot be found then that object will not have any state restored.</p>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Serialization.StatefulGameObjectTypes.html">StatefulGameObjectTypes</a></h4>
-      <section></section>
+      <section><p>Enum of stateful game object types that implement <a class="xref" href="DaggerfallWorkshop.Game.Serialization.ISerializableGameObject.html">ISerializableGameObject</a>.
+To add a new type of stateful game object:</p>
+<ul>
+<li>add type name here</li>
+<li>add a condition to SerializableStateManager.GetStatefulGameObjectType()</li>
+<li>add serializer methods</li>
+<li>add to SerializableStateManager.CacheScene() and RestoreCachedScene()</li>
+</ul>
+</section>
     <h3 id="delegates">Delegates
   </h3>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnLoadEventHandler.html">SaveLoadManager.OnLoadEventHandler</a></h4>

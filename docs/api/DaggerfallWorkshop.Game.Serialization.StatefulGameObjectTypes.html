@@ -73,7 +73,15 @@
   
   <h1 id="DaggerfallWorkshop_Game_Serialization_StatefulGameObjectTypes" data-uid="DaggerfallWorkshop.Game.Serialization.StatefulGameObjectTypes" class="text-break">Enum StatefulGameObjectTypes
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Enum of stateful game object types that implement <a class="xref" href="DaggerfallWorkshop.Game.Serialization.ISerializableGameObject.html">ISerializableGameObject</a>.
+To add a new type of stateful game object:</p>
+<ul>
+<li>add type name here</li>
+<li>add a condition to SerializableStateManager.GetStatefulGameObjectType()</li>
+<li>add serializer methods</li>
+<li>add to SerializableStateManager.CacheScene() and RestoreCachedScene()</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Serialization.html">DaggerfallWorkshop.Game.Serialization</a></h6>
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>

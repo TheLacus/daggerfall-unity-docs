@@ -88,17 +88,24 @@ struct for a parameter, to be called automatically by Mod Manager during mod set
       <section><p>A mod for Daggerfall Unity.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.ModInfo.html">ModInfo</a></h4>
-      <section></section>
+      <section><p>The content of a json mod manifest file, created from the Mod Builder and bundled with the mod itself.</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.html">ModManager</a></h4>
-      <section></section>
+      <section><p>Handles setup and execution of mods and provides support for features related to modding support.
+Mods can also use this singleton to find and interact with other mods.</p>
+</section>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.InitParams.html">InitParams</a></h4>
-      <section></section>
+      <section><p>Data passed to methods with the <a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.Invoke.html">Invoke</a> attribute when they are invoked by the Mod Manager.
+It contains informations required to initialize custom scripts provided by a mod,
+including the <a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.InitParams.html#DaggerfallWorkshop_Game_Utility_ModSupport_InitParams_Mod">Mod</a> instance associated to the class that receives this data.</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.LoadedAsset.html">LoadedAsset</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.SetupOptions.html">SetupOptions</a></h4>
-      <section></section>
+      <section><p>Options for a mod setup intro point, meaning a method with the <a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.Invoke.html">Invoke</a> attribute.</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.Source.html">Source</a></h4>
       <section></section>
     <h3 id="interfaces">Interfaces
@@ -117,9 +124,11 @@ struct for a parameter, to be called automatically by Mod Manager during mod set
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.DFModMessageReceiver.html">DFModMessageReceiver</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.AssetUpdate.html">ModManager.AssetUpdate</a></h4>
-      <section></section>
+      <section><p>Signature for an event related to an asset from a mod.</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.ModUpdate.html">ModManager.ModUpdate</a></h4>
-      <section></section>
+      <section><p>Signature for an event related to a mod.</p>
+</section>
 </article>
           </div>
           

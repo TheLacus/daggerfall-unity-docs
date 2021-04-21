@@ -1132,7 +1132,10 @@ needs.</p>
   </span>
   <a id="DaggerfallConnect_Arena2_MapsFile_GetMapPixelID_" data-uid="DaggerfallConnect.Arena2.MapsFile.GetMapPixelID*"></a>
   <h4 id="DaggerfallConnect_Arena2_MapsFile_GetMapPixelID_System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.MapsFile.GetMapPixelID(System.Int32,System.Int32)">GetMapPixelID(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets ID of map pixel.
+This can be mapped to location IDs and quest IDs.
+MapTableData.MapId &amp; 0x000fffff = WorldPixelID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1151,12 +1154,14 @@ needs.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">mapPixelX</span></td>
-        <td></td>
+        <td><p>Map pixel X.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">mapPixelY</span></td>
-        <td></td>
+        <td><p>Map pixel Y.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1171,7 +1176,8 @@ needs.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
+        <td><p>Map pixel ID.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1184,7 +1190,10 @@ needs.</p>
   </span>
   <a id="DaggerfallConnect_Arena2_MapsFile_GetMapPixelIDFromLongitudeLatitude_" data-uid="DaggerfallConnect.Arena2.MapsFile.GetMapPixelIDFromLongitudeLatitude*"></a>
   <h4 id="DaggerfallConnect_Arena2_MapsFile_GetMapPixelIDFromLongitudeLatitude_System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.MapsFile.GetMapPixelIDFromLongitudeLatitude(System.Int32,System.Int32)">GetMapPixelIDFromLongitudeLatitude(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets ID of map pixel using latitude and longitude.
+This can be mapped to location IDs and quest IDs.
+MapTableData.MapId &amp; 0x000fffff = WorldPixelID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1203,12 +1212,14 @@ needs.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">longitude</span></td>
-        <td></td>
+        <td><p>Longitude position.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">latitude</span></td>
-        <td></td>
+        <td><p>Latitude position.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1223,7 +1234,8 @@ needs.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
+        <td><p>Map pixel ID.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1976,7 +1988,7 @@ The world is 1000x500 map pixels.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_MapsFile_ReadLocationIdFast_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.MapsFile.ReadLocationIdFast(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/MapsFile.cs/#L1006">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/MapsFile.cs/#L1034">View Source</a>
   </span>
   <a id="DaggerfallConnect_Arena2_MapsFile_ReadLocationIdFast_" data-uid="DaggerfallConnect.Arena2.MapsFile.ReadLocationIdFast*"></a>
   <h4 id="DaggerfallConnect_Arena2_MapsFile_ReadLocationIdFast_System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.MapsFile.ReadLocationIdFast(System.Int32,System.Int32)">ReadLocationIdFast(Int32, Int32)</h4>
@@ -2154,6 +2166,132 @@ Region must be loaded before calling this method.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><p>Block name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_MapsFile_SetClimateIndex_System_Int32_System_Int32_DaggerfallConnect_Arena2_MapsFile_Climates_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.MapsFile.SetClimateIndex(System.Int32%2CSystem.Int32%2CDaggerfallConnect.Arena2.MapsFile.Climates)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/MapsFile.cs/#L847">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_MapsFile_SetClimateIndex_" data-uid="DaggerfallConnect.Arena2.MapsFile.SetClimateIndex*"></a>
+  <h4 id="DaggerfallConnect_Arena2_MapsFile_SetClimateIndex_System_Int32_System_Int32_DaggerfallConnect_Arena2_MapsFile_Climates_" data-uid="DaggerfallConnect.Arena2.MapsFile.SetClimateIndex(System.Int32,System.Int32,DaggerfallConnect.Arena2.MapsFile.Climates)">SetClimateIndex(Int32, Int32, MapsFile.Climates)</h4>
+  <div class="markdown level1 summary"><p>Sets climate index from CLIMATE.PAK based on world pixel.
+Allows loaded climate data from Pak file to be modified by mods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetClimateIndex(int mapPixelX, int mapPixelY, MapsFile.Climates value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td><p>Map pixel X position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td><p>Map pixel Y position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.MapsFile.Climates.html">MapsFile.Climates</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The climate to set for the specified map pixel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if climate index was set, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_MapsFile_SetPoliticIndex_System_Int32_System_Int32_System_Byte_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.MapsFile.SetPoliticIndex(System.Int32%2CSystem.Int32%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/MapsFile.cs/#L861">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_MapsFile_SetPoliticIndex_" data-uid="DaggerfallConnect.Arena2.MapsFile.SetPoliticIndex*"></a>
+  <h4 id="DaggerfallConnect_Arena2_MapsFile_SetPoliticIndex_System_Int32_System_Int32_System_Byte_" data-uid="DaggerfallConnect.Arena2.MapsFile.SetPoliticIndex(System.Int32,System.Int32,System.Byte)">SetPoliticIndex(Int32, Int32, Byte)</h4>
+  <div class="markdown level1 summary"><p>Reads politic index from POLITIC.PAK based on world pixel.
+Allows loaded region data from Pak file to be modified by mods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetPoliticIndex(int mapPixelX, int mapPixelY, byte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td><p>Map pixel X position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td><p>Map pixel Y position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The politic index to set for the specified map pixel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if politic index was set, false otherwise.</p>
 </td>
       </tr>
     </tbody>
