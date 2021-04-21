@@ -74,11 +74,14 @@
   <h1 id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger" class="text-break">Class HUDQuestDebugger
   </h1>
   <div class="markdown level0 summary"><p>Output quest information on HUD to view state in real-time and optionally step-through execution.
-Uses some non-bindable keys (not all implemented):</p>
+Uses default keys (set in DialogShortcuts.txt file):</p>
 <ul>
-<li>]            Show next quest tasks/vars/timers (only when debugger HUD open)</li>
-<li>[            Show previous quest tasks/vars/timers (only when debugger HUD open)</li>
-<li>Shift+Tab    Toggle global variables display</li>
+<li>Ctrl+Shift+D             Cycle through debugger and global variables display state</li>
+<li>Ctrl+Shift+RightArrow    Show next quest tasks/vars/timers (only when debugger HUD open)</li>
+<li>Ctrl+Shift+LeftArrow     Show previous quest tasks/vars/timers (only when debugger HUD open)</li>
+<li>Ctrl+Shift+UpArrow       Teleport to next dungeon marker (only when debugger HUD open inside dungeon)</li>
+<li>Ctrl+Shift+DownArrow     Teleport to next dungeon marker (only when debugger HUD open inside dungeon)
+NOTE: EnableQuestDebugger must be True in settings.ini</li>
 </ul>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -396,7 +399,7 @@ Uses some non-bindable keys (not all implemented):</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger__ctor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L79">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L82">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.#ctor*"></a>
   <h4 id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger__ctor" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.#ctor">HUDQuestDebugger()</h4>
@@ -413,7 +416,7 @@ Uses some non-bindable keys (not all implemented):</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_CurrentQuest.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.CurrentQuest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L68">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L71">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_CurrentQuest_" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.CurrentQuest*"></a>
   <h4 id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_CurrentQuest" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.CurrentQuest">CurrentQuest</h4>
@@ -443,7 +446,7 @@ Uses some non-bindable keys (not all implemented):</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_State.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L73">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L76">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_State_" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.State*"></a>
   <h4 id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_State" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.State">State</h4>
@@ -475,7 +478,7 @@ Uses some non-bindable keys (not all implemented):</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_NextState.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.NextState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L196">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L206">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_NextState_" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.NextState*"></a>
   <h4 id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_NextState" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.NextState">NextState()</h4>
@@ -490,7 +493,7 @@ Uses some non-bindable keys (not all implemented):</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_Update.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L129">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L132">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_Update_" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.Update*"></a>
   <h4 id="DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger_Update" data-uid="DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.Update">Update()</h4>
@@ -513,7 +516,7 @@ Uses some non-bindable keys (not all implemented):</p>
                     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_HUDQuestDebugger.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/HUDQuestDebugger.cs/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

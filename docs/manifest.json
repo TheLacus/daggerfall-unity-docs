@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallConnect.Arena2.BiogFile.Answer.html",
-          "hash": "SUeRXQxc1JBknB4yjPJqdg=="
+          "hash": "IAqPq8Wm9TgoSZi9hbiWvQ=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallConnect.Arena2.BiogFile.Question.html",
-          "hash": "3lwq+cCx+6v1KGax7hc+Lg=="
+          "hash": "4leOPJWsTkhkYJe8hnO+fQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallConnect.Arena2.BiogFile.html",
-          "hash": "dBJ6/+5L4sQbEr3lZkwztg=="
+          "hash": "uMg/NukbR0CDqn/I2kRQXg=="
         }
       },
       "is_incremental": false,
@@ -2561,6 +2561,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DaggerfallWorkshop.AutomapModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DaggerfallWorkshop.AutomapModel.html",
+          "hash": "nUzR3eAyZ7zDBdfOQ6DGBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DaggerfallWorkshop.Border-1.yml",
       "output": {
         ".html": {
@@ -2745,7 +2757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.DaggerfallActionDoor.html",
-          "hash": "h96cNWP7LgbN+ny/8IZM6w=="
+          "hash": "H2CrWeNru733gKQdE+AyIQ=="
         }
       },
       "is_incremental": false,
@@ -2877,7 +2889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.DaggerfallEnemy.html",
-          "hash": "oEwUk7dUdK5k44JpjrRLeA=="
+          "hash": "OUc/hoXRXcQpkqLCU7L0bw=="
         }
       },
       "is_incremental": false,
@@ -3057,7 +3069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.DaggerfallMobileUnit.html",
-          "hash": "BzSEEpBdCTOjHlhmiqVemA=="
+          "hash": "xtvAfU1W8XgVYKTXxE1wfg=="
         }
       },
       "is_incremental": false,
@@ -3849,7 +3861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.DaggerfallMissile.OnCompleteEventHandler.html",
-          "hash": "Eu1Z9XUYPIufhRc8i24dSw=="
+          "hash": "aydC/o3Ha/gzhgh21dm4kw=="
         }
       },
       "is_incremental": false,
@@ -3861,7 +3873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.DaggerfallMissile.html",
-          "hash": "LuHsOF8MFRuNjppajqeYBA=="
+          "hash": "RbS7WHgYDlgeRShNF6jEeA=="
         }
       },
       "is_incremental": false,
@@ -4065,7 +4077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Entity.DaggerfallEntity.OnDeathHandler.html",
-          "hash": "QPXkUblCsT1NcZ6DCh1f/Q=="
+          "hash": "MVbLhHoYdMsEy/IbHZpJ0w=="
         }
       },
       "is_incremental": false,
@@ -4077,7 +4089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Entity.DaggerfallEntity.OnExhaustedHandler.html",
-          "hash": "onrPVNkxA05pRd8vHKq6Lg=="
+          "hash": "4BLdrW2WpSTQLybj9rA+WQ=="
         }
       },
       "is_incremental": false,
@@ -4089,7 +4101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Entity.DaggerfallEntity.OnMagickaDepletedHandler.html",
-          "hash": "Xf6Z0IuRo9tgUnvlvYLcUQ=="
+          "hash": "+lIKvf5a9xbEgJZgTOp29w=="
         }
       },
       "is_incremental": false,
@@ -4101,7 +4113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html",
-          "hash": "UWGpLjbnz3TgomeE5AraHg=="
+          "hash": "SkcIrqCX5YiAben8wgKmkw=="
         }
       },
       "is_incremental": false,
@@ -4577,6 +4589,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DaggerfallWorkshop.Game.Formulas.FormulaHelper.SpellCost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DaggerfallWorkshop.Game.Formulas.FormulaHelper.SpellCost.html",
+          "hash": "dFH1rE5iNZ4XavNZbCXObw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DaggerfallWorkshop.Game.Formulas.FormulaHelper.ToHitAndDamageMods.yml",
       "output": {
         ".html": {
@@ -4593,7 +4617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Formulas.FormulaHelper.html",
-          "hash": "GXJ5mvZHqDAkkC9NuI6gLw=="
+          "hash": "977zQu1R4aM+RKHd95UouQ=="
         }
       },
       "is_incremental": false,
@@ -4605,7 +4629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Formulas.html",
-          "hash": "Mom1VzFVRQPIveeqQIT0Hg=="
+          "hash": "VfqGpgscZdg2FmQM4gFJiQ=="
         }
       },
       "is_incremental": false,
@@ -5349,7 +5373,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Items.ItemCollection.html",
-          "hash": "UEia1yrfwgaBB8JdGZ6Kbg=="
+          "hash": "uUiVKjwChsMUeitDkBJtvg=="
         }
       },
       "is_incremental": false,
@@ -6009,7 +6033,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectBundleSaveData_v1.html",
-          "hash": "EQH+ivm/TgjyiCq+z1Q8gQ=="
+          "hash": "Q1GDqnFuImg44cMIeHxtjg=="
         }
       },
       "is_incremental": false,
@@ -6021,7 +6045,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1.html",
-          "hash": "ZMLSV0bOUhwSJfZ7B1wJ8w=="
+          "hash": "BE85TQHMe5CqlQ8A+/uOKQ=="
         }
       },
       "is_incremental": false,
@@ -6033,7 +6057,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnAddIncumbentStateEventHandler.html",
-          "hash": "eCMI8RU0boe3drjIzm3wXg=="
+          "hash": "/1c8m0vp/VdhtpqB/1yeMA=="
         }
       },
       "is_incremental": false,
@@ -6045,7 +6069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnAssignBundleEventHandler.html",
-          "hash": "0v5xPcWlEl76HnTa4eRkPA=="
+          "hash": "fCX0G8+MsLeoIF7WkNhoPA=="
         }
       },
       "is_incremental": false,
@@ -6057,7 +6081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnCastReadySpellEventHandler.html",
-          "hash": "Zg9ca74Jeoz7figY/GVccA=="
+          "hash": "JL0WR1a5jxEBb3dmr4P3Rg=="
         }
       },
       "is_incremental": false,
@@ -6069,7 +6093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnNewReadySpellEventHandler.html",
-          "hash": "C1u3Ctk8Ps31nICMQSRUYw=="
+          "hash": "HAqyTyItgVu6tsKOHmaVuA=="
         }
       },
       "is_incremental": false,
@@ -6081,7 +6105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnRemoveBundleEventHandler.html",
-          "hash": "6O51MVVYh5+LXoYYdB9xrQ=="
+          "hash": "P6YVzW7UyBfmhkk/0by8zw=="
         }
       },
       "is_incremental": false,
@@ -6093,7 +6117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.html",
-          "hash": "1ihMZgIFgWgWYjzVkVvahw=="
+          "hash": "NPRpXvHZMafbbx7hbToWGA=="
         }
       },
       "is_incremental": false,
@@ -6477,7 +6501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.CreateItem.html",
-          "hash": "WaI6KL0M5pUy6wz3hOf6LQ=="
+          "hash": "RRxsJsy3zm5RHD1BgKS8NA=="
         }
       },
       "is_incremental": false,
@@ -8505,7 +8529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Player.CharacterDocument.html",
-          "hash": "re2W8FBj0RUpAJbI0wtecg=="
+          "hash": "+1Kr0/HnTAjTXDDD+6T+7A=="
         }
       },
       "is_incremental": false,
@@ -8781,7 +8805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.PlayerEnterExit.html",
-          "hash": "bsTU3K5Y8n1tRZXXc9NQ+Q=="
+          "hash": "qRltTsfzuHJEagtnrPJtwA=="
         }
       },
       "is_incremental": false,
@@ -11925,7 +11949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.SetupDemoEnemy.html",
-          "hash": "BgM/xfUtJxZaJ0MY5RGJfQ=="
+          "hash": "WAp5vywODFeA/l3zthLvig=="
         }
       },
       "is_incremental": false,
@@ -13089,7 +13113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.DisplayState.html",
-          "hash": "7tG4fTnYPj7VeLqC3qBJQw=="
+          "hash": "xcGV/89ysCimOpKD/GjSUg=="
         }
       },
       "is_incremental": false,
@@ -13101,7 +13125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterface.HUDQuestDebugger.html",
-          "hash": "VSK4eBlIPvctbLjUuKh49A=="
+          "hash": "cJUCVTA9wO7YzN6qKAYJSg=="
         }
       },
       "is_incremental": false,
@@ -13245,7 +13269,19 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterface.ItemListScroller.OnItemHoverHandler.html",
-          "hash": "YuGaYGUeYf2QWYB8CFlHDg=="
+          "hash": "NskdM3vp9mFs7Am+SH9zIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DaggerfallWorkshop.Game.UserInterface.ItemListScroller.OnItemMiddleClickHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DaggerfallWorkshop.Game.UserInterface.ItemListScroller.OnItemMiddleClickHandler.html",
+          "hash": "ShEYggBVstixjeD4t+5UZQ=="
         }
       },
       "is_incremental": false,
@@ -13269,7 +13305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterface.ItemListScroller.html",
-          "hash": "UtK5063F2uFXthNmYst9zA=="
+          "hash": "PcjS3ifx98euI+9rq9x5DA=="
         }
       },
       "is_incremental": false,
@@ -13977,7 +14013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterface.html",
-          "hash": "PNHou1lgP8aFPqnRIZZZjA=="
+          "hash": "5Vz9k1iMr5U40l6EhGgQJA=="
         }
       },
       "is_incremental": false,
@@ -14421,7 +14457,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallHUD.html",
-          "hash": "Wlek1nKXGJG3pz0dP6y3Sw=="
+          "hash": "Z2PvBcMnTkf3t6uLamYweA=="
         }
       },
       "is_incremental": false,
@@ -14493,7 +14529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.html",
-          "hash": "dzpi6FWf59YjEyegHuuKFg=="
+          "hash": "wD6IpxhzDjiIz50vgT8jzg=="
         }
       },
       "is_incremental": false,
@@ -14697,7 +14733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPotionMakerWindow.html",
-          "hash": "gFlfTRpHL/sRYXmVc/KFyQ=="
+          "hash": "mtLNaIJjHEOJe7fuaRafLg=="
         }
       },
       "is_incremental": false,
@@ -14709,7 +14745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallQuestJournalWindow.JournalDisplay.html",
-          "hash": "FIacixlksczbIxf0HNbrIA=="
+          "hash": "8Hu5fTmZ5NQ8TqCrH0l0/A=="
         }
       },
       "is_incremental": false,
@@ -14721,7 +14757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallQuestJournalWindow.html",
-          "hash": "n5xyByrGaV97u/px+0eVcg=="
+          "hash": "TTsHR+K6jTkliQ/XbYN5Jw=="
         }
       },
       "is_incremental": false,
@@ -14817,7 +14853,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallSpellBookWindow.html",
-          "hash": "ZasBaaMisUHeOxGA4wHttQ=="
+          "hash": "If1dm+jy+/ZlZtql36/TwA=="
         }
       },
       "is_incremental": false,
@@ -14877,7 +14913,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallTradeWindow.OnTradeHandler.html",
-          "hash": "a6Uw4ZnKUEW/R5q+9WVufg=="
+          "hash": "Wg9urwgVT+fzY2GBXxaI5A=="
         }
       },
       "is_incremental": false,
@@ -14901,7 +14937,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallTradeWindow.html",
-          "hash": "cJun7Xgb9bjatk/orAaUKg=="
+          "hash": "/909e0FGriXvAvNSiRuU/A=="
         }
       },
       "is_incremental": false,
@@ -15165,7 +15201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.StartNewGameWizard.WizardStages.html",
-          "hash": "7vVNRCYViOO/uDB5q3lEgA=="
+          "hash": "q30x065MESc4q0wzWQ6XQQ=="
         }
       },
       "is_incremental": false,
@@ -15177,7 +15213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.StartNewGameWizard.html",
-          "hash": "jPp3wgBmrIfmwTUiXdWJlw=="
+          "hash": "caZGz83VoIHfc54vKTdncA=="
         }
       },
       "is_incremental": false,
@@ -16125,7 +16161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.WeaponManager.html",
-          "hash": "L3k6RBBLekyZzz+NmnKa6Q=="
+          "hash": "4vQRBqMZDZM2Zh9RHUogwQ=="
         }
       },
       "is_incremental": false,
@@ -16805,6 +16841,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DaggerfallWorkshop.MobileUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DaggerfallWorkshop.MobileUnit.html",
+          "hash": "n1KgxRIhnPADK+cJTuVcng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DaggerfallWorkshop.ModelData.SubMeshData.yml",
       "output": {
         ".html": {
@@ -16917,7 +16965,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.PlayerGPS.OnClimateIndexChangedEventHandler.html",
-          "hash": "bsLmhDGWV+tBSmKKZlcZNQ=="
+          "hash": "UhC4Op8V7TLLg6/oPAXazg=="
         }
       },
       "is_incremental": false,
@@ -16929,7 +16977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.PlayerGPS.OnEnterLocationRectEventHandler.html",
-          "hash": "pXk9FPRf1Qjtctbaa0YwQw=="
+          "hash": "H5IIzS7tqy5Chiw0nwlumg=="
         }
       },
       "is_incremental": false,
@@ -16941,7 +16989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.PlayerGPS.OnExitLocationRectEventHandler.html",
-          "hash": "fFNqlEq0DE4X1iQjJZIzdQ=="
+          "hash": "XTns4uBNiYizWuPaeCwbAg=="
         }
       },
       "is_incremental": false,
@@ -16953,7 +17001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.PlayerGPS.OnMapPixelChangedEventHandler.html",
-          "hash": "AUtRHHPYATRtethlKlQ5Yg=="
+          "hash": "cMvDFFf9QpeOOTUO4eh0vQ=="
         }
       },
       "is_incremental": false,
@@ -16965,7 +17013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.PlayerGPS.OnPoliticIndexChangedEventHandler.html",
-          "hash": "fld0I2EMGMMDRSrY3GL3EQ=="
+          "hash": "ZdvwXIAXNbJos2P+yWk/hQ=="
         }
       },
       "is_incremental": false,
@@ -16977,7 +17025,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.PlayerGPS.OnRegionIndexChangedEventHandler.html",
-          "hash": "V+IVvYKncmbly+46WOhO5Q=="
+          "hash": "ctErXaau36E+R/Jo4vb6uQ=="
         }
       },
       "is_incremental": false,
@@ -16989,7 +17037,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.PlayerGPS.html",
-          "hash": "YpBm3VVdn1Z/QU6yTVLOGg=="
+          "hash": "uNvRacNsmeLtxJXXcr4b5Q=="
         }
       },
       "is_incremental": false,
@@ -17049,7 +17097,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.SettingsManager.html",
-          "hash": "8DCCCzY50Jl/ZsULCl8C4g=="
+          "hash": "tWSqHBQOdg+1zpjOl5Ok4A=="
         }
       },
       "is_incremental": false,
@@ -17181,7 +17229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnAvailableLocationGameObjectHandler.html",
-          "hash": "bofbITWIyGGvA9eh70TA9g=="
+          "hash": "frBEi96jdg1KCgWK28seEg=="
         }
       },
       "is_incremental": false,
@@ -17193,7 +17241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnClearStreamingWorldEventHandler.html",
-          "hash": "T1YLG7Y54OjqmewLsHO08Q=="
+          "hash": "z+z881v2/hO7mpTyOfhToA=="
         }
       },
       "is_incremental": false,
@@ -17205,7 +17253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnCreateLocationGameObjectEventHandler.html",
-          "hash": "0R3LyEP3olQU1m1hWaP9oQ=="
+          "hash": "HcQbIVSw6rUsyn2oJfQOKg=="
         }
       },
       "is_incremental": false,
@@ -17217,7 +17265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnFloatingOriginChangeEventHandler.html",
-          "hash": "hM7Q5cGOgBeaIvmkldpwhA=="
+          "hash": "OHMDCREbM5Mm2EoyT6TSaw=="
         }
       },
       "is_incremental": false,
@@ -17229,7 +17277,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnInitWorldEventHandler.html",
-          "hash": "PA+mG5I/ywSwi8CJvUgiKw=="
+          "hash": "GoM/kir21SHv9Ey0bL8Yvg=="
         }
       },
       "is_incremental": false,
@@ -17241,7 +17289,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnPreInitWorldEventHandler.html",
-          "hash": "K2uTtmvuoKOmrw4607Gc9g=="
+          "hash": "6jftPe0pOocRqdJoixU0Xw=="
         }
       },
       "is_incremental": false,
@@ -17253,7 +17301,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnReadyEventHandler.html",
-          "hash": "DLEnqenlLv6s9iUODXO6Rg=="
+          "hash": "6kjEaxHxphsn0Ec4MPmnaA=="
         }
       },
       "is_incremental": false,
@@ -17265,7 +17313,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnTeleportToCoordinatesEventHandler.html",
-          "hash": "RSHA6FAK+v8wZ44qgMKL6g=="
+          "hash": "+Ep7CG3bsKw9DDo1ecE0mg=="
         }
       },
       "is_incremental": false,
@@ -17277,7 +17325,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnUpdateLocationGameObjectEventHandler.html",
-          "hash": "ZCym6au3Fevvnirmf2PwsQ=="
+          "hash": "/K6c1mm5/pKocUigwnQgdQ=="
         }
       },
       "is_incremental": false,
@@ -17289,7 +17337,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsEndEventHandler.html",
-          "hash": "UEoXPxOjueYC9deCDIzXzA=="
+          "hash": "IdUn7k22nC51l0bYIhIcLg=="
         }
       },
       "is_incremental": false,
@@ -17301,7 +17349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsStartEventHandler.html",
-          "hash": "FEiMFqZ9syNq2m8CR0TLoQ=="
+          "hash": "O944wkm6v38wTzuM6+T1ug=="
         }
       },
       "is_incremental": false,
@@ -17337,7 +17385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.StreamingWorld.html",
-          "hash": "reyj3lVeFkyeGoQo4MnBsQ=="
+          "hash": "AvPvvM1tGhc8KdF7xh7Nhg=="
         }
       },
       "is_incremental": false,
@@ -17553,7 +17601,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.html",
-          "hash": "2PL07azzQZQEk00i0bQGWw=="
+          "hash": "bKKdxzj+ZSiLOpvPpuHRTw=="
         }
       },
       "is_incremental": false,
@@ -17781,7 +17829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Utility.BuildingNames.html",
-          "hash": "RlDp8LPnirfngG0RPnYMPw=="
+          "hash": "ITAqBZnRvwdo37wzxIum4A=="
         }
       },
       "is_incremental": false,
@@ -18609,7 +18657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.html",
-          "hash": "nVwuNv0XSlHIGKKFg7uuhw=="
+          "hash": "0T2+/wltAXzgBKQFxuxNJw=="
         }
       },
       "is_incremental": false,
@@ -18621,7 +18669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.VersionInfo.html",
-          "hash": "l1Mjy+UM0nv+WKbuSNnjww=="
+          "hash": "wqxjS/UtKptgfKBa8GWi0g=="
         }
       },
       "is_incremental": false,
@@ -18789,7 +18837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "qrRSb2CkrPlGN5KJm0CDyQ=="
+          "hash": "tUxFY9miaFj/GVEst6nnCw=="
         }
       },
       "is_incremental": false,
@@ -18804,7 +18852,7 @@
           "hash": "8uVCoST2rDktk/Jd1NhcvA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -18833,13 +18881,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 2
+          "skipped_file_count": 1
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 1564,
-          "skipped_file_count": 1484
+          "total_file_count": 1568,
+          "skipped_file_count": 1497
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
