@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace DaggerfallWorkshop.Game.Questing.Actions
    ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.52.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -125,7 +125,7 @@ Currently ignoring &quot;get item from&quot; as it appears to behave identically
 Will not fire if Foe dies immediately (e.g. player one-shots enemy).</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JournalNote.html">JournalNote</a></h4>
-      <section><p>Displays a prompt which user can click to dismiss.</p>
+      <section><p>Adds a text entry to the player journal as a note.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JuggleAction.html">JuggleAction</a></h4>
       <section><p>Example action to give contributors a starting point.
@@ -144,7 +144,8 @@ Inherits from ActionTemplate which implements basics of IQuestAction.</p>
       <section><p>Inflicts a disease on player through quest system.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PayMoney.html">PayMoney</a></h4>
-      <section><p>Take an amount from player, and start a task depending on if they could pay.</p>
+      <section><p>Take an amount from player, and start a task depending on if they could pay.
+Amount can be gold, letter of credit, or a combination.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PcAt.html">PcAt</a></h4>
       <section><p>Condition which checks if player character at a specific place.</p>
@@ -204,7 +205,8 @@ Superficially very similar to ClickedNpc but also requires item check to be true
 Unlike clear, which simply rearms a task, unset will permanently disable that task.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.WhenPcEntersExits.html">WhenPcEntersExits</a></h4>
-      <section></section>
+      <section><p>Trigger for player entering or exiting an exterior type as defined in places table.</p>
+</section>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.AddFace.SaveData_v1.html">AddFace.SaveData_v1</a></h4>

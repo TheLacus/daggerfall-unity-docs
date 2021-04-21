@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ItemCollection
    ">
-    <meta name="generator" content="docfx 2.48.1.0">
+    <meta name="generator" content="docfx 2.52.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -504,7 +504,7 @@ New UIDs will be allocated to cloned items.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemCollection_DeserializeItems_DaggerfallWorkshop_Game_Serialization_ItemData_v1___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemCollection.DeserializeItems(DaggerfallWorkshop.Game.Serialization.ItemData_v1%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L534">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L555">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Items_ItemCollection_DeserializeItems_" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.DeserializeItems*"></a>
   <h4 id="DaggerfallWorkshop_Game_Items_ItemCollection_DeserializeItems_DaggerfallWorkshop_Game_Serialization_ItemData_v1___" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.DeserializeItems(DaggerfallWorkshop.Game.Serialization.ItemData_v1[])">DeserializeItems(ItemData_v1[])</h4>
@@ -565,6 +565,62 @@ UIDs will be retained.</p>
         <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>[]</td>
         <td><p>Items array.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemCollection_ExportQuestItems_System_UInt64_DaggerfallWorkshop_Game_Questing_Symbol_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemCollection.ExportQuestItems(System.UInt64%2CDaggerfallWorkshop.Game.Questing.Symbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L518">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemCollection_ExportQuestItems_" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.ExportQuestItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemCollection_ExportQuestItems_System_UInt64_DaggerfallWorkshop_Game_Questing_Symbol_" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.ExportQuestItems(System.UInt64,DaggerfallWorkshop.Game.Questing.Symbol)">ExportQuestItems(UInt64, Symbol)</h4>
+  <div class="markdown level1 summary"><p>Gets all quest items for a specific quest and item Symbol.
+Ignores ex-quest items that have been made permanent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallUnityItem[] ExportQuestItems(ulong questUID, Symbol itemSymbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">questUID</span></td>
+        <td><p>Quest UID for item search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Symbol.html">Symbol</a></td>
+        <td><span class="parametername">itemSymbol</span></td>
+        <td><p>Item Symbol for item search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>[]</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -998,7 +1054,7 @@ does not correctly set the item flags so magically-created items never disappear
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemCollection_RemoveOrphanedItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemCollection.RemoveOrphanedItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L598">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L619">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Items_ItemCollection_RemoveOrphanedItems_" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.RemoveOrphanedItems*"></a>
   <h4 id="DaggerfallWorkshop_Game_Items_ItemCollection_RemoveOrphanedItems" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.RemoveOrphanedItems">RemoveOrphanedItems()</h4>
@@ -1105,7 +1161,7 @@ New UIDs will be allocated to cloned items.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemCollection_SearchItems_DaggerfallWorkshop_Game_Items_ItemGroups_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemCollection.SearchItems(DaggerfallWorkshop.Game.Items.ItemGroups%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L571">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L592">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Items_ItemCollection_SearchItems_" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.SearchItems*"></a>
   <h4 id="DaggerfallWorkshop_Game_Items_ItemCollection_SearchItems_DaggerfallWorkshop_Game_Items_ItemGroups_System_Int32_" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.SearchItems(DaggerfallWorkshop.Game.Items.ItemGroups,System.Int32)">SearchItems(ItemGroups, Int32)</h4>
@@ -1163,7 +1219,7 @@ For speed purposes returns actual item reference not a clone.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemCollection_SerializeItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemCollection.SerializeItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L516">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemCollection.cs/#L537">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Items_ItemCollection_SerializeItems_" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.SerializeItems*"></a>
   <h4 id="DaggerfallWorkshop_Game_Items_ItemCollection_SerializeItems" data-uid="DaggerfallWorkshop.Game.Items.ItemCollection.SerializeItems">SerializeItems()</h4>
