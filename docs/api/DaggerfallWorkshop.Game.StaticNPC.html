@@ -209,7 +209,7 @@ NPCs that have been permanently removed by quest system.</li>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_AssignQuestResourceBehaviour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.AssignQuestResourceBehaviour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L216">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L219">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_AssignQuestResourceBehaviour_" data-uid="DaggerfallWorkshop.Game.StaticNPC.AssignQuestResourceBehaviour*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_AssignQuestResourceBehaviour" data-uid="DaggerfallWorkshop.Game.StaticNPC.AssignQuestResourceBehaviour">AssignQuestResourceBehaviour()</h4>
@@ -226,7 +226,7 @@ Can happen either at runtime or during scene layout.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_GetPositionHash_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.GetPositionHash(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L291">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L294">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_GetPositionHash_" data-uid="DaggerfallWorkshop.Game.StaticNPC.GetPositionHash*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_GetPositionHash_System_Int32_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.StaticNPC.GetPositionHash(System.Int32,System.Int32,System.Int32)">GetPositionHash(Int32, Int32, Int32)</h4>
@@ -281,10 +281,59 @@ Can happen either at runtime or during scene layout.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_GetRaceFromFaction_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.GetRaceFromFaction(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L318">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_StaticNPC_GetRaceFromFaction_" data-uid="DaggerfallWorkshop.Game.StaticNPC.GetRaceFromFaction*"></a>
+  <h4 id="DaggerfallWorkshop_Game_StaticNPC_GetRaceFromFaction_System_Int32_" data-uid="DaggerfallWorkshop.Game.StaticNPC.GetRaceFromFaction(System.Int32)">GetRaceFromFaction(Int32)</h4>
+  <div class="markdown level1 summary"><p>Return the race corresponding to a given faction ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Races GetRaceFromFaction(int factionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">factionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.Races.html">Races</a></td>
+        <td><p>The faction race if available, otherwise the race of the current region.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_IsChildNPCData_DaggerfallWorkshop_Game_StaticNPC_NPCData_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.IsChildNPCData(DaggerfallWorkshop.Game.StaticNPC.NPCData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L300">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L303">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_IsChildNPCData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.IsChildNPCData*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_IsChildNPCData_DaggerfallWorkshop_Game_StaticNPC_NPCData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.IsChildNPCData(DaggerfallWorkshop.Game.StaticNPC.NPCData)">IsChildNPCData(StaticNPC.NPCData)</h4>
@@ -333,7 +382,7 @@ Can happen either at runtime or during scene layout.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallConnect_DFBlock_RdbObject_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallConnect.DFBlock.RdbObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L131">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L132">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallConnect_DFBlock_RdbObject_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallConnect.DFBlock.RdbObject)">SetLayoutData(DFBlock.RdbObject)</h4>
@@ -366,7 +415,7 @@ Can happen either at runtime or during scene layout.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallConnect_DFBlock_RmbBlockFlatObjectRecord_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallConnect.DFBlock.RmbBlockFlatObjectRecord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L163">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L164">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallConnect_DFBlock_RmbBlockFlatObjectRecord_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallConnect.DFBlock.RmbBlockFlatObjectRecord)">SetLayoutData(DFBlock.RmbBlockFlatObjectRecord)</h4>
@@ -399,7 +448,7 @@ Can happen either at runtime or during scene layout.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallConnect_DFBlock_RmbBlockPeopleRecord_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallConnect.DFBlock.RmbBlockPeopleRecord%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L147">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L148">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallConnect_DFBlock_RmbBlockPeopleRecord_System_Int32_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallConnect.DFBlock.RmbBlockPeopleRecord,System.Int32)">SetLayoutData(DFBlock.RmbBlockPeopleRecord, Int32)</h4>
@@ -437,7 +486,7 @@ Can happen either at runtime or during scene layout.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallWorkshop_Game_StaticNPC_NPCData__System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallWorkshop.Game.StaticNPC.NPCData%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L176">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L177">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_DaggerfallWorkshop_Game_StaticNPC_NPCData__System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int64_System_Int32_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(DaggerfallWorkshop.Game.StaticNPC.NPCData@,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Int32)">SetLayoutData(ref StaticNPC.NPCData, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int64, Int32)</h4>
@@ -514,7 +563,7 @@ Can happen either at runtime or during scene layout.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_System_Int32_System_Int32_System_Int32_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(System.Int32%2CSystem.Int32%2CSystem.Int32%2CDaggerfallWorkshop.Game.Entity.Genders%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L201">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L203">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_System_Int32_System_Int32_System_Int32_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(System.Int32,System.Int32,System.Int32,DaggerfallWorkshop.Game.Entity.Genders,System.Int32,System.Int32)">SetLayoutData(Int32, Int32, Int32, Genders, Int32, Int32)</h4>
@@ -572,7 +621,7 @@ Can happen either at runtime or during scene layout.</p>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_System_Int32_System_Int32_System_Int32_DaggerfallWorkshop_Game_Questing_Person_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(System.Int32%2CSystem.Int32%2CSystem.Int32%2CDaggerfallWorkshop.Game.Questing.Person)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L193">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/StaticNPC.cs/#L195">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData*"></a>
   <h4 id="DaggerfallWorkshop_Game_StaticNPC_SetLayoutData_System_Int32_System_Int32_System_Int32_DaggerfallWorkshop_Game_Questing_Person_" data-uid="DaggerfallWorkshop.Game.StaticNPC.SetLayoutData(System.Int32,System.Int32,System.Int32,DaggerfallWorkshop.Game.Questing.Person)">SetLayoutData(Int32, Int32, Int32, Person)</h4>

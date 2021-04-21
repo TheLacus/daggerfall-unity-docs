@@ -99,7 +99,8 @@ Daggerfall meshes and billboards can be replaced with a prefab imported from mod
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.html">RuntimeMaterials</a></h4>
       <section><p>Holds a list of archives and records and uses them to assign materials when the prefab is instantiated at runtime.
-Materials are automatically applied on Awake but can also be manually reapplied.</p>
+Materials are automatically applied on Awake or, if <span class="xref">DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.UseDungeonTextureTable</span> is true, as part of dungeon layout
+or when requested with an overload of <a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.html#DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials">ApplyMaterials()</a>.</p>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.SoundReplacement.html">SoundReplacement</a></h4>
       <section><p>Handles import and injection of custom sounds and songs with the purpose of providing modding support.

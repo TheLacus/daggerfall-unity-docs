@@ -74,16 +74,17 @@
   <h1 id="DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials" data-uid="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials" class="text-break">Class RuntimeMaterials
   </h1>
   <div class="markdown level0 summary"><p>Holds a list of archives and records and uses them to assign materials when the prefab is instantiated at runtime.
-Materials are automatically applied on Awake but can also be manually reapplied.</p>
+Materials are automatically applied on Awake or, if <span class="xref">DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.UseDungeonTextureTable</span> is true, as part of dungeon layout
+or when requested with an overload of <a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.html#DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials">ApplyMaterials()</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Object.html">Object</a></div>
-    <div class="level2"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Component.html">Component</a></div>
-    <div class="level3"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
-    <div class="level4"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
     <div class="level5"><span class="xref">RuntimeMaterials</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.html">DaggerfallWorkshop.Utility.AssetInjection</a></h6>
@@ -100,11 +101,11 @@ public sealed class RuntimeMaterials : MonoBehaviour</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/RuntimeMaterials.cs/#L62">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/RuntimeMaterials.cs/#L89">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials*"></a>
   <h4 id="DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials" data-uid="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials">ApplyMaterials()</h4>
-  <div class="markdown level1 summary"><p>Applies materials to MeshRender found on gameobject.</p>
+  <div class="markdown level1 summary"><p>Applies materials to MeshRender found on gameobject using existing configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -117,11 +118,11 @@ public void ApplyMaterials()</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials_DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterial___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials(DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterial%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/RuntimeMaterials.cs/#L72">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/RuntimeMaterials.cs/#L99">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials*"></a>
   <h4 id="DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials_DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterial___" data-uid="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials(DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterial[])">ApplyMaterials(RuntimeMaterial[])</h4>
-  <div class="markdown level1 summary"><p>Applies materials to MeshRender found on gameobject.</p>
+  <div class="markdown level1 summary"><p>Applies materials to MeshRender found on gameobject with the given configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -142,6 +143,47 @@ public void ApplyMaterials()</code></pre>
         <td><a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterial.html">RuntimeMaterial</a>[]</td>
         <td><span class="parametername">materials</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials_System_Int32___DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterial___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials(System.Int32%5B%5D%2CDaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterial%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/RuntimeMaterials.cs/#L118">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials_ApplyMaterials_System_Int32___DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterial___" data-uid="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials.ApplyMaterials(System.Int32[],DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterial[])">ApplyMaterials(Int32[], RuntimeMaterial[])</h4>
+  <div class="markdown level1 summary"><p>Applies materials to MeshRender found on gameobject with the given dungeon texture table
+and optionally overrides configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyMaterials(int[] dungeonTextureTable, RuntimeMaterial[] materials = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="parametername">dungeonTextureTable</span></td>
+        <td><p>Texture table to be used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterial.html">RuntimeMaterial</a>[]</td>
+        <td><span class="parametername">materials</span></td>
+        <td><p>Overrides materials configuration if not null.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -172,7 +214,7 @@ public void ApplyMaterials()</code></pre>
                     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_RuntimeMaterials.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.RuntimeMaterials%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/RuntimeMaterials.cs/#L41" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/RuntimeMaterials.cs/#L43" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

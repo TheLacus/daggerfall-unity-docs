@@ -245,16 +245,9 @@ This makes it possible remix localized strings with original formatting.</p>
       <section><p>Faction IDs in Daggerfall's FACTION.TXT file.</p>
 </section>
       <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.FactionRaces.html">FactionFile.FactionRaces</a></h4>
-      <section><p>Faction race value does not map to usual race ID.
-Instead it selects from a smaller pool as below.
-For example:</p>
-<ul>
-<li>&quot;Daggerfall&quot;, and most others, have a race of 3 (Breton)</li>
-<li>&quot;Sentinel&quot; has a race of 2 (Redguard)</li>
-<li>This is likely involved in how Daggerfall assigns the race of wandering NPCs in towns</li>
-<li>When selecting a random face for escorts, it is assigned by the dominant race of region</li>
-<li>Not all races found in FACTION.TXT are present here - unsure if these are even used in game</li>
-</ul>
+      <section><p>Faction race value does not map to usual race ID but maps
+to oath selection and is used only for this. Values above 7
+are not used in-game but are guessed from FACTION.TXT.</p>
 </section>
       <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.FactionTypes.html">FactionFile.FactionTypes</a></h4>
       <section></section>

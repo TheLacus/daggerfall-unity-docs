@@ -73,16 +73,9 @@
   
   <h1 id="DaggerfallConnect_Arena2_FactionFile_FactionRaces" data-uid="DaggerfallConnect.Arena2.FactionFile.FactionRaces" class="text-break">Enum FactionFile.FactionRaces
   </h1>
-  <div class="markdown level0 summary"><p>Faction race value does not map to usual race ID.
-Instead it selects from a smaller pool as below.
-For example:</p>
-<ul>
-<li>&quot;Daggerfall&quot;, and most others, have a race of 3 (Breton)</li>
-<li>&quot;Sentinel&quot; has a race of 2 (Redguard)</li>
-<li>This is likely involved in how Daggerfall assigns the race of wandering NPCs in towns</li>
-<li>When selecting a random face for escorts, it is assigned by the dominant race of region</li>
-<li>Not all races found in FACTION.TXT are present here - unsure if these are even used in game</li>
-</ul>
+  <div class="markdown level0 summary"><p>Faction race value does not map to usual race ID but maps
+to oath selection and is used only for this. Values above 7
+are not used in-game but are guessed from FACTION.TXT.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallConnect.Arena2.html">DaggerfallConnect.Arena2</a></h6>
@@ -102,6 +95,10 @@ For example:</p>
     <thead>
     <tbody>
       <tr>
+        <td id="DaggerfallConnect_Arena2_FactionFile_FactionRaces_Argonian">Argonian</td>
+        <td></td>
+      </tr>
+      <tr>
         <td id="DaggerfallConnect_Arena2_FactionFile_FactionRaces_Breton">Breton</td>
         <td></td>
       </tr>
@@ -111,6 +108,14 @@ For example:</p>
       </tr>
       <tr>
         <td id="DaggerfallConnect_Arena2_FactionFile_FactionRaces_Fey">Fey</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="DaggerfallConnect_Arena2_FactionFile_FactionRaces_HighElf">HighElf</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="DaggerfallConnect_Arena2_FactionFile_FactionRaces_Khajiit">Khajiit</td>
         <td></td>
       </tr>
       <tr>
@@ -154,7 +159,7 @@ For example:</p>
                     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_FactionFile_FactionRaces.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.FactionFile.FactionRaces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FactionFile.cs/#L608" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FactionFile.cs/#L603" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
