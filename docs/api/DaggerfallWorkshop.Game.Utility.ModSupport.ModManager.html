@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ModManager
    ">
-    <meta name="generator" content="docfx 2.47.0.0">
+    <meta name="generator" content="docfx 2.48.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -1491,19 +1491,19 @@ public Mod[] GetAllMods(bool loadOrder)</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String_System_Boolean___0__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset%60%601(System.String%2CSystem.Boolean%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String_System_Nullable_System_Boolean____0__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset%60%601(System.String%2CSystem.Nullable%7BSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L399">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset_" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset*"></a>
-  <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String_System_Boolean___0__" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset``1(System.String,System.Boolean,``0@)">TryGetAsset&lt;T&gt;(String, Boolean, out T)</h4>
+  <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String_System_Nullable_System_Boolean____0__" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset``1(System.String,System.Nullable{System.Boolean},``0@)">TryGetAsset&lt;T&gt;(String, Nullable&lt;Boolean&gt;, out T)</h4>
   <div class="markdown level1 summary"><p>Seek asset in all mods with load order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGetAsset&lt;T&gt;(string name, bool clone, out T asset)
+    <pre><code class="lang-csharp hljs">public bool TryGetAsset&lt;T&gt;(string name, bool? clone, out T asset)
     where T : Object</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1523,9 +1523,9 @@ public Mod[] GetAllMods(bool loadOrder)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">clone</span></td>
-        <td><p>Make a copy of asset?</p>
+        <td><p>Make a copy of asset? If null is loaded without cache.</p>
 </td>
       </tr>
       <tr>
@@ -1567,25 +1567,25 @@ public Mod[] GetAllMods(bool loadOrder)</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String_System_Boolean___0___remarks">Remarks</h5>
+  <h5 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String_System_Nullable_System_Boolean____0___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If multiple mods contain an asset with given name, priority is defined by load order.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String___System_Boolean___0__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset%60%601(System.String%5B%5D%2CSystem.Boolean%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String___System_Nullable_System_Boolean____0__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset%60%601(System.String%5B%5D%2CSystem.Nullable%7BSystem.Boolean%7D%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L424">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset_" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset*"></a>
-  <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String___System_Boolean___0__" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset``1(System.String[],System.Boolean,``0@)">TryGetAsset&lt;T&gt;(String[], Boolean, out T)</h4>
+  <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String___System_Nullable_System_Boolean____0__" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.TryGetAsset``1(System.String[],System.Nullable{System.Boolean},``0@)">TryGetAsset&lt;T&gt;(String[], Nullable&lt;Boolean&gt;, out T)</h4>
   <div class="markdown level1 summary"><p>Seek asset in all mods with load order.
 Check all names for each mod with the given priority.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGetAsset&lt;T&gt;(string[] names, bool clone, out T asset)
+    <pre><code class="lang-csharp hljs">public bool TryGetAsset&lt;T&gt;(string[] names, bool? clone, out T asset)
     where T : Object</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1605,9 +1605,9 @@ Check all names for each mod with the given priority.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">clone</span></td>
-        <td><p>Make a copy of asset?</p>
+        <td><p>Make a copy of asset? If null is loaded without cache.</p>
 </td>
       </tr>
       <tr>
@@ -1649,7 +1649,7 @@ Check all names for each mod with the given priority.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String___System_Boolean___0___remarks">Remarks</h5>
+  <h5 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_TryGetAsset__1_System_String___System_Nullable_System_Boolean____0___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If multiple mods contain an asset with any of the given names, priority is defined by load order.
 If chosen mod contains multiple assets, priority is defined by order of names list.</p>
 </div>
