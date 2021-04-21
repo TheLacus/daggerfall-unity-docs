@@ -1,0 +1,33 @@
+apiRules:
+- exclude:
+    uidRegex: ^System\.Object
+    type: Type
+- exclude:
+    uidRegex: ^UnityEngine\.Object
+    type: Type
+- exclude:
+    uidRegex: ^UnityEngine\.Component
+    type: Type
+- exclude:
+    uidRegex: ^UnityEngine\.Behaviour
+    type: Type
+- exclude:
+    uidRegex: ^UnityEngine\.MonoBehaviour
+    type: Type
+- exclude:
+    uidRegex: ^DaggerfallWorkshop\.Game\.Utility\.Compiler
+    type: Class
+- exclude:
+    uidRegex: ^FPSDisplay
+    type: Class
+- include:
+    uidRegex: ^DaggerfallConnect
+    type: Namespace
+- include:
+    uidRegex: ^DaggerfallWorkshop
+    type: Namespace
+- include:
+    uidRegex: ^Wenzil.Console$
+- exclude:
+    uidRegex: .*
+    type: Namespace
