@@ -28,6 +28,13 @@ apiRules:
     type: Namespace
 - include:
     uidRegex: ^Wenzil.Console$
+- include:
+    uidRegex: ^Global$
+    type: Namespace
+- include:
+    uidRegex: ^Global\.VersionInfo
+- exclude:
+    uidRegex: ^Global\..*
 - exclude:
     uidRegex: .*
     type: Namespace

@@ -12,7 +12,8 @@
       "dest": "api",
       "filter": "filterConfig.yml",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableDefaultFilter": false,
+      "globalNamespaceId": "Global"
     }
   ],
   "build": {

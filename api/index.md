@@ -1,3 +1,6 @@
 # API Documentation
 
-Daggerfall Unity Beta 0.11.0
+API Documentation for **Daggerfall Unity**.
+
+> [!NOTE]
+> Documentation refers to project version defined in @Global.VersionInfo.
