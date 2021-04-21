@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MobilePersonAsset
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MobilePersonAsset
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.MobilePersonAsset">
+  
+  
+  <h1 id="DaggerfallWorkshop_MobilePersonAsset" data-uid="DaggerfallWorkshop.MobilePersonAsset" class="text-break">Class MobilePersonAsset
+  </h1>
+  <div class="markdown level0 summary"><p>The component that handles graphics for a mobile person.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><span class="xref">MobilePersonAsset</span></div>
+      <div class="level6"><a class="xref" href="DaggerfallWorkshop.MobilePersonBillboard.html">MobilePersonBillboard</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.html">DaggerfallWorkshop</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_MobilePersonAsset_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MobilePersonAsset : MonoBehaviour</code></pre>
+  </div>
+  <h5 id="DaggerfallWorkshop_MobilePersonAsset_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Implementations should be added to a prefab named &quot;MobilePersonAsset&quot; bundled with a mod.
+This prefab acts as a provider for all custom npcs graphics. This allows mods to replace classic
+<a class="xref" href="DaggerfallWorkshop.MobilePersonBillboard.html">MobilePersonBillboard</a> with 3d models or other alternatives.
+The actual graphic asset for specific npc should be loaded when requested by <a class="xref" href="DaggerfallWorkshop.MobilePersonAsset.html#DaggerfallWorkshop_MobilePersonAsset_SetPerson_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Boolean_">SetPerson(Races, Genders, Int32, Boolean)</a>.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonAsset_IsIdle.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonAsset.IsIdle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L48">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_MobilePersonAsset_IsIdle_" data-uid="DaggerfallWorkshop.MobilePersonAsset.IsIdle*"></a>
+  <h4 id="DaggerfallWorkshop_MobilePersonAsset_IsIdle" data-uid="DaggerfallWorkshop.MobilePersonAsset.IsIdle">IsIdle</h4>
+  <div class="markdown level1 summary"><p>Gets or sets idle state. Daggerfall NPCs are either in or motion or idle facing player.
+This only controls animation state, actual motion is handled by <a class="xref" href="DaggerfallWorkshop.Game.MobilePersonMotor.html">MobilePersonMotor</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsIdle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonAsset_Trigger.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonAsset.Trigger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L42">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_MobilePersonAsset_Trigger_" data-uid="DaggerfallWorkshop.MobilePersonAsset.Trigger*"></a>
+  <h4 id="DaggerfallWorkshop_MobilePersonAsset_Trigger" data-uid="DaggerfallWorkshop.MobilePersonAsset.Trigger">Trigger</h4>
+  <div class="markdown level1 summary"><p>Trigger collider used for interaction with player. The collider should be altered to enclose the entire npc mesh when
+<a class="xref" href="DaggerfallWorkshop.MobilePersonAsset.html#DaggerfallWorkshop_MobilePersonAsset_SetPerson_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Boolean_">SetPerson(Races, Genders, Int32, Boolean)</a> is called. A sign of badly setup collider is misbehaviour of idle state and talk functionalities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CapsuleCollider Trigger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/CapsuleCollider.html">CapsuleCollider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonAsset_GetSize.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonAsset.GetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L64">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_MobilePersonAsset_GetSize_" data-uid="DaggerfallWorkshop.MobilePersonAsset.GetSize*"></a>
+  <h4 id="DaggerfallWorkshop_MobilePersonAsset_GetSize" data-uid="DaggerfallWorkshop.MobilePersonAsset.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"><p>Gets size of asset used by this person (i.e size of bounds). Used to adjust position on terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Vector3 GetSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><p>Size of npc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonAsset_SetPerson_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonAsset.SetPerson(DaggerfallWorkshop.Game.Entity.Races%2CDaggerfallWorkshop.Game.Entity.Genders%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L58">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_MobilePersonAsset_SetPerson_" data-uid="DaggerfallWorkshop.MobilePersonAsset.SetPerson*"></a>
+  <h4 id="DaggerfallWorkshop_MobilePersonAsset_SetPerson_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Boolean_" data-uid="DaggerfallWorkshop.MobilePersonAsset.SetPerson(DaggerfallWorkshop.Game.Entity.Races,DaggerfallWorkshop.Game.Entity.Genders,System.Int32,System.Boolean)">SetPerson(Races, Genders, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Setup this person based on race, gender and outfit variant. Enitities in a npcs pool can be recycled
+when out of range, meaning that this method can be called more than once with different parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetPerson(Races race, Genders gender, int personVariant, bool isGuard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.Races.html">Races</a></td>
+        <td><span class="parametername">race</span></td>
+        <td><p>Race of target npc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.Genders.html">Genders</a></td>
+        <td><span class="parametername">gender</span></td>
+        <td><p>Gender of target npc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">personVariant</span></td>
+        <td><p>Which basic outfit does the person wear.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isGuard</span></td>
+        <td><p>True if this npc is a city watch guard.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonAsset.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

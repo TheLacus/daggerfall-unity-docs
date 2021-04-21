@@ -83,7 +83,14 @@
     <div class="level2"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Component.html">Component</a></div>
     <div class="level3"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
     <div class="level4"><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
-    <div class="level5"><span class="xref">MobilePersonBillboard</span></div>
+    <div class="level5"><a class="xref" href="DaggerfallWorkshop.MobilePersonAsset.html">MobilePersonAsset</a></div>
+    <div class="level6"><span class="xref">MobilePersonBillboard</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.MobilePersonAsset.html#DaggerfallWorkshop_MobilePersonAsset_Trigger">MobilePersonAsset.Trigger</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.html">DaggerfallWorkshop</a></h6>
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
@@ -91,7 +98,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
-public class MobilePersonBillboard : MonoBehaviour</code></pre>
+public class MobilePersonBillboard : MobilePersonAsset</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -100,7 +107,7 @@ public class MobilePersonBillboard : MonoBehaviour</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonBillboard_IsIdle.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonBillboard.IsIdle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L121">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L161">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_MobilePersonBillboard_IsIdle_" data-uid="DaggerfallWorkshop.MobilePersonBillboard.IsIdle*"></a>
   <h4 id="DaggerfallWorkshop_MobilePersonBillboard_IsIdle" data-uid="DaggerfallWorkshop.MobilePersonBillboard.IsIdle">IsIdle</h4>
@@ -111,7 +118,7 @@ This only controls anim state, actual motion is handled by MobilePersonMotor.</p
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsIdle { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override sealed bool IsIdle { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,53 +135,25 @@ This only controls anim state, actual motion is handled by MobilePersonMotor.</p
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonBillboard_IsUsingGuardTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonBillboard.IsUsingGuardTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L127">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_MobilePersonBillboard_IsUsingGuardTexture_" data-uid="DaggerfallWorkshop.MobilePersonBillboard.IsUsingGuardTexture*"></a>
-  <h4 id="DaggerfallWorkshop_MobilePersonBillboard_IsUsingGuardTexture" data-uid="DaggerfallWorkshop.MobilePersonBillboard.IsUsingGuardTexture">IsUsingGuardTexture</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsUsingGuardTexture { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.MobilePersonAsset.html#DaggerfallWorkshop_MobilePersonAsset_IsIdle">MobilePersonAsset.IsIdle</a></div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonBillboard_GetBillboardSize.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonBillboard.GetBillboardSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonBillboard_GetSize.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonBillboard.GetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L229">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L264">View Source</a>
   </span>
-  <a id="DaggerfallWorkshop_MobilePersonBillboard_GetBillboardSize_" data-uid="DaggerfallWorkshop.MobilePersonBillboard.GetBillboardSize*"></a>
-  <h4 id="DaggerfallWorkshop_MobilePersonBillboard_GetBillboardSize" data-uid="DaggerfallWorkshop.MobilePersonBillboard.GetBillboardSize">GetBillboardSize()</h4>
+  <a id="DaggerfallWorkshop_MobilePersonBillboard_GetSize_" data-uid="DaggerfallWorkshop.MobilePersonBillboard.GetSize*"></a>
+  <h4 id="DaggerfallWorkshop_MobilePersonBillboard_GetSize" data-uid="DaggerfallWorkshop.MobilePersonBillboard.GetSize">GetSize()</h4>
   <div class="markdown level1 summary"><p>Gets billboard size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 GetBillboardSize()</code></pre>
+    <pre><code class="lang-csharp hljs">public override sealed Vector3 GetSize()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,18 +165,20 @@ This only controls anim state, actual motion is handled by MobilePersonMotor.</p
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><a class="xref" href="https://docs.unity3d.com/2018.2/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
         <td><p>Vector2 of billboard width and height.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.MobilePersonAsset.html#DaggerfallWorkshop_MobilePersonAsset_GetSize">MobilePersonAsset.GetSize()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonBillboard_SetPerson_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonBillboard.SetPerson(DaggerfallWorkshop.Game.Entity.Races%2CDaggerfallWorkshop.Game.Entity.Genders%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L179">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L214">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_MobilePersonBillboard_SetPerson_" data-uid="DaggerfallWorkshop.MobilePersonBillboard.SetPerson*"></a>
   <h4 id="DaggerfallWorkshop_MobilePersonBillboard_SetPerson_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Boolean_" data-uid="DaggerfallWorkshop.MobilePersonBillboard.SetPerson(DaggerfallWorkshop.Game.Entity.Races,DaggerfallWorkshop.Game.Entity.Genders,System.Int32,System.Boolean)">SetPerson(Races, Genders, Int32, Boolean)</h4>
@@ -206,7 +187,7 @@ This only controls anim state, actual motion is handled by MobilePersonMotor.</p
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetPerson(Races race, Genders gender, int personVariant, bool isGuard)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetPerson(Races race, Genders gender, int personVariant, bool isGuard)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,6 +221,8 @@ This only controls anim state, actual motion is handled by MobilePersonMotor.</p
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.MobilePersonAsset.html#DaggerfallWorkshop_MobilePersonAsset_SetPerson_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Int32_System_Boolean_">MobilePersonAsset.SetPerson(Races, Genders, Int32, Boolean)</a></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
@@ -267,7 +250,7 @@ This only controls anim state, actual motion is handled by MobilePersonMotor.</p
                     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_MobilePersonBillboard.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.MobilePersonBillboard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L33" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/MobilePersonBillboard.cs/#L73" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
