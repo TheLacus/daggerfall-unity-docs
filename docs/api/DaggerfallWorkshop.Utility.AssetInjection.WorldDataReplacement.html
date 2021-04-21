@@ -1,0 +1,899 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WorldDataReplacement
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WorldDataReplacement
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement">
+  
+  
+  <h1 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement" class="text-break">Class WorldDataReplacement
+  </h1>
+  <div class="markdown level0 summary"><p>Handles import and injection of custom block data with the purpose of providing modding support.
+Block data is imported from mod bundles with load order or loaded directly from disk.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">WorldDataReplacement</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.html">DaggerfallWorkshop.Utility.AssetInjection</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WorldDataReplacement</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_WorldDataPath.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.WorldDataPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L68">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_WorldDataPath_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.WorldDataPath*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_WorldDataPath" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.WorldDataPath">WorldDataPath</h4>
+  <div class="markdown level1 summary"><p>Path to custom world data on disk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WorldDataPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetBuildingReplacementData_System_String_System_Int32_System_Int32_DaggerfallWorkshop_Utility_AssetInjection_BuildingReplacementData__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetBuildingReplacementData(System.String%2CSystem.Int32%2CSystem.Int32%2CDaggerfallWorkshop.Utility.AssetInjection.BuildingReplacementData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L388">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetBuildingReplacementData_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetBuildingReplacementData*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetBuildingReplacementData_System_String_System_Int32_System_Int32_DaggerfallWorkshop_Utility_AssetInjection_BuildingReplacementData__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetBuildingReplacementData(System.String,System.Int32,System.Int32,DaggerfallWorkshop.Utility.AssetInjection.BuildingReplacementData@)">GetBuildingReplacementData(String, Int32, Int32, out BuildingReplacementData)</h4>
+  <div class="markdown level1 summary"><p>Checks for replacement building data within a block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetBuildingReplacementData(string blockName, int blockIndex, int recordIndex, out BuildingReplacementData buildingData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blockName</span></td>
+        <td><p>Block name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">blockIndex</span></td>
+        <td><p>Block index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">recordIndex</span></td>
+        <td><p>Record index of building within block</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.BuildingReplacementData.html">BuildingReplacementData</a></td>
+        <td><span class="parametername">buildingData</span></td>
+        <td><p>BuildingReplacementData output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if replacement data found, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetBuildingReplacementFilename_System_String_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetBuildingReplacementFilename(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetBuildingReplacementFilename_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetBuildingReplacementFilename*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetBuildingReplacementFilename_System_String_System_Int32_System_Int32_System_String_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetBuildingReplacementFilename(System.String,System.Int32,System.Int32,System.String)">GetBuildingReplacementFilename(String, Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBuildingReplacementFilename(string blockName, int blockIndex, int recordIndex, string variant = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blockName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">blockIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">recordIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">variant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFBlockReplacementData_System_Int32_System_String_DaggerfallConnect_DFBlock__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFBlockReplacementData(System.Int32%2CSystem.String%2CDaggerfallConnect.DFBlock%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L333">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFBlockReplacementData_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFBlockReplacementData*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFBlockReplacementData_System_Int32_System_String_DaggerfallConnect_DFBlock__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFBlockReplacementData(System.Int32,System.String,DaggerfallConnect.DFBlock@)">GetDFBlockReplacementData(Int32, String, out DFBlock)</h4>
+  <div class="markdown level1 summary"><p>Checks for replacement block data. Only RDB block replacement is currently possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetDFBlockReplacementData(int block, string blockName, out DFBlock dfBlock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>Block index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blockName</span></td>
+        <td><p>Block name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBlock.html">DFBlock</a></td>
+        <td><span class="parametername">dfBlock</span></td>
+        <td><p>DFBlock data output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if replacement data found, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFBlockReplacementFilename_System_String_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFBlockReplacementFilename(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L84">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFBlockReplacementFilename_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFBlockReplacementFilename*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFBlockReplacementFilename_System_String_System_String_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFBlockReplacementFilename(System.String,System.String)">GetDFBlockReplacementFilename(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDFBlockReplacementFilename(string blockName, string variant = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blockName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">variant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFLocationReplacementData_System_Int32_System_Int32_DaggerfallConnect_DFLocation__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFLocationReplacementData(System.Int32%2CSystem.Int32%2CDaggerfallConnect.DFLocation%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L195">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFLocationReplacementData_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFLocationReplacementData*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFLocationReplacementData_System_Int32_System_Int32_DaggerfallConnect_DFLocation__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFLocationReplacementData(System.Int32,System.Int32,DaggerfallConnect.DFLocation@)">GetDFLocationReplacementData(Int32, Int32, out DFLocation)</h4>
+  <div class="markdown level1 summary"><p>Checks for replacement location data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetDFLocationReplacementData(int regionIndex, int locationIndex, out DFLocation dfLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionIndex</span></td>
+        <td><p>Region index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">locationIndex</span></td>
+        <td><p>Location index</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td><span class="parametername">dfLocation</span></td>
+        <td><p>DFLocation data output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if replacement data found, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFLocationReplacementFilename_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFLocationReplacementFilename(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFLocationReplacementFilename_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFLocationReplacementFilename*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFLocationReplacementFilename_System_Int32_System_Int32_System_String_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFLocationReplacementFilename(System.Int32,System.Int32,System.String)">GetDFLocationReplacementFilename(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDFLocationReplacementFilename(int regionIndex, int locationIndex, string variant = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">locationIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">variant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFRegionAdditionalLocationData_System_Int32_DaggerfallConnect_DFRegion__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFRegionAdditionalLocationData(System.Int32%2CDaggerfallConnect.DFRegion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L125">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFRegionAdditionalLocationData_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFRegionAdditionalLocationData*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFRegionAdditionalLocationData_System_Int32_DaggerfallConnect_DFRegion__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFRegionAdditionalLocationData(System.Int32,DaggerfallConnect.DFRegion@)">GetDFRegionAdditionalLocationData(Int32, ref DFRegion)</h4>
+  <div class="markdown level1 summary"><p>Checks a region for added location data. (i.e. new locations)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetDFRegionAdditionalLocationData(int regionIndex, ref DFRegion dfRegion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionIndex</span></td>
+        <td><p>Region index</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFRegion.html">DFRegion</a></td>
+        <td><span class="parametername">dfRegion</span></td>
+        <td><p>DFRegion data output updated with any added locations found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if added blocks had indices assigned, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFRegionReplacementFilename_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFRegionReplacementFilename(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L74">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFRegionReplacementFilename_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFRegionReplacementFilename*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetDFRegionReplacementFilename_System_Int32_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetDFRegionReplacementFilename(System.Int32)">GetDFRegionReplacementFilename(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDFRegionReplacementFilename(int regionIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFBlockIndex_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFBlockIndex(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L303">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFBlockIndex_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFBlockIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFBlockIndex_System_String_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFBlockIndex(System.String)">GetNewDFBlockIndex(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the index for a new added block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetNewDFBlockIndex(string blockName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">blockName</span></td>
+        <td><p>Block name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Block index, or -1 if not found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFBlockName_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFBlockName(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L316">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFBlockName_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFBlockName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFBlockName_System_Int32_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFBlockName(System.Int32)">GetNewDFBlockName(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the name for a new added block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetNewDFBlockName(int block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>Block index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Block name, or null if not found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFLocationIndex_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFLocationIndex(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L104">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFLocationIndex_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFLocationIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_GetNewDFLocationIndex_System_Int32_System_String_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.GetNewDFLocationIndex(System.Int32,System.String)">GetNewDFLocationIndex(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the index for a new location after region is loaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetNewDFLocationIndex(int regionIndex, string locationName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionIndex</span></td>
+        <td><p>Region index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">locationName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Location index, or -1 if not found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_LoadNewDFLocationVariant_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.LoadNewDFLocationVariant(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L254">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_LoadNewDFLocationVariant_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.LoadNewDFLocationVariant*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_LoadNewDFLocationVariant_System_Int32_System_Int32_System_String_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.LoadNewDFLocationVariant(System.Int32,System.Int32,System.String)">LoadNewDFLocationVariant(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadNewDFLocationVariant(int regionIndex, int locationIndex, string variant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">locationIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">variant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_MakeLocationKey_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.MakeLocationKey(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L437">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_MakeLocationKey_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.MakeLocationKey*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement_MakeLocationKey_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement.MakeLocationKey(System.Int32,System.Int32)">MakeLocationKey(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Construct a location key. Note this is not the same as the LocationId in
+the DFLocation struct but may be a good value to use for new locations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MakeLocationKey(int regionIndex, int locationIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">locationIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_WorldDataReplacement.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.WorldDataReplacement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/WorldDataReplacement.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

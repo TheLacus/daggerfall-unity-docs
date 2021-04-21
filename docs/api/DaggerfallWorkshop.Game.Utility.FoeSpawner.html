@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FoeSpawner
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FoeSpawner
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Utility_FoeSpawner" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner" class="text-break">Class FoeSpawner
+  </h1>
+  <div class="markdown level0 summary"><p>Spawn one or more enemies near player.
+Will attempt to start placing spawns after game objects are set and spawn count greater than 0.
+This is a generic spawn helper not tied to any specific system.
+NOTES:</p>
+<ul>
+<li>Spawns foes immediately. Be careful spawning multiple foes as they are likely to become stuck on each other.</li>
+<li>The spawner will self-destroy once all foes spawned. Do not attach to anything you want to remain in scene.</li>
+<li>There is a prefab carrying this component in Prefabs/Scene for easy spawner setups.</li>
+<li>Will attempt to find best parent at time if none specified (e.g. dungeon, interior).</li>
+<li>Might need to reduce MinDistance if expecting to spawn in tigt confines like small interiors.</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">FoeSpawner</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Utility.html">DaggerfallWorkshop.Game.Utility</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FoeSpawner : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_AlliedToPlayer.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.AlliedToPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L40">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_AlliedToPlayer" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.AlliedToPlayer">AlliedToPlayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlliedToPlayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_FoeType.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.FoeType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L34">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_FoeType" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.FoeType">FoeType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileTypes FoeType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileTypes.html">MobileTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_lastFoeType.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.lastFoeType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L42">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_lastFoeType" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.lastFoeType">lastFoeType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileTypes lastFoeType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileTypes.html">MobileTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_LineOfSightCheck.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.LineOfSightCheck%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L39">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_LineOfSightCheck" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.LineOfSightCheck">LineOfSightCheck</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LineOfSightCheck</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_MaxDistance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.MaxDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L37">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_MaxDistance" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.MaxDistance">MaxDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_MinDistance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.MinDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L36">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_MinDistance" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.MinDistance">MinDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_Parent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L38">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_Parent" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.Parent">Parent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform Parent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_SpawnCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.SpawnCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L35">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_SpawnCount" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.SpawnCount">SpawnCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SpawnCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner_SetFoeGameObjects_UnityEngine_GameObject___UnityEngine_Transform_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner.SetFoeGameObjects(UnityEngine.GameObject%5B%5D%2CUnityEngine.Transform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L83">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_FoeSpawner_SetFoeGameObjects_" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.SetFoeGameObjects*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_FoeSpawner_SetFoeGameObjects_UnityEngine_GameObject___UnityEngine_Transform_" data-uid="DaggerfallWorkshop.Game.Utility.FoeSpawner.SetFoeGameObjects(UnityEngine.GameObject[],UnityEngine.Transform)">SetFoeGameObjects(GameObject[], Transform)</h4>
+  <div class="markdown level1 summary"><p>Assign an array of pending foe GameObjects to spawn.
+The spawner will then try to place these foes around player until none remain.
+Use GameObjectHelper.CreateFoeGameObjects() static method to create foe GameObjects first.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFoeGameObjects(GameObject[] gameObjects, Transform parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span>[]</td>
+        <td><span class="parametername">gameObjects</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_FoeSpawner.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.FoeSpawner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/FoeSpawner.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

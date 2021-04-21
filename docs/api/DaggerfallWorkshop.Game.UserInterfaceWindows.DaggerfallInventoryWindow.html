@@ -1,0 +1,2760 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DaggerfallInventoryWindow
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DaggerfallInventoryWindow
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow" class="text-break">Class DaggerfallInventoryWindow
+  </h1>
+  <div class="markdown level0 summary"><p>Implements inventory window.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html">UserInterfaceWindow</a></div>
+    <div class="level2"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html">DaggerfallBaseWindow</a></div>
+    <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html">DaggerfallPopupWindow</a></div>
+    <div class="level4"><span class="xref">DaggerfallInventoryWindow</span></div>
+      <div class="level5"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallTradeWindow.html">DaggerfallTradeWindow</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_ScreenDimColor">DaggerfallPopupWindow.ScreenDimColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_AllowCancel">DaggerfallPopupWindow.AllowCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Cancelled">DaggerfallPopupWindow.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_PreviousWindow">DaggerfallPopupWindow.PreviousWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Draw">DaggerfallPopupWindow.Draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_CancelWindow">DaggerfallPopupWindow.CancelWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_OnCancel">DaggerfallPopupWindow.OnCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_exitKey">DaggerfallBaseWindow.exitKey</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_defaultToolTip">DaggerfallBaseWindow.defaultToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_DaggerfallUnity">DaggerfallBaseWindow.DaggerfallUnity</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_IsSetup">DaggerfallBaseWindow.IsSetup</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_NativePanel">DaggerfallBaseWindow.NativePanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_parentPanel">UserInterfaceWindow.parentPanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_uiManager">UserInterfaceWindow.uiManager</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_enabled">UserInterfaceWindow.enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_pauseWhileOpened">UserInterfaceWindow.pauseWhileOpened</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_focusControl">UserInterfaceWindow.focusControl</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_Value">UserInterfaceWindow.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_Enabled">UserInterfaceWindow.Enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_ParentPanel">UserInterfaceWindow.ParentPanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_FocusControl">UserInterfaceWindow.FocusControl</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_ProcessMessages">UserInterfaceWindow.ProcessMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnReturn">UserInterfaceWindow.OnReturn()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_CloseWindow">UserInterfaceWindow.CloseWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_PopWindow">UserInterfaceWindow.PopWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_PauseWhileOpen">UserInterfaceWindow.PauseWhileOpen</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_SetFocus_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_">UserInterfaceWindow.SetFocus(BaseScreenComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnClose">UserInterfaceWindow.OnClose</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_RaiseOnCloseHandler">UserInterfaceWindow.RaiseOnCloseHandler()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.html">DaggerfallWorkshop.Game.UserInterfaceWindows</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DaggerfallInventoryWindow : DaggerfallPopupWindow, IUserInterfaceWindow</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.%23ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager%2CDaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L274">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.#ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager,DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow)">DaggerfallInventoryWindow(IUserInterfaceManager, DaggerfallBaseWindow)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallInventoryWindow(IUserInterfaceManager uiManager, DaggerfallBaseWindow previous = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a></td>
+        <td><span class="parametername">uiManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html">DaggerfallBaseWindow</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_baseTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.baseTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L99">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_baseTexture" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.baseTexture">baseTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D baseTexture</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_clothingAndMiscNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.clothingAndMiscNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L104">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_clothingAndMiscNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.clothingAndMiscNotSelected">clothingAndMiscNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D clothingAndMiscNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_clothingAndMiscSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.clothingAndMiscSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L108">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_clothingAndMiscSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.clothingAndMiscSelected">clothingAndMiscSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D clothingAndMiscSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_coinsAnimation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.coinsAnimation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L124">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_coinsAnimation" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.coinsAnimation">coinsAnimation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageData coinsAnimation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.ImageData.html">ImageData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_coinsAnimationDelay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.coinsAnimationDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L148">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_coinsAnimationDelay" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.coinsAnimationDelay">coinsAnimationDelay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float coinsAnimationDelay = 0.08F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_equipNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.equipNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L113">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_equipNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.equipNotSelected">equipNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D equipNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_equipSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.equipSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L118">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_equipSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.equipSelected">equipSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D equipSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_exitButtonRect.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.exitButtonRect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L58">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_exitButtonRect" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.exitButtonRect">exitButtonRect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Rect exitButtonRect</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_goldTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.goldTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L100">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_goldTexture" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.goldTexture">goldTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D goldTexture</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_infoNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.infoNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L112">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_infoNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.infoNotSelected">infoNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D infoNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_infoSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.infoSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L117">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_infoSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.infoSelected">infoSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D infoSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_infoTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.infoTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L122">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_infoTexture" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.infoTexture">infoTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D infoTexture</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ingredientsNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ingredientsNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L105">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ingredientsNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ingredientsNotSelected">ingredientsNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D ingredientsNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ingredientsSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ingredientsSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L109">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ingredientsSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ingredientsSelected">ingredientsSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D ingredientsSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_itemInfoPanel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.itemInfoPanel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L85">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_itemInfoPanel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.itemInfoPanel">itemInfoPanel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Panel itemInfoPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html">Panel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_itemInfoPanelLabel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.itemInfoPanelLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L86">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_itemInfoPanelLabel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.itemInfoPanelLabel">itemInfoPanelLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MultiFormatTextLabel itemInfoPanelLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.html">MultiFormatTextLabel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_lastLeftHandItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.lastLeftHandItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L93">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_lastLeftHandItem" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.lastLeftHandItem">lastLeftHandItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DaggerfallUnityItem lastLeftHandItem</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_lastRightHandItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.lastRightHandItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L92">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_lastRightHandItem" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.lastRightHandItem">lastRightHandItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DaggerfallUnityItem lastRightHandItem</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localItemListScroller.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localItemListScroller%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L88">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localItemListScroller" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localItemListScroller">localItemListScroller</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ItemListScroller localItemListScroller</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ItemListScroller.html">ItemListScroller</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L164">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localItems" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localItems">localItems</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ItemCollection localItems</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localItemsFiltered.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localItemsFiltered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L168">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localItemsFiltered" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localItemsFiltered">localItemsFiltered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;DaggerfallUnityItem&gt; localItemsFiltered</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localTargetIconLabel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localTargetIconLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L82">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localTargetIconLabel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localTargetIconLabel">localTargetIconLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextLabel localTargetIconLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.TextLabel.html">TextLabel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localTargetIconPanel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localTargetIconPanel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L81">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_localTargetIconPanel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.localTargetIconPanel">localTargetIconPanel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Panel localTargetIconPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html">Panel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicAnimation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicAnimation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L125">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicAnimation" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicAnimation">magicAnimation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImageData magicAnimation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.ImageData.html">ImageData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicAnimationDelay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicAnimationDelay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L149">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicAnimationDelay" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicAnimationDelay">magicAnimationDelay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const float magicAnimationDelay = 0.15F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicItemsNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicItemsNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L103">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicItemsNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicItemsNotSelected">magicItemsNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D magicItemsNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicItemsSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicItemsSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L107">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_magicItemsSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.magicItemsSelected">magicItemsSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D magicItemsSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteItemListScroller.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteItemListScroller%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L89">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteItemListScroller" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteItemListScroller">remoteItemListScroller</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ItemListScroller remoteItemListScroller</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ItemListScroller.html">ItemListScroller</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L165">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteItems" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteItems">remoteItems</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ItemCollection remoteItems</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteItemsFiltered.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteItemsFiltered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L169">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteItemsFiltered" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteItemsFiltered">remoteItemsFiltered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;DaggerfallUnityItem&gt; remoteItemsFiltered</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteTargetIconLabel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteTargetIconLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L84">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteTargetIconLabel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteTargetIconLabel">remoteTargetIconLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextLabel remoteTargetIconLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.TextLabel.html">TextLabel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteTargetIconPanel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteTargetIconPanel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L83">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteTargetIconPanel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteTargetIconPanel">remoteTargetIconPanel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Panel remoteTargetIconPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html">Panel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteTargetType.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteTargetType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L162">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_remoteTargetType" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.remoteTargetType">remoteTargetType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DaggerfallInventoryWindow.RemoteTargetTypes remoteTargetType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.RemoteTargetTypes.html">DaggerfallInventoryWindow.RemoteTargetTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_removeNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.removeNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L114">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_removeNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.removeNotSelected">removeNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D removeNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_removeSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.removeSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L119">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_removeSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.removeSelected">removeSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D removeSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_selectedActionMode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.selectedActionMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L161">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_selectedActionMode" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.selectedActionMode">selectedActionMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DaggerfallInventoryWindow.ActionModes selectedActionMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ActionModes.html">DaggerfallInventoryWindow.ActionModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_textDatabase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.textDatabase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L131">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_textDatabase" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.textDatabase">textDatabase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string textDatabase = &quot;DaggerfallUI&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_theftBasket.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.theftBasket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L166">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_theftBasket" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.theftBasket">theftBasket</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ItemCollection theftBasket</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_useNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.useNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L115">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_useNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.useNotSelected">useNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D useNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_useSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.useSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L120">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_useSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.useSelected">useSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D useSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_wagonNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.wagonNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L111">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_wagonNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.wagonNotSelected">wagonNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D wagonNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_wagonSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.wagonSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L116">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_wagonSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.wagonSelected">wagonSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D wagonSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_weaponsAndArmorNotSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.weaponsAndArmorNotSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L102">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_weaponsAndArmorNotSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.weaponsAndArmorNotSelected">weaponsAndArmorNotSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D weaponsAndArmorNotSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_weaponsAndArmorSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.weaponsAndArmorSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L106">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_weaponsAndArmorSelected" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.weaponsAndArmorSelected">weaponsAndArmorSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D weaponsAndArmorSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LootTarget.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LootTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L242">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LootTarget_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LootTarget*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LootTarget" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LootTarget">LootTarget</h4>
+  <div class="markdown level1 summary"><p>Gets or sets specific loot to view on next open.
+Otherwise will default to ground for dropping items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallLoot LootTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallLoot.html">DaggerfallLoot</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_PlayerEntity.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.PlayerEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L233">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.PlayerEntity*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_PlayerEntity" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.PlayerEntity">PlayerEntity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerEntity PlayerEntity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TheftBasket.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TheftBasket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L248">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TheftBasket_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TheftBasket*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TheftBasket" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TheftBasket">TheftBasket</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemCollection TheftBasket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AccessoryItemsButton_OnMouseClick_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AccessoryItemsButton_OnMouseClick(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1786">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AccessoryItemsButton_OnMouseClick_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AccessoryItemsButton_OnMouseClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AccessoryItemsButton_OnMouseClick_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AccessoryItemsButton_OnMouseClick(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent,UnityEngine.Vector2)">AccessoryItemsButton_OnMouseClick(BaseScreenComponent, Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AccessoryItemsButton_OnMouseClick(BaseScreenComponent sender, Vector2 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AccessoryItemsButton_OnMouseEnter_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AccessoryItemsButton_OnMouseEnter(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L2024">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AccessoryItemsButton_OnMouseEnter_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AccessoryItemsButton_OnMouseEnter*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AccessoryItemsButton_OnMouseEnter_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AccessoryItemsButton_OnMouseEnter(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)">AccessoryItemsButton_OnMouseEnter(BaseScreenComponent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AccessoryItemsButton_OnMouseEnter(BaseScreenComponent sender)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AddLocalItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AddLocalItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L876">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AddLocalItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AddLocalItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AddLocalItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AddLocalItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">AddLocalItem(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddLocalItem(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AllowDungeonWagonAccess.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AllowDungeonWagonAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L253">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AllowDungeonWagonAccess_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AllowDungeonWagonAccess*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_AllowDungeonWagonAccess" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.AllowDungeonWagonAccess">AllowDungeonWagonAccess()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AllowDungeonWagonAccess()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_CanCarryAmount_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.CanCarryAmount(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1357">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_CanCarryAmount_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.CanCarryAmount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_CanCarryAmount_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.CanCarryAmount(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">CanCarryAmount(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int CanCarryAmount(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_DoTransferItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_DaggerfallWorkshop_Game_Items_ItemCollection_DaggerfallWorkshop_Game_Items_ItemCollection_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.DoTransferItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem%2CDaggerfallWorkshop.Game.Items.ItemCollection%2CDaggerfallWorkshop.Game.Items.ItemCollection%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1484">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_DoTransferItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.DoTransferItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_DoTransferItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_DaggerfallWorkshop_Game_Items_ItemCollection_DaggerfallWorkshop_Game_Items_ItemCollection_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.DoTransferItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem,DaggerfallWorkshop.Game.Items.ItemCollection,DaggerfallWorkshop.Game.Items.ItemCollection,System.Boolean)">DoTransferItem(DaggerfallUnityItem, ItemCollection, ItemCollection, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DoTransferItem(DaggerfallUnityItem item, ItemCollection from, ItemCollection to, bool equip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">equip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_EquipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.EquipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1266">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_EquipItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.EquipItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_EquipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.EquipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">EquipItem(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EquipItem(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ExitButton_OnMouseClick_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ExitButton_OnMouseClick(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1924">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ExitButton_OnMouseClick_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ExitButton_OnMouseClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ExitButton_OnMouseClick_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ExitButton_OnMouseClick(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent,UnityEngine.Vector2)">ExitButton_OnMouseClick(BaseScreenComponent, Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ExitButton_OnMouseClick(BaseScreenComponent sender, Vector2 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_FilterLocalItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.FilterLocalItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L858">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_FilterLocalItems_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.FilterLocalItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_FilterLocalItems" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.FilterLocalItems">FilterLocalItems()</h4>
+  <div class="markdown level1 summary"><p>Creates filtered list of local items based on view state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void FilterLocalItems()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_FilterRemoteItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.FilterRemoteItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L911">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_FilterRemoteItems_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.FilterRemoteItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_FilterRemoteItems" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.FilterRemoteItems">FilterRemoteItems()</h4>
+  <div class="markdown level1 summary"><p>Creates filtered list of remote items.
+For now this just creates a flat list, as that is Daggerfall's behaviour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void FilterRemoteItems()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_GetCarriedWeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.GetCarriedWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L814">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_GetCarriedWeight_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.GetCarriedWeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_GetCarriedWeight" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.GetCarriedWeight">GetCarriedWeight()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float GetCarriedWeight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ItemBackgroundColourHandler_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ItemBackgroundColourHandler(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L383">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ItemBackgroundColourHandler_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ItemBackgroundColourHandler*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ItemBackgroundColourHandler_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ItemBackgroundColourHandler(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">ItemBackgroundColourHandler(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color ItemBackgroundColourHandler(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ItemListScroller_OnHover_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ItemListScroller_OnHover(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L2034">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ItemListScroller_OnHover_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ItemListScroller_OnHover*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ItemListScroller_OnHover_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ItemListScroller_OnHover(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">ItemListScroller_OnHover(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ItemListScroller_OnHover(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LoadTextures.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LoadTextures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L961">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LoadTextures_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LoadTextures*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LoadTextures" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LoadTextures">LoadTextures()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LoadTextures()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LocalItemListScroller_OnItemClick_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LocalItemListScroller_OnItemClick(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1843">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LocalItemListScroller_OnItemClick_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LocalItemListScroller_OnItemClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_LocalItemListScroller_OnItemClick_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.LocalItemListScroller_OnItemClick(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">LocalItemListScroller_OnItemClick(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LocalItemListScroller_OnItemClick(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_NextVariant_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.NextVariant(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1348">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_NextVariant_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.NextVariant*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_NextVariant_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.NextVariant(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">NextVariant(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void NextVariant(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_OnPop.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.OnPop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L637">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_OnPop_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.OnPop*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_OnPop" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.OnPop">OnPop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPop()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnPop">UserInterfaceWindow.OnPop()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_OnPush.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.OnPush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L545">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_OnPush_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.OnPush*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_OnPush" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.OnPush">OnPush()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPush()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnPush">UserInterfaceWindow.OnPush()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_PaperDoll_OnMouseClick_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.PaperDoll_OnMouseClick(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1810">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_PaperDoll_OnMouseClick_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.PaperDoll_OnMouseClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_PaperDoll_OnMouseClick_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.PaperDoll_OnMouseClick(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent,UnityEngine.Vector2)">PaperDoll_OnMouseClick(BaseScreenComponent, Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void PaperDoll_OnMouseClick(BaseScreenComponent sender, Vector2 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Refresh_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Refresh(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L728">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Refresh_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Refresh*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Refresh_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Refresh(System.Boolean)">Refresh(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Refresh character portrait and inventory.
+Called every time inventory is pushed to top of stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Refresh(bool refreshPaperDoll = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">refreshPaperDoll</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_RemoteItemListScroller_OnItemClick_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.RemoteItemListScroller_OnItemClick(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1882">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_RemoteItemListScroller_OnItemClick_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.RemoteItemListScroller_OnItemClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_RemoteItemListScroller_OnItemClick_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.RemoteItemListScroller_OnItemClick(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">RemoteItemListScroller_OnItemClick(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RemoteItemListScroller_OnItemClick(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SelectTabPage_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TabPages_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SelectTabPage(DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TabPages)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L765">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SelectTabPage_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SelectTabPage*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SelectTabPage_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TabPages_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SelectTabPage(DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TabPages)">SelectTabPage(DaggerfallInventoryWindow.TabPages)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SelectTabPage(DaggerfallInventoryWindow.TabPages tabPage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TabPages.html">DaggerfallInventoryWindow.TabPages</a></td>
+        <td><span class="parametername">tabPage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetChooseOne_DaggerfallWorkshop_Game_Items_ItemCollection_System_Action_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetChooseOne(DaggerfallWorkshop.Game.Items.ItemCollection%2CSystem.Action%7BDaggerfallWorkshop.Game.Items.DaggerfallUnityItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L258">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetChooseOne_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetChooseOne*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetChooseOne_DaggerfallWorkshop_Game_Items_ItemCollection_System_Action_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem__" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetChooseOne(DaggerfallWorkshop.Game.Items.ItemCollection,System.Action{DaggerfallWorkshop.Game.Items.DaggerfallUnityItem})">SetChooseOne(ItemCollection, Action&lt;DaggerfallUnityItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChooseOne(ItemCollection items, Action&lt;DaggerfallUnityItem&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetRemoteItemsAnimation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetRemoteItemsAnimation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L753">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetRemoteItemsAnimation_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetRemoteItemsAnimation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetRemoteItemsAnimation" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetRemoteItemsAnimation">SetRemoteItemsAnimation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetRemoteItemsAnimation()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetShopShelfStealing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetShopShelfStealing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L265">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetShopShelfStealing_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetShopShelfStealing*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetShopShelfStealing" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetShopShelfStealing">SetShopShelfStealing()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetShopShelfStealing()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Setup.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Setup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L284">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Setup_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Setup*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Setup" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Setup">Setup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Setup()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Setup">DaggerfallPopupWindow.Setup()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupAccessoryElements.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupAccessoryElements%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L490">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupAccessoryElements_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupAccessoryElements*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupAccessoryElements" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupAccessoryElements">SetupAccessoryElements()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupAccessoryElements()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupActionButtons.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupActionButtons%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L469">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupActionButtons_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupActionButtons*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupActionButtons" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupActionButtons">SetupActionButtons()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetupActionButtons()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupItemInfoPanel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupItemInfoPanel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L424">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupItemInfoPanel_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupItemInfoPanel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupItemInfoPanel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupItemInfoPanel">SetupItemInfoPanel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupItemInfoPanel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupItemListScrollers.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupItemListScrollers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L352">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupItemListScrollers_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupItemListScrollers*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupItemListScrollers" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupItemListScrollers">SetupItemListScrollers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupItemListScrollers()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupPaperdoll.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupPaperdoll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L444">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupPaperdoll_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupPaperdoll*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupPaperdoll" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupPaperdoll">SetupPaperdoll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupPaperdoll()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupTabPageButtons.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupTabPageButtons%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L454">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupTabPageButtons_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupTabPageButtons*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupTabPageButtons" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupTabPageButtons">SetupTabPageButtons()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupTabPageButtons()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupTargetIconPanels.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupTargetIconPanels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L406">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupTargetIconPanels_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupTargetIconPanels*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_SetupTargetIconPanels" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.SetupTargetIconPanels">SetupTargetIconPanels()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupTargetIconPanels()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ShowInfoPopup_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ShowInfoPopup(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1517">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ShowInfoPopup_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ShowInfoPopup*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_ShowInfoPopup_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.ShowInfoPopup(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">ShowInfoPopup(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ShowInfoPopup(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_StartGameBehaviour_OnNewGame.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.StartGameBehaviour_OnNewGame%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L2039">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_StartGameBehaviour_OnNewGame_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.StartGameBehaviour_OnNewGame*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_StartGameBehaviour_OnNewGame" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.StartGameBehaviour_OnNewGame">StartGameBehaviour_OnNewGame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void StartGameBehaviour_OnNewGame()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TransferItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_DaggerfallWorkshop_Game_Items_ItemCollection_DaggerfallWorkshop_Game_Items_ItemCollection_System_Nullable_System_Int32__System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TransferItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem%2CDaggerfallWorkshop.Game.Items.ItemCollection%2CDaggerfallWorkshop.Game.Items.ItemCollection%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1387">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TransferItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TransferItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_TransferItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_DaggerfallWorkshop_Game_Items_ItemCollection_DaggerfallWorkshop_Game_Items_ItemCollection_System_Nullable_System_Int32__System_Boolean_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.TransferItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem,DaggerfallWorkshop.Game.Items.ItemCollection,DaggerfallWorkshop.Game.Items.ItemCollection,System.Nullable{System.Int32},System.Boolean,System.Boolean,System.Boolean)">TransferItem(DaggerfallUnityItem, ItemCollection, ItemCollection, Nullable&lt;Int32&gt;, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void TransferItem(DaggerfallUnityItem item, ItemCollection from, ItemCollection to, int? maxAmount = default(int? ), bool blockTransport = false, bool equip = false, bool allowSplitting = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">maxAmount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">blockTransport</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">equip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowSplitting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UnequipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UnequipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1338">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UnequipItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UnequipItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UnequipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UnequipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem,System.Boolean)">UnequipItem(DaggerfallUnityItem, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UnequipItem(DaggerfallUnityItem item, bool refreshPaperDoll = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">refreshPaperDoll</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Update.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L334">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Update_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Update*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_Update" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Update">DaggerfallPopupWindow.Update()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateAccessoryItemsDisplay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateAccessoryItemsDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L925">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateAccessoryItemsDisplay_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateAccessoryItemsDisplay*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateAccessoryItemsDisplay" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateAccessoryItemsDisplay">UpdateAccessoryItemsDisplay()</h4>
+  <div class="markdown level1 summary"><p>Updates accessory items display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateAccessoryItemsDisplay()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateLocalTargetIcon.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateLocalTargetIcon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L819">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateLocalTargetIcon_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateLocalTargetIcon*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateLocalTargetIcon" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateLocalTargetIcon">UpdateLocalTargetIcon()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateLocalTargetIcon()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateRemoteTargetIcon.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateRemoteTargetIcon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L827">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateRemoteTargetIcon_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateRemoteTargetIcon*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_UpdateRemoteTargetIcon" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.UpdateRemoteTargetIcon">UpdateRemoteTargetIcon()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateRemoteTargetIcon()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_WagonCanHoldAmount_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.WagonCanHoldAmount(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L1368">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_WagonCanHoldAmount_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.WagonCanHoldAmount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow_WagonCanHoldAmount_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow.WagonCanHoldAmount(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">WagonCanHoldAmount(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int WagonCanHoldAmount(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallInventoryWindow.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallInventoryWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallInventoryWindow.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,737 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TextureAtlasBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TextureAtlasBuilder
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder">
+  
+  
+  <h1 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder" class="text-break">Class TextureAtlasBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Builds an atlas from any combination of texture archives.
+Does not yet integrate with main material system.
+Currently some limitations around caching and serialization.
+At this time used only for static misc billboards in cities.
+Will be enhanced in future.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TextureAtlasBuilder</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Utility.html">DaggerfallWorkshop.Utility</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextureAtlasBuilder</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_AtlasMaterial.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasMaterial%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L72">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_AtlasMaterial_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasMaterial*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_AtlasMaterial" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasMaterial">AtlasMaterial</h4>
+  <div class="markdown level1 summary"><p>Gets the atlas material generated from texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material AtlasMaterial { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_AtlasTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L64">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_AtlasTexture_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasTexture*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_AtlasTexture" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasTexture">AtlasTexture</h4>
+  <div class="markdown level1 summary"><p>Gets the atlas Texture2D created after packing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D AtlasTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_MaxAtlasDim.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.MaxAtlasDim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L80">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_MaxAtlasDim_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.MaxAtlasDim*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_MaxAtlasDim" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.MaxAtlasDim">MaxAtlasDim</h4>
+  <div class="markdown level1 summary"><p>Gets or sets max dimensions of texture atlas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxAtlasDim { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_MipMaps.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.MipMaps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_MipMaps_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.MipMaps*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_MipMaps" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.MipMaps">MipMaps</h4>
+  <div class="markdown level1 summary"><p>Gets or sets flag to create mipmaps for atlas texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MipMaps { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_Padding.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.Padding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L98">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_Padding_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.Padding*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_Padding" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.Padding">Padding</h4>
+  <div class="markdown level1 summary"><p>Gets or sets padding around each texture in atlas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Padding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_AddTextureItem_UnityEngine_Texture2D_System_Int32_System_Int32_System_Int32_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.AddTextureItem(UnityEngine.Texture2D%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CUnityEngine.Vector2%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L117">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_AddTextureItem_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AddTextureItem*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_AddTextureItem_UnityEngine_Texture2D_System_Int32_System_Int32_System_Int32_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AddTextureItem(UnityEngine.Texture2D,System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Vector2,UnityEngine.Vector2)">AddTextureItem(Texture2D, Int32, Int32, Int32, Int32, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Add a new texture item to source list.
+These items are used to build atlas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTextureItem(Texture2D texture, int archive, int record, int frame, int frameCount, Vector2 size, Vector2 scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td><span class="parametername">texture</span></td>
+        <td><p>Individual Texture2D. Must be readable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td><p>Archive index of this texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Record index of this texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>Frame index of this texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frameCount</span></td>
+        <td><p>Number of frames in this set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_Clear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L255">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_Clear_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_Clear" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear all texture items and reset atlas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetAtlasItem_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetAtlasItem(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L226">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetAtlasItem_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetAtlasItem*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetAtlasItem_System_Int32_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetAtlasItem(System.Int32)">GetAtlasItem(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets details of a particular atlas item.
+If texture does not exist in atlas an empty item is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureAtlasBuilder.AtlasItem GetAtlasItem(int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key of item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasItem.html">TextureAtlasBuilder.AtlasItem</a></td>
+        <td><p>AtlasItem. Key member contains -1 if item not present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetAtlasItem_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetAtlasItem(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L213">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetAtlasItem_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetAtlasItem*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetAtlasItem_System_Int32_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetAtlasItem(System.Int32,System.Int32,System.Int32)">GetAtlasItem(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets atlas details of a particular item.
+If texture does not exist in atlas an empty item is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureAtlasBuilder.AtlasItem GetAtlasItem(int archive, int record, int frame = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td><p>Archive index of texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Record index of texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>Frame index of texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.TextureAtlasBuilder.AtlasItem.html">TextureAtlasBuilder.AtlasItem</a></td>
+        <td><p>AtlasItem. Key member contains -1 if item not present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetFrameCount_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetFrameCount(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L239">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetFrameCount_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetFrameCount*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetFrameCount_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetFrameCount(System.Int32,System.Int32)">GetFrameCount(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets frame count of any item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFrameCount(int archive, int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of frame in this set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetMaterial_DaggerfallWorkshop_MaterialReader_CustomBlendMode_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetMaterial(DaggerfallWorkshop.MaterialReader.CustomBlendMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L194">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetMaterial_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetMaterial*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_GetMaterial_DaggerfallWorkshop_MaterialReader_CustomBlendMode_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.GetMaterial(DaggerfallWorkshop.MaterialReader.CustomBlendMode)">GetMaterial(MaterialReader.CustomBlendMode)</h4>
+  <div class="markdown level1 summary"><p>Gets a Standard material from current atlas texture.
+Does not return normal or emission map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material GetMaterial(MaterialReader.CustomBlendMode blendMode = MaterialReader.CustomBlendMode.Cutout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MaterialReader.CustomBlendMode.html">MaterialReader.CustomBlendMode</a></td>
+        <td><span class="parametername">blendMode</span></td>
+        <td><p>Blend mode of material.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><p>Material.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_MakeTextureKey_System_Int16_System_Byte_System_Byte_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.MakeTextureKey(System.Int16%2CSystem.Byte%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L270">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_MakeTextureKey_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.MakeTextureKey*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_MakeTextureKey_System_Int16_System_Byte_System_Byte_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.MakeTextureKey(System.Int16,System.Byte,System.Byte)">MakeTextureKey(Int16, Byte, Byte)</h4>
+  <div class="markdown level1 summary"><p>Create a texture key from indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MakeTextureKey(short archive, byte record, byte frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">record</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_Rebuild_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.Rebuild(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L138">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_Rebuild_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.Rebuild*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_Rebuild_System_Int32_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.Rebuild(System.Int32)">Rebuild(Int32)</h4>
+  <div class="markdown level1 summary"><p>Rebuilds source textures into new atlas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rebuild(int borderSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">borderSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder_ReverseTextureKey_System_Int32_System_Int32__System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder.ReverseTextureKey(System.Int32%2CSystem.Int32%40%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L278">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_ReverseTextureKey_" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.ReverseTextureKey*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureAtlasBuilder_ReverseTextureKey_System_Int32_System_Int32__System_Int32__System_Int32__" data-uid="DaggerfallWorkshop.Utility.TextureAtlasBuilder.ReverseTextureKey(System.Int32,System.Int32@,System.Int32@,System.Int32@)">ReverseTextureKey(Int32, out Int32, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Reverse a texture key back into indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReverseTextureKey(int key, out int archiveOut, out int recordOut, out int frameOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archiveOut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">recordOut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frameOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureAtlasBuilder.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureAtlasBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureAtlasBuilder.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

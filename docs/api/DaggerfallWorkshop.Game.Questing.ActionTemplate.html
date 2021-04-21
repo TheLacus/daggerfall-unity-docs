@@ -1,0 +1,799 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActionTemplate
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActionTemplate
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Questing_ActionTemplate" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate" class="text-break">Class ActionTemplate
+  </h1>
+  <div class="markdown level0 summary"><p>Base class template for all quest actions and conditions used by tasks.
+Handles some of the boilerplate of IQuestAction.
+This class can be used to test and factory new action interfaces from itself.
+Actions belong to a task and perform a specific function when task is active and conditions are met.
+An action will persist until task terminates.
+Think of actions as objects with a lifetime rather than a simple unit of one-shot execution.
+For example, the &quot;vengeance&quot; sound played in nighttime Daggerfall is an action that persists until Lysandus is put to rest.
+Currently still unclear on when actions get reset (e.g. when does &quot;play sound 10 times&quot; counter get reset?).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html">QuestResource</a></div>
+    <div class="level2"><span class="xref">ActionTemplate</span></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.AddFace.html">AddFace</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.ClearTask.html">ClearTask</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpc.html">CreateNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpcAt.html">CreateNpcAt</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CurePcDisease.html">CurePcDisease</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.DropFace.html">DropFace</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.DroppedItemAtPlace.html">DroppedItemAtPlace</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.EndQuest.html">EndQuest</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GetItem.html">GetItem</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GiveItem.html">GiveItem</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GivePc.html">GivePc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.HideNpc.html">HideNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.InjuredFoe.html">InjuredFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JournalNote.html">JournalNote</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JuggleAction.html">JuggleAction</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.KilledFoe.html">KilledFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.KillFoe.html">KillFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.LogMessage.html">LogMessage</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.MakePcDiseased.html">MakePcDiseased</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PayMoney.html">PayMoney</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PcAt.html">PcAt</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PickOneOf.html">PickOneOf</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceFoe.html">PlaceFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceItem.html">PlaceItem</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceNpc.html">PlaceNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaySound.html">PlaySound</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlayVideo.html">PlayVideo</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Prompt.html">Prompt</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveFoe.html">RemoveFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveLogMessage.html">RemoveLogMessage</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RestoreNpc.html">RestoreNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RestrainFoe.html">RestrainFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Say.html">Say</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.StartStopTimer.html">StartStopTimer</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.StartTask.html">StartTask</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.TakeItem.html">TakeItem</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.html">TotingItemAndClickedNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.UnsetTask.html">UnsetTask</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.WhenPcEntersExits.html">WhenPcEntersExits</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.AddAsQuestor.html">AddAsQuestor</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.AddDialog.html">AddDialog</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastEffectDo.html">CastEffectDo</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastSpellDo.html">CastSpellDo</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastSpellOnFoe.html">CastSpellOnFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.ChangeReputeWith.html">ChangeReputeWith</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedFoe.html">ClickedFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedItem.html">ClickedItem</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedNpc.html">ClickedNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.CreateFoe.html">CreateFoe</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.DailyFrom.html">DailyFrom</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.DestroyNpc.html">DestroyNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.DialogLink.html">DialogLink</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.DropAsQuestor.html">DropAsQuestor</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.Enemies.html">Enemies</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.HaveItem.html">HaveItem</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.ItemUsedDo.html">ItemUsedDo</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.LegalRepute.html">LegalRepute</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.LevelCompleted.html">LevelCompleted</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.MakePermanent.html">MakePermanent</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.MuteNpc.html">MuteNpc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.ReputeExceedsDo.html">ReputeExceedsDo</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.RevealLocation.html">RevealLocation</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.RumorMill.html">RumorMill</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.StartQuest.html">StartQuest</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.TeleportPc.html">TeleportPc</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenAttributeLevel.html">WhenAttributeLevel</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenNpcIsAvailable.html">WhenNpcIsAvailable</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenReputeWith.html">WhenReputeWith</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenSkillLevel.html">WhenSkillLevel</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenTask.html">WhenTask</a></div>
+      <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.Questing.WorldUpdate.html">WorldUpdate</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DaggerfallWorkshop.Game.Questing.IQuestAction.html">IQuestAction</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_BLANK">QuestResource.BLANK</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Symbol">QuestResource.Symbol</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_ParentQuest">QuestResource.ParentQuest</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_InfoMessageID">QuestResource.InfoMessageID</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_UsedMessageID">QuestResource.UsedMessageID</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RumorsMessageID">QuestResource.RumorsMessageID</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_HasPlayerClicked">QuestResource.HasPlayerClicked</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_IsHidden">QuestResource.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Gender">QuestResource.Gender</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_QuestResourceBehaviour">QuestResource.QuestResourceBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_SetResource_System_String_">QuestResource.SetResource(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_ExpandMacro_DaggerfallWorkshop_MacroTypes_System_String__">QuestResource.ExpandMacro(MacroTypes, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Tick_DaggerfallWorkshop_Game_Questing_Quest_">QuestResource.Tick(Quest)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_PostTick_DaggerfallWorkshop_Game_Questing_Quest_">QuestResource.PostTick(Quest)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_ParseMessageTags_System_String_">QuestResource.ParseMessageTags(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Dispose">QuestResource.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_SetPlayerClicked">QuestResource.SetPlayerClicked()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RearmPlayerClick">QuestResource.RearmPlayerClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_GetResourceSaveData">QuestResource.GetResourceSaveData()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RestoreResourceSaveData_DaggerfallWorkshop_Game_Questing_QuestResource_ResourceSaveData_v1_">QuestResource.RestoreResourceSaveData(QuestResource.ResourceSaveData_v1)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_GetSaveData">QuestResource.GetSaveData()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RestoreSaveData_System_Object_">QuestResource.RestoreSaveData(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_OnDispose">QuestResource.OnDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RaiseOnDisposeEvent">QuestResource.RaiseOnDisposeEvent()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Questing.html">DaggerfallWorkshop.Game.Questing</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ActionTemplate : QuestResource, IDisposable, IQuestAction</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate__ctor_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.%23ctor(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L130">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate__ctor_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate__ctor_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.#ctor(DaggerfallWorkshop.Game.Questing.Quest)">ActionTemplate(Quest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionTemplate(Quest parentQuest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">parentQuest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_allowRearm.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.allowRearm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L121">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_allowRearm" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.allowRearm">allowRearm</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool allowRearm</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_DebugSource.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.DebugSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L126">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_DebugSource_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.DebugSource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_DebugSource" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.DebugSource">DebugSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DebugSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_IsAlwaysOnTriggerCondition.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.IsAlwaysOnTriggerCondition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L125">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_IsAlwaysOnTriggerCondition_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.IsAlwaysOnTriggerCondition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_IsAlwaysOnTriggerCondition" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.IsAlwaysOnTriggerCondition">IsAlwaysOnTriggerCondition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAlwaysOnTriggerCondition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_IsComplete.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.IsComplete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L123">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_IsComplete_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.IsComplete*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_IsComplete" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.IsComplete">IsComplete</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsComplete { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_IsTriggerCondition.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.IsTriggerCondition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L124">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_IsTriggerCondition_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.IsTriggerCondition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_IsTriggerCondition" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.IsTriggerCondition">IsTriggerCondition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTriggerCondition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_Pattern.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.Pattern%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L128">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_Pattern_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.Pattern*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_Pattern" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.Pattern">Pattern</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string Pattern { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_CheckTrigger_DaggerfallWorkshop_Game_Questing_Task_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.CheckTrigger(DaggerfallWorkshop.Game.Questing.Task)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L153">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_CheckTrigger_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.CheckTrigger*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_CheckTrigger_DaggerfallWorkshop_Game_Questing_Task_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.CheckTrigger(DaggerfallWorkshop.Game.Questing.Task)">CheckTrigger(Task)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CheckTrigger(Task caller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Task.html">Task</a></td>
+        <td><span class="parametername">caller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_CreateNew_System_String_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.CreateNew(System.String%2CDaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L144">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_CreateNew_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.CreateNew*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_CreateNew_System_String_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.CreateNew(System.String,DaggerfallWorkshop.Game.Questing.Quest)">CreateNew(String, Quest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IQuestAction CreateNew(string source, Quest parentQuest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">parentQuest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.IQuestAction.html">IQuestAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_GetActionSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.GetActionSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L185">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_GetActionSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.GetActionSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_GetActionSaveData" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.GetActionSaveData">GetActionSaveData()</h4>
+  <div class="markdown level1 summary"><p>Get full action save data including action specific data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionTemplate.ActionSaveData_v1 GetActionSaveData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.ActionTemplate.ActionSaveData_v1.html">ActionTemplate.ActionSaveData_v1</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_InitialiseOnSet.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.InitialiseOnSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L140">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_InitialiseOnSet_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.InitialiseOnSet*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_InitialiseOnSet" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.InitialiseOnSet">InitialiseOnSet()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitialiseOnSet()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_RearmAction.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.RearmAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L163">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_RearmAction_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.RearmAction*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_RearmAction" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.RearmAction">RearmAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RearmAction()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_RestoreActionSaveData_DaggerfallWorkshop_Game_Questing_ActionTemplate_ActionSaveData_v1_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.RestoreActionSaveData(DaggerfallWorkshop.Game.Questing.ActionTemplate.ActionSaveData_v1)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L201">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_RestoreActionSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.RestoreActionSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_RestoreActionSaveData_DaggerfallWorkshop_Game_Questing_ActionTemplate_ActionSaveData_v1_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.RestoreActionSaveData(DaggerfallWorkshop.Game.Questing.ActionTemplate.ActionSaveData_v1)">RestoreActionSaveData(ActionTemplate.ActionSaveData_v1)</h4>
+  <div class="markdown level1 summary"><p>Restore full action save data including action specific data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreActionSaveData(ActionTemplate.ActionSaveData_v1 data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.ActionTemplate.ActionSaveData_v1.html">ActionTemplate.ActionSaveData_v1</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_SetComplete.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.SetComplete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L158">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_SetComplete_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.SetComplete*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_SetComplete" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.SetComplete">SetComplete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetComplete()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_Test_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.Test(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L135">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_Test_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.Test*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_Test_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.Test(System.String)">Test(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Match Test(string source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.RegularExpressions.Match</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate_Update_DaggerfallWorkshop_Game_Questing_Task_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate.Update(DaggerfallWorkshop.Game.Questing.Task)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L149">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_ActionTemplate_Update_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.Update*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_ActionTemplate_Update_DaggerfallWorkshop_Game_Questing_Task_" data-uid="DaggerfallWorkshop.Game.Questing.ActionTemplate.Update(DaggerfallWorkshop.Game.Questing.Task)">Update(Task)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update(Task caller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Task.html">Task</a></td>
+        <td><span class="parametername">caller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.IQuestAction.html">IQuestAction</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ActionTemplate.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ActionTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestAction.cs/#L115" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

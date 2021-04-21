@@ -1,0 +1,2168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ListBox
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ListBox
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_ListBox" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox" class="text-break">Class ListBox
+  </h1>
+  <div class="markdown level0 summary"><p>Implements a text list box.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></div>
+    <div class="level2"><span class="xref">ListBox</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_rectRestrictedRenderArea">BaseScreenComponent.rectRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_restrictedRenderAreaCustomParent">BaseScreenComponent.restrictedRenderAreaCustomParent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_restrictedRenderAreaCoordinateType">BaseScreenComponent.restrictedRenderAreaCoordinateType</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_backgroundTexture">BaseScreenComponent.backgroundTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_animatedBackgroundTextures">BaseScreenComponent.animatedBackgroundTextures</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_backgroundTextureLayout">BaseScreenComponent.backgroundTextureLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseEnter">BaseScreenComponent.OnMouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseLeave">BaseScreenComponent.OnMouseLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseMove">BaseScreenComponent.OnMouseMove</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseDown">BaseScreenComponent.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseUp">BaseScreenComponent.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseClick">BaseScreenComponent.OnMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseDoubleClick">BaseScreenComponent.OnMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseDown">BaseScreenComponent.OnRightMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseUp">BaseScreenComponent.OnRightMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseClick">BaseScreenComponent.OnRightMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseDoubleClick">BaseScreenComponent.OnRightMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseDown">BaseScreenComponent.OnMiddleMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseUp">BaseScreenComponent.OnMiddleMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseClick">BaseScreenComponent.OnMiddleMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseDoubleClick">BaseScreenComponent.OnMiddleMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseScrollUp">BaseScreenComponent.OnMouseScrollUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseScrollDown">BaseScreenComponent.OnMouseScrollDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Enabled">BaseScreenComponent.Enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UseFocus">BaseScreenComponent.UseFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Name">BaseScreenComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Tag">BaseScreenComponent.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Position">BaseScreenComponent.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Size">BaseScreenComponent.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RootSize">BaseScreenComponent.RootSize</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Parent">BaseScreenComponent.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Rectangle">BaseScreenComponent.Rectangle</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_HorizontalAlignment">BaseScreenComponent.HorizontalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_VerticalAlignment">BaseScreenComponent.VerticalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RestrictedRenderAreaCoordinateType">BaseScreenComponent.RestrictedRenderAreaCoordinateType</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RectRestrictedRenderArea">BaseScreenComponent.RectRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RestrictedRenderAreaCustomParent">BaseScreenComponent.RestrictedRenderAreaCustomParent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UseRestrictedRenderArea">BaseScreenComponent.UseRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_CustomMousePosition">BaseScreenComponent.CustomMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MousePosition">BaseScreenComponent.MousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LastMousePosition">BaseScreenComponent.LastMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScaledMousePosition">BaseScreenComponent.ScaledMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundColor">BaseScreenComponent.BackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseOverBackgroundColor">BaseScreenComponent.MouseOverBackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundColorTexture">BaseScreenComponent.BackgroundColorTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundTexture">BaseScreenComponent.BackgroundTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundCroppedRect">BaseScreenComponent.BackgroundCroppedRect</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AnimatedBackgroundTextures">BaseScreenComponent.AnimatedBackgroundTextures</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AnimationDelayInSeconds">BaseScreenComponent.AnimationDelayInSeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundTextureLayout">BaseScreenComponent.BackgroundTextureLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_InteriorWidth">BaseScreenComponent.InteriorWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_InteriorHeight">BaseScreenComponent.InteriorHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Scale">BaseScreenComponent.Scale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AutoSize">BaseScreenComponent.AutoSize</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LocalScale">BaseScreenComponent.LocalScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ToolTip">BaseScreenComponent.ToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ToolTipText">BaseScreenComponent.ToolTipText</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SuppressToolTip">BaseScreenComponent.SuppressToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MinAutoScale">BaseScreenComponent.MinAutoScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MaxAutoScale">BaseScreenComponent.MaxAutoScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseOverComponent">BaseScreenComponent.MouseOverComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_TopMargin">BaseScreenComponent.TopMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BottomMargin">BaseScreenComponent.BottomMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LeftMargin">BaseScreenComponent.LeftMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMargin">BaseScreenComponent.RightMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScreenToLocal_UnityEngine_Vector2_">BaseScreenComponent.ScreenToLocal(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScreenToLocal_UnityEngine_Rect_">BaseScreenComponent.ScreenToLocal(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_GotFocus">BaseScreenComponent.GotFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LostFocus">BaseScreenComponent.LostFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_TriggerMouseClick">BaseScreenComponent.TriggerMouseClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMouseClick_UnityEngine_Vector2_">BaseScreenComponent.RightMouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MiddleMouseClick_UnityEngine_Vector2_">BaseScreenComponent.MiddleMouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.RightMouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MiddleMouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.MiddleMouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseEnter">BaseScreenComponent.MouseEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Dispose">BaseScreenComponent.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SetMargins_DaggerfallWorkshop_Game_UserInterface_Margins_System_Int32_">BaseScreenComponent.SetMargins(Margins, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OffsetFrom_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_DaggerfallWorkshop_Game_UserInterface_Sides_System_Int32_">BaseScreenComponent.OffsetFrom(BaseScreenComponent, Sides, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SetFocus">BaseScreenComponent.SetFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_HasFocus">BaseScreenComponent.HasFocus()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_ListBox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ListBox : BaseScreenComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox__ctor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L257">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox__ctor" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.#ctor">ListBox()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListBox()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_Count.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L153">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_Count_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Count*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_Count" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_EnabledHorizontalScroll.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.EnabledHorizontalScroll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L109">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_EnabledHorizontalScroll_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.EnabledHorizontalScroll*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_EnabledHorizontalScroll" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.EnabledHorizontalScroll">EnabledHorizontalScroll</h4>
+  <div class="markdown level1 summary"><p>Enables horizontally scrolling of listbox content (this mode can be used if textlabels do not horizontally fit into listbox entirely)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnabledHorizontalScroll { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_Font.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.Font%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L94">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_Font_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Font*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_Font" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Font">Font</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallFont Font { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.html">DaggerfallFont</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L118">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollIndex_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollIndex" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollIndex">HorizontalScrollIndex</h4>
+  <div class="markdown level1 summary"><p>Horizontal scroll index - depending on HorizontalScrollMode its unit is either in characters or pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HorizontalScrollIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollMode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L248">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollMode_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollMode*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollMode" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollMode">HorizontalScrollMode</h4>
+  <div class="markdown level1 summary"><p>set horizontal scroll mode to either character wise or pixel wise</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListBox.HorizontalScrollModes HorizontalScrollMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollModes.html">ListBox.HorizontalScrollModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MaxCharacters.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MaxCharacters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L88">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MaxCharacters_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MaxCharacters*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MaxCharacters" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MaxCharacters">MaxCharacters</h4>
+  <div class="markdown level1 summary"><p>Maximum length of label string.
+Setting to -1 allows for any length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxCharacters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MaxHorizontalScrollIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MaxHorizontalScrollIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L131">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MaxHorizontalScrollIndex_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MaxHorizontalScrollIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MaxHorizontalScrollIndex" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MaxHorizontalScrollIndex">MaxHorizontalScrollIndex</h4>
+  <div class="markdown level1 summary"><p>Maximal allowed horizontal scroll index - depending on HorizontalScrollMode its unit is either in characters or pixels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxHorizontalScrollIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_RowAlignment.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.RowAlignment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L188">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_RowAlignment_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RowAlignment*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_RowAlignment" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RowAlignment">RowAlignment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorizontalAlignment RowAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.HorizontalAlignment.html">HorizontalAlignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_RowsDisplayed.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.RowsDisplayed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L176">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_RowsDisplayed_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RowsDisplayed*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_RowsDisplayed" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RowsDisplayed">RowsDisplayed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RowsDisplayed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_RowSpacing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.RowSpacing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L182">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_RowSpacing_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RowSpacing*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_RowSpacing" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RowSpacing">RowSpacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RowSpacing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L100">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollIndex_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollIndex" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollIndex">ScrollIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ScrollIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L137">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedIndex_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedIndex" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedIndex">SelectedIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L143">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedItem" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedItem">SelectedItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SelectedItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedShadowColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedShadowColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L224">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedShadowColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedShadowColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedShadowColor" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedShadowColor">SelectedShadowColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color SelectedShadowColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedShadowPosition.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedShadowPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L200">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedShadowPosition_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedShadowPosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedShadowPosition" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedShadowPosition">SelectedShadowPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 SelectedShadowPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedTextColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedTextColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L212">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedTextColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedTextColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedTextColor" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedTextColor">SelectedTextColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color SelectedTextColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedValue.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L148">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedValue_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedValue*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectedValue" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectedValue">SelectedValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListBox.ListItem SelectedValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.ListItem.html">ListBox.ListItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_ShadowColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.ShadowColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L218">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_ShadowColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ShadowColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_ShadowColor" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ShadowColor">ShadowColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ShadowColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_ShadowPosition.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.ShadowPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L194">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_ShadowPosition_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ShadowPosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_ShadowPosition" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ShadowPosition">ShadowPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ShadowPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_TextColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.TextColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L206">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_TextColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.TextColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_TextColor" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.TextColor">TextColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color TextColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_TextScale.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.TextScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L230">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_TextScale_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.TextScale*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_TextScale" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.TextScale">TextScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TextScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_VerticalScrollMode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.VerticalScrollMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L239">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_VerticalScrollMode_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.VerticalScrollMode*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_VerticalScrollMode" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.VerticalScrollMode">VerticalScrollMode</h4>
+  <div class="markdown level1 summary"><p>set vertical scroll mode to either character wise or pixel wise</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListBox.VerticalScrollModes VerticalScrollMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.VerticalScrollModes.html">ListBox.VerticalScrollModes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_WrapTextItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.WrapTextItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L161">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_WrapTextItems_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.WrapTextItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_WrapTextItems" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.WrapTextItems">WrapTextItems</h4>
+  <div class="markdown level1 summary"><p>enable wrapping of text items, additional mode for word wrapping can be activated with property WrapWords</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WrapTextItems { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_WrapWords.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.WrapWords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L170">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_WrapWords_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.WrapWords*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_WrapWords" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.WrapWords">WrapWords</h4>
+  <div class="markdown level1 summary"><p>enable wrapping of words in text items - Property WrapTextItems must be set to true as well so that this has an effect</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WrapWords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_DaggerfallWorkshop_Game_UserInterface_TextLabel_DaggerfallWorkshop_Game_UserInterface_ListBox_ListItem__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem(DaggerfallWorkshop.Game.UserInterface.TextLabel%2CDaggerfallWorkshop.Game.UserInterface.ListBox.ListItem%40%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L515">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_DaggerfallWorkshop_Game_UserInterface_TextLabel_DaggerfallWorkshop_Game_UserInterface_ListBox_ListItem__System_Int32_System_String_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem(DaggerfallWorkshop.Game.UserInterface.TextLabel,DaggerfallWorkshop.Game.UserInterface.ListBox.ListItem@,System.Int32,System.String)">AddItem(TextLabel, out ListBox.ListItem, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(TextLabel textLabel, out ListBox.ListItem itemOut, int position = -1, string tag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.TextLabel.html">TextLabel</a></td>
+        <td><span class="parametername">textLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.ListItem.html">ListBox.ListItem</a></td>
+        <td><span class="parametername">itemOut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_System_String_DaggerfallWorkshop_Game_UserInterface_ListBox_ListItem__System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem(System.String%2CDaggerfallWorkshop.Game.UserInterface.ListBox.ListItem%40%2CSystem.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L477">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_System_String_DaggerfallWorkshop_Game_UserInterface_ListBox_ListItem__System_Int32_System_Object_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem(System.String,DaggerfallWorkshop.Game.UserInterface.ListBox.ListItem@,System.Int32,System.Object)">AddItem(String, out ListBox.ListItem, Int32, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(string text, out ListBox.ListItem itemOut, int position = -1, object tag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.ListItem.html">ListBox.ListItem</a></td>
+        <td><span class="parametername">itemOut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_System_String_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem(System.String%2CSystem.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L549">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItem_System_String_System_Int32_System_Object_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItem(System.String,System.Int32,System.Object)">AddItem(String, Int32, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(string text, int position = -1, object tag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_AddItems_DaggerfallWorkshop_Game_UserInterface_TextLabel___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.AddItems(DaggerfallWorkshop.Game.UserInterface.TextLabel%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L561">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItems_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItems_DaggerfallWorkshop_Game_UserInterface_TextLabel___" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItems(DaggerfallWorkshop.Game.UserInterface.TextLabel[])">AddItems(TextLabel[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItems(TextLabel[] labels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.TextLabel.html">TextLabel</a>[]</td>
+        <td><span class="parametername">labels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_AddItems_System_String___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.AddItems(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L555">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItems_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_AddItems_System_String___" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.AddItems(System.String[])">AddItems(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItems(string[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_ClearItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.ClearItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L470">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_ClearItems_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ClearItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_ClearItems" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ClearItems">ClearItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearItems()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_Draw.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.Draw%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L284">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_Draw_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Draw*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_Draw" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Draw">Draw()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Draw">BaseScreenComponent.Draw()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_FindIndex_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.FindIndex(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L750">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_FindIndex_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.FindIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_FindIndex_System_String_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.FindIndex(System.String)">FindIndex(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_GetItem_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.GetItem(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L603">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_GetItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.GetItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_GetItem_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.GetItem(System.Int32)">GetItem(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListBox.ListItem GetItem(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.ListItem.html">ListBox.ListItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_HeightContent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.HeightContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L618">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_HeightContent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HeightContent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_HeightContent" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HeightContent">HeightContent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeightContent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollLeft.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollLeft%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L675">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollLeft_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollLeft*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollLeft" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollLeft">HorizontalScrollLeft()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HorizontalScrollLeft()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollRight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollRight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L684">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollRight_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollRight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_HorizontalScrollRight" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.HorizontalScrollRight">HorizontalScrollRight()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HorizontalScrollRight()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_LengthOfLongestItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.LengthOfLongestItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L608">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_LengthOfLongestItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.LengthOfLongestItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_LengthOfLongestItem" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.LengthOfLongestItem">LengthOfLongestItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LengthOfLongestItem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MouseClick_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MouseClick(UnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L408">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseClick_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseClick_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseClick(UnityEngine.Vector2)">MouseClick(Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MouseClick(Vector2 clickPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">clickPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseClick_UnityEngine_Vector2_">BaseScreenComponent.MouseClick(Vector2)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MouseDoubleClick_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MouseDoubleClick(UnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L445">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseDoubleClick_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseDoubleClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseDoubleClick_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseDoubleClick(UnityEngine.Vector2)">MouseDoubleClick(Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MouseDoubleClick(Vector2 clickPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">clickPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.MouseDoubleClick(Vector2)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MouseLeave_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MouseLeave(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L403">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseLeave_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseLeave*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseLeave_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseLeave(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)">MouseLeave(BaseScreenComponent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MouseLeave(BaseScreenComponent sender)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseLeave_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_">BaseScreenComponent.MouseLeave(BaseScreenComponent)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MouseMove_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MouseMove(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L370">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseMove_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseMove*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseMove_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseMove(System.Int32,System.Int32)">MouseMove(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MouseMove(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseMove_System_Int32_System_Int32_">BaseScreenComponent.MouseMove(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MouseScrollDown.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MouseScrollDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L459">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseScrollDown_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseScrollDown*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseScrollDown" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseScrollDown">MouseScrollDown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MouseScrollDown()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseScrollDown">BaseScreenComponent.MouseScrollDown()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_MouseScrollUp.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.MouseScrollUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L452">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseScrollUp_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseScrollUp*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_MouseScrollUp" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.MouseScrollUp">MouseScrollUp()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MouseScrollUp()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseScrollUp">BaseScreenComponent.MouseScrollUp()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_RemoveItem_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.RemoveItem(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L573">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_RemoveItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RemoveItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_RemoveItem_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.RemoveItem(System.Int32)">RemoveItem(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveItem(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollDown.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L727">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollDown_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollDown*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollDown" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollDown">ScrollDown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollDown()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollToSelected.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollToSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L707">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollToSelected_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollToSelected*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollToSelected" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollToSelected">ScrollToSelected()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToSelected()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollUp.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L719">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollUp_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollUp*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_ScrollUp" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.ScrollUp">ScrollUp()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollUp()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectIndex_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L693">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectIndex_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectIndex_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectIndex(System.Int32)">SelectIndex(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectIndex(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectNext.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L658">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectNext_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectNext*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectNext" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectNext">SelectNext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectNext()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectNone.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectNone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L702">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectNone_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectNone*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectNone" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectNone">SelectNone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectNone()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SelectPrevious.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SelectPrevious%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L641">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectPrevious_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectPrevious*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SelectPrevious" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SelectPrevious">SelectPrevious()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectPrevious()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SetRowsDisplayedByHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SetRowsDisplayedByHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L742">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SetRowsDisplayedByHeight_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SetRowsDisplayedByHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SetRowsDisplayedByHeight" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SetRowsDisplayedByHeight">SetRowsDisplayedByHeight()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRowsDisplayedByHeight()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_SwapItems_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.SwapItems(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L591">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_SwapItems_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SwapItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_SwapItems_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.SwapItems(System.Int32,System.Int32)">SwapItems(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwapItems(int indexA, int indexB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_Update.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L265">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_Update_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Update*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_Update" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Update">BaseScreenComponent.Update()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_UpdateItem_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.UpdateItem(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L581">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_UpdateItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.UpdateItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_UpdateItem_System_Int32_System_String_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.UpdateItem(System.Int32,System.String)">UpdateItem(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateItem(int index, string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_UseSelectedItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.UseSelectedItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L714">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_UseSelectedItem_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.UseSelectedItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_UseSelectedItem" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.UseSelectedItem">UseSelectedItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UseSelectedItem()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_WidthContent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.WidthContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L631">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ListBox_WidthContent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.WidthContent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_WidthContent" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.WidthContent">WidthContent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WidthContent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_OnScroll.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.OnScroll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L806">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_OnScroll" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.OnScroll">OnScroll</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ListBox.OnScrollHandler OnScroll</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.OnScrollHandler.html">ListBox.OnScrollHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_OnSelectItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L784">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_OnSelectItem" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectItem">OnSelectItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ListBox.OnSelectItemEventHandler OnSelectItem</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectItemEventHandler.html">ListBox.OnSelectItemEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_OnSelectNext.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L776">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_OnSelectNext" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectNext">OnSelectNext</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ListBox.OnSelectNextEventHandler OnSelectNext</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectNextEventHandler.html">ListBox.OnSelectNextEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_OnSelectPrevious.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectPrevious%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L768">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_OnSelectPrevious" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectPrevious">OnSelectPrevious</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ListBox.OnSelectPreviousEventHandler OnSelectPrevious</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.OnSelectPreviousEventHandler.html">ListBox.OnSelectPreviousEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox_OnUseSelectedItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox.OnUseSelectedItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L795">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ListBox_OnUseSelectedItem" data-uid="DaggerfallWorkshop.Game.UserInterface.ListBox.OnUseSelectedItem">OnUseSelectedItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ListBox.OnUseSelectedItemEventHandler OnUseSelectedItem</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ListBox.OnUseSelectedItemEventHandler.html">ListBox.OnUseSelectedItemEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ListBox.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ListBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ListBox.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

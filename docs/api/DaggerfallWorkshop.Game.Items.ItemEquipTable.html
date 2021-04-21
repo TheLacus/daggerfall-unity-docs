@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ItemEquipTable
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ItemEquipTable
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Items_ItemEquipTable" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable" class="text-break">Class ItemEquipTable
+  </h1>
+  <div class="markdown level0 summary"><p>Represents items equipped by an entity.
+Provides helpers to equip/dequip items.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ItemEquipTable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Items.html">DaggerfallWorkshop.Game.Items</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ItemEquipTable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable__ctor_DaggerfallWorkshop_Game_Entity_DaggerfallEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.%23ctor(DaggerfallWorkshop.Game.Entity.DaggerfallEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L56">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable__ctor_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable__ctor_DaggerfallWorkshop_Game_Entity_DaggerfallEntity_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.#ctor(DaggerfallWorkshop.Game.Entity.DaggerfallEntity)">ItemEquipTable(DaggerfallEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemEquipTable(DaggerfallEntity parentEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html">DaggerfallEntity</a></td>
+        <td><span class="parametername">parentEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipTable_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipTable" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipTable">EquipTable</h4>
+  <div class="markdown level1 summary"><p>Gets current equip table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallUnityItem[] EquipTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipTableLength.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipTableLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L39">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipTableLength_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipTableLength*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipTableLength" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipTableLength">EquipTableLength</h4>
+  <div class="markdown level1 summary"><p>Gets length of equip table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EquipTableLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_Clear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L70">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_Clear_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_Clear" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears equip table.
+Does not unequip items, just wipes table.
+Used when clearing state for a new game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_DeserializeEquipTable_System_UInt64___DaggerfallWorkshop_Game_Items_ItemCollection_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.DeserializeEquipTable(System.UInt64%5B%5D%2CDaggerfallWorkshop.Game.Items.ItemCollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L354">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_DeserializeEquipTable_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.DeserializeEquipTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_DeserializeEquipTable_System_UInt64___DaggerfallWorkshop_Game_Items_ItemCollection_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.DeserializeEquipTable(System.UInt64[],DaggerfallWorkshop.Game.Items.ItemCollection)">DeserializeEquipTable(UInt64[], ItemCollection)</h4>
+  <div class="markdown level1 summary"><p>Deserialize equip table and attempt to relink equipped items in collection.
+Item UID must exist inside collection provided or entry will not be restored and item not equipped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeserializeEquipTable(ulong[] data, ItemCollection items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>UID array exactly this.equipTableLength in length.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.ItemCollection.html">ItemCollection</a></td>
+        <td><span class="parametername">items</span></td>
+        <td><p>Item collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L94">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_EquipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.EquipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem,System.Boolean,System.Boolean)">EquipItem(DaggerfallUnityItem, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Attempt to equip item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DaggerfallUnityItem&gt; EquipItem(DaggerfallUnityItem item, bool alwaysEquip = true, bool playEquipSounds = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Item to equip.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">alwaysEquip</span></td>
+        <td><p>Always equip item, replacing another in the same slot if needed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">playEquipSounds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>&gt;</td>
+        <td><p>True when item equipped, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_GetEquipSlot_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.GetEquipSlot(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L250">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetEquipSlot_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetEquipSlot*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetEquipSlot_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetEquipSlot(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">GetEquipSlot(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"><p>Get the equipment slot this items belongs in.
+Not currently 100% known how Daggerfall defines equipment slots.
+This method uses the best available knowledge at time of writing.
+When item supports multiple slots:</p>
+<ul>
+<li>If a slot is open, returns first free slot.</li>
+<li>If both slots populated, returns first slot by order.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EquipSlots GetEquipSlot(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Item to find equipment slot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td><p>EquipSlot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_GetFirstSlot_DaggerfallWorkshop_Game_Items_EquipSlots_DaggerfallWorkshop_Game_Items_EquipSlots_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.GetFirstSlot(DaggerfallWorkshop.Game.Items.EquipSlots%2CDaggerfallWorkshop.Game.Items.EquipSlots)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L298">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetFirstSlot_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetFirstSlot*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetFirstSlot_DaggerfallWorkshop_Game_Items_EquipSlots_DaggerfallWorkshop_Game_Items_EquipSlots_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetFirstSlot(DaggerfallWorkshop.Game.Items.EquipSlots,DaggerfallWorkshop.Game.Items.EquipSlots)">GetFirstSlot(EquipSlots, EquipSlots)</h4>
+  <div class="markdown level1 summary"><p>Returns first open slot or just first slot if both populated.
+This follows Daggerfall's behaviour for multi-slot items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EquipSlots GetFirstSlot(EquipSlots slot1, EquipSlots slot2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td><span class="parametername">slot1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td><span class="parametername">slot2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_GetItem_DaggerfallWorkshop_Game_Items_EquipSlots_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.GetItem(DaggerfallWorkshop.Game.Items.EquipSlots)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L80">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetItem_DaggerfallWorkshop_Game_Items_EquipSlots_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetItem(DaggerfallWorkshop.Game.Items.EquipSlots)">GetItem(EquipSlots)</h4>
+  <div class="markdown level1 summary"><p>Gets item equipped to slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallUnityItem GetItem(EquipSlots slot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td><span class="parametername">slot</span></td>
+        <td><p>Slot to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><p>Item present in slot, otherwise null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_GetItemHands_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.GetItemHands(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L600">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetItemHands_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetItemHands*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_GetItemHands_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.GetItemHands(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">GetItemHands(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"><p>Gets how item is held in the hands.
+Item templates define whether item is 1 or 2 handed, but this method
+provides more exact information about which hand item can be used in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ItemHands GetItemHands(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.ItemHands.html">ItemHands</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_IsEquipped_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.IsEquipped(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L175">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsEquipped_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsEquipped*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsEquipped_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsEquipped(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">IsEquipped(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"><p>Checks if an item is currently equipped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEquipped(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Item to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if item is equipped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_IsLowerClothed.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.IsLowerClothed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L322">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsLowerClothed_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsLowerClothed*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsLowerClothed" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsLowerClothed">IsLowerClothed()</h4>
+  <div class="markdown level1 summary"><p>Quick test for legs cover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLowerClothed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_IsSlotOpen_DaggerfallWorkshop_Game_Items_EquipSlots_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.IsSlotOpen(DaggerfallWorkshop.Game.Items.EquipSlots)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L283">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsSlotOpen_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsSlotOpen*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsSlotOpen_DaggerfallWorkshop_Game_Items_EquipSlots_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsSlotOpen(DaggerfallWorkshop.Game.Items.EquipSlots)">IsSlotOpen(EquipSlots)</h4>
+  <div class="markdown level1 summary"><p>Checks if a slot is open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSlotOpen(EquipSlots slot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td><span class="parametername">slot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_IsUpperClothed.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.IsUpperClothed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L311">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsUpperClothed_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsUpperClothed*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_IsUpperClothed" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.IsUpperClothed">IsUpperClothed()</h4>
+  <div class="markdown level1 summary"><p>Quick test for torso cover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUpperClothed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_SerializeEquipTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.SerializeEquipTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L334">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_SerializeEquipTable_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.SerializeEquipTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_SerializeEquipTable" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.SerializeEquipTable">SerializeEquipTable()</h4>
+  <div class="markdown level1 summary"><p>Serialize equip table into list of equipped UIDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] SerializeEquipTable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><p>ulong array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L219">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem(DaggerfallWorkshop.Game.Items.DaggerfallUnityItem)">UnequipItem(DaggerfallUnityItem)</h4>
+  <div class="markdown level1 summary"><p>Attempt to unequip a specific item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnequipItem(DaggerfallUnityItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>Item to unequip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if item was found to be equipped and was unequipped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_DaggerfallWorkshop_Game_Items_EquipSlots_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem(DaggerfallWorkshop.Game.Items.EquipSlots)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L197">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_DaggerfallWorkshop_Game_Items_EquipSlots_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem(DaggerfallWorkshop.Game.Items.EquipSlots)">UnequipItem(EquipSlots)</h4>
+  <div class="markdown level1 summary"><p>Attempt to unequip item from slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallUnityItem UnequipItem(EquipSlots slot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td><span class="parametername">slot</span></td>
+        <td><p>Slot to unequip.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><p>The item unequipped, otherwise null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_DaggerfallWorkshop_Game_Items_EquipSlots_System_Collections_Generic_List_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem(DaggerfallWorkshop.Game.Items.EquipSlots%2CSystem.Collections.Generic.List%7BDaggerfallWorkshop.Game.Items.DaggerfallUnityItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L160">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Items_ItemEquipTable_UnequipItem_DaggerfallWorkshop_Game_Items_EquipSlots_System_Collections_Generic_List_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem__" data-uid="DaggerfallWorkshop.Game.Items.ItemEquipTable.UnequipItem(DaggerfallWorkshop.Game.Items.EquipSlots,System.Collections.Generic.List{DaggerfallWorkshop.Game.Items.DaggerfallUnityItem})">UnequipItem(EquipSlots, List&lt;DaggerfallUnityItem&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnequipItem(EquipSlots slot, List&lt;DaggerfallUnityItem&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.EquipSlots.html">EquipSlots</a></td>
+        <td><span class="parametername">slot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Items_ItemEquipTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Items.ItemEquipTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Items/ItemEquipTable.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

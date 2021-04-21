@@ -1,0 +1,799 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Clock
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Clock
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Questing.Clock">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Questing_Clock" data-uid="DaggerfallWorkshop.Game.Questing.Clock" class="text-break">Class Clock
+  </h1>
+  <div class="markdown level0 summary"><p>A clock is an alarm that that executes a task with the same symbol name.
+Clock must be started and stopped by quest actions.
+Clock runs down in game-time (default is 12x real-time).
+This also means timer is paused when game is paused.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html">QuestResource</a></div>
+    <div class="level2"><span class="xref">Clock</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_BLANK">QuestResource.BLANK</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Symbol">QuestResource.Symbol</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_ParentQuest">QuestResource.ParentQuest</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_InfoMessageID">QuestResource.InfoMessageID</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_UsedMessageID">QuestResource.UsedMessageID</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RumorsMessageID">QuestResource.RumorsMessageID</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_HasPlayerClicked">QuestResource.HasPlayerClicked</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_IsHidden">QuestResource.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Gender">QuestResource.Gender</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_QuestResourceBehaviour">QuestResource.QuestResourceBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_PostTick_DaggerfallWorkshop_Game_Questing_Quest_">QuestResource.PostTick(Quest)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_ParseMessageTags_System_String_">QuestResource.ParseMessageTags(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Dispose">QuestResource.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_SetPlayerClicked">QuestResource.SetPlayerClicked()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RearmPlayerClick">QuestResource.RearmPlayerClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_GetResourceSaveData">QuestResource.GetResourceSaveData()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RestoreResourceSaveData_DaggerfallWorkshop_Game_Questing_QuestResource_ResourceSaveData_v1_">QuestResource.RestoreResourceSaveData(QuestResource.ResourceSaveData_v1)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_OnDispose">QuestResource.OnDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RaiseOnDisposeEvent">QuestResource.RaiseOnDisposeEvent()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Questing.html">DaggerfallWorkshop.Game.Questing</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Questing_Clock_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Clock : QuestResource, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock__ctor_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.%23ctor(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L92">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock__ctor_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock__ctor_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.#ctor(DaggerfallWorkshop.Game.Questing.Quest)">Clock(Quest)</h4>
+  <div class="markdown level1 summary"><p>Default constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Clock(Quest parentQuest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">parentQuest</span></td>
+        <td><p>Parent quest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock__ctor_DaggerfallWorkshop_Game_Questing_Quest_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.%23ctor(DaggerfallWorkshop.Game.Questing.Quest%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L102">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock__ctor_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock__ctor_DaggerfallWorkshop_Game_Questing_Quest_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.#ctor(DaggerfallWorkshop.Game.Questing.Quest,System.String)">Clock(Quest, String)</h4>
+  <div class="markdown level1 summary"><p>Construct a clock from QBN input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Clock(Quest parentQuest, string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">parentQuest</span></td>
+        <td><p>Parent quest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>Clock definition line from QBN.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_Enabled.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.Enabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L45">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_Enabled_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Enabled*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_Enabled" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Enabled">Enabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Enabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_Finished.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.Finished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L51">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_Finished_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Finished*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_Finished" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Finished">Finished</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Finished { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_Flag.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.Flag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L56">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_Flag_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Flag*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_Flag" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Flag">Flag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Flag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_MaxRange.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.MaxRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L68">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_MaxRange_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.MaxRange*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_MaxRange" data-uid="DaggerfallWorkshop.Game.Questing.Clock.MaxRange">MaxRange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_MinRange.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.MinRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L62">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_MinRange_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.MinRange*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_MinRange" data-uid="DaggerfallWorkshop.Game.Questing.Clock.MinRange">MinRange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_RemainingTimeInSeconds.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.RemainingTimeInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_RemainingTimeInSeconds_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.RemainingTimeInSeconds*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_RemainingTimeInSeconds" data-uid="DaggerfallWorkshop.Game.Questing.Clock.RemainingTimeInSeconds">RemainingTimeInSeconds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemainingTimeInSeconds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_StartingTimeInSeconds.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.StartingTimeInSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L74">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_StartingTimeInSeconds_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.StartingTimeInSeconds*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_StartingTimeInSeconds" data-uid="DaggerfallWorkshop.Game.Questing.Clock.StartingTimeInSeconds">StartingTimeInSeconds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StartingTimeInSeconds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_ExpandMacro_DaggerfallWorkshop_MacroTypes_System_String__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.ExpandMacro(DaggerfallWorkshop.MacroTypes%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L259">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_ExpandMacro_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.ExpandMacro*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_ExpandMacro_DaggerfallWorkshop_MacroTypes_System_String__" data-uid="DaggerfallWorkshop.Game.Questing.Clock.ExpandMacro(DaggerfallWorkshop.MacroTypes,System.String@)">ExpandMacro(MacroTypes, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ExpandMacro(MacroTypes macro, out string textOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MacroTypes.html">MacroTypes</a></td>
+        <td><span class="parametername">macro</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">textOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_ExpandMacro_DaggerfallWorkshop_MacroTypes_System_String__">QuestResource.ExpandMacro(MacroTypes, out String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_GetDaysString_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.GetDaysString(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L349">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_GetDaysString_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.GetDaysString*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_GetDaysString_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.GetDaysString(System.Int32)">GetDaysString(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDaysString(int timeInSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeInSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_GetSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.GetSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L502">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_GetSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.GetSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_GetSaveData" data-uid="DaggerfallWorkshop.Game.Questing.Clock.GetSaveData">GetSaveData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetSaveData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_GetSaveData">QuestResource.GetSaveData()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_GetTimeString_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.GetTimeString(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L357">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_GetTimeString_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.GetTimeString*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_GetTimeString_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.GetTimeString(System.Int32)">GetTimeString(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTimeString(int timeInSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeInSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_RestoreSaveData_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.RestoreSaveData(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L517">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_RestoreSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.RestoreSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_RestoreSaveData_System_Object_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.RestoreSaveData(System.Object)">RestoreSaveData(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RestoreSaveData(object dataIn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">dataIn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_RestoreSaveData_System_Object_">QuestResource.RestoreSaveData(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_SetResource_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.SetResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L112">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_SetResource_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.SetResource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_SetResource_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.SetResource(System.String)">SetResource(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetResource(string line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_SetResource_System_String_">QuestResource.SetResource(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_StartTimer.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.StartTimer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L309">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_StartTimer_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.StartTimer*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_StartTimer" data-uid="DaggerfallWorkshop.Game.Questing.Clock.StartTimer">StartTimer()</h4>
+  <div class="markdown level1 summary"><p>Starts timer if not already running or complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartTimer()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_StopTimer.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.StopTimer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L341">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_StopTimer_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.StopTimer*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_StopTimer" data-uid="DaggerfallWorkshop.Game.Questing.Clock.StopTimer">StopTimer()</h4>
+  <div class="markdown level1 summary"><p>Stops clock from running if not already complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopTimer()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock_Tick_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock.Tick(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L276">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_Clock_Tick_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Tick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_Clock_Tick_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.Clock.Tick(DaggerfallWorkshop.Game.Questing.Quest)">Tick(Quest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Tick(Quest caller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">caller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html#DaggerfallWorkshop_Game_Questing_QuestResource_Tick_DaggerfallWorkshop_Game_Questing_Quest_">QuestResource.Tick(Quest)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Clock.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Clock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Clock.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace DaggerfallWorkshop.Game.MagicAndEffects
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace DaggerfallWorkshop.Game.MagicAndEffects
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.MagicAndEffects">
+  
+  <h1 id="DaggerfallWorkshop_Game_MagicAndEffects" data-uid="DaggerfallWorkshop.Game.MagicAndEffects" class="text-break">Namespace DaggerfallWorkshop.Game.MagicAndEffects
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html">BaseEntityEffect</a></h4>
+      <section><p>Base implementation of an entity effect.
+Entity effects are like &quot;actions&quot; for spells, potions, items, advantages, diseases, etc.
+They generally perform work against one or more entities (e.g. damage or restore health).
+Some effects perform highly custom operations unique to player (e.g. anchor/teleport UI).
+Magic effects are scripted in C# so they have full access to engine and UI as required.
+Classic magic effects are included in build for cross-platform compatibility.
+Custom effects can be added later using mod system (todo:).</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectBroker.html">EntityEffectBroker</a></h4>
+      <section><p>Enumerates available magic effects and coordinates their instantiation.
+Also coordinates &quot;magic rounds&quot; at 5-second intervals for all entity EntityEffectManager components active in scene.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectBundle.html">EntityEffectBundle</a></h4>
+      <section><p>Stores effect settings for transport to an entity.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.html">EntityEffectManager</a></h4>
+      <section><p>Peered with a DaggerfallEntityBehaviour for magic and effect handling related to that entity.
+Manages list of active effects currently operating on peered entity.
+Used by player and enemies to send and receive magic effects from various sources.
+NOTE: Under active development and subject to frequent change.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.LiveEffectBundle.html">LiveEffectBundle</a></h4>
+      <section><p>Stores an instanced effect bundle for executing effects.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicCandleBehaviour.html">MagicCandleBehaviour</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.html">PotionRecipe</a></h4>
+      <section><p>Implements a potion recipe to support equality comparison, hashing, and string output.
+Internally the recipe is just an array of item template IDs abstracted to an Ingredient type.
+A recipe can be constructed from any Ingredient[] array or int[] array of item template IDs.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ReflectiveEnumerator.html">ReflectiveEnumerator</a></h4>
+      <section><p>Find all subclasses of type and create instance.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.CustomEnchantment.html">CustomEnchantment</a></h4>
+      <section><p>Defines a custom enchantment for items.
+Classic enchantments use a type/param number pair in DaggerfallEnchantment.
+Custom enchantments use a key/param string pair in CustomEnchantment.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.DiseaseData.html">DiseaseData</a></h4>
+      <section><p>Settings for a basic disease effect.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectBundleSettings.html">EffectBundleSettings</a></h4>
+      <section><p>Settings for an entity effect bundle.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectCosts.html">EffectCosts</a></h4>
+      <section><p>Allows tuning of cost per setting.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectEntry.html">EffectEntry</a></h4>
+      <section><p>For storing effect in bundle settings.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectProperties.html">EffectProperties</a></h4>
+      <section><p>Defines properties intrinsic to an effect.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectSettings.html">EffectSettings</a></h4>
+      <section><p>Duration, Chance, Magnitude settings for an effect.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam.html">EnchantmentParam</a></h4>
+      <section><p>Flexible enchantment parameter for either a classic effect or a custom effect.
+This is stored with EffectEntry for enchantment bundles and assigned to live effect instance.
+Formalising this to a data structure allows for expanding custom enchantment params later.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentSettings.html">EnchantmentSettings</a></h4>
+      <section><p>Settings for a single enchantment on item.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectBroker.CustomSpellBundleOffer.html">EntityEffectBroker.CustomSpellBundleOffer</a></h4>
+      <section><p>A custom spell bundle offer.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectBundleSaveData_v1.html">EntityEffectManager.EffectBundleSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1.html">EntityEffectManager.EffectSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ForcedEnchantment.html">ForcedEnchantment</a></h4>
+      <section><p>Defines a single forced enchantment effect with param.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ForcedEnchantmentSet.html">ForcedEnchantmentSet</a></h4>
+      <section><p>Contains a set of forced effects keyed to a valid mobile type.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.LegacyEffectEntry.html">LegacyEffectEntry</a></h4>
+      <section><p>Stores an effect group / subgroup pair as read from classic save.
+This is only used when importing character spellbook from classic.
+During startup any legacy spells will be migrated to Daggerfall Unity spells
+provided all classic group / subgroup pairs can be resolved to a known effect key.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PayloadCallbackResults.html">PayloadCallbackResults</a></h4>
+      <section><p>Optional information returned to framework by enchantment payload callbacks.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionProperties.html">PotionProperties</a></h4>
+      <section><p>Defines properties intrinsic to a potion.
+Note: Under early development. Subject to change.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient.html">PotionRecipe.Ingredient</a></h4>
+      <section><p>Abstracts an item ID into an ingredient.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.SpellIcon.html">SpellIcon</a></h4>
+      <section><p>Reference a spell icon within an icon pack.
+A null, empty, or invalid key value will fallback to a classic icon.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.SpellReference.html">SpellReference</a></h4>
+      <section><p>References either a classic or custom spell bundle.
+Always considered to reference a custom spell bundle when CustomKey is not null or empty.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.html">IEntityEffect</a></h4>
+      <section><p>Interface to an entity effect.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.AssignBundleFlags.html">AssignBundleFlags</a></h4>
+      <section><p>Flags to modify behaviour of assigning effect bundles.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.ClassicEffectFamily.html">BaseEntityEffect.ClassicEffectFamily</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BundleTypes.html">BundleTypes</a></h4>
+      <section><p>Supported bundle types.
+This helps determine lifetime and usage of a bundle.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ChanceFunction.html">ChanceFunction</a></h4>
+      <section><p>Determines how effect chance will function.
+OnCast: is checked at cast time by EntityEffectManager receiving effect - effect is rejected on failure.
+Custom: is always allowed by EntityEffectManager, but still generates ChanceSuccess flag on Start().
+This allows custom chance handling elsewhere by either by the effect itself or elsewhere in effect back-end.
+A Custom chance effect can then decide to check for ChanceSuccess at any time, even do something else entirely.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.Diseases.html">Diseases</a></h4>
+      <section><p>Diseases the player can catch. (msgs 100-116)</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ElementTypes.html">ElementTypes</a></h4>
+      <section><p>How effect bundle manifests for cast animations, billboard effects, resist checks, etc.
+Can be used as flags by effect system to declare supported elements.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentPayloadFlags.html">EnchantmentPayloadFlags</a></h4>
+      <section><p>Flags to inform magic framework when enchantment effect should receive callbacks to execute its payload.
+As Daggerfall Unity supports custom effects there is more granularity to payload execution than classic.
+Note these are distinct from &quot;cast when used&quot;, &quot;cast when held&quot;, etc. Rather, the CastWhenUsed and CastWhenHeld
+effects will deliver their payload from callbacks related to these flags.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectBroker.CustomSpellBundleOfferUsage.html">EntityEffectBroker.CustomSpellBundleOfferUsage</a></h4>
+      <section><p>Usage flags for custom spell bundle offer.
+Informs other systems if they can use this spell.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ItemMakerFlags.html">ItemMakerFlags</a></h4>
+      <section><p>Defines flags for additional feature support at item maker.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicCraftingStations.html">MagicCraftingStations</a></h4>
+      <section><p>Flags defining which magic crafting stations can serve this effect.
+What constitutes a magic crafting station is likely to expand over time.
+For example, custom character creator is potentially a type of crafting station for advantages/disadvantages.
+Just leaving as main three stations (spellmaker, potionmaker, itemmaker) for now.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.TargetTypes.html">TargetTypes</a></h4>
+      <section><p>How an effect bundle targets entities in world space.
+Can be used as flags by effect system to declare supported targets.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectBroker.OnNewMagicRoundEventHandler.html">EntityEffectBroker.OnNewMagicRoundEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectBroker.OnRegisterCustomEffectsEventHandler.html">EntityEffectBroker.OnRegisterCustomEffectsEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnAddIncumbentStateEventHandler.html">EntityEffectManager.OnAddIncumbentStateEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnAssignBundleEventHandler.html">EntityEffectManager.OnAssignBundleEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnCastReadySpellEventHandler.html">EntityEffectManager.OnCastReadySpellEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnNewReadySpellEventHandler.html">EntityEffectManager.OnNewReadySpellEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.OnRemoveBundleEventHandler.html">EntityEffectManager.OnRemoveBundleEventHandler</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1514 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImageProcessing
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImageProcessing
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Utility.ImageProcessing">
+  
+  
+  <h1 id="DaggerfallWorkshop_Utility_ImageProcessing" data-uid="DaggerfallWorkshop.Utility.ImageProcessing" class="text-break">Class ImageProcessing
+  </h1>
+  <div class="markdown level0 summary"><p>Basic image processing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ImageProcessing</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Utility.html">DaggerfallWorkshop.Utility</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Utility_ImageProcessing_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ImageProcessing</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_ChangeDye_DaggerfallConnect_DFBitmap_DaggerfallWorkshop_DyeColors_DaggerfallWorkshop_DyeTargets_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.ChangeDye(DaggerfallConnect.DFBitmap%2CDaggerfallWorkshop.DyeColors%2CDaggerfallWorkshop.DyeTargets)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L420">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_ChangeDye_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ChangeDye*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_ChangeDye_DaggerfallConnect_DFBitmap_DaggerfallWorkshop_DyeColors_DaggerfallWorkshop_DyeTargets_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ChangeDye(DaggerfallConnect.DFBitmap,DaggerfallWorkshop.DyeColors,DaggerfallWorkshop.DyeTargets)">ChangeDye(DFBitmap, DyeColors, DyeTargets)</h4>
+  <div class="markdown level1 summary"><p>Dye supported bitmap image based on dye index and type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DFBitmap ChangeDye(DFBitmap srcBitmap, DyeColors dye, DyeTargets target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><span class="parametername">srcBitmap</span></td>
+        <td><p>Source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DyeColors.html">DyeColors</a></td>
+        <td><span class="parametername">dye</span></td>
+        <td><p>Dye index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DyeTargets.html">DyeTargets</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Dye target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><p>New DFBitmap dyed to specified colour.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_ChangeMask_DaggerfallConnect_DFBitmap_System_Byte_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.ChangeMask(DaggerfallConnect.DFBitmap%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L393">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_ChangeMask_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ChangeMask*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_ChangeMask_DaggerfallConnect_DFBitmap_System_Byte_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ChangeMask(DaggerfallConnect.DFBitmap,System.Byte)">ChangeMask(DFBitmap, Byte)</h4>
+  <div class="markdown level1 summary"><p>Changes mask index to another index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DFBitmap ChangeMask(DFBitmap srcBitmap, byte replaceWith = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><span class="parametername">srcBitmap</span></td>
+        <td><p>Source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">replaceWith</span></td>
+        <td><p>Index to substitute for mask index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><p>New DFBitmap with modified mask.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_Clamp_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.Clamp(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L18">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_Clamp_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.Clamp*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_Clamp_System_Int32_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.Clamp(System.Int32,System.Int32,System.Int32)">Clamp(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Clamp(int value, int min, int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">min</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_ClampBorder_UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.ClampBorder(UnityEngine.Color32%5B%5D%40%2CDaggerfallConnect.Utility.DFSize%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L281">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_ClampBorder_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ClampBorder*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_ClampBorder_UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ClampBorder(UnityEngine.Color32[]@,DaggerfallConnect.Utility.DFSize,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">ClampBorder(ref Color32[], DFSize, Int32, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Clamps texture into empty border area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClampBorder(ref Color32[] colors, DFSize size, int border, bool leftRight = true, bool topBottom = true, bool topLeft = true, bool topRight = true, bool bottomLeft = true, bool bottomRight = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Image size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">border</span></td>
+        <td><p>Border width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leftRight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">topBottom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">topLeft</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">topRight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bottomLeft</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bottomRight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_ConvertBumpToNormals_UnityEngine_Color32____System_Int32_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.ConvertBumpToNormals(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L876">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_ConvertBumpToNormals_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ConvertBumpToNormals*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_ConvertBumpToNormals_UnityEngine_Color32____System_Int32_System_Int32_System_Single_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.ConvertBumpToNormals(UnityEngine.Color32[]@,System.Int32,System.Int32,System.Single)">ConvertBumpToNormals(ref Color32[], Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Converts bump map to normal map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] ConvertBumpToNormals(ref Color32[] colors, int width, int height, float strength = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source Color32 array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">strength</span></td>
+        <td><p>Normal strength.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><p>Color32[] normal map.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_CopyColors_UnityEngine_Color32____UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_DaggerfallConnect_Utility_DFSize_DaggerfallConnect_Utility_DFPosition_DaggerfallConnect_Utility_DFPosition_DaggerfallConnect_Utility_DFSize_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.CopyColors(UnityEngine.Color32%5B%5D%40%2CUnityEngine.Color32%5B%5D%40%2CDaggerfallConnect.Utility.DFSize%2CDaggerfallConnect.Utility.DFSize%2CDaggerfallConnect.Utility.DFPosition%2CDaggerfallConnect.Utility.DFPosition%2CDaggerfallConnect.Utility.DFSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L37">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_CopyColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.CopyColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_CopyColors_UnityEngine_Color32____UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_DaggerfallConnect_Utility_DFSize_DaggerfallConnect_Utility_DFPosition_DaggerfallConnect_Utility_DFPosition_DaggerfallConnect_Utility_DFSize_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.CopyColors(UnityEngine.Color32[]@,UnityEngine.Color32[]@,DaggerfallConnect.Utility.DFSize,DaggerfallConnect.Utility.DFSize,DaggerfallConnect.Utility.DFPosition,DaggerfallConnect.Utility.DFPosition,DaggerfallConnect.Utility.DFSize)">CopyColors(ref Color32[], ref Color32[], DFSize, DFSize, DFPosition, DFPosition, DFSize)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyColors(ref Color32[] src, ref Color32[] dst, DFSize srcSize, DFSize dstSize, DFPosition srcPos, DFPosition dstPos, DFSize copySize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><span class="parametername">srcSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><span class="parametername">dstSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">srcPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">dstPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><span class="parametername">copySize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_CreateFontAtlas_DaggerfallConnect_Arena2_FntFile_UnityEngine_Color_UnityEngine_Color_UnityEngine_Texture2D__UnityEngine_Rect____.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.CreateFontAtlas(DaggerfallConnect.Arena2.FntFile%2CUnityEngine.Color%2CUnityEngine.Color%2CUnityEngine.Texture2D%40%2CUnityEngine.Rect%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L961">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_CreateFontAtlas_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.CreateFontAtlas*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_CreateFontAtlas_DaggerfallConnect_Arena2_FntFile_UnityEngine_Color_UnityEngine_Color_UnityEngine_Texture2D__UnityEngine_Rect____" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.CreateFontAtlas(DaggerfallConnect.Arena2.FntFile,UnityEngine.Color,UnityEngine.Color,UnityEngine.Texture2D@,UnityEngine.Rect[]@)">CreateFontAtlas(FntFile, Color, Color, out Texture2D, out Rect[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateFontAtlas(FntFile fntFile, Color backColor, Color textColor, out Texture2D atlasTextureOut, out Rect[] atlasRectsOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.FntFile.html">FntFile</a></td>
+        <td><span class="parametername">fntFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">backColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">textColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td><span class="parametername">atlasTextureOut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span>[]</td>
+        <td><span class="parametername">atlasRectsOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_DilateColors_UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.DilateColors(UnityEngine.Color32%5B%5D%40%2CDaggerfallConnect.Utility.DFSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L189">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_DilateColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.DilateColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_DilateColors_UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.DilateColors(UnityEngine.Color32[]@,DaggerfallConnect.Utility.DFSize)">DilateColors(ref Color32[], DFSize)</h4>
+  <div class="markdown level1 summary"><p>Creates a blended border around transparent textures.
+Removes dark edges from billboards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DilateColors(ref Color32[] colors, DFSize size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Image size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_FlipColors_UnityEngine_Color32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.FlipColors(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L163">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_FlipColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.FlipColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_FlipColors_UnityEngine_Color32____System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.FlipColors(UnityEngine.Color32[]@,System.Int32,System.Int32)">FlipColors(ref Color32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] FlipColors(ref Color32[] src, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_FlipHorizontallyColors_UnityEngine_Color32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.FlipHorizontallyColors(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L125">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_FlipHorizontallyColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.FlipHorizontallyColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_FlipHorizontallyColors_UnityEngine_Color32____System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.FlipHorizontallyColors(UnityEngine.Color32[]@,System.Int32,System.Int32)">FlipHorizontallyColors(ref Color32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] FlipHorizontallyColors(ref Color32[] src, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_FlipVerticallyColors_UnityEngine_Color32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.FlipVerticallyColors(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L144">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_FlipVerticallyColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.FlipVerticallyColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_FlipVerticallyColors_UnityEngine_Color32____System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.FlipVerticallyColors(UnityEngine.Color32[]@,System.Int32,System.Int32)">FlipVerticallyColors(ref Color32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] FlipVerticallyColors(ref Color32[] src, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_GetBumpMap_UnityEngine_Color32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.GetBumpMap(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L820">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_GetBumpMap_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetBumpMap*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_GetBumpMap_UnityEngine_Color32____System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetBumpMap(UnityEngine.Color32[]@,System.Int32,System.Int32)">GetBumpMap(ref Color32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a bump map from source Color32 array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] GetBumpMap(ref Color32[] colors, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source Color32 array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><p>DFBitmap bump image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_GetDyeColorTable_DaggerfallWorkshop_DyeColors_DaggerfallWorkshop_DyeTargets_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.GetDyeColorTable(DaggerfallWorkshop.DyeColors%2CDaggerfallWorkshop.DyeTargets)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L471">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_GetDyeColorTable_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetDyeColorTable*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_GetDyeColorTable_DaggerfallWorkshop_DyeColors_DaggerfallWorkshop_DyeTargets_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetDyeColorTable(DaggerfallWorkshop.DyeColors,DaggerfallWorkshop.DyeTargets)">GetDyeColorTable(DyeColors, DyeTargets)</h4>
+  <div class="markdown level1 summary"><p>Gets colour table for all supported dyes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] GetDyeColorTable(DyeColors dye, DyeTargets target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DyeColors.html">DyeColors</a></td>
+        <td><span class="parametername">dye</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DyeTargets.html">DyeTargets</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_GetGlyphColors_DaggerfallConnect_Arena2_FntFile_System_Int32_UnityEngine_Color_UnityEngine_Color_UnityEngine_Rect__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.GetGlyphColors(DaggerfallConnect.Arena2.FntFile%2CSystem.Int32%2CUnityEngine.Color%2CUnityEngine.Color%2CUnityEngine.Rect%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L917">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_GetGlyphColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetGlyphColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_GetGlyphColors_DaggerfallConnect_Arena2_FntFile_System_Int32_UnityEngine_Color_UnityEngine_Color_UnityEngine_Rect__" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetGlyphColors(DaggerfallConnect.Arena2.FntFile,System.Int32,UnityEngine.Color,UnityEngine.Color,UnityEngine.Rect@)">GetGlyphColors(FntFile, Int32, Color, Color, out Rect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] GetGlyphColors(FntFile fntFile, int index, Color backColor, Color textColor, out Rect sizeOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.FntFile.html">FntFile</a></td>
+        <td><span class="parametername">fntFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">backColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">textColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">sizeOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_GetMetalColorTable_DaggerfallWorkshop_MetalTypes_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.GetMetalColorTable(DaggerfallWorkshop.MetalTypes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L560">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_GetMetalColorTable_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetMetalColorTable*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_GetMetalColorTable_DaggerfallWorkshop_MetalTypes_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetMetalColorTable(DaggerfallWorkshop.MetalTypes)">GetMetalColorTable(MetalTypes)</h4>
+  <div class="markdown level1 summary"><p>Gets colour table for each metal type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] GetMetalColorTable(MetalTypes metalType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MetalTypes.html">MetalTypes</a></td>
+        <td><span class="parametername">metalType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_GetMetalDyeColor_DaggerfallWorkshop_MetalTypes_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.GetMetalDyeColor(DaggerfallWorkshop.MetalTypes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L606">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_GetMetalDyeColor_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetMetalDyeColor*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_GetMetalDyeColor_DaggerfallWorkshop_MetalTypes_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetMetalDyeColor(DaggerfallWorkshop.MetalTypes)">GetMetalDyeColor(MetalTypes)</h4>
+  <div class="markdown level1 summary"><p>Converts a DaggerfallUnity metal type to dye colour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DyeColors GetMetalDyeColor(MetalTypes metalType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MetalTypes.html">MetalTypes</a></td>
+        <td><span class="parametername">metalType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DyeColors.html">DyeColors</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_GetProportionalGlyphColors_DaggerfallConnect_Arena2_FntFile_System_Int32_UnityEngine_Color_UnityEngine_Color_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.GetProportionalGlyphColors(DaggerfallConnect.Arena2.FntFile%2CSystem.Int32%2CUnityEngine.Color%2CUnityEngine.Color%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L938">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_GetProportionalGlyphColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetProportionalGlyphColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_GetProportionalGlyphColors_DaggerfallConnect_Arena2_FntFile_System_Int32_UnityEngine_Color_UnityEngine_Color_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.GetProportionalGlyphColors(DaggerfallConnect.Arena2.FntFile,System.Int32,UnityEngine.Color,UnityEngine.Color,System.Boolean)">GetProportionalGlyphColors(FntFile, Int32, Color, Color, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] GetProportionalGlyphColors(FntFile fntFile, int index, Color backColor, Color textColor, bool invertY = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.FntFile.html">FntFile</a></td>
+        <td><span class="parametername">fntFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">backColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">textColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">invertY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_InsertColors_UnityEngine_Color32____UnityEngine_Color32____System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.InsertColors(UnityEngine.Color32%5B%5D%40%2CUnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L24">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_InsertColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.InsertColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_InsertColors_UnityEngine_Color32____UnityEngine_Color32____System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.InsertColors(UnityEngine.Color32[]@,UnityEngine.Color32[]@,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">InsertColors(ref Color32[], ref Color32[], Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InsertColors(ref Color32[] src, ref Color32[] dst, int xPos, int yPos, int srcWidth, int srcHeight, int dstWidth, int dstHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">xPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">yPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">srcWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">srcHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dstWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dstHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_MakeAverageIntensity_UnityEngine_Color32___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.MakeAverageIntensity(UnityEngine.Color32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L84">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_MakeAverageIntensity_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.MakeAverageIntensity*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_MakeAverageIntensity_UnityEngine_Color32___" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.MakeAverageIntensity(UnityEngine.Color32[])">MakeAverageIntensity(Color32[])</h4>
+  <div class="markdown level1 summary"><p>Creates average intensity Color32 array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] MakeAverageIntensity(Color32[] colors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source Color32 array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><p>Average intensity Color32 array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_MakeTexture2D_UnityEngine_Color32____System_Int32_System_Int32_UnityEngine_TextureFormat_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.MakeTexture2D(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CUnityEngine.TextureFormat%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L50">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_MakeTexture2D_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.MakeTexture2D*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_MakeTexture2D_UnityEngine_Color32____System_Int32_System_Int32_UnityEngine_TextureFormat_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.MakeTexture2D(UnityEngine.Color32[]@,System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean)">MakeTexture2D(ref Color32[], Int32, Int32, TextureFormat, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D MakeTexture2D(ref Color32[] src, int width, int height, TextureFormat textureFormat, bool mipMaps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.TextureFormat</span></td>
+        <td><span class="parametername">textureFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mipMaps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_Negative_UnityEngine_Color32____.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.Negative(UnityEngine.Color32%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L219">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_Negative_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.Negative*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_Negative_UnityEngine_Color32____" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.Negative(UnityEngine.Color32[]@)">Negative(ref Color32[])</h4>
+  <div class="markdown level1 summary"><p>Creates a negative of image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Negative(ref Color32[] colors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source Color32 array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_RotateColors_UnityEngine_Color32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.RotateColors(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L106">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_RotateColors_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.RotateColors*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_RotateColors_UnityEngine_Color32____System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.RotateColors(UnityEngine.Color32[]@,System.Int32,System.Int32)">RotateColors(ref Color32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] RotateColors(ref Color32[] src, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_Sharpen_UnityEngine_Color32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.Sharpen(UnityEngine.Color32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L792">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_Sharpen_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.Sharpen*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_Sharpen_UnityEngine_Color32____System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.Sharpen(UnityEngine.Color32[]@,System.Int32,System.Int32)">Sharpen(ref Color32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sharpen a DFBitmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color32[] Sharpen(ref Color32[] colors, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source Color32 array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Image width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Image height.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><p>Sharpened image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing_WrapBorder_UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing.WrapBorder(UnityEngine.Color32%5B%5D%40%2CDaggerfallConnect.Utility.DFSize%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L238">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_ImageProcessing_WrapBorder_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.WrapBorder*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_ImageProcessing_WrapBorder_UnityEngine_Color32____DaggerfallConnect_Utility_DFSize_System_Int32_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.ImageProcessing.WrapBorder(UnityEngine.Color32[]@,DaggerfallConnect.Utility.DFSize,System.Int32,System.Boolean,System.Boolean)">WrapBorder(ref Color32[], DFSize, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Wraps texture into emtpty border area on opposite side.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WrapBorder(ref Color32[] colors, DFSize size, int border, bool leftRight = true, bool topBottom = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Source image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Image size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">border</span></td>
+        <td><p>Border width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leftRight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">topBottom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_ImageProcessing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.ImageProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/ImageProcessing.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

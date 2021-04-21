@@ -1,0 +1,3413 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TalkManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TalkManager
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.TalkManager">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_TalkManager" data-uid="DaggerfallWorkshop.Game.TalkManager" class="text-break">Class TalkManager
+  </h1>
+  <div class="markdown level0 summary"><p>This class manages talk topics and resulting actions/answers</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">TalkManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.html">DaggerfallWorkshop.Game</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_TalkManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TalkManager : MonoBehaviour, IMacroContextProvider</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_LocationOfRegionalBuilding.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.LocationOfRegionalBuilding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L272">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_LocationOfRegionalBuilding" data-uid="DaggerfallWorkshop.Game.TalkManager.LocationOfRegionalBuilding">LocationOfRegionalBuilding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LocationOfRegionalBuilding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ConsoleCommandFlag_npcsKnowEverything.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ConsoleCommandFlag_npcsKnowEverything%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L449">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ConsoleCommandFlag_npcsKnowEverything_" data-uid="DaggerfallWorkshop.Game.TalkManager.ConsoleCommandFlag_npcsKnowEverything*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ConsoleCommandFlag_npcsKnowEverything" data-uid="DaggerfallWorkshop.Game.TalkManager.ConsoleCommandFlag_npcsKnowEverything">ConsoleCommandFlag_npcsKnowEverything</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConsoleCommandFlag_npcsKnowEverything { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_CurrentKeySubject.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.CurrentKeySubject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L409">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_CurrentKeySubject_" data-uid="DaggerfallWorkshop.Game.TalkManager.CurrentKeySubject*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_CurrentKeySubject" data-uid="DaggerfallWorkshop.Game.TalkManager.CurrentKeySubject">CurrentKeySubject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrentKeySubject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_CurrentKeySubjectType.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.CurrentKeySubjectType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L414">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_CurrentKeySubjectType_" data-uid="DaggerfallWorkshop.Game.TalkManager.CurrentKeySubjectType*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_CurrentKeySubjectType" data-uid="DaggerfallWorkshop.Game.TalkManager.CurrentKeySubjectType">CurrentKeySubjectType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TalkManager.KeySubjectType CurrentKeySubjectType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.KeySubjectType.html">TalkManager.KeySubjectType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_CurrentQuestionListItem.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.CurrentQuestionListItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L404">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_CurrentQuestionListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.CurrentQuestionListItem*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_CurrentQuestionListItem" data-uid="DaggerfallWorkshop.Game.TalkManager.CurrentQuestionListItem">CurrentQuestionListItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TalkManager.ListItem CurrentQuestionListItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GreetingNameNPC.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GreetingNameNPC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L399">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GreetingNameNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.GreetingNameNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GreetingNameNPC" data-uid="DaggerfallWorkshop.Game.TalkManager.GreetingNameNPC">GreetingNameNPC</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GreetingNameNPC { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_HasInstance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.HasInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L56">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_HasInstance_" data-uid="DaggerfallWorkshop.Game.TalkManager.HasInstance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_HasInstance" data-uid="DaggerfallWorkshop.Game.TalkManager.HasInstance">HasInstance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasInstance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_Instance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L41">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_Instance_" data-uid="DaggerfallWorkshop.Game.TalkManager.Instance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_Instance" data-uid="DaggerfallWorkshop.Game.TalkManager.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TalkManager Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.html">TalkManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ListTopicLocation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ListTopicLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L429">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ListTopicLocation_" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicLocation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ListTopicLocation" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicLocation">ListTopicLocation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TalkManager.ListItem&gt; ListTopicLocation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ListTopicPerson.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ListTopicPerson%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L434">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ListTopicPerson_" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicPerson*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ListTopicPerson" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicPerson">ListTopicPerson</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TalkManager.ListItem&gt; ListTopicPerson { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ListTopicTellMeAbout.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ListTopicTellMeAbout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L424">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ListTopicTellMeAbout_" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicTellMeAbout*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ListTopicTellMeAbout" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicTellMeAbout">ListTopicTellMeAbout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TalkManager.ListItem&gt; ListTopicTellMeAbout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ListTopicThings.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ListTopicThings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L439">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ListTopicThings_" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicThings*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ListTopicThings" data-uid="DaggerfallWorkshop.Game.TalkManager.ListTopicThings">ListTopicThings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TalkManager.ListItem&gt; ListTopicThings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_MarkLocationOnMap.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.MarkLocationOnMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L419">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_MarkLocationOnMap_" data-uid="DaggerfallWorkshop.Game.TalkManager.MarkLocationOnMap*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_MarkLocationOnMap" data-uid="DaggerfallWorkshop.Game.TalkManager.MarkLocationOnMap">MarkLocationOnMap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MarkLocationOnMap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_NameNPC.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.NameNPC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L394">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_NameNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.NameNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_NameNPC" data-uid="DaggerfallWorkshop.Game.TalkManager.NameNPC">NameNPC</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NameNPC { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_NPCGreetingText.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.NPCGreetingText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L455">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_NPCGreetingText_" data-uid="DaggerfallWorkshop.Game.TalkManager.NPCGreetingText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_NPCGreetingText" data-uid="DaggerfallWorkshop.Game.TalkManager.NPCGreetingText">NPCGreetingText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NPCGreetingText { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_TextDatabase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.TextDatabase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L444">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_TextDatabase_" data-uid="DaggerfallWorkshop.Game.TalkManager.TextDatabase*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_TextDatabase" data-uid="DaggerfallWorkshop.Game.TalkManager.TextDatabase">TextDatabase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TextDatabase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_WorkAvailable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.WorkAvailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2426">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_WorkAvailable_" data-uid="DaggerfallWorkshop.Game.TalkManager.WorkAvailable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_WorkAvailable" data-uid="DaggerfallWorkshop.Game.TalkManager.WorkAvailable">WorkAvailable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WorkAvailable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_AddDialogForQuestInfoResource_System_UInt64_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.AddDialogForQuestInfoResource(System.UInt64%2CSystem.String%2CDaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2041">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_AddDialogForQuestInfoResource_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddDialogForQuestInfoResource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_AddDialogForQuestInfoResource_System_UInt64_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_System_Boolean_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddDialogForQuestInfoResource(System.UInt64,System.String,DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType,System.Boolean)">AddDialogForQuestInfoResource(UInt64, String, TalkManager.QuestInfoResourceType, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDialogForQuestInfoResource(ulong questID, string resourceName, TalkManager.QuestInfoResourceType resourceType, bool instantRebuildTopicLists = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType.html">TalkManager.QuestInfoResourceType</a></td>
+        <td><span class="parametername">resourceType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">instantRebuildTopicLists</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_AddNonQuestRumor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.AddNonQuestRumor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2515">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_AddNonQuestRumor_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddNonQuestRumor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_AddNonQuestRumor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddNonQuestRumor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddNonQuestRumor(Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNonQuestRumor(int faction1, int faction2, int regionID, int type, int textID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">faction1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">faction2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">textID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_AddOrReplaceQuestProgressRumor_System_UInt64_DaggerfallWorkshop_Game_Questing_Message_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.AddOrReplaceQuestProgressRumor(System.UInt64%2CDaggerfallWorkshop.Game.Questing.Message)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1385">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_AddOrReplaceQuestProgressRumor_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddOrReplaceQuestProgressRumor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_AddOrReplaceQuestProgressRumor_System_UInt64_DaggerfallWorkshop_Game_Questing_Message_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddOrReplaceQuestProgressRumor(System.UInt64,DaggerfallWorkshop.Game.Questing.Message)">AddOrReplaceQuestProgressRumor(UInt64, Message)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOrReplaceQuestProgressRumor(ulong questID, Message message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.html">Message</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_AddQuestorPostQuestMessage_System_UInt64_DaggerfallWorkshop_Game_Questing_Message_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.AddQuestorPostQuestMessage(System.UInt64%2CDaggerfallWorkshop.Game.Questing.Message)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1463">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_AddQuestorPostQuestMessage_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestorPostQuestMessage*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_AddQuestorPostQuestMessage_System_UInt64_DaggerfallWorkshop_Game_Questing_Message_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestorPostQuestMessage(System.UInt64,DaggerfallWorkshop.Game.Questing.Message)">AddQuestorPostQuestMessage(UInt64, Message)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddQuestorPostQuestMessage(ulong questID, Message message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.html">Message</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_AddQuestRumorToRumorMill_System_UInt64_DaggerfallWorkshop_Game_Questing_Message_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.AddQuestRumorToRumorMill(System.UInt64%2CDaggerfallWorkshop.Game.Questing.Message)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1351">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_AddQuestRumorToRumorMill_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestRumorToRumorMill*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_AddQuestRumorToRumorMill_System_UInt64_DaggerfallWorkshop_Game_Questing_Message_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestRumorToRumorMill(System.UInt64,DaggerfallWorkshop.Game.Questing.Message)">AddQuestRumorToRumorMill(UInt64, Message)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddQuestRumorToRumorMill(ulong questID, Message message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.html">Message</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_AddQuestRumorToRumorMill_System_UInt64_System_Collections_Generic_List_DaggerfallConnect_Arena2_TextFile_Token____.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.AddQuestRumorToRumorMill(System.UInt64%2CSystem.Collections.Generic.List%7BDaggerfallConnect.Arena2.TextFile.Token%5B%5D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1369">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_AddQuestRumorToRumorMill_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestRumorToRumorMill*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_AddQuestRumorToRumorMill_System_UInt64_System_Collections_Generic_List_DaggerfallConnect_Arena2_TextFile_Token____" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestRumorToRumorMill(System.UInt64,System.Collections.Generic.List{DaggerfallConnect.Arena2.TextFile.Token[]})">AddQuestRumorToRumorMill(UInt64, List&lt;TextFile.Token[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddQuestRumorToRumorMill(ulong questID, List&lt;TextFile.Token[]&gt; listTokens)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]&gt;</td>
+        <td><span class="parametername">listTokens</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_AddQuestTopicWithInfoAndRumors_System_UInt64_DaggerfallWorkshop_Game_Questing_QuestResource_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_System_Collections_Generic_List_DaggerfallConnect_Arena2_TextFile_Token____System_Collections_Generic_List_DaggerfallConnect_Arena2_TextFile_Token____.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.AddQuestTopicWithInfoAndRumors(System.UInt64%2CDaggerfallWorkshop.Game.Questing.QuestResource%2CSystem.String%2CDaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType%2CSystem.Collections.Generic.List%7BDaggerfallConnect.Arena2.TextFile.Token%5B%5D%7D%2CSystem.Collections.Generic.List%7BDaggerfallConnect.Arena2.TextFile.Token%5B%5D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1920">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_AddQuestTopicWithInfoAndRumors_" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestTopicWithInfoAndRumors*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_AddQuestTopicWithInfoAndRumors_System_UInt64_DaggerfallWorkshop_Game_Questing_QuestResource_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_System_Collections_Generic_List_DaggerfallConnect_Arena2_TextFile_Token____System_Collections_Generic_List_DaggerfallConnect_Arena2_TextFile_Token____" data-uid="DaggerfallWorkshop.Game.TalkManager.AddQuestTopicWithInfoAndRumors(System.UInt64,DaggerfallWorkshop.Game.Questing.QuestResource,System.String,DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType,System.Collections.Generic.List{DaggerfallConnect.Arena2.TextFile.Token[]},System.Collections.Generic.List{DaggerfallConnect.Arena2.TextFile.Token[]})">AddQuestTopicWithInfoAndRumors(UInt64, QuestResource, String, TalkManager.QuestInfoResourceType, List&lt;TextFile.Token[]&gt;, List&lt;TextFile.Token[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddQuestTopicWithInfoAndRumors(ulong questID, QuestResource questResource, string resourceName, TalkManager.QuestInfoResourceType resourceType, List&lt;TextFile.Token[]&gt; anyInfoAnswers, List&lt;TextFile.Token[]&gt; rumorsAnswers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html">QuestResource</a></td>
+        <td><span class="parametername">questResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType.html">TalkManager.QuestInfoResourceType</a></td>
+        <td><span class="parametername">resourceType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]&gt;</td>
+        <td><span class="parametername">anyInfoAnswers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]&gt;</td>
+        <td><span class="parametername">rumorsAnswers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_CheckLocationKeyForRegionalBuilding_System_UInt32_System_Byte_System_Int16_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.CheckLocationKeyForRegionalBuilding(System.UInt32%2CSystem.Byte%2CSystem.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1759">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_CheckLocationKeyForRegionalBuilding_" data-uid="DaggerfallWorkshop.Game.TalkManager.CheckLocationKeyForRegionalBuilding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_CheckLocationKeyForRegionalBuilding_System_UInt32_System_Byte_System_Int16_" data-uid="DaggerfallWorkshop.Game.TalkManager.CheckLocationKeyForRegionalBuilding(System.UInt32,System.Byte,System.Int16)">CheckLocationKeyForRegionalBuilding(UInt32, Byte, Int16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CheckLocationKeyForRegionalBuilding(uint key, byte index, short faction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_DialogLinkForQuestInfoResource_System_UInt64_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.DialogLinkForQuestInfoResource(System.UInt64%2CSystem.String%2CDaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType%2CSystem.String%2CDaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1979">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_DialogLinkForQuestInfoResource_" data-uid="DaggerfallWorkshop.Game.TalkManager.DialogLinkForQuestInfoResource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_DialogLinkForQuestInfoResource_System_UInt64_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_System_String_DaggerfallWorkshop_Game_TalkManager_QuestInfoResourceType_" data-uid="DaggerfallWorkshop.Game.TalkManager.DialogLinkForQuestInfoResource(System.UInt64,System.String,DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType,System.String,DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType)">DialogLinkForQuestInfoResource(UInt64, String, TalkManager.QuestInfoResourceType, String, TalkManager.QuestInfoResourceType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DialogLinkForQuestInfoResource(ulong questID, string resourceName, TalkManager.QuestInfoResourceType resourceType, string linkedResourceName = null, TalkManager.QuestInfoResourceType linkedResourceType = TalkManager.QuestInfoResourceType.NotSet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType.html">TalkManager.QuestInfoResourceType</a></td>
+        <td><span class="parametername">resourceType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">linkedResourceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.QuestInfoResourceType.html">TalkManager.QuestInfoResourceType</a></td>
+        <td><span class="parametername">linkedResourceType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_DirectionVector2DirectionHintString_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.DirectionVector2DirectionHintString(UnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1027">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_DirectionVector2DirectionHintString_" data-uid="DaggerfallWorkshop.Game.TalkManager.DirectionVector2DirectionHintString*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_DirectionVector2DirectionHintString_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Game.TalkManager.DirectionVector2DirectionHintString(UnityEngine.Vector2)">DirectionVector2DirectionHintString(Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DirectionVector2DirectionHintString(Vector2 vecDirectionToTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">vecDirectionToTarget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_FindTalkManager_DaggerfallWorkshop_Game_TalkManager__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.FindTalkManager(DaggerfallWorkshop.Game.TalkManager%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L64">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_FindTalkManager_" data-uid="DaggerfallWorkshop.Game.TalkManager.FindTalkManager*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_FindTalkManager_DaggerfallWorkshop_Game_TalkManager__" data-uid="DaggerfallWorkshop.Game.TalkManager.FindTalkManager(DaggerfallWorkshop.Game.TalkManager@)">FindTalkManager(out TalkManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindTalkManager(out TalkManager talkManagerOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.html">TalkManager</a></td>
+        <td><span class="parametername">talkManagerOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ForceTopicListsUpdate.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ForceTopicListsUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1915">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ForceTopicListsUpdate_" data-uid="DaggerfallWorkshop.Game.TalkManager.ForceTopicListsUpdate*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ForceTopicListsUpdate" data-uid="DaggerfallWorkshop.Game.TalkManager.ForceTopicListsUpdate">ForceTopicListsUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceTopicListsUpdate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetAnswerAboutRegionalBuilding_DaggerfallWorkshop_Game_TalkManager_ListItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetAnswerAboutRegionalBuilding(DaggerfallWorkshop.Game.TalkManager.ListItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1707">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetAnswerAboutRegionalBuilding_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerAboutRegionalBuilding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetAnswerAboutRegionalBuilding_DaggerfallWorkshop_Game_TalkManager_ListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerAboutRegionalBuilding(DaggerfallWorkshop.Game.TalkManager.ListItem)">GetAnswerAboutRegionalBuilding(TalkManager.ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAnswerAboutRegionalBuilding(TalkManager.ListItem listItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetAnswerTellMeAboutTopic_DaggerfallWorkshop_Game_TalkManager_ListItem_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetAnswerTellMeAboutTopic(DaggerfallWorkshop.Game.TalkManager.ListItem%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1888">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetAnswerTellMeAboutTopic_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerTellMeAboutTopic*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetAnswerTellMeAboutTopic_DaggerfallWorkshop_Game_TalkManager_ListItem_System_Single_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerTellMeAboutTopic(DaggerfallWorkshop.Game.TalkManager.ListItem,System.Single)">GetAnswerTellMeAboutTopic(TalkManager.ListItem, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAnswerTellMeAboutTopic(TalkManager.ListItem listItem, float chanceNPCknowsSomething)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">chanceNPCknowsSomething</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetAnswerText_DaggerfallWorkshop_Game_TalkManager_ListItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetAnswerText(DaggerfallWorkshop.Game.TalkManager.ListItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1829">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetAnswerText_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetAnswerText_DaggerfallWorkshop_Game_TalkManager_ListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerText(DaggerfallWorkshop.Game.TalkManager.ListItem)">GetAnswerText(TalkManager.ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAnswerText(TalkManager.ListItem listItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetAnswerWhereAmI.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetAnswerWhereAmI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1314">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetAnswerWhereAmI_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerWhereAmI*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetAnswerWhereAmI" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerWhereAmI">GetAnswerWhereAmI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAnswerWhereAmI()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetAnswerWhereIs_DaggerfallWorkshop_Game_TalkManager_ListItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetAnswerWhereIs(DaggerfallWorkshop.Game.TalkManager.ListItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1623">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetAnswerWhereIs_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerWhereIs*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetAnswerWhereIs_DaggerfallWorkshop_Game_TalkManager_ListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetAnswerWhereIs(DaggerfallWorkshop.Game.TalkManager.ListItem)">GetAnswerWhereIs(TalkManager.ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAnswerWhereIs(TalkManager.ListItem listItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetBuildingCompassDirection_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetBuildingCompassDirection(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1067">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetBuildingCompassDirection_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetBuildingCompassDirection*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetBuildingCompassDirection_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetBuildingCompassDirection(System.Int32)">GetBuildingCompassDirection(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBuildingCompassDirection(int buildingKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildingKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetBuildingNameForBuildingKey_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetBuildingNameForBuildingKey(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2183">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetBuildingNameForBuildingKey_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetBuildingNameForBuildingKey*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetBuildingNameForBuildingKey_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetBuildingNameForBuildingKey(System.Int32)">GetBuildingNameForBuildingKey(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBuildingNameForBuildingKey(int buildingKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildingKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetBuildingTypeForBuildingKey_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetBuildingTypeForBuildingKey(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2171">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetBuildingTypeForBuildingKey_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetBuildingTypeForBuildingKey*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetBuildingTypeForBuildingKey_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetBuildingTypeForBuildingKey(System.Int32)">GetBuildingTypeForBuildingKey(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFLocation.BuildingTypes GetBuildingTypeForBuildingKey(int buildingKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildingKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.BuildingTypes.html">DFLocation.BuildingTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetConversationSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetConversationSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2245">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetConversationSaveData_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetConversationSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetConversationSaveData" data-uid="DaggerfallWorkshop.Game.TalkManager.GetConversationSaveData">GetConversationSaveData()</h4>
+  <div class="markdown level1 summary"><p>Gets the conversation dictionary for save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TalkManager.SaveDataConversation GetConversationSaveData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.SaveDataConversation.html">TalkManager.SaveDataConversation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetDialogHint_DaggerfallWorkshop_Game_TalkManager_ListItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetDialogHint(DaggerfallWorkshop.Game.TalkManager.ListItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1552">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetDialogHint_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetDialogHint*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetDialogHint_DaggerfallWorkshop_Game_TalkManager_ListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetDialogHint(DaggerfallWorkshop.Game.TalkManager.ListItem)">GetDialogHint(TalkManager.ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDialogHint(TalkManager.ListItem listItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetDialogHint2_DaggerfallWorkshop_Game_TalkManager_ListItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetDialogHint2(DaggerfallWorkshop.Game.TalkManager.ListItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1562">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetDialogHint2_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetDialogHint2*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetDialogHint2_DaggerfallWorkshop_Game_TalkManager_ListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetDialogHint2(DaggerfallWorkshop.Game.TalkManager.ListItem)">GetDialogHint2(TalkManager.ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDialogHint2(TalkManager.ListItem listItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetFactionName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetFactionName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1599">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetFactionName_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetFactionName" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionName">GetFactionName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFactionName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetFactionNPC.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetFactionNPC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1589">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetFactionNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetFactionNPC" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionNPC">GetFactionNPC()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFactionNPC()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetFactionNPCAlly.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetFactionNPCAlly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1579">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetFactionNPCAlly_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionNPCAlly*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetFactionNPCAlly" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionNPCAlly">GetFactionNPCAlly()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFactionNPCAlly()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetFactionNPCEnemy.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetFactionNPCEnemy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1584">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetFactionNPCEnemy_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionNPCEnemy*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetFactionNPCEnemy" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionNPCEnemy">GetFactionNPCEnemy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFactionNPCEnemy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetFactionPC.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetFactionPC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1594">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetFactionPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetFactionPC" data-uid="DaggerfallWorkshop.Game.TalkManager.GetFactionPC">GetFactionPC()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFactionPC()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetHonoric.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetHonoric%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1610">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetHonoric_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetHonoric*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetHonoric" data-uid="DaggerfallWorkshop.Game.TalkManager.GetHonoric">GetHonoric()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetHonoric()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingDirection.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1476">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingDirection_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingDirection*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingDirection" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingDirection">GetKeySubjectBuildingDirection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetKeySubjectBuildingDirection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingHint.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingHint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1491">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingHint_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingHint*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingHint" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingHint">GetKeySubjectBuildingHint()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetKeySubjectBuildingHint()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingOnMap.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingOnMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1482">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingOnMap_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingOnMap*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectBuildingOnMap" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectBuildingOnMap">GetKeySubjectBuildingOnMap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetKeySubjectBuildingOnMap()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetKeySubjectLocationCompassDirection.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetKeySubjectLocationCompassDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1053">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectLocationCompassDirection_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectLocationCompassDirection*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectLocationCompassDirection" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectLocationCompassDirection">GetKeySubjectLocationCompassDirection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetKeySubjectLocationCompassDirection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetKeySubjectPersonHint.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetKeySubjectPersonHint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1509">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectPersonHint_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectPersonHint*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetKeySubjectPersonHint" data-uid="DaggerfallWorkshop.Game.TalkManager.GetKeySubjectPersonHint">GetKeySubjectPersonHint()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetKeySubjectPersonHint()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetLocationCompassDirection_DaggerfallWorkshop_Game_Questing_Place_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetLocationCompassDirection(DaggerfallWorkshop.Game.Questing.Place)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1102">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetLocationCompassDirection_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetLocationCompassDirection*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetLocationCompassDirection_DaggerfallWorkshop_Game_Questing_Place_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetLocationCompassDirection(DaggerfallWorkshop.Game.Questing.Place)">GetLocationCompassDirection(Place)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLocationCompassDirection(Place questPlace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Place.html">Place</a></td>
+        <td><span class="parametername">questPlace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetLocationWithRegionalBuilding_System_Byte_System_Int16_DaggerfallConnect_DFLocation__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetLocationWithRegionalBuilding(System.Byte%2CSystem.Int16%2CDaggerfallConnect.DFLocation%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1730">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetLocationWithRegionalBuilding_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetLocationWithRegionalBuilding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetLocationWithRegionalBuilding_System_Byte_System_Int16_DaggerfallConnect_DFLocation__" data-uid="DaggerfallWorkshop.Game.TalkManager.GetLocationWithRegionalBuilding(System.Byte,System.Int16,DaggerfallConnect.DFLocation@)">GetLocationWithRegionalBuilding(Byte, Int16, ref DFLocation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLocationWithRegionalBuilding(byte index, short faction, ref DFLocation location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetMacroDataSource.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetMacroDataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManagerMCP.cs/#L40">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetMacroDataSource_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetMacroDataSource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetMacroDataSource" data-uid="DaggerfallWorkshop.Game.TalkManager.GetMacroDataSource">GetMacroDataSource()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MacroDataSource GetMacroDataSource()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.MacroDataSource.html">MacroDataSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetNewsOrRumors.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetNewsOrRumors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1219">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetNewsOrRumors_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetNewsOrRumors*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetNewsOrRumors" data-uid="DaggerfallWorkshop.Game.TalkManager.GetNewsOrRumors">GetNewsOrRumors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetNewsOrRumors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetOldLeaderFateString_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetOldLeaderFateString(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1618">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetOldLeaderFateString_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetOldLeaderFateString*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetOldLeaderFateString_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetOldLeaderFateString(System.Int32)">GetOldLeaderFateString(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetOldLeaderFateString(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetOrganizationInfo_DaggerfallWorkshop_Game_TalkManager_ListItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetOrganizationInfo(DaggerfallWorkshop.Game.TalkManager.ListItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1345">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetOrganizationInfo_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetOrganizationInfo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetOrganizationInfo_DaggerfallWorkshop_Game_TalkManager_ListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetOrganizationInfo(DaggerfallWorkshop.Game.TalkManager.ListItem)">GetOrganizationInfo(TalkManager.ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetOrganizationInfo(TalkManager.ListItem listItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetPCFollowUpText_DaggerfallWorkshop_Game_UserInterface_DaggerfallTalkWindow_TalkTone_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetPCFollowUpText(DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1008">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetPCFollowUpText_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPCFollowUpText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetPCFollowUpText_DaggerfallWorkshop_Game_UserInterface_DaggerfallTalkWindow_TalkTone_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPCFollowUpText(DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone)">GetPCFollowUpText(DaggerfallTalkWindow.TalkTone)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPCFollowUpText(DaggerfallTalkWindow.TalkTone talkTone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone.html">DaggerfallTalkWindow.TalkTone</a></td>
+        <td><span class="parametername">talkTone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetPCGreetingOrFollowUpText.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetPCGreetingOrFollowUpText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1013">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetPCGreetingOrFollowUpText_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPCGreetingOrFollowUpText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetPCGreetingOrFollowUpText" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPCGreetingOrFollowUpText">GetPCGreetingOrFollowUpText()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPCGreetingOrFollowUpText()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetPCGreetingText_DaggerfallWorkshop_Game_UserInterface_DaggerfallTalkWindow_TalkTone_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetPCGreetingText(DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L997">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetPCGreetingText_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPCGreetingText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetPCGreetingText_DaggerfallWorkshop_Game_UserInterface_DaggerfallTalkWindow_TalkTone_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPCGreetingText(DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone)">GetPCGreetingText(DaggerfallTalkWindow.TalkTone)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPCGreetingText(DaggerfallTalkWindow.TalkTone talkTone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone.html">DaggerfallTalkWindow.TalkTone</a></td>
+        <td><span class="parametername">talkTone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetPersonBuildingKey_DaggerfallWorkshop_Game_Questing_Person__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetPersonBuildingKey(DaggerfallWorkshop.Game.Questing.Person%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2134">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetPersonBuildingKey_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPersonBuildingKey*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetPersonBuildingKey_DaggerfallWorkshop_Game_Questing_Person__" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPersonBuildingKey(DaggerfallWorkshop.Game.Questing.Person@)">GetPersonBuildingKey(ref Person)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPersonBuildingKey(ref Person person)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.html">Person</a></td>
+        <td><span class="parametername">person</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetPersonResource_System_UInt64_System_String_DaggerfallWorkshop_Game_Questing_Person__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetPersonResource(System.UInt64%2CSystem.String%2CDaggerfallWorkshop.Game.Questing.Person%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2106">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetPersonResource_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPersonResource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetPersonResource_System_UInt64_System_String_DaggerfallWorkshop_Game_Questing_Person__" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPersonResource(System.UInt64,System.String,DaggerfallWorkshop.Game.Questing.Person@)">GetPersonResource(UInt64, String, out Person)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPersonResource(ulong questID, string resourceName, out Person person)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.html">Person</a></td>
+        <td><span class="parametername">person</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetPersonSiteDetails_DaggerfallWorkshop_Game_Questing_Person__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetPersonSiteDetails(DaggerfallWorkshop.Game.Questing.Person%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2159">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetPersonSiteDetails_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPersonSiteDetails*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetPersonSiteDetails_DaggerfallWorkshop_Game_Questing_Person__" data-uid="DaggerfallWorkshop.Game.TalkManager.GetPersonSiteDetails(DaggerfallWorkshop.Game.Questing.Person@)">GetPersonSiteDetails(ref Person)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiteDetails GetPersonSiteDetails(ref Person person)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.html">Person</a></td>
+        <td><span class="parametername">person</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SiteDetails.html">SiteDetails</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetQuestionText_DaggerfallWorkshop_Game_TalkManager_ListItem_DaggerfallWorkshop_Game_UserInterface_DaggerfallTalkWindow_TalkTone_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetQuestionText(DaggerfallWorkshop.Game.TalkManager.ListItem%2CDaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1162">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetQuestionText_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestionText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetQuestionText_DaggerfallWorkshop_Game_TalkManager_ListItem_DaggerfallWorkshop_Game_UserInterface_DaggerfallTalkWindow_TalkTone_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestionText(DaggerfallWorkshop.Game.TalkManager.ListItem,DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone)">GetQuestionText(TalkManager.ListItem, DaggerfallTalkWindow.TalkTone)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetQuestionText(TalkManager.ListItem listItem, DaggerfallTalkWindow.TalkTone talkTone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallTalkWindow.TalkTone.html">DaggerfallTalkWindow.TalkTone</a></td>
+        <td><span class="parametername">talkTone</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetQuestorGender.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetQuestorGender%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2411">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetQuestorGender_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestorGender*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetQuestorGender" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestorGender">GetQuestorGender()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Genders GetQuestorGender()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.Genders.html">Genders</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetQuestorLocation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetQuestorLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2416">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetQuestorLocation_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestorLocation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetQuestorLocation" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestorLocation">GetQuestorLocation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetQuestorLocation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetQuestorName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetQuestorName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2405">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetQuestorName_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestorName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetQuestorName" data-uid="DaggerfallWorkshop.Game.TalkManager.GetQuestorName">GetQuestorName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetQuestorName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetReactionToPlayer_DaggerfallConnect_Arena2_FactionFile_SocialGroups_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetReactionToPlayer(DaggerfallConnect.Arena2.FactionFile.SocialGroups)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L518">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetReactionToPlayer_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetReactionToPlayer*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetReactionToPlayer_DaggerfallConnect_Arena2_FactionFile_SocialGroups_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetReactionToPlayer(DaggerfallConnect.Arena2.FactionFile.SocialGroups)">GetReactionToPlayer(FactionFile.SocialGroups)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetReactionToPlayer(FactionFile.SocialGroups socialGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.SocialGroups.html">FactionFile.SocialGroups</a></td>
+        <td><span class="parametername">socialGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetRegionalLocationCityName_DaggerfallWorkshop_Game_TalkManager_ListItem_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetRegionalLocationCityName(DaggerfallWorkshop.Game.TalkManager.ListItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1715">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetRegionalLocationCityName_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetRegionalLocationCityName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetRegionalLocationCityName_DaggerfallWorkshop_Game_TalkManager_ListItem_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetRegionalLocationCityName(DaggerfallWorkshop.Game.TalkManager.ListItem)">GetRegionalLocationCityName(TalkManager.ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetRegionalLocationCityName(TalkManager.ListItem listItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.ListItem.html">TalkManager.ListItem</a></td>
+        <td><span class="parametername">listItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_GetWorkString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.GetWorkString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1022">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_GetWorkString_" data-uid="DaggerfallWorkshop.Game.TalkManager.GetWorkString*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_GetWorkString" data-uid="DaggerfallWorkshop.Game.TalkManager.GetWorkString">GetWorkString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetWorkString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ImportClassicRumor_DaggerfallConnect_Arena2_RumorFile_DaggerfallRumor_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ImportClassicRumor(DaggerfallConnect.Arena2.RumorFile.DaggerfallRumor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2485">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ImportClassicRumor_" data-uid="DaggerfallWorkshop.Game.TalkManager.ImportClassicRumor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ImportClassicRumor_DaggerfallConnect_Arena2_RumorFile_DaggerfallRumor_" data-uid="DaggerfallWorkshop.Game.TalkManager.ImportClassicRumor(DaggerfallConnect.Arena2.RumorFile.DaggerfallRumor)">ImportClassicRumor(RumorFile.DaggerfallRumor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImportClassicRumor(RumorFile.DaggerfallRumor rumor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.RumorFile.DaggerfallRumor.html">RumorFile.DaggerfallRumor</a></td>
+        <td><span class="parametername">rumor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_IsBuildingQuestResource_System_Int32_System_Int32_System_String__System_Boolean__System_Boolean__System_Boolean__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.IsBuildingQuestResource(System.Int32%2CSystem.Int32%2CSystem.String%40%2CSystem.Boolean%40%2CSystem.Boolean%40%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2195">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_IsBuildingQuestResource_" data-uid="DaggerfallWorkshop.Game.TalkManager.IsBuildingQuestResource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_IsBuildingQuestResource_System_Int32_System_Int32_System_String__System_Boolean__System_Boolean__System_Boolean__" data-uid="DaggerfallWorkshop.Game.TalkManager.IsBuildingQuestResource(System.Int32,System.Int32,System.String@,System.Boolean@,System.Boolean@,System.Boolean@)">IsBuildingQuestResource(Int32, Int32, ref String, ref Boolean, ref Boolean, ref Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBuildingQuestResource(int mapID, int buildingKey, ref string overrideBuildingName, ref bool pcLearnedAboutExistence, ref bool receivedDirectionalHints, ref bool locationWasMarkedOnMapByNPC)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildingKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">overrideBuildingName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">pcLearnedAboutExistence</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">receivedDirectionalHints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">locationWasMarkedOnMapByNPC</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_IsCastleNpcOfferingQuest_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.IsCastleNpcOfferingQuest(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2375">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_IsCastleNpcOfferingQuest_" data-uid="DaggerfallWorkshop.Game.TalkManager.IsCastleNpcOfferingQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_IsCastleNpcOfferingQuest_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.IsCastleNpcOfferingQuest(System.Int32)">IsCastleNpcOfferingQuest(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCastleNpcOfferingQuest(int nameSeed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nameSeed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_IsNpcOfferingQuest_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.IsNpcOfferingQuest(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2370">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_IsNpcOfferingQuest_" data-uid="DaggerfallWorkshop.Game.TalkManager.IsNpcOfferingQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_IsNpcOfferingQuest_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.IsNpcOfferingQuest(System.Int32)">IsNpcOfferingQuest(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNpcOfferingQuest(int nameSeed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nameSeed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_MarkKeySubjectLocationOnMap.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.MarkKeySubjectLocationOnMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1147">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_MarkKeySubjectLocationOnMap_" data-uid="DaggerfallWorkshop.Game.TalkManager.MarkKeySubjectLocationOnMap*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_MarkKeySubjectLocationOnMap" data-uid="DaggerfallWorkshop.Game.TalkManager.MarkKeySubjectLocationOnMap">MarkKeySubjectLocationOnMap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkKeySubjectLocationOnMap()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_RefreshRumorMill.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.RefreshRumorMill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2554">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_RefreshRumorMill_" data-uid="DaggerfallWorkshop.Game.TalkManager.RefreshRumorMill*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_RefreshRumorMill" data-uid="DaggerfallWorkshop.Game.TalkManager.RefreshRumorMill">RefreshRumorMill()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshRumorMill()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_RemoveNpcQuestor_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.RemoveNpcQuestor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2421">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_RemoveNpcQuestor_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveNpcQuestor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_RemoveNpcQuestor_System_Int32_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveNpcQuestor(System.Int32)">RemoveNpcQuestor(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveNpcQuestor(int nameSeed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nameSeed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_RemoveQuestInfoTopicsForSpecificQuest_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.RemoveQuestInfoTopicsForSpecificQuest(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2095">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestInfoTopicsForSpecificQuest_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestInfoTopicsForSpecificQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestInfoTopicsForSpecificQuest_System_UInt64_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestInfoTopicsForSpecificQuest(System.UInt64)">RemoveQuestInfoTopicsForSpecificQuest(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveQuestInfoTopicsForSpecificQuest(ulong questID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_RemoveQuestorPostQuestMessage_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.RemoveQuestorPostQuestMessage(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1468">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestorPostQuestMessage_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestorPostQuestMessage*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestorPostQuestMessage_System_UInt64_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestorPostQuestMessage(System.UInt64)">RemoveQuestorPostQuestMessage(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveQuestorPostQuestMessage(ulong questID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_RemoveQuestProgressRumorsFromRumorMill_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.RemoveQuestProgressRumorsFromRumorMill(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1443">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestProgressRumorsFromRumorMill_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestProgressRumorsFromRumorMill*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestProgressRumorsFromRumorMill_System_UInt64_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestProgressRumorsFromRumorMill(System.UInt64)">RemoveQuestProgressRumorsFromRumorMill(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveQuestProgressRumorsFromRumorMill(ulong questID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_RemoveQuestRumorsFromRumorMill_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.RemoveQuestRumorsFromRumorMill(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L1423">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestRumorsFromRumorMill_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestRumorsFromRumorMill*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_RemoveQuestRumorsFromRumorMill_System_UInt64_" data-uid="DaggerfallWorkshop.Game.TalkManager.RemoveQuestRumorsFromRumorMill(System.UInt64)">RemoveQuestRumorsFromRumorMill(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveQuestRumorsFromRumorMill(ulong questID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_ResetNPCKnowledge.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.ResetNPCKnowledge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L509">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_ResetNPCKnowledge_" data-uid="DaggerfallWorkshop.Game.TalkManager.ResetNPCKnowledge*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_ResetNPCKnowledge" data-uid="DaggerfallWorkshop.Game.TalkManager.ResetNPCKnowledge">ResetNPCKnowledge()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetNPCKnowledge()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_RestoreConversationData_DaggerfallWorkshop_Game_TalkManager_SaveDataConversation_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.RestoreConversationData(DaggerfallWorkshop.Game.TalkManager.SaveDataConversation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2259">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_RestoreConversationData_" data-uid="DaggerfallWorkshop.Game.TalkManager.RestoreConversationData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_RestoreConversationData_DaggerfallWorkshop_Game_TalkManager_SaveDataConversation_" data-uid="DaggerfallWorkshop.Game.TalkManager.RestoreConversationData(DaggerfallWorkshop.Game.TalkManager.SaveDataConversation)">RestoreConversationData(TalkManager.SaveDataConversation)</h4>
+  <div class="markdown level1 summary"><p>Restores the conversation dictionary for load.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreConversationData(TalkManager.SaveDataConversation data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.TalkManager.SaveDataConversation.html">TalkManager.SaveDataConversation</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_SetRandomQuestor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.SetRandomQuestor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L2394">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_SetRandomQuestor_" data-uid="DaggerfallWorkshop.Game.TalkManager.SetRandomQuestor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_SetRandomQuestor" data-uid="DaggerfallWorkshop.Game.TalkManager.SetRandomQuestor">SetRandomQuestor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomQuestor()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_SetTargetNPC_DaggerfallWorkshop_Game_MobilePersonNPC_System_Boolean__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.SetTargetNPC(DaggerfallWorkshop.Game.MobilePersonNPC%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L671">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_SetTargetNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.SetTargetNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_SetTargetNPC_DaggerfallWorkshop_Game_MobilePersonNPC_System_Boolean__" data-uid="DaggerfallWorkshop.Game.TalkManager.SetTargetNPC(DaggerfallWorkshop.Game.MobilePersonNPC,System.Boolean@)">SetTargetNPC(MobilePersonNPC, ref Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTargetNPC(MobilePersonNPC targetMobileNPC, ref bool sameTalkTargetAsBefore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MobilePersonNPC.html">MobilePersonNPC</a></td>
+        <td><span class="parametername">targetMobileNPC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">sameTalkTargetAsBefore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_SetTargetNPC_DaggerfallWorkshop_Game_StaticNPC_System_Boolean__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.SetTargetNPC(DaggerfallWorkshop.Game.StaticNPC%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L703">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_SetTargetNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.SetTargetNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_SetTargetNPC_DaggerfallWorkshop_Game_StaticNPC_System_Boolean__" data-uid="DaggerfallWorkshop.Game.TalkManager.SetTargetNPC(DaggerfallWorkshop.Game.StaticNPC,System.Boolean@)">SetTargetNPC(StaticNPC, ref Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTargetNPC(StaticNPC targetNPC, ref bool sameTalkTargetAsBefore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.StaticNPC.html">StaticNPC</a></td>
+        <td><span class="parametername">targetNPC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">sameTalkTargetAsBefore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_StartNewConversation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.StartNewConversation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L775">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_StartNewConversation_" data-uid="DaggerfallWorkshop.Game.TalkManager.StartNewConversation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_StartNewConversation" data-uid="DaggerfallWorkshop.Game.TalkManager.StartNewConversation">StartNewConversation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartNewConversation()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_TalkToMobileNPC_DaggerfallWorkshop_Game_MobilePersonNPC_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.TalkToMobileNPC(DaggerfallWorkshop.Game.MobilePersonNPC)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L623">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_TalkToMobileNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.TalkToMobileNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_TalkToMobileNPC_DaggerfallWorkshop_Game_MobilePersonNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.TalkToMobileNPC(DaggerfallWorkshop.Game.MobilePersonNPC)">TalkToMobileNPC(MobilePersonNPC)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TalkToMobileNPC(MobilePersonNPC targetNPC)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MobilePersonNPC.html">MobilePersonNPC</a></td>
+        <td><span class="parametername">targetNPC</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager_TalkToStaticNPC_DaggerfallWorkshop_Game_StaticNPC_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager.TalkToStaticNPC(DaggerfallWorkshop.Game.StaticNPC%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManager.cs/#L639">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_TalkManager_TalkToStaticNPC_" data-uid="DaggerfallWorkshop.Game.TalkManager.TalkToStaticNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_TalkManager_TalkToStaticNPC_DaggerfallWorkshop_Game_StaticNPC_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.TalkManager.TalkToStaticNPC(DaggerfallWorkshop.Game.StaticNPC,System.Boolean,System.Boolean)">TalkToStaticNPC(StaticNPC, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TalkToStaticNPC(StaticNPC targetNPC, bool menu = true, bool isSpyMaster = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.StaticNPC.html">StaticNPC</a></td>
+        <td><span class="parametername">targetNPC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSpyMaster</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_TalkManager.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.TalkManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/TalkManagerMCP.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

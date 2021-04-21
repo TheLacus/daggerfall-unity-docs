@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LabelFormatter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LabelFormatter
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter" class="text-break">Class LabelFormatter
+  </h1>
+  <div class="markdown level0 summary"><p>Helper class to uniformly reformat token streams into a line-wrapping TextLabel.
+-Problem description:
+Text in classic Daggerfall uses hard-coded positions, line breaks, and other justification tokens which assume
+text is written only with a certain size pixel font and only over a 320x200 display area.
+This is very problematic for correct translation support as international text require fonts
+of different proportions and each language requires variable distance to express the same concepts.
+To make matter worse, embedded formatting is broken in several places such as books, where text can become
+aligned oddly or even overflow the display area completely.
+A general solution is needed that can reformat text from various sources (quests, books, TEXT.RSC, etc.)
+into a new layout that will wrap words cleanly and use line breaks only when required.
+-Earlier implementation:
+Daggerfall Unity first implemented true classic pixel font support and followed the same formatting tokens
+precisely. This resulted in a perfect recreation of classic Daggerfall's user interface, but also
+inherited the same general limitations. When SDF fonts were implemented, they still followed the same
+formatting as classic. Glyphs were even stretched/squished to occupy the same spaces.
+While this made text somewhat clearer to read, formatting remained uncomfortable and inflexible.
+-Iterated implementation:
+The only way forward to correctly support translations will first require cleaner text formatting.
+This is a multi-stage process that first implementes new font and formatting support.
+It is necessary for this system to support both classic and SDF pathways with either
+default fonts or custom fonts for non-Latin characters. Ideally this will support text
+read from classic binary data in addition to new language databases.
+-Purpose of this helper class:
+This class is an attempt at creating a tool to automatically reformat classic text data from a
+variety of binary sources into a clean word-wrapped format. Its purpose is only to reformat
+classic text from the DOS binaries and classic quests to output text in a clean and readable
+manner for both classic and SDF font pathways.
+This class is not intended to be used with text sourced from translated text databases (in development)
+as this text will be written without classic formatting tokens and with normal word wrapping already in mind.
+-Supported classic sources:
+Initial support will be for automatically reformatting books. This will be extended to other areas
+where possible using lessons learned. Automatic text reformatting from classic binary data and quests
+will always remain &quot;best effort&quot;. Eventually all in-game text will be migrated to a default text database
+at which point formatting can be cleaned up further.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LabelFormatter</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LabelFormatter</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_LabelFormatter_Count.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.LabelFormatter.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/LabelFormatter.cs/#L70">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_Count_" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.Count*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_Count" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets number of labels formatted so far.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_LabelFormatter_Clear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.LabelFormatter.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/LabelFormatter.cs/#L105">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_Clear_" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_Clear" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear formatter of all data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_LabelFormatter_CreateLabels.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.LabelFormatter.CreateLabels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/LabelFormatter.cs/#L114">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_CreateLabels_" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.CreateLabels*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_CreateLabels" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.CreateLabels">CreateLabels()</h4>
+  <div class="markdown level1 summary"><p>Create labels from formatted data.
+Note: If using TextLabel directly, consumer must set TextLabel.MaxWidth to suit layout area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TextLabel&gt; CreateLabels()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.UserInterface.TextLabel.html">TextLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_LabelFormatter_ReformatBook_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.LabelFormatter.ReformatBook(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/LabelFormatter.cs/#L150">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_ReformatBook_" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.ReformatBook*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_ReformatBook_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.ReformatBook(System.Int32)">ReformatBook(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReformatBook(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_LabelFormatter_ReformatBook_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.LabelFormatter.ReformatBook(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/LabelFormatter.cs/#L155">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_ReformatBook_" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.ReformatBook*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_LabelFormatter_ReformatBook_System_String_" data-uid="DaggerfallWorkshop.Game.UserInterface.LabelFormatter.ReformatBook(System.String)">ReformatBook(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReformatBook(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_LabelFormatter.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.LabelFormatter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/LabelFormatter.cs/#L56" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

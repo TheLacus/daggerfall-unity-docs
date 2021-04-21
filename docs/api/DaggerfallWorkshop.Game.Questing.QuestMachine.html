@@ -1,0 +1,3352 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QuestMachine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QuestMachine
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Questing_QuestMachine" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine" class="text-break">Class QuestMachine
+  </h1>
+  <div class="markdown level0 summary"><p>Hosts quests and manages their execution during play.
+Quests are instantiated from a source text template.
+It's possible to have the same quest multiple times (e.g. same fetch quest from two different mage guildhalls).
+Running quests can perform actions in the world (e.g. spawn enemies and play sounds).
+Or they can provide data to external systems like the NPC dialog interface (e.g. 'tell me about' and 'rumors').
+Quest support is considered to be in very early prototype stages and may change at any time.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">QuestMachine</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Questing.html">DaggerfallWorkshop.Game.Questing</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Questing_QuestMachine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QuestMachine : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_questFoeTag.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.questFoeTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L39">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_questFoeTag" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.questFoeTag">questFoeTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string questFoeTag = &quot;QuestFoe&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_questItemTag.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.questItemTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L40">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_questItemTag" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.questItemTag">questItemTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string questItemTag = &quot;QuestItem&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_questPersonTag.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.questPersonTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L38">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_questPersonTag" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.questPersonTag">questPersonTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string questPersonTag = &quot;QuestPerson&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_DiseasesTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.DiseasesTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L185">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_DiseasesTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.DiseasesTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_DiseasesTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.DiseasesTable">DiseasesTable</h4>
+  <div class="markdown level1 summary"><p>Gets the diseases data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table DiseasesTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_FactionsTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.FactionsTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L169">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_FactionsTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FactionsTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_FactionsTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FactionsTable">FactionsTable</h4>
+  <div class="markdown level1 summary"><p>Gets the factions data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table FactionsTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_FoesTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.FoesTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L177">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_FoesTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FoesTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_FoesTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FoesTable">FoesTable</h4>
+  <div class="markdown level1 summary"><p>Gets the foes data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table FoesTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GlobalVarsTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GlobalVarsTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L129">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GlobalVarsTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GlobalVarsTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GlobalVarsTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GlobalVarsTable">GlobalVarsTable</h4>
+  <div class="markdown level1 summary"><p>Gets the global variables data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table GlobalVarsTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_HasInstance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.HasInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1620">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_HasInstance_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.HasInstance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_HasInstance" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.HasInstance">HasInstance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasInstance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_Instance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1603">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_Instance_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Instance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_Instance" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestMachine Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.html">QuestMachine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsDebugModeEnabled.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsDebugModeEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L212">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsDebugModeEnabled_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsDebugModeEnabled*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsDebugModeEnabled" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsDebugModeEnabled">IsDebugModeEnabled</h4>
+  <div class="markdown level1 summary"><p>Returns true if debug mode enabled.
+This causes original quest source line to be stored and serialized with quests.
+Always enabled at this stage of development.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDebugModeEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ItemsTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ItemsTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L161">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ItemsTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ItemsTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ItemsTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ItemsTable">ItemsTable</h4>
+  <div class="markdown level1 summary"><p>Gets the items data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table ItemsTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_LastNPCClicked.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.LastNPCClicked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L201">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_LastNPCClicked_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.LastNPCClicked*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_LastNPCClicked" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.LastNPCClicked">LastNPCClicked</h4>
+  <div class="markdown level1 summary"><p>Gets or sets StaticNPC last clicked by player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StaticNPC LastNPCClicked { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.StaticNPC.html">StaticNPC</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_PlacesTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.PlacesTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L145">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_PlacesTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.PlacesTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_PlacesTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.PlacesTable">PlacesTable</h4>
+  <div class="markdown level1 summary"><p>Gets the places data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table PlacesTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_QuestCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.QuestCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L96">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_QuestCount_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_QuestCount" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestCount">QuestCount</h4>
+  <div class="markdown level1 summary"><p>Gets count of all quests running at this time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int QuestCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_QuestSourceFolder.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.QuestSourceFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L112">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_QuestSourceFolder_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestSourceFolder*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_QuestSourceFolder" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestSourceFolder">QuestSourceFolder</h4>
+  <div class="markdown level1 summary"><p>Gets Quests source folder in StreamingAssets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string QuestSourceFolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_SiteLinkCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.SiteLinkCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L104">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_SiteLinkCount_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SiteLinkCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_SiteLinkCount" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SiteLinkCount">SiteLinkCount</h4>
+  <div class="markdown level1 summary"><p>Gets current count of all active SiteLinks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SiteLinkCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_SoundsTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.SoundsTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L153">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_SoundsTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SoundsTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_SoundsTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SoundsTable">SoundsTable</h4>
+  <div class="markdown level1 summary"><p>Gets the sounds data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table SoundsTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_SpellsTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.SpellsTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L193">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_SpellsTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SpellsTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_SpellsTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SpellsTable">SpellsTable</h4>
+  <div class="markdown level1 summary"><p>Gets the spells data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table SpellsTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_StaticMessagesTable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.StaticMessagesTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L137">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_StaticMessagesTable_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.StaticMessagesTable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_StaticMessagesTable" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.StaticMessagesTable">StaticMessagesTable</h4>
+  <div class="markdown level1 summary"><p>Gets the static message names data table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table StaticMessagesTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_TablesSourceFolder.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.TablesSourceFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L121">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_TablesSourceFolder_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.TablesSourceFolder*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_TablesSourceFolder" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.TablesSourceFolder">TablesSourceFolder</h4>
+  <div class="markdown level1 summary"><p>Gets Tables source folder in StreamingAssets.
+TODO: This folder isn't ultimately exclusive to quests. Find a more generic spot later, e.g. GameManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TablesSourceFolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveFactionPersons_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveFactionPersons(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1003">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveFactionPersons_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveFactionPersons*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveFactionPersons_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveFactionPersons(System.Int32)">ActiveFactionPersons(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets any assigned Person resources of faction ID across all quests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Person[] ActiveFactionPersons(int factionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionID</span></td>
+        <td><p>FactionID to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.html">Person</a>[]</td>
+        <td><p>Person array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveQuestor_DaggerfallWorkshop_Game_StaticNPC_NPCData_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveQuestor(DaggerfallWorkshop.Game.StaticNPC.NPCData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1058">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveQuestor_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveQuestor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveQuestor_DaggerfallWorkshop_Game_StaticNPC_NPCData_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveQuestor(DaggerfallWorkshop.Game.StaticNPC.NPCData)">ActiveQuestor(StaticNPC.NPCData)</h4>
+  <div class="markdown level1 summary"><p>Finds an active questor given a specific static NPC.
+NPCData passed must be populated with runtime data such as map id and building key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Person ActiveQuestor(StaticNPC.NPCData npcData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.StaticNPC.NPCData.html">StaticNPC.NPCData</a></td>
+        <td><span class="parametername">npcData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.html">Person</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveQuestor_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveQuestor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1028">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveQuestor_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveQuestor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ActiveQuestor_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ActiveQuestor(System.Int32)">ActiveQuestor(Int32)</h4>
+  <div class="markdown level1 summary"><p>Find an active questor for an individual NPC faction ID across all quests.
+Individual NPCs can only be assigned as a questor by one quest at a time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Person ActiveQuestor(int factionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionID</span></td>
+        <td><p>FactionID of individual NPC to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.html">Person</a></td>
+        <td><p>Person resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_AddFactionListener_System_Int32_DaggerfallWorkshop_Game_Questing_IQuestAction_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.AddFactionListener(System.Int32%2CDaggerfallWorkshop.Game.Questing.IQuestAction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1096">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_AddFactionListener_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.AddFactionListener*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_AddFactionListener_System_Int32_DaggerfallWorkshop_Game_Questing_IQuestAction_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.AddFactionListener(System.Int32,DaggerfallWorkshop.Game.Questing.IQuestAction)">AddFactionListener(Int32, IQuestAction)</h4>
+  <div class="markdown level1 summary"><p>Add a faction listener for the individual faction ID.
+Does nothing if faction ID already claimed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFactionListener(int factionID, IQuestAction owner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.IQuestAction.html">IQuestAction</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_AddSiteLink_DaggerfallWorkshop_SiteLink_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.AddSiteLink(DaggerfallWorkshop.SiteLink)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1155">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_AddSiteLink_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.AddSiteLink*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_AddSiteLink_DaggerfallWorkshop_SiteLink_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.AddSiteLink(DaggerfallWorkshop.SiteLink)">AddSiteLink(SiteLink)</h4>
+  <div class="markdown level1 summary"><p>Adds a site link to quest machine.
+There is no strong unique key to use for site links so they are stored in a flat list.
+Only a small number of site links will be ever active at one time in normal play.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSiteLink(SiteLink siteLink)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SiteLink.html">SiteLink</a></td>
+        <td><span class="parametername">siteLink</span></td>
+        <td><p>SiteLink to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ClearQuests.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ClearQuests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1113">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ClearQuests_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ClearQuests*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ClearQuests" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ClearQuests">ClearQuests()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearQuests()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ClearState.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ClearState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L497">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ClearState_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ClearState*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ClearState" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ClearState">ClearState()</h4>
+  <div class="markdown level1 summary"><p>Resets operating state - clears all quests, sitelinks, debuggers, etc.
+Quests will not be disposed or tombstoned they will just be dropped for garbage collector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearState()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_CreateMessagePrompt_DaggerfallWorkshop_Game_Questing_Message_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.CreateMessagePrompt(DaggerfallWorkshop.Game.Questing.Message)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L841">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_CreateMessagePrompt_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CreateMessagePrompt*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_CreateMessagePrompt_DaggerfallWorkshop_Game_Questing_Message_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CreateMessagePrompt(DaggerfallWorkshop.Game.Questing.Message)">CreateMessagePrompt(Message)</h4>
+  <div class="markdown level1 summary"><p>Creates a yes/no prompt from quest message.
+Caller must set events and call Show() when ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallMessageBox CreateMessagePrompt(Message message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.html">Message</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.html">DaggerfallMessageBox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_CreateMessagePrompt_DaggerfallWorkshop_Game_Questing_Quest_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.CreateMessagePrompt(DaggerfallWorkshop.Game.Questing.Quest%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L828">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_CreateMessagePrompt_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CreateMessagePrompt*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_CreateMessagePrompt_DaggerfallWorkshop_Game_Questing_Quest_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CreateMessagePrompt(DaggerfallWorkshop.Game.Questing.Quest,System.Int32)">CreateMessagePrompt(Quest, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a yes/no prompt from quest message.
+Caller must set events and call Show() when ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallMessageBox CreateMessagePrompt(Quest quest, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.html">DaggerfallMessageBox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_CreateSiteLink_DaggerfallWorkshop_Game_Questing_Quest_DaggerfallWorkshop_Game_Questing_Symbol_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.CreateSiteLink(DaggerfallWorkshop.Game.Questing.Quest%2CDaggerfallWorkshop.Game.Questing.Symbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1522">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_CreateSiteLink_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CreateSiteLink*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_CreateSiteLink_DaggerfallWorkshop_Game_Questing_Quest_DaggerfallWorkshop_Game_Questing_Symbol_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CreateSiteLink(DaggerfallWorkshop.Game.Questing.Quest,DaggerfallWorkshop.Game.Questing.Symbol)">CreateSiteLink(Quest, Symbol)</h4>
+  <div class="markdown level1 summary"><p>Creates a new SiteLink at Place.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateSiteLink(Quest parentQuest, Symbol placeSymbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">parentQuest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Symbol.html">Symbol</a></td>
+        <td><span class="parametername">placeSymbol</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_CullResourceTarget_DaggerfallWorkshop_Game_Questing_QuestResource_DaggerfallWorkshop_Game_Questing_Symbol_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.CullResourceTarget(DaggerfallWorkshop.Game.Questing.QuestResource%2CDaggerfallWorkshop.Game.Questing.Symbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1371">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_CullResourceTarget_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CullResourceTarget*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_CullResourceTarget_DaggerfallWorkshop_Game_Questing_QuestResource_DaggerfallWorkshop_Game_Questing_Symbol_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.CullResourceTarget(DaggerfallWorkshop.Game.Questing.QuestResource,DaggerfallWorkshop.Game.Questing.Symbol)">CullResourceTarget(QuestResource, Symbol)</h4>
+  <div class="markdown level1 summary"><p>Removes an existing quest resource allocation (if present).
+This is called when allocating a resource to ensure it is removed from any previous SiteLinks
+For example, Sx011 will move Barenziah's book from Orsinium to Scourg Barrow after a time limit expires.
+Allocation needs to be removed from Orsinium or item will be present in both locations.
+This needs to be done in a way that does not break resources allocated from other quests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CullResourceTarget(QuestResource resource, Symbol newPlace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html">QuestResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to cull. No action taken if resource null or not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Symbol.html">Symbol</a></td>
+        <td><span class="parametername">newPlace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_FindQuestMachine_DaggerfallWorkshop_Game_Questing_QuestMachine__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.FindQuestMachine(DaggerfallWorkshop.Game.Questing.QuestMachine%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1628">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_FindQuestMachine_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FindQuestMachine*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_FindQuestMachine_DaggerfallWorkshop_Game_Questing_QuestMachine__" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FindQuestMachine(DaggerfallWorkshop.Game.Questing.QuestMachine@)">FindQuestMachine(out QuestMachine)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindQuestMachine(out QuestMachine questMachineOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.html">QuestMachine</a></td>
+        <td><span class="parametername">questMachineOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_FindQuests_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.FindQuests(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L807">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_FindQuests_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FindQuests*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_FindQuests_System_String_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.FindQuests(System.String,System.Boolean)">FindQuests(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds quests based on quest name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] FindQuests(string questName, bool activeOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">questName</span></td>
+        <td><p>Quest name to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">activeOnly</span></td>
+        <td><p>Only find active quests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><p>ulong[] array of quest UIDs with matching quest name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetActionTemplate_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetActionTemplate(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L691">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetActionTemplate_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetActionTemplate*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetActionTemplate_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetActionTemplate(System.String)">GetActionTemplate(String)</h4>
+  <div class="markdown level1 summary"><p>Find registered action template based on source line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQuestAction GetActionTemplate(string source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Action source line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.IQuestAction.html">IQuestAction</a></td>
+        <td><p>IQuestAction template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllActiveQuests.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllActiveQuests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L789">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllActiveQuests_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllActiveQuests*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllActiveQuests" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllActiveQuests">GetAllActiveQuests()</h4>
+  <div class="markdown level1 summary"><p>Returns an array of all active (not completed, not tombstoned) quest UIDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] GetAllActiveQuests()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><p>ulong[] array of quest UIDs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllActiveQuestSites.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllActiveQuestSites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L709">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllActiveQuestSites_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllActiveQuestSites*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllActiveQuestSites" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllActiveQuestSites">GetAllActiveQuestSites()</h4>
+  <div class="markdown level1 summary"><p>Get all Place site details for all active quests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiteDetails[] GetAllActiveQuestSites()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SiteDetails.html">SiteDetails</a>[]</td>
+        <td><p>SiteDetails[] array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllQuestLogMessages.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllQuestLogMessages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L580">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllQuestLogMessages_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllQuestLogMessages*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllQuestLogMessages" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllQuestLogMessages">GetAllQuestLogMessages()</h4>
+  <div class="markdown level1 summary"><p>Returns a list of all active log messages from all active quests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Message&gt; GetAllQuestLogMessages()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.html">Message</a>&gt;</td>
+        <td><p>List of log messages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllQuests.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllQuests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L774">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllQuests_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllQuests*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetAllQuests" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetAllQuests">GetAllQuests()</h4>
+  <div class="markdown level1 summary"><p>Returns an array of all quest UIDs, even if completed or tombstoned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] GetAllQuests()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><p>ulong[] array of quest UIDs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetCurrentLocationQuestMarker_DaggerfallWorkshop_QuestMarker__UnityEngine_Vector3__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetCurrentLocationQuestMarker(DaggerfallWorkshop.QuestMarker%40%2CUnityEngine.Vector3%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1304">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetCurrentLocationQuestMarker_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetCurrentLocationQuestMarker*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetCurrentLocationQuestMarker_DaggerfallWorkshop_QuestMarker__UnityEngine_Vector3__" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetCurrentLocationQuestMarker(DaggerfallWorkshop.QuestMarker@,UnityEngine.Vector3@)">GetCurrentLocationQuestMarker(out QuestMarker, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>Gets active marker in player's current location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetCurrentLocationQuestMarker(out QuestMarker markerOut, out Vector3 buildingOriginOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.QuestMarker.html">QuestMarker</a></td>
+        <td><span class="parametername">markerOut</span></td>
+        <td><p>Active QuestMarker out.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">buildingOriginOut</span></td>
+        <td><p>Building origin in scene, or Vector3.zero if not inside a building.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetQuest_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetQuest(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L734">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetQuest_System_UInt64_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetQuest(System.UInt64)">GetQuest(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Gets an active or tombstoned quest based on UID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quest GetQuest(ulong questUID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questUID</span></td>
+        <td><p>Quest UID to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><p>Quest object. Returns null if UID not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetQuestSourceText_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetQuestSourceText(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L526">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetQuestSourceText_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetQuestSourceText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetQuestSourceText_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetQuestSourceText(System.String)">GetQuestSourceText(String)</h4>
+  <div class="markdown level1 summary"><p>Attempts to load quest source text from StreamingAssets/Quests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetQuestSourceText(string questName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">questName</span></td>
+        <td><p>Quest filename. Extension .txt is optional.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Array of lines in quest text, or empty array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1665">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetSaveData" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetSaveData">GetSaveData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestMachine.QuestMachineData_v1 GetSaveData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestMachineData_v1.html">QuestMachine.QuestMachineData_v1</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetSiteLinks_DaggerfallWorkshop_SiteTypes_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetSiteLinks(DaggerfallWorkshop.SiteTypes%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1180">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetSiteLinks_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetSiteLinks*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetSiteLinks_DaggerfallWorkshop_SiteTypes_System_Int32_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetSiteLinks(DaggerfallWorkshop.SiteTypes,System.Int32,System.Int32,System.Int32)">GetSiteLinks(SiteTypes, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Selects all actives site links matching parameters.
+Very little information is needed to determine if player is in Town, Dungeon, or Building.
+This information is intended to be easily reached by scene builders at layout time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiteLink[] GetSiteLinks(SiteTypes siteType, int mapId, int buildingKey = 0, int magicNumberIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SiteTypes.html">SiteTypes</a></td>
+        <td><span class="parametername">siteType</span></td>
+        <td><p>Type of sites to select.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapId</span></td>
+        <td><p>MapID in world.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildingKey</span></td>
+        <td><p>Building key for buidings. Not used if left at default 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">magicNumberIndex</span></td>
+        <td><p>Magic number index for fixed sites. Not used is left at default 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SiteLink.html">SiteLink</a>[]</td>
+        <td><p>SiteLink[] array of found links. Check for null or empty on return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetStoredExceptions.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetStoredExceptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1460">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetStoredExceptions_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetStoredExceptions*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetStoredExceptions" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetStoredExceptions">GetStoredExceptions()</h4>
+  <div class="markdown level1 summary"><p>Gets array of stored exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestMachine.StoredException[] GetStoredExceptions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.StoredException.html">QuestMachine.StoredException</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_GetTableSourceText_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.GetTableSourceText(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L554">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetTableSourceText_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetTableSourceText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_GetTableSourceText_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.GetTableSourceText(System.String)">GetTableSourceText(String)</h4>
+  <div class="markdown level1 summary"><p>Attempts to load table text from StreamingAssets/Tables.
+TODO: Tables are ultimately not exclusive to quests. Relocate this later.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetTableSourceText(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>Table filename. Extension .txt is optional.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Array of lines in table text, or empty array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_HasFactionListener_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.HasFactionListener(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1087">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_HasFactionListener_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.HasFactionListener*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_HasFactionListener_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.HasFactionListener(System.Int32)">HasFactionListener(Int32)</h4>
+  <div class="markdown level1 summary"><p>Check if a faction listener is active for the individual faction ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFactionListener(int factionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_HasSiteLink_DaggerfallWorkshop_Game_Questing_Quest_DaggerfallWorkshop_Game_Questing_Symbol_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.HasSiteLink(DaggerfallWorkshop.Game.Questing.Quest%2CDaggerfallWorkshop.Game.Questing.Symbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1504">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_HasSiteLink_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.HasSiteLink*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_HasSiteLink_DaggerfallWorkshop_Game_Questing_Quest_DaggerfallWorkshop_Game_Questing_Symbol_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.HasSiteLink(DaggerfallWorkshop.Game.Questing.Quest,DaggerfallWorkshop.Game.Questing.Symbol)">HasSiteLink(Quest, Symbol)</h4>
+  <div class="markdown level1 summary"><p>Checks if a Place has a SiteLink available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasSiteLink(Quest parentQuest, Symbol placeSymbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">parentQuest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Symbol.html">Symbol</a></td>
+        <td><span class="parametername">placeSymbol</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_InstantiateQuest_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.InstantiateQuest(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L667">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_InstantiateQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.InstantiateQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_InstantiateQuest_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.InstantiateQuest(DaggerfallWorkshop.Game.Questing.Quest)">InstantiateQuest(Quest)</h4>
+  <div class="markdown level1 summary"><p>Instantiate quest from a parsed quest object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InstantiateQuest(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td><p>Quest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_InstantiateQuest_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.InstantiateQuest(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L653">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_InstantiateQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.InstantiateQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_InstantiateQuest_System_String_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.InstantiateQuest(System.String,System.Int32)">InstantiateQuest(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Parse and instantiate a quest from quest name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InstantiateQuest(string questName, int factionId = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">questName</span></td>
+        <td><p>Quest name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionId</span></td>
+        <td><p>Faction id. (optional)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsIndividualNPC_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsIndividualNPC(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1223">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsIndividualNPC_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsIndividualNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsIndividualNPC_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsIndividualNPC(System.Int32)">IsIndividualNPC(Int32)</h4>
+  <div class="markdown level1 summary"><p>Checks if NPC is a special individual NPC.
+These NPCs can exist in world even if not currently part of any active quests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIndividualNPC(int factionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionID</span></td>
+        <td><p>Faction ID of individual NPC.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if this is an individual NPC.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsIndividualQuestNPCAtSiteLink_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsIndividualQuestNPCAtSiteLink(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1243">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsIndividualQuestNPCAtSiteLink_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsIndividualQuestNPCAtSiteLink*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsIndividualQuestNPCAtSiteLink_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsIndividualQuestNPCAtSiteLink(System.Int32)">IsIndividualQuestNPCAtSiteLink(Int32)</h4>
+  <div class="markdown level1 summary"><p>Walks SiteLink &gt; Quest &gt; Place &gt; QuestMarkers &gt; Target to see if an individual NPC has been placed elsewhere.
+Used only to determine if an individual NPC should be disabled at home location by layout builders.
+Ignores non-individual NPCs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIndividualQuestNPCAtSiteLink(int factionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionID</span></td>
+        <td><p>Faction ID of individual NPC.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if individual has been placed elsewhere, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsLastNPCClickedAnActiveQuestor_DaggerfallWorkshop_Utility_IMacroContextProvider_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsLastNPCClickedAnActiveQuestor(DaggerfallWorkshop.Utility.IMacroContextProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L858">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsLastNPCClickedAnActiveQuestor_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsLastNPCClickedAnActiveQuestor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsLastNPCClickedAnActiveQuestor_DaggerfallWorkshop_Utility_IMacroContextProvider_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsLastNPCClickedAnActiveQuestor(DaggerfallWorkshop.Utility.IMacroContextProvider)">IsLastNPCClickedAnActiveQuestor(IMacroContextProvider)</h4>
+  <div class="markdown level1 summary"><p>Checks if last NPC clicked is questor for any quests.
+This is used for quest turn-in and reward process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLastNPCClickedAnActiveQuestor(IMacroContextProvider mcp = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></td>
+        <td><span class="parametername">mcp</span></td>
+        <td><p>External secondary context provider for quest macro expansion. (optional)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if this NPC is a questor in any quest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsNPCDataEqual_DaggerfallWorkshop_Game_StaticNPC_NPCData_DaggerfallWorkshop_Game_StaticNPC_NPCData_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsNPCDataEqual(DaggerfallWorkshop.Game.StaticNPC.NPCData%2CDaggerfallWorkshop.Game.StaticNPC.NPCData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L914">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsNPCDataEqual_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsNPCDataEqual*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsNPCDataEqual_DaggerfallWorkshop_Game_StaticNPC_NPCData_DaggerfallWorkshop_Game_StaticNPC_NPCData_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsNPCDataEqual(DaggerfallWorkshop.Game.StaticNPC.NPCData,DaggerfallWorkshop.Game.StaticNPC.NPCData)">IsNPCDataEqual(StaticNPC.NPCData, StaticNPC.NPCData)</h4>
+  <div class="markdown level1 summary"><p>Checks if two sets of StaticNPC data reference the same NPC.
+Notes:</p>
+<ul>
+<li>Still working through some issues here.</li>
+<li>Possible for Questor NPC to be moved.</li>
+<li>This will likely become more robust and conditional as quest system progresses.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNPCDataEqual(StaticNPC.NPCData person1, StaticNPC.NPCData person2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.StaticNPC.NPCData.html">StaticNPC.NPCData</a></td>
+        <td><span class="parametername">person1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.StaticNPC.NPCData.html">StaticNPC.NPCData</a></td>
+        <td><span class="parametername">person2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if person1 and person2 are considered the same.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsProtectedQuest_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsProtectedQuest(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L486">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsProtectedQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsProtectedQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsProtectedQuest_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsProtectedQuest(DaggerfallWorkshop.Game.Questing.Quest)">IsProtectedQuest(Quest)</h4>
+  <div class="markdown level1 summary"><p>Checks if a quest is protected from ending prematurely.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsProtectedQuest(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if quest is protected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsQuestComplete_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsQuestComplete(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L747">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsQuestComplete_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsQuestComplete*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsQuestComplete_System_UInt64_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsQuestComplete(System.UInt64)">IsQuestComplete(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Check if quest UID has been completed in quest machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsQuestComplete(ulong questUID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questUID</span></td>
+        <td><p>Quest UID to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if quest is complete. Also returns false if quest not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_IsQuestTombstoned_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.IsQuestTombstoned(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L761">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsQuestTombstoned_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsQuestTombstoned*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_IsQuestTombstoned_System_UInt64_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.IsQuestTombstoned(System.UInt64)">IsQuestTombstoned(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Check if quest UID has been tombstoned in quest machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsQuestTombstoned(ulong questUID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questUID</span></td>
+        <td><p>Quest UID to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if quest is tombstoned. Also returns false if quest not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_Log_DaggerfallWorkshop_Game_Questing_Quest_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.Log(DaggerfallWorkshop.Game.Questing.Quest%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1583">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_Log_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Log*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_Log_DaggerfallWorkshop_Game_Questing_Quest_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Log(DaggerfallWorkshop.Game.Questing.Quest,System.String)">Log(Quest, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(Quest quest, string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_Log_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.Log(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1569">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_Log_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Log*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_Log_System_String_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Log(System.String)">Log(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_LogFormat_DaggerfallWorkshop_Game_Questing_Quest_System_String_System_Object___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.LogFormat(DaggerfallWorkshop.Game.Questing.Quest%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1593">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_LogFormat_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.LogFormat*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_LogFormat_DaggerfallWorkshop_Game_Questing_Quest_System_String_System_Object___" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.LogFormat(DaggerfallWorkshop.Game.Questing.Quest,System.String,System.Object[])">LogFormat(Quest, String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogFormat(Quest quest, string text, params object[] p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_LogFormat_System_String_System_Object___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.LogFormat(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1588">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_LogFormat_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.LogFormat*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_LogFormat_System_String_System_Object___" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.LogFormat(System.String,System.Object[])">LogFormat(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogFormat(string text, params object[] p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ParseQuest_System_String_System_String___System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ParseQuest(System.String%2CSystem.String%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L627">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ParseQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ParseQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ParseQuest_System_String_System_String___System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ParseQuest(System.String,System.String[],System.Int32)">ParseQuest(String, String[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Instantiate a new quest from source text array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quest ParseQuest(string questName, string[] questSource, int factionId = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">questName</span></td>
+        <td><p>Name of quest filename. Extensions .txt is optional.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">questSource</span></td>
+        <td><p>Array of lines from quest source file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionId</span></td>
+        <td><p>Faction id of quest giver for guilds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><p>Quest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_PurgeAllQuests.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.PurgeAllQuests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L931">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_PurgeAllQuests_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.PurgeAllQuests*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_PurgeAllQuests" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.PurgeAllQuests">PurgeAllQuests()</h4>
+  <div class="markdown level1 summary"><p>Immediately tombstones then removes all quests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PurgeAllQuests()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of quests removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestEndedEvent_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestEndedEvent(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1758">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestEndedEvent_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestEndedEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestEndedEvent_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestEndedEvent(DaggerfallWorkshop.Game.Questing.Quest)">RaiseOnQuestEndedEvent(Quest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnQuestEndedEvent(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestErrorTerminationEvent_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestErrorTerminationEvent(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1767">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestErrorTerminationEvent_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestErrorTerminationEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestErrorTerminationEvent_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestErrorTerminationEvent(DaggerfallWorkshop.Game.Questing.Quest)">RaiseOnQuestErrorTerminationEvent(Quest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnQuestErrorTerminationEvent(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestStartedEvent_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestStartedEvent(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1749">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestStartedEvent_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestStartedEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnQuestStartedEvent_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnQuestStartedEvent(DaggerfallWorkshop.Game.Questing.Quest)">RaiseOnQuestStartedEvent(Quest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnQuestStartedEvent(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnRegisterCustomerActionsEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnRegisterCustomerActionsEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1731">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnRegisterCustomerActionsEvent_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnRegisterCustomerActionsEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnRegisterCustomerActionsEvent" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnRegisterCustomerActionsEvent">RaiseOnRegisterCustomerActionsEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnRegisterCustomerActionsEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnTickEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnTickEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1740">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnTickEvent_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnTickEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RaiseOnTickEvent" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RaiseOnTickEvent">RaiseOnTickEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnTickEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RegisterAction_DaggerfallWorkshop_Game_Questing_IQuestAction_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RegisterAction(DaggerfallWorkshop.Game.Questing.IQuestAction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L516">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RegisterAction_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RegisterAction*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RegisterAction_DaggerfallWorkshop_Game_Questing_IQuestAction_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RegisterAction(DaggerfallWorkshop.Game.Questing.IQuestAction)">RegisterAction(IQuestAction)</h4>
+  <div class="markdown level1 summary"><p>Register a new action in the quest engine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterAction(IQuestAction actionTemplate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.IQuestAction.html">IQuestAction</a></td>
+        <td><span class="parametername">actionTemplate</span></td>
+        <td><p>IQuestAction template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveAllQuestSiteLinks_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveAllQuestSiteLinks(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1165">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveAllQuestSiteLinks_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveAllQuestSiteLinks*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveAllQuestSiteLinks_System_UInt64_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveAllQuestSiteLinks(System.UInt64)">RemoveAllQuestSiteLinks(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Removes all site links for a quest.
+Typically done when quest has completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllQuestSiteLinks(ulong questUID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questUID</span></td>
+        <td><p>UID of quest to remove site links to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveFactionListener_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveFactionListener(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1107">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveFactionListener_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveFactionListener*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveFactionListener_System_Int32_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveFactionListener(System.Int32)">RemoveFactionListener(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove a faction listener for the individual faction ID.
+Does nothing if faction ID not claimed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFactionListener(int factionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveQuest_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveQuest(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L985">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveQuest_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveQuest(DaggerfallWorkshop.Game.Questing.Quest)">RemoveQuest(Quest)</h4>
+  <div class="markdown level1 summary"><p>Removes a quest completely from quest machine.
+Tombstones quest before removal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveQuest(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if quest was removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveQuest_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveQuest(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L974">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RemoveQuest_System_UInt64_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RemoveQuest(System.UInt64)">RemoveQuest(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Removes a quest completely from quest machine.
+Tombstones quest before removal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveQuest(ulong questUID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">questUID</span></td>
+        <td><p>Quest UID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if quest was removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_RestoreSaveData_DaggerfallWorkshop_Game_Questing_QuestMachine_QuestMachineData_v1_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.RestoreSaveData(DaggerfallWorkshop.Game.Questing.QuestMachine.QuestMachineData_v1)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1683">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_RestoreSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RestoreSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_RestoreSaveData_DaggerfallWorkshop_Game_Questing_QuestMachine_QuestMachineData_v1_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.RestoreSaveData(DaggerfallWorkshop.Game.Questing.QuestMachine.QuestMachineData_v1)">RestoreSaveData(QuestMachine.QuestMachineData_v1)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreSaveData(QuestMachine.QuestMachineData_v1 data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestMachineData_v1.html">QuestMachine.QuestMachineData_v1</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_ScheduleQuest_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.ScheduleQuest(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L681">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_ScheduleQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ScheduleQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_ScheduleQuest_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.ScheduleQuest(DaggerfallWorkshop.Game.Questing.Quest)">ScheduleQuest(Quest)</h4>
+  <div class="markdown level1 summary"><p>Schedules quest to start on next tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScheduleQuest(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td><p>Quest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_SetLastNPCClicked_DaggerfallWorkshop_Game_StaticNPC_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.SetLastNPCClicked(DaggerfallWorkshop.Game.StaticNPC)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L888">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_SetLastNPCClicked_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SetLastNPCClicked*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_SetLastNPCClicked_DaggerfallWorkshop_Game_StaticNPC_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SetLastNPCClicked(DaggerfallWorkshop.Game.StaticNPC)">SetLastNPCClicked(StaticNPC)</h4>
+  <div class="markdown level1 summary"><p>Sets the last StaticNPC clicked by player.
+Always called by PlayerActivate when player clicks on GameObject holding StaticNPC behaviour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLastNPCClicked(StaticNPC npc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.StaticNPC.html">StaticNPC</a></td>
+        <td><span class="parametername">npc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_SetStoredExceptions_DaggerfallWorkshop_Game_Questing_QuestMachine_StoredException___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.SetStoredExceptions(DaggerfallWorkshop.Game.Questing.QuestMachine.StoredException%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1468">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_SetStoredExceptions_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SetStoredExceptions*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_SetStoredExceptions_DaggerfallWorkshop_Game_Questing_QuestMachine_StoredException___" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.SetStoredExceptions(DaggerfallWorkshop.Game.Questing.QuestMachine.StoredException[])">SetStoredExceptions(QuestMachine.StoredException[])</h4>
+  <div class="markdown level1 summary"><p>Restores an array of stored exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStoredExceptions(QuestMachine.StoredException[] exceptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.StoredException.html">QuestMachine.StoredException</a>[]</td>
+        <td><span class="parametername">exceptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_StoreQuestException_DaggerfallWorkshop_Game_Questing_Quest_System_Exception_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.StoreQuestException(DaggerfallWorkshop.Game.Questing.Quest%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1439">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_StoreQuestException_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.StoreQuestException*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_StoreQuestException_DaggerfallWorkshop_Game_Questing_Quest_System_Exception_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.StoreQuestException(DaggerfallWorkshop.Game.Questing.Quest,System.Exception)">StoreQuestException(Quest, Exception)</h4>
+  <div class="markdown level1 summary"><p>Stores a quest exception in save file.
+Should only be used for major quest-ending errors to help diagnose difficult issues.
+Will only store a finite number of exceptions before overwriting oldest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StoreQuestException(Quest quest, Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td><p>Quest throwing the exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td><p>Exception being thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_Tick.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.Tick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L412">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_Tick_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Tick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_Tick" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.Tick">Tick()</h4>
+  <div class="markdown level1 summary"><p>Tick quest machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Tick()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_TombstoneQuest_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.TombstoneQuest(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L960">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_TombstoneQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.TombstoneQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_TombstoneQuest_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.TombstoneQuest(DaggerfallWorkshop.Game.Questing.Quest)">TombstoneQuest(Quest)</h4>
+  <div class="markdown level1 summary"><p>Tombstones a quest. It will remain in quest machine for &quot;talk&quot; links until removed.
+This calls Dispose() on quest, removes all related SiteLinks, then calls OnQuestEnded event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TombstoneQuest(Quest quest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td><p>Quest to Tombstone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_UnmuteQuestNPCs.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.UnmuteQuestNPCs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1123">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestMachine_UnmuteQuestNPCs_" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.UnmuteQuestNPCs*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_UnmuteQuestNPCs" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.UnmuteQuestNPCs">UnmuteQuestNPCs()</h4>
+  <div class="markdown level1 summary"><p>Unmutes all quest NPCs.
+Supports console command workaround for &quot;mute npc&quot; bug present up to 0.7.36.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UnmuteQuestNPCs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_OnQuestEnded.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestEnded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1757">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_OnQuestEnded" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestEnded">OnQuestEnded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event QuestMachine.OnQuestEndedEventHandler OnQuestEnded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestEndedEventHandler.html">QuestMachine.OnQuestEndedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_OnQuestErrorTermination.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestErrorTermination%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1766">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_OnQuestErrorTermination" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestErrorTermination">OnQuestErrorTermination</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event QuestMachine.OnQuestErrorTerminationEventHandler OnQuestErrorTermination</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestErrorTerminationEventHandler.html">QuestMachine.OnQuestErrorTerminationEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_OnQuestStarted.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1748">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_OnQuestStarted" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestStarted">OnQuestStarted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event QuestMachine.OnQuestStartedEventHandler OnQuestStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestStartedEventHandler.html">QuestMachine.OnQuestStartedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_OnRegisterCustomActions.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.OnRegisterCustomActions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1730">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_OnRegisterCustomActions" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.OnRegisterCustomActions">OnRegisterCustomActions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event QuestMachine.OnRegisterCustomActionsEventHandler OnRegisterCustomActions</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnRegisterCustomActionsEventHandler.html">QuestMachine.OnRegisterCustomActionsEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine_OnTick.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine.OnTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L1739">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestMachine_OnTick" data-uid="DaggerfallWorkshop.Game.Questing.QuestMachine.OnTick">OnTick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event QuestMachine.OnTickEventHandler OnTick</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnTickEventHandler.html">QuestMachine.OnTickEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestMachine.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestMachine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/QuestMachine.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

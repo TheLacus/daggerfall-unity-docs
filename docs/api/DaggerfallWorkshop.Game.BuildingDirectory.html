@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BuildingDirectory
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BuildingDirectory
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.BuildingDirectory">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_BuildingDirectory" data-uid="DaggerfallWorkshop.Game.BuildingDirectory" class="text-break">Class BuildingDirectory
+  </h1>
+  <div class="markdown level0 summary"><p>Attached to same GameObject as DaggerfallLocation by scene builders.
+This behaviour manages a building dictionary for every building in an exterior location.
+Provides helpers to query buildings and link between related systems (automap, quest sites, info text, etc.).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">BuildingDirectory</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.html">DaggerfallWorkshop.Game</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_BuildingDirectory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BuildingDirectory : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_buildingKey0.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.buildingKey0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L33">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_buildingKey0" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.buildingKey0">buildingKey0</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int buildingKey0 = 16777216</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_BuildingCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.BuildingCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_BuildingCount_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.BuildingCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_BuildingCount" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.BuildingCount">BuildingCount</h4>
+  <div class="markdown level1 summary"><p>Gets total number of buildings in this directory (can be 0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BuildingCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_LocationData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.LocationData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L71">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_LocationData_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.LocationData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_LocationData" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.LocationData">LocationData</h4>
+  <div class="markdown level1 summary"><p>Gets location data of set location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFLocation LocationData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_LocationID.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.LocationID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L55">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_LocationID_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.LocationID*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_LocationID" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.LocationID">LocationID</h4>
+  <div class="markdown level1 summary"><p>Gets LocationID of set location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LocationID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_MapID.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.MapID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L63">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_MapID_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.MapID*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_MapID" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.MapID">MapID</h4>
+  <div class="markdown level1 summary"><p>Gets MapID of set location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MapID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingsOfFaction_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingsOfFaction(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L147">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingsOfFaction_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingsOfFaction*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingsOfFaction_System_Int32_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingsOfFaction(System.Int32)">GetBuildingsOfFaction(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BuildingSummary&gt; GetBuildingsOfFaction(int factionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.BuildingSummary.html">BuildingSummary</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingsOfType_DaggerfallConnect_DFLocation_BuildingTypes_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingsOfType(DaggerfallConnect.DFLocation.BuildingTypes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L140">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingsOfType_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingsOfType*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingsOfType_DaggerfallConnect_DFLocation_BuildingTypes_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingsOfType(DaggerfallConnect.DFLocation.BuildingTypes)">GetBuildingsOfType(DFLocation.BuildingTypes)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BuildingSummary&gt; GetBuildingsOfType(DFLocation.BuildingTypes buildingType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.BuildingTypes.html">DFLocation.BuildingTypes</a></td>
+        <td><span class="parametername">buildingType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.BuildingSummary.html">BuildingSummary</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingSummary_System_Int32_DaggerfallWorkshop_BuildingSummary__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingSummary(System.Int32%2CDaggerfallWorkshop.BuildingSummary%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L127">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingSummary_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingSummary*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_GetBuildingSummary_System_Int32_DaggerfallWorkshop_BuildingSummary__" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetBuildingSummary(System.Int32,DaggerfallWorkshop.BuildingSummary@)">GetBuildingSummary(Int32, out BuildingSummary)</h4>
+  <div class="markdown level1 summary"><p>Gets building summary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBuildingSummary(int key, out BuildingSummary buildingSummaryOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Building key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.BuildingSummary.html">BuildingSummary</a></td>
+        <td><span class="parametername">buildingSummaryOut</span></td>
+        <td><p>Building summary out.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if lookup successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_GetHousesForSale.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.GetHousesForSale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L156">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_GetHousesForSale_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetHousesForSale*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_GetHousesForSale" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.GetHousesForSale">GetHousesForSale()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BuildingSummary&gt; GetHousesForSale()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.BuildingSummary.html">BuildingSummary</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_MakeBuildingKey_System_Byte_System_Byte_System_Byte_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.MakeBuildingKey(System.Byte%2CSystem.Byte%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L197">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_MakeBuildingKey_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.MakeBuildingKey*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_MakeBuildingKey_System_Byte_System_Byte_System_Byte_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.MakeBuildingKey(System.Byte,System.Byte,System.Byte)">MakeBuildingKey(Byte, Byte, Byte)</h4>
+  <div class="markdown level1 summary"><p>Create a building key unique within a single location only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MakeBuildingKey(byte layoutX, byte layoutY, byte recordIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">layoutX</span></td>
+        <td><p>X position of parent block in map layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">layoutY</span></td>
+        <td><p>Y position of parent block in map layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">recordIndex</span></td>
+        <td><p>Record index of building inside parent block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Building key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_ReverseBuildingKey_System_Int32_System_Int32__System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.ReverseBuildingKey(System.Int32%2CSystem.Int32%40%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L210">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_ReverseBuildingKey_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.ReverseBuildingKey*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_ReverseBuildingKey_System_Int32_System_Int32__System_Int32__System_Int32__" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.ReverseBuildingKey(System.Int32,System.Int32@,System.Int32@,System.Int32@)">ReverseBuildingKey(Int32, out Int32, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Reverse a building key back to block layout coordinates and record index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReverseBuildingKey(int key, out int layoutXOut, out int layoutYOut, out int recordIndexOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Building key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">layoutXOut</span></td>
+        <td><p>X position of parent block in map layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">layoutYOut</span></td>
+        <td><p>Y position of parent block in map layout.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">recordIndexOut</span></td>
+        <td><p>Record index of building inside parent block.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_DaggerfallConnect_DFLocation_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.SetLocation(DaggerfallConnect.DFLocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L84">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.SetLocation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_DaggerfallConnect_DFLocation_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.SetLocation(DaggerfallConnect.DFLocation)">SetLocation(DFLocation)</h4>
+  <div class="markdown level1 summary"><p>Setup building directory from specified location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocation(DFLocation location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>Source location data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

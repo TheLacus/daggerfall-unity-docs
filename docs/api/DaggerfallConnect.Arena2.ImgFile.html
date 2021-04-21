@@ -1,0 +1,878 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImgFile
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImgFile
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallConnect.Arena2.ImgFile">
+  
+  
+  <h1 id="DaggerfallConnect_Arena2_ImgFile" data-uid="DaggerfallConnect.Arena2.ImgFile" class="text-break">Class ImgFile
+  </h1>
+  <div class="markdown level0 summary"><p>Connects to a *.IMG file to enumerate and extract image data. Each IMG file contains a single image.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html">BaseImageFile</a></div>
+    <div class="level2"><span class="xref">ImgFile</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_myPalette">BaseImageFile.myPalette</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_FilePath">BaseImageFile.FilePath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_FileName">BaseImageFile.FileName</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_Palette">BaseImageFile.Palette</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_LoadPalette_System_String_">BaseImageFile.LoadPalette(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_System_Int32_System_Int32_System_Int32_">BaseImageFile.GetColor32(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_">BaseImageFile.GetColor32(DFBitmap, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_System_Int32_System_Int32_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__">BaseImageFile.GetColor32(Int32, Int32, Int32, Int32, DFSize)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__">BaseImageFile.GetColor32(DFBitmap, Int32, Int32, DFSize)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetWindowColors32_DaggerfallConnect_DFBitmap_System_Int32_">BaseImageFile.GetWindowColors32(DFBitmap, Int32)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallConnect.Arena2.html">DaggerfallConnect.Arena2</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallConnect_Arena2_ImgFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ImgFile : BaseImageFile</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile__ctor.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L58">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile__ctor_" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile__ctor" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor">ImgFile()</h4>
+  <div class="markdown level1 summary"><p>Default constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImgFile()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile__ctor_System_String_DaggerfallConnect_FileUsage_DaggerfallConnect_DFPalette_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.%23ctor(System.String%2CDaggerfallConnect.FileUsage%2CDaggerfallConnect.DFPalette%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L81">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile__ctor_" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile__ctor_System_String_DaggerfallConnect_FileUsage_DaggerfallConnect_DFPalette_System_Boolean_" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor(System.String,DaggerfallConnect.FileUsage,DaggerfallConnect.DFPalette,System.Boolean)">ImgFile(String, FileUsage, DFPalette, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load constructor with palette assignment.
+Some IMG files contain palette information, this will overwrite the specified palette.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImgFile(string filePath, FileUsage usage, DFPalette palette, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to *.IMG file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFPalette.html">DFPalette</a></td>
+        <td><span class="parametername">palette</span></td>
+        <td><p>Palette to use when building images.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile__ctor_System_String_DaggerfallConnect_FileUsage_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.%23ctor(System.String%2CDaggerfallConnect.FileUsage%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L68">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile__ctor_" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile__ctor_System_String_DaggerfallConnect_FileUsage_System_Boolean_" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor(System.String,DaggerfallConnect.FileUsage,System.Boolean)">ImgFile(String, FileUsage, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImgFile(string filePath, FileUsage usage, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to *.IMG file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile__ctor_System_String_DaggerfallConnect_FileUsage_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.%23ctor(System.String%2CDaggerfallConnect.FileUsage%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile__ctor_" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile__ctor_System_String_DaggerfallConnect_FileUsage_System_String_System_Boolean_" data-uid="DaggerfallConnect.Arena2.ImgFile.#ctor(System.String,DaggerfallConnect.FileUsage,System.String,System.Boolean)">ImgFile(String, FileUsage, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load constructor that also loads a palette.
+Some IMG files contain palette information, this will overwrite the specified palette.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImgFile(string filePath, FileUsage usage, string paletteFilePath, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to *.IMG file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">paletteFilePath</span></td>
+        <td><p>Absolute path to Daggerfall palette file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_Description.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L164">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_Description_" data-uid="DaggerfallConnect.Arena2.ImgFile.Description*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_Description" data-uid="DaggerfallConnect.Arena2.ImgFile.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Description of this file (always &quot;IMG File&quot; as the game files contain no text descriptions for this file type).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_Description">BaseImageFile.Description</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_ImageOffset.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.ImageOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L172">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_ImageOffset_" data-uid="DaggerfallConnect.Arena2.ImgFile.ImageOffset*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_ImageOffset" data-uid="DaggerfallConnect.Arena2.ImgFile.ImageOffset">ImageOffset</h4>
+  <div class="markdown level1 summary"><p>Gets XOffset and YOffset from image header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFPosition ImageOffset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_IsPalettized.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.IsPalettized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L108">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_IsPalettized_" data-uid="DaggerfallConnect.Arena2.ImgFile.IsPalettized*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_IsPalettized" data-uid="DaggerfallConnect.Arena2.ImgFile.IsPalettized">IsPalettized</h4>
+  <div class="markdown level1 summary"><p>Specifies if this IMG file defines its own palette.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPalettized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_PaletteName.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.PaletteName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L117">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_PaletteName_" data-uid="DaggerfallConnect.Arena2.ImgFile.PaletteName*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_PaletteName" data-uid="DaggerfallConnect.Arena2.ImgFile.PaletteName">PaletteName</h4>
+  <div class="markdown level1 summary"><p>IMG files use a variety of palettes. This property returns the correct palette filename to use for this image.
+Palettized images (check IsPalettized flag) will return String.Emtpy for the palette filename.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string PaletteName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_PaletteName">BaseImageFile.PaletteName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_RecordCount.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.RecordCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L149">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_RecordCount_" data-uid="DaggerfallConnect.Arena2.ImgFile.RecordCount*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_RecordCount" data-uid="DaggerfallConnect.Arena2.ImgFile.RecordCount">RecordCount</h4>
+  <div class="markdown level1 summary"><p>Number of image records in this Img file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int RecordCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_RecordCount">BaseImageFile.RecordCount</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_GetDFBitmap.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.GetDFBitmap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L252">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_GetDFBitmap_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetDFBitmap*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_GetDFBitmap" data-uid="DaggerfallConnect.Arena2.ImgFile.GetDFBitmap">GetDFBitmap()</h4>
+  <div class="markdown level1 summary"><p>Gets bitmap data as indexed 8-bit byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFBitmap GetDFBitmap()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><p>DFBitmap object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_GetDFBitmap_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.GetDFBitmap(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L270">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_GetDFBitmap_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetDFBitmap*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_GetDFBitmap_System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetDFBitmap(System.Int32,System.Int32)">GetDFBitmap(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets bitmap data as indexed 8-bit byte array for specified record and frame.
+This method is an override for abstract method in parent class DFImageFile.
+As IMG files only have 1 image the Record and Frame indices must always be 0
+when calling this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DFBitmap GetDFBitmap(int record, int frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record. Must be 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>Index of frame. Must be 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><p>DFBitmap object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetDFBitmap_System_Int32_System_Int32_">BaseImageFile.GetDFBitmap(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_GetFrameCount_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.GetFrameCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L284">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_GetFrameCount_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetFrameCount*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_GetFrameCount_System_Int32_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetFrameCount(System.Int32)">GetFrameCount(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets number of frames in specified record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetFrameCount(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record. Must be 0 for Img files.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of frames. Always 1 for loaded Img files.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetFrameCount_System_Int32_">BaseImageFile.GetFrameCount(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_GetHeaderlessFileImageDimensions.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.GetHeaderlessFileImageDimensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L321">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_GetHeaderlessFileImageDimensions_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetHeaderlessFileImageDimensions*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_GetHeaderlessFileImageDimensions" data-uid="DaggerfallConnect.Arena2.ImgFile.GetHeaderlessFileImageDimensions">GetHeaderlessFileImageDimensions()</h4>
+  <div class="markdown level1 summary"><p>IMG files have a fixed width and height not specified in a header.
+This method returns the correct dimensions of images inside these files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DFSize GetHeaderlessFileImageDimensions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><p>Dimensions of image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_GetSize_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.GetSize(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L303">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_GetSize_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetSize*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_GetSize_System_Int32_" data-uid="DaggerfallConnect.Arena2.ImgFile.GetSize(System.Int32)">GetSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets width and height of specified record. As IMG files only have 1 record,
+this must be 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DFSize GetSize(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record. Must be 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><p>DFSize object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetSize_System_Int32_">BaseImageFile.GetSize(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_IsFilenameSupported_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.IsFilenameSupported(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L199">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_IsFilenameSupported_" data-uid="DaggerfallConnect.Arena2.ImgFile.IsFilenameSupported*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_IsFilenameSupported_System_String_" data-uid="DaggerfallConnect.Arena2.ImgFile.IsFilenameSupported(System.String)">IsFilenameSupported(String)</h4>
+  <div class="markdown level1 summary"><p>Tests if a filename is supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFilenameSupported(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Name of *.IMG file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if supported, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.Load(System.String%2CDaggerfallConnect.FileUsage%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L219">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_Load_" data-uid="DaggerfallConnect.Arena2.ImgFile.Load*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_" data-uid="DaggerfallConnect.Arena2.ImgFile.Load(System.String,DaggerfallConnect.FileUsage,System.Boolean)">Load(String, FileUsage, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads an IMG file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Load(string filePath, FileUsage usage, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to *.IMG file</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_">BaseImageFile.Load(String, FileUsage, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile_UnsupportedFilenames.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile.UnsupportedFilenames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L185">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_ImgFile_UnsupportedFilenames_" data-uid="DaggerfallConnect.Arena2.ImgFile.UnsupportedFilenames*"></a>
+  <h4 id="DaggerfallConnect_Arena2_ImgFile_UnsupportedFilenames" data-uid="DaggerfallConnect.Arena2.ImgFile.UnsupportedFilenames">UnsupportedFilenames()</h4>
+  <div class="markdown level1 summary"><p>Gets unsupported filenames. The three IMG filenames returned have no image data or are otherwise invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] UnsupportedFilenames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Array of unsupported filenames.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_ImgFile.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.ImgFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/ImgFile.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

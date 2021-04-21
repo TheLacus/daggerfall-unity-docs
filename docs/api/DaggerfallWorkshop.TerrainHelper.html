@@ -1,0 +1,1327 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TerrainHelper
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TerrainHelper
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.TerrainHelper">
+  
+  
+  <h1 id="DaggerfallWorkshop_TerrainHelper" data-uid="DaggerfallWorkshop.TerrainHelper" class="text-break">Class TerrainHelper
+  </h1>
+  <div class="markdown level0 summary"><p>Helper methods for terrain generation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TerrainHelper</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.html">DaggerfallWorkshop</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_TerrainHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TerrainHelper</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_avgHeightIdx.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.avgHeightIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L28">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_avgHeightIdx" data-uid="DaggerfallWorkshop.TerrainHelper.avgHeightIdx">avgHeightIdx</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte avgHeightIdx = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_defaultMapPixelX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.defaultMapPixelX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L39">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_defaultMapPixelX" data-uid="DaggerfallWorkshop.TerrainHelper.defaultMapPixelX">defaultMapPixelX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int defaultMapPixelX = 207</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_defaultMapPixelY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.defaultMapPixelY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L40">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_defaultMapPixelY" data-uid="DaggerfallWorkshop.TerrainHelper.defaultMapPixelY">defaultMapPixelY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int defaultMapPixelY = 213</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_defaultTerrainScale.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.defaultTerrainScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L43">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_defaultTerrainScale" data-uid="DaggerfallWorkshop.TerrainHelper.defaultTerrainScale">defaultTerrainScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float defaultTerrainScale = 1.5F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_flipBit.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.flipBit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L31">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_flipBit" data-uid="DaggerfallWorkshop.TerrainHelper.flipBit">flipBit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int flipBit = 128</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_maxHeightIdx.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.maxHeightIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L29">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_maxHeightIdx" data-uid="DaggerfallWorkshop.TerrainHelper.maxHeightIdx">maxHeightIdx</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte maxHeightIdx = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_maxMapPixelX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.maxMapPixelX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L37">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_maxMapPixelX" data-uid="DaggerfallWorkshop.TerrainHelper.maxMapPixelX">maxMapPixelX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int maxMapPixelX = 998</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_maxMapPixelY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.maxMapPixelY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L38">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_maxMapPixelY" data-uid="DaggerfallWorkshop.TerrainHelper.maxMapPixelY">maxMapPixelY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int maxMapPixelY = 498</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_maxTerrainScale.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.maxTerrainScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L42">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_maxTerrainScale" data-uid="DaggerfallWorkshop.TerrainHelper.maxTerrainScale">maxTerrainScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float maxTerrainScale = 10F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_minMapPixelX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.minMapPixelX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L35">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_minMapPixelX" data-uid="DaggerfallWorkshop.TerrainHelper.minMapPixelX">minMapPixelX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int minMapPixelX = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_minMapPixelY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.minMapPixelY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L36">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_minMapPixelY" data-uid="DaggerfallWorkshop.TerrainHelper.minMapPixelY">minMapPixelY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int minMapPixelY = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_minTerrainScale.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.minTerrainScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L41">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_minTerrainScale" data-uid="DaggerfallWorkshop.TerrainHelper.minTerrainScale">minTerrainScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float minTerrainScale = 1F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_rotBit.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.rotBit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L30">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_rotBit" data-uid="DaggerfallWorkshop.TerrainHelper.rotBit">rotBit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int rotBit = 64</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_NatureMeshUsed.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.NatureMeshUsed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L45">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_NatureMeshUsed_" data-uid="DaggerfallWorkshop.TerrainHelper.NatureMeshUsed*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_NatureMeshUsed" data-uid="DaggerfallWorkshop.TerrainHelper.NatureMeshUsed">NatureMeshUsed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NatureMeshUsed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_BilinearInterpolator_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.BilinearInterpolator(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L637">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_BilinearInterpolator_" data-uid="DaggerfallWorkshop.TerrainHelper.BilinearInterpolator*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_BilinearInterpolator_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="DaggerfallWorkshop.TerrainHelper.BilinearInterpolator(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">BilinearInterpolator(Single, Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float BilinearInterpolator(float valx0y0, float valx0y1, float valx1y0, float valx1y1, float u, float v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">valx0y0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">valx0y1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">valx1y0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">valx1y1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">u</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">v</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_CubicInterpolator_System_Single_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.CubicInterpolator(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L649">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_CubicInterpolator_" data-uid="DaggerfallWorkshop.TerrainHelper.CubicInterpolator*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_CubicInterpolator_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="DaggerfallWorkshop.TerrainHelper.CubicInterpolator(System.Single,System.Single,System.Single,System.Single,System.Single)">CubicInterpolator(Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CubicInterpolator(float v0, float v1, float v2, float v3, float fracy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">v0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">v1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">v2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">v3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fracy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_DilateCoastalClimate_DaggerfallWorkshop_Utility_ContentReader_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.DilateCoastalClimate(DaggerfallWorkshop.Utility.ContentReader%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L367">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_DilateCoastalClimate_" data-uid="DaggerfallWorkshop.TerrainHelper.DilateCoastalClimate*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_DilateCoastalClimate_DaggerfallWorkshop_Utility_ContentReader_System_Int32_" data-uid="DaggerfallWorkshop.TerrainHelper.DilateCoastalClimate(DaggerfallWorkshop.Utility.ContentReader,System.Int32)">DilateCoastalClimate(ContentReader, Int32)</h4>
+  <div class="markdown level1 summary"><p>Terrain interpolation causes Daggerfall's square coastline to become nicely raised and curvy.
+A side effect of this is that underwater climate areas are raised above sea-level.
+This function dilates coastal land climate into nearby ocean to hide this issue.
+Intended to be called once at startup. Modifies runtime copy of CLIMATE.PAK buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DilateCoastalClimate(ContentReader contentReader, int passes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.ContentReader.html">ContentReader</a></td>
+        <td><span class="parametername">contentReader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">passes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_GetLocationTerrainTileOrigin_DaggerfallConnect_DFLocation_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.GetLocationTerrainTileOrigin(DaggerfallConnect.DFLocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L103">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_GetLocationTerrainTileOrigin_" data-uid="DaggerfallWorkshop.TerrainHelper.GetLocationTerrainTileOrigin*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_GetLocationTerrainTileOrigin_DaggerfallConnect_DFLocation_" data-uid="DaggerfallWorkshop.TerrainHelper.GetLocationTerrainTileOrigin(DaggerfallConnect.DFLocation)">GetLocationTerrainTileOrigin(DFLocation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DFPosition GetLocationTerrainTileOrigin(DFLocation location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_GetMapPixelData_DaggerfallWorkshop_Utility_ContentReader_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.GetMapPixelData(DaggerfallWorkshop.Utility.ContentReader%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L58">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_GetMapPixelData_" data-uid="DaggerfallWorkshop.TerrainHelper.GetMapPixelData*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_GetMapPixelData_DaggerfallWorkshop_Utility_ContentReader_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.TerrainHelper.GetMapPixelData(DaggerfallWorkshop.Utility.ContentReader,System.Int32,System.Int32)">GetMapPixelData(ContentReader, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets map pixel data for any location in world.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MapPixelData GetMapPixelData(ContentReader contentReader, int mapPixelX, int mapPixelY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.ContentReader.html">ContentReader</a></td>
+        <td><span class="parametername">contentReader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MapPixelData.html">MapPixelData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_GetNoise_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.GetNoise(System.Int32%2CSystem.Int32%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L661">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_GetNoise_" data-uid="DaggerfallWorkshop.TerrainHelper.GetNoise*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_GetNoise_System_Int32_System_Int32_System_Single_System_Single_System_Single_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.TerrainHelper.GetNoise(System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Int32,System.Int32)">GetNoise(Int32, Int32, Single, Single, Single, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetNoise(int x, int y, float frequency, float amplitude, float persistance, int octaves, int seed = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amplitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">persistance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">octaves</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_GetTerrainName_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.GetTerrainName(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L50">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_GetTerrainName_" data-uid="DaggerfallWorkshop.TerrainHelper.GetTerrainName*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_GetTerrainName_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.TerrainHelper.GetTerrainName(System.Int32,System.Int32)">GetTerrainName(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the Terrain name for a given map pixel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetTerrainName(int mapPixelX, int mapPixelY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_LayoutNatureBillboards_DaggerfallWorkshop_DaggerfallTerrain_DaggerfallWorkshop_DaggerfallBillboardBatch_System_Single_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.LayoutNatureBillboards(DaggerfallWorkshop.DaggerfallTerrain%2CDaggerfallWorkshop.DaggerfallBillboardBatch%2CSystem.Single%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L461">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_LayoutNatureBillboards_" data-uid="DaggerfallWorkshop.TerrainHelper.LayoutNatureBillboards*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_LayoutNatureBillboards_DaggerfallWorkshop_DaggerfallTerrain_DaggerfallWorkshop_DaggerfallBillboardBatch_System_Single_System_Int32_" data-uid="DaggerfallWorkshop.TerrainHelper.LayoutNatureBillboards(DaggerfallWorkshop.DaggerfallTerrain,DaggerfallWorkshop.DaggerfallBillboardBatch,System.Single,System.Int32)">LayoutNatureBillboards(DaggerfallTerrain, DaggerfallBillboardBatch, Single, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LayoutNatureBillboards(DaggerfallTerrain dfTerrain, DaggerfallBillboardBatch dfBillboardBatch, float terrainScale, int terrainDist)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallTerrain.html">DaggerfallTerrain</a></td>
+        <td><span class="parametername">dfTerrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallBillboardBatch.html">DaggerfallBillboardBatch</a></td>
+        <td><span class="parametername">dfBillboardBatch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">terrainScale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">terrainDist</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_MakeTerrainKey_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.MakeTerrainKey(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L587">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_MakeTerrainKey_" data-uid="DaggerfallWorkshop.TerrainHelper.MakeTerrainKey*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_MakeTerrainKey_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.TerrainHelper.MakeTerrainKey(System.Int32,System.Int32)">MakeTerrainKey(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MakeTerrainKey(int mapPixelX, int mapPixelY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_ReverseTerrainKey_System_Int32_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.ReverseTerrainKey(System.Int32%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L593">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_ReverseTerrainKey_" data-uid="DaggerfallWorkshop.TerrainHelper.ReverseTerrainKey*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_ReverseTerrainKey_System_Int32_System_Int32__System_Int32__" data-uid="DaggerfallWorkshop.TerrainHelper.ReverseTerrainKey(System.Int32,System.Int32@,System.Int32@)">ReverseTerrainKey(Int32, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReverseTerrainKey(int key, out int mapPixelX, out int mapPixelY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_ScheduleBlendLocationTerrainJob_DaggerfallWorkshop_MapPixelData__Unity_Jobs_JobHandle_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.ScheduleBlendLocationTerrainJob(DaggerfallWorkshop.MapPixelData%40%2CUnity.Jobs.JobHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L197">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_ScheduleBlendLocationTerrainJob_" data-uid="DaggerfallWorkshop.TerrainHelper.ScheduleBlendLocationTerrainJob*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_ScheduleBlendLocationTerrainJob_DaggerfallWorkshop_MapPixelData__Unity_Jobs_JobHandle_" data-uid="DaggerfallWorkshop.TerrainHelper.ScheduleBlendLocationTerrainJob(DaggerfallWorkshop.MapPixelData@,Unity.Jobs.JobHandle)">ScheduleBlendLocationTerrainJob(ref MapPixelData, JobHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobHandle ScheduleBlendLocationTerrainJob(ref MapPixelData mapPixel, JobHandle dependencies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MapPixelData.html">MapPixelData</a></td>
+        <td><span class="parametername">mapPixel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Jobs.JobHandle</span></td>
+        <td><span class="parametername">dependencies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Unity.Jobs.JobHandle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_ScheduleCalcAvgMaxHeightJob_DaggerfallWorkshop_MapPixelData__Unity_Jobs_JobHandle_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.ScheduleCalcAvgMaxHeightJob(DaggerfallWorkshop.MapPixelData%40%2CUnity.Jobs.JobHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L187">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_ScheduleCalcAvgMaxHeightJob_" data-uid="DaggerfallWorkshop.TerrainHelper.ScheduleCalcAvgMaxHeightJob*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_ScheduleCalcAvgMaxHeightJob_DaggerfallWorkshop_MapPixelData__Unity_Jobs_JobHandle_" data-uid="DaggerfallWorkshop.TerrainHelper.ScheduleCalcAvgMaxHeightJob(DaggerfallWorkshop.MapPixelData@,Unity.Jobs.JobHandle)">ScheduleCalcAvgMaxHeightJob(ref MapPixelData, JobHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobHandle ScheduleCalcAvgMaxHeightJob(ref MapPixelData mapPixel, JobHandle dependencies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MapPixelData.html">MapPixelData</a></td>
+        <td><span class="parametername">mapPixel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Jobs.JobHandle</span></td>
+        <td><span class="parametername">dependencies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Unity.Jobs.JobHandle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_ScheduleUpdateTileMapDataJob_DaggerfallWorkshop_MapPixelData__Unity_Jobs_JobHandle_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.ScheduleUpdateTileMapDataJob(DaggerfallWorkshop.MapPixelData%40%2CUnity.Jobs.JobHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L209">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_ScheduleUpdateTileMapDataJob_" data-uid="DaggerfallWorkshop.TerrainHelper.ScheduleUpdateTileMapDataJob*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_ScheduleUpdateTileMapDataJob_DaggerfallWorkshop_MapPixelData__Unity_Jobs_JobHandle_" data-uid="DaggerfallWorkshop.TerrainHelper.ScheduleUpdateTileMapDataJob(DaggerfallWorkshop.MapPixelData@,Unity.Jobs.JobHandle)">ScheduleUpdateTileMapDataJob(ref MapPixelData, JobHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JobHandle ScheduleUpdateTileMapDataJob(ref MapPixelData mapPixel, JobHandle dependencies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MapPixelData.html">MapPixelData</a></td>
+        <td><span class="parametername">mapPixel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Jobs.JobHandle</span></td>
+        <td><span class="parametername">dependencies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Unity.Jobs.JobHandle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_SetLocationTiles_DaggerfallWorkshop_MapPixelData__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.SetLocationTiles(DaggerfallWorkshop.MapPixelData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L124">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_SetLocationTiles_" data-uid="DaggerfallWorkshop.TerrainHelper.SetLocationTiles*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_SetLocationTiles_DaggerfallWorkshop_MapPixelData__" data-uid="DaggerfallWorkshop.TerrainHelper.SetLocationTiles(DaggerfallWorkshop.MapPixelData@)">SetLocationTiles(ref MapPixelData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetLocationTiles(ref MapPixelData mapPixel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MapPixelData.html">MapPixelData</a></td>
+        <td><span class="parametername">mapPixel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper_SmoothLocationNeighbourhood_DaggerfallWorkshop_Utility_ContentReader_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper.SmoothLocationNeighbourhood(DaggerfallWorkshop.Utility.ContentReader%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L427">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_TerrainHelper_SmoothLocationNeighbourhood_" data-uid="DaggerfallWorkshop.TerrainHelper.SmoothLocationNeighbourhood*"></a>
+  <h4 id="DaggerfallWorkshop_TerrainHelper_SmoothLocationNeighbourhood_DaggerfallWorkshop_Utility_ContentReader_System_Int32_" data-uid="DaggerfallWorkshop.TerrainHelper.SmoothLocationNeighbourhood(DaggerfallWorkshop.Utility.ContentReader,System.Int32)">SmoothLocationNeighbourhood(ContentReader, Int32)</h4>
+  <div class="markdown level1 summary"><p>If a location map pixel is on a gradient greater than threshold, then
+smooth surrounding Moore neighbourhood with location height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SmoothLocationNeighbourhood(ContentReader contentReader, int threshold = 20)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.ContentReader.html">ContentReader</a></td>
+        <td><span class="parametername">contentReader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threshold</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_TerrainHelper.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.TerrainHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/TerrainHelper.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

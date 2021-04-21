@@ -1,0 +1,1550 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DaggerfallFont
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DaggerfallFont
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont" class="text-break">Class DaggerfallFont
+  </h1>
+  <div class="markdown level0 summary"><p>Daggerfall-specific implementation of a pixel font.
+Supports classic FONT0000-0004 with an SDF variant.
+Classic font has the same limitations of 256 characters starting from ASCII 33.
+SDF font uses a keyed dictionary so can support any number of glyph codes.
+Current implementation will load a TextMeshPro 1.3.x font asset directly for SDF variant.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DaggerfallFont</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DaggerfallFont</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont__ctor_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_FontName_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.%23ctor(DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FontName)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L138">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont__ctor_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_FontName_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.#ctor(DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FontName)">DaggerfallFont(DaggerfallFont.FontName)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallFont(DaggerfallFont.FontName font = DaggerfallFont.FontName.FONT0003)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FontName.html">DaggerfallFont.FontName</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont__ctor_System_String_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_FontName_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.%23ctor(System.String%2CDaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FontName)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L144">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont__ctor_System_String_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_FontName_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.#ctor(System.String,DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FontName)">DaggerfallFont(String, DaggerfallFont.FontName)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallFont(string arena2Path, DaggerfallFont.FontName font = DaggerfallFont.FontName.FONT0003)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">arena2Path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FontName.html">DaggerfallFont.FontName</a></td>
+        <td><span class="parametername">font</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_asciiStart.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.asciiStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L53">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_asciiStart" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.asciiStart">asciiStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int asciiStart</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_atlasRects.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.atlasRects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L52">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_atlasRects" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.atlasRects">atlasRects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Rect[] atlasRects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_atlasTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.atlasTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L51">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_atlasTexture" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.atlasTexture">atlasTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Texture2D atlasTexture</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ErrorCode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ErrorCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L36">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ErrorCode" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ErrorCode">ErrorCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ErrorCode = 63</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_invalidCode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.invalidCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L38">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_invalidCode" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.invalidCode">invalidCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string invalidCode = &quot;Font does not contain glyph for code: &quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_sdfFontInfo.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.sdfFontInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L55">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_sdfFontInfo" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.sdfFontInfo">sdfFontInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DaggerfallFont.SDFFontInfo? sdfFontInfo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFFontInfo.html">DaggerfallFont.SDFFontInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SpaceCode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SpaceCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L35">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SpaceCode" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SpaceCode">SpaceCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SpaceCode = 32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_AsciiStart.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.AsciiStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L97">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_AsciiStart_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.AsciiStart*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_AsciiStart" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.AsciiStart">AsciiStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AsciiStart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_FilterMode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FilterMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L113">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_FilterMode_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FilterMode*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_FilterMode" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.FilterMode">FilterMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilterMode FilterMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.FilterMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L119">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphCount_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphCount" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphCount">GlyphCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GlyphCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L102">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphHeight_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphHeight" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphHeight">GlyphHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GlyphHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphSpacing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphSpacing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L108">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphSpacing_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphSpacing*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphSpacing" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphSpacing">GlyphSpacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlyphSpacing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_IsSDFCapable.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.IsSDFCapable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L124">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_IsSDFCapable_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.IsSDFCapable*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_IsSDFCapable" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.IsSDFCapable">IsSDFCapable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSDFCapable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SDFInfo.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L129">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SDFInfo_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFInfo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SDFInfo" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFInfo">SDFInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallFont.SDFFontInfo SDFInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFFontInfo.html">DaggerfallFont.SDFFontInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_AddGlyph_System_Int32_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphInfo_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.AddGlyph(System.Int32%2CDaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L401">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_AddGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.AddGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_AddGlyph_System_Int32_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GlyphInfo_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.AddGlyph(System.Int32,DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphInfo)">AddGlyph(Int32, DaggerfallFont.GlyphInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGlyph(int ascii, DaggerfallFont.GlyphInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ascii</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphInfo.html">DaggerfallFont.GlyphInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_CalculateTextWidth_System_String_UnityEngine_Vector2_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.CalculateTextWidth(System.String%2CUnityEngine.Vector2%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L323">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_CalculateTextWidth_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.CalculateTextWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_CalculateTextWidth_System_String_UnityEngine_Vector2_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.CalculateTextWidth(System.String,UnityEngine.Vector2,System.Int32,System.Int32)">CalculateTextWidth(String, Vector2, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculate width of text using whichever font path is active (classic or SDF).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateTextWidth(string text, Vector2 scale, int start = 0, int length = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text to calculate width of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Scale to use when calculating width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Width of string in scaled pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ClearGlyphs.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ClearGlyphs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L383">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ClearGlyphs_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ClearGlyphs*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ClearGlyphs" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ClearGlyphs">ClearGlyphs()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearGlyphs()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawClassicGlyph_System_Byte_UnityEngine_Rect_UnityEngine_Color_UnityEngine_Vector2_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawClassicGlyph(System.Byte%2CUnityEngine.Rect%2CUnityEngine.Color%2CUnityEngine.Vector2%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L211">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawClassicGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawClassicGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawClassicGlyph_System_Byte_UnityEngine_Rect_UnityEngine_Color_UnityEngine_Vector2_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawClassicGlyph(System.Byte,UnityEngine.Rect,UnityEngine.Color,UnityEngine.Vector2,UnityEngine.Color)">DrawClassicGlyph(Byte, Rect, Color, Vector2, Color)</h4>
+  <div class="markdown level1 summary"><p>Draws a classic glyph with a drop-shadow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawClassicGlyph(byte rawAscii, Rect targetRect, Color color, Vector2 shadowPosition, Color shadowColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">rawAscii</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">targetRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">shadowPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">shadowColor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SDFGlyphInfo_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph(DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFGlyphInfo%2CUnityEngine.Vector2%2CUnityEngine.Vector2%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L232">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SDFGlyphInfo_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph(DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFGlyphInfo,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Color)">DrawSDFGlyph(DaggerfallFont.SDFGlyphInfo, Vector2, Vector2, Color)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DrawSDFGlyph(DaggerfallFont.SDFGlyphInfo glyph, Vector2 position, Vector2 scale, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFGlyphInfo.html">DaggerfallFont.SDFGlyphInfo</a></td>
+        <td><span class="parametername">glyph</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph(System.Int32%2CUnityEngine.Vector2%2CUnityEngine.Vector2%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L227">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph(System.Int32,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Color)">DrawSDFGlyph(Int32, Vector2, Vector2, Color)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DrawSDFGlyph(int code, Vector2 position, Vector2 scale, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_UnityEngine_Vector2_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph(System.Int32%2CUnityEngine.Vector2%2CUnityEngine.Vector2%2CUnityEngine.Color%2CUnityEngine.Vector2%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L222">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawSDFGlyph_System_Int32_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_UnityEngine_Vector2_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawSDFGlyph(System.Int32,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Color,UnityEngine.Vector2,UnityEngine.Color)">DrawSDFGlyph(Int32, Vector2, Vector2, Color, Vector2, Color)</h4>
+  <div class="markdown level1 summary"><p>Draws an SDF glyph with a drop-shadow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DrawSDFGlyph(int code, Vector2 position, Vector2 scale, Color color, Vector2 shadowPosition, Color shadowColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">shadowPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">shadowColor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawText_System_String_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawText(System.String%2CUnityEngine.Vector2%2CUnityEngine.Vector2%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L255">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawText_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawText_System_String_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawText(System.String,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Color)">DrawText(String, Vector2, Vector2, Color)</h4>
+  <div class="markdown level1 summary"><p>Draws string of classic or SDF glyphs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawText(string text, Vector2 position, Vector2 scale, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawText_System_String_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_UnityEngine_Color_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawText(System.String%2CUnityEngine.Vector2%2CUnityEngine.Vector2%2CUnityEngine.Color%2CUnityEngine.Color%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L305">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawText_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_DrawText_System_String_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Color_UnityEngine_Color_UnityEngine_Vector2_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.DrawText(System.String,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Color,UnityEngine.Color,UnityEngine.Vector2)">DrawText(String, Vector2, Vector2, Color, Color, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Draws string of individual text glyphs with a shadow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawText(string text, Vector2 position, Vector2 scale, Color color, Color shadowColor, Vector2 shadowPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">shadowColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">shadowPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyph_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyph(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L406">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyph_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyph(System.Int32)">GetGlyph(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallFont.GlyphInfo GetGlyph(int ascii)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ascii</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GlyphInfo.html">DaggerfallFont.GlyphInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyphWidth_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SDFGlyphInfo_UnityEngine_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyphWidth(DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFGlyphInfo%2CUnityEngine.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L437">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyphWidth_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyphWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyphWidth_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_SDFGlyphInfo_UnityEngine_Vector2_System_Single_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyphWidth(DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFGlyphInfo,UnityEngine.Vector2,System.Single)">GetGlyphWidth(DaggerfallFont.SDFGlyphInfo, Vector2, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetGlyphWidth(DaggerfallFont.SDFGlyphInfo glyph, Vector2 scale, float spacing = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFGlyphInfo.html">DaggerfallFont.SDFGlyphInfo</a></td>
+        <td><span class="parametername">glyph</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spacing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyphWidth_System_Int32_UnityEngine_Vector2_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyphWidth(System.Int32%2CUnityEngine.Vector2%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L422">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyphWidth_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyphWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetGlyphWidth_System_Int32_UnityEngine_Vector2_System_Single_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetGlyphWidth(System.Int32,UnityEngine.Vector2,System.Single)">GetGlyphWidth(Int32, Vector2, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetGlyphWidth(int code, Vector2 scale, float spacing = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spacing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetMaterial.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetMaterial%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L451">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetMaterial_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetMaterial*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetMaterial" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetMaterial">GetMaterial()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material GetMaterial()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetSDFGlyph_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetSDFGlyph(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L414">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetSDFGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetSDFGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_GetSDFGlyph_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.GetSDFGlyph(System.Int32)">GetSDFGlyph(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallFont.SDFGlyphInfo GetSDFGlyph(int code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.SDFGlyphInfo.html">DaggerfallFont.SDFGlyphInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_HasGlyph_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.HasGlyph(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L388">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_HasGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.HasGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_HasGlyph_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.HasGlyph(System.Int32)">HasGlyph(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasGlyph(int ascii)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ascii</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_HasSDFGlyph_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.HasSDFGlyph(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L393">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_HasSDFGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.HasSDFGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_HasSDFGlyph_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.HasSDFGlyph(System.Int32)">HasSDFGlyph(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSDFGlyph(int code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_LoadSDFFontAsset_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.LoadSDFFontAsset(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L462">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_LoadSDFFontAsset_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.LoadSDFFontAsset*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_LoadSDFFontAsset_System_String_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.LoadSDFFontAsset(System.String)">LoadSDFFontAsset(String)</h4>
+  <div class="markdown level1 summary"><p>Load a TextMeshPro 1.3.x asset used for this to use for SDF rendering.
+Mods can use DaggerfallUI.Instance.Font1 through Font4 to access the instances used by other game windows.
+Custom font should be set only during startup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadSDFFontAsset(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path to a TextMeshPro 1.3.x font asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ReloadFont_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ReloadFont(UnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L377">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ReloadFont_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ReloadFont*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_ReloadFont_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.ReloadFont(UnityEngine.Color)">ReloadFont(Color)</h4>
+  <div class="markdown level1 summary"><p>Reloads font glyphs with a different base colour (default is Color.white for normal UI tinting).
+This is an expensive operation, only use this at font create time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReloadFont(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>New colour of glyphs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_RemoveGlyph_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.RemoveGlyph(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L443">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_RemoveGlyph_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.RemoveGlyph*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_RemoveGlyph_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.RemoveGlyph(System.Int32)">RemoveGlyph(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveGlyph(int ascii)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ascii</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallFont.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallFont%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/DaggerfallFont.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

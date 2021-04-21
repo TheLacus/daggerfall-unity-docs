@@ -1,0 +1,1550 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGuild
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGuild
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Guilds_IGuild" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild" class="text-break">Interface IGuild
+  </h1>
+  <div class="markdown level0 summary"><p>Guild objects define player rank progression and benefits with the guild.
+For vanilla style guilds, extend abstract class Guild.cs which defines most
+of the vanilla base behaviour.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html#DaggerfallWorkshop_Utility_IMacroContextProvider_GetMacroDataSource">IMacroContextProvider.GetMacroDataSource()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Guilds.html">DaggerfallWorkshop.Game.Guilds</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Guilds_IGuild_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGuild : IMacroContextProvider</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GuildSkills.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GuildSkills%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L29">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GuildSkills_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GuildSkills*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GuildSkills" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GuildSkills">GuildSkills</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DFCareer.Skills&gt; GuildSkills { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallConnect.DFCareer.Skills.html">DFCareer.Skills</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_Rank.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.Rank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L37">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_Rank_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.Rank*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_Rank" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.Rank">Rank</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Rank { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_RankTitles.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.RankTitles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L27">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_RankTitles_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.RankTitles*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_RankTitles" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.RankTitles">RankTitles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] RankTitles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_TrainingSkills.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.TrainingSkills%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L31">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_TrainingSkills_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TrainingSkills*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_TrainingSkills" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TrainingSkills">TrainingSkills</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DFCareer.Skills&gt; TrainingSkills { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallConnect.DFCareer.Skills.html">DFCareer.Skills</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_AlterReward_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.AlterReward(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L77">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_AlterReward_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.AlterReward*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_AlterReward_System_Int32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.AlterReward(System.Int32)">AlterReward(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AlterReward(int reward)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">reward</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_AvoidDeath.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.AvoidDeath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L97">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_AvoidDeath_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.AvoidDeath*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_AvoidDeath" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.AvoidDeath">AvoidDeath()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AvoidDeath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_CanAccessLibrary.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.CanAccessLibrary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L103">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_CanAccessLibrary_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.CanAccessLibrary*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_CanAccessLibrary" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.CanAccessLibrary">CanAccessLibrary()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanAccessLibrary()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_CanAccessService_DaggerfallWorkshop_Game_Guilds_GuildServices_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.CanAccessService(DaggerfallWorkshop.Game.Guilds.GuildServices)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L105">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_CanAccessService_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.CanAccessService*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_CanAccessService_DaggerfallWorkshop_Game_Guilds_GuildServices_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.CanAccessService(DaggerfallWorkshop.Game.Guilds.GuildServices)">CanAccessService(GuildServices)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanAccessService(GuildServices service)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Guilds.GuildServices.html">GuildServices</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_CanRest.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.CanRest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L69">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_CanRest_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.CanRest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_CanRest" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.CanRest">CanRest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanRest()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_DeepBreath_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.DeepBreath(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_DeepBreath_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.DeepBreath*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_DeepBreath_System_Int32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.DeepBreath(System.Int32)">DeepBreath(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int DeepBreath(int duration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_FastTravel_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.FastTravel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L93">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_FastTravel_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FastTravel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_FastTravel_System_Int32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FastTravel(System.Int32)">FastTravel(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FastTravel(int duration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_FreeHealing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.FreeHealing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L73">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeHealing_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeHealing*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeHealing" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeHealing">FreeHealing()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FreeHealing()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_FreeMagickaRecharge.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.FreeMagickaRecharge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L75">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeMagickaRecharge_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeMagickaRecharge*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeMagickaRecharge" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeMagickaRecharge">FreeMagickaRecharge()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FreeMagickaRecharge()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_FreeShipTravel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.FreeShipTravel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L91">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeShipTravel_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeShipTravel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeShipTravel" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeShipTravel">FreeShipTravel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FreeShipTravel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_FreeTavernRooms.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.FreeTavernRooms%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeTavernRooms_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeTavernRooms*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_FreeTavernRooms" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.FreeTavernRooms">FreeTavernRooms()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FreeTavernRooms()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetAffiliation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetAffiliation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L61">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetAffiliation_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetAffiliation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetAffiliation" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetAffiliation">GetAffiliation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetAffiliation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetFactionId.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetFactionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L55">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetFactionId_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetFactionId*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetFactionId" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetFactionId">GetFactionId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetFactionId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetGuildData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetGuildData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L136">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetGuildData_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetGuildData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetGuildData" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetGuildData">GetGuildData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GuildMembership_v1 GetGuildData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.GuildMembership_v1.html">GuildMembership_v1</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetGuildName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetGuildName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L59">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetGuildName_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetGuildName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetGuildName" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetGuildName">GetGuildName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetGuildName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetReputation_DaggerfallWorkshop_Game_Entity_PlayerEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetReputation(DaggerfallWorkshop.Game.Entity.PlayerEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L57">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetReputation_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetReputation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetReputation_DaggerfallWorkshop_Game_Entity_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetReputation(DaggerfallWorkshop.Game.Entity.PlayerEntity)">GetReputation(PlayerEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetReputation(PlayerEntity playerEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetTitle.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L63">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetTitle_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetTitle*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetTitle" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetTitle">GetTitle()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTitle()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetTrainingMax_DaggerfallConnect_DFCareer_Skills_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetTrainingMax(DaggerfallConnect.DFCareer.Skills)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L111">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetTrainingMax_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetTrainingMax*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetTrainingMax_DaggerfallConnect_DFCareer_Skills_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetTrainingMax(DaggerfallConnect.DFCareer.Skills)">GetTrainingMax(DFCareer.Skills)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetTrainingMax(DFCareer.Skills skill)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFCareer.Skills.html">DFCareer.Skills</a></td>
+        <td><span class="parametername">skill</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_GetTrainingPrice.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.GetTrainingPrice%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L113">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_GetTrainingPrice_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetTrainingPrice*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_GetTrainingPrice" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.GetTrainingPrice">GetTrainingPrice()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetTrainingPrice()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_HallAccessAnytime.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.HallAccessAnytime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L71">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_HallAccessAnytime_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.HallAccessAnytime*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_HallAccessAnytime" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.HallAccessAnytime">HallAccessAnytime()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HallAccessAnytime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_ImportLastRankChange_System_UInt32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.ImportLastRankChange(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L39">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_ImportLastRankChange_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ImportLastRankChange*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_ImportLastRankChange_System_UInt32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ImportLastRankChange(System.UInt32)">ImportLastRankChange(UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ImportLastRankChange(uint timeOfLastRankChange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">timeOfLastRankChange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_IsEligibleToJoin_DaggerfallWorkshop_Game_Entity_PlayerEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.IsEligibleToJoin(DaggerfallWorkshop.Game.Entity.PlayerEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L123">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_IsEligibleToJoin_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.IsEligibleToJoin*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_IsEligibleToJoin_DaggerfallWorkshop_Game_Entity_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.IsEligibleToJoin(DaggerfallWorkshop.Game.Entity.PlayerEntity)">IsEligibleToJoin(PlayerEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsEligibleToJoin(PlayerEntity playerEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_IsMember.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.IsMember%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L53">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_IsMember_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.IsMember*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_IsMember" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.IsMember">IsMember()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsMember()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_Join.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.Join%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L119">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_Join_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.Join*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_Join" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.Join">Join()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Join()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_Leave.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.Leave%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L121">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_Leave_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.Leave*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_Leave" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.Leave">Leave()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Leave()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_ReducedCureCost_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.ReducedCureCost(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L83">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_ReducedCureCost_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ReducedCureCost*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_ReducedCureCost_System_Int32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ReducedCureCost(System.Int32)">ReducedCureCost(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReducedCureCost(int price)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">price</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_ReducedIdentifyCost_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.ReducedIdentifyCost(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L81">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_ReducedIdentifyCost_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ReducedIdentifyCost*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_ReducedIdentifyCost_System_Int32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ReducedIdentifyCost(System.Int32)">ReducedIdentifyCost(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReducedIdentifyCost(int price)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">price</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_ReducedRepairCost_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.ReducedRepairCost(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_ReducedRepairCost_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ReducedRepairCost*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_ReducedRepairCost_System_Int32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.ReducedRepairCost(System.Int32)">ReducedRepairCost(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReducedRepairCost(int price)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">price</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_RestoreGuildData_DaggerfallWorkshop_Game_Serialization_GuildMembership_v1_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.RestoreGuildData(DaggerfallWorkshop.Game.Serialization.GuildMembership_v1)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L138">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_RestoreGuildData_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.RestoreGuildData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_RestoreGuildData_DaggerfallWorkshop_Game_Serialization_GuildMembership_v1_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.RestoreGuildData(DaggerfallWorkshop.Game.Serialization.GuildMembership_v1)">RestoreGuildData(GuildMembership_v1)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RestoreGuildData(GuildMembership_v1 data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.GuildMembership_v1.html">GuildMembership_v1</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_TokensDemotion.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.TokensDemotion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L45">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensDemotion_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensDemotion*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensDemotion" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensDemotion">TokensDemotion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextFile.Token[] TokensDemotion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_TokensEligible_DaggerfallWorkshop_Game_Entity_PlayerEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.TokensEligible(DaggerfallWorkshop.Game.Entity.PlayerEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L127">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensEligible_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensEligible*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensEligible_DaggerfallWorkshop_Game_Entity_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensEligible(DaggerfallWorkshop.Game.Entity.PlayerEntity)">TokensEligible(PlayerEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextFile.Token[] TokensEligible(PlayerEntity playerEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_TokensExpulsion.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.TokensExpulsion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensExpulsion_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensExpulsion*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensExpulsion" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensExpulsion">TokensExpulsion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextFile.Token[] TokensExpulsion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_TokensIneligible_DaggerfallWorkshop_Game_Entity_PlayerEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.TokensIneligible(DaggerfallWorkshop.Game.Entity.PlayerEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L125">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensIneligible_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensIneligible*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensIneligible_DaggerfallWorkshop_Game_Entity_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensIneligible(DaggerfallWorkshop.Game.Entity.PlayerEntity)">TokensIneligible(PlayerEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextFile.Token[] TokensIneligible(PlayerEntity playerEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_TokensPromotion_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.TokensPromotion(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L43">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensPromotion_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensPromotion*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensPromotion_System_Int32_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensPromotion(System.Int32)">TokensPromotion(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextFile.Token[] TokensPromotion(int newRank)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newRank</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_TokensWelcome.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.TokensWelcome%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L129">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensWelcome_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensWelcome*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_TokensWelcome" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.TokensWelcome">TokensWelcome()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextFile.Token[] TokensWelcome()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild_UpdateRank_DaggerfallWorkshop_Game_Entity_PlayerEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild.UpdateRank(DaggerfallWorkshop.Game.Entity.PlayerEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L41">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Guilds_IGuild_UpdateRank_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.UpdateRank*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Guilds_IGuild_UpdateRank_DaggerfallWorkshop_Game_Entity_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.Guilds.IGuild.UpdateRank(DaggerfallWorkshop.Game.Entity.PlayerEntity)">UpdateRank(PlayerEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextFile.Token[] UpdateRank(PlayerEntity playerEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Guilds_IGuild.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Guilds.IGuild%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Guilds/IGuild.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

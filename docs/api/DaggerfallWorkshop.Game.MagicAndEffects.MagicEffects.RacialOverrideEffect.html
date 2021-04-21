@@ -1,0 +1,1232 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RacialOverrideEffect
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RacialOverrideEffect
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect" class="text-break">Class RacialOverrideEffect
+  </h1>
+  <div class="markdown level0 summary"><p>Allows an effect to override player's racial display information such as race name and portrait.
+Used for vampirism and lycanthropy and possibly could be used for future racial overrides.
+Considered a minimal implementation at this time for core game to support vamp/were only.
+Only intended to be used on player entity. Will be permanent until removed.
+Only a single racial override incumbent effect can be active on player at one time.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html">BaseEntityEffect</a></div>
+    <div class="level2"><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html">IncumbentEffect</a></div>
+    <div class="level3"><span class="xref">RacialOverrideEffect</span></div>
+      <div class="level4"><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.LycanthropyEffect.html">LycanthropyEffect</a></div>
+      <div class="level4"><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.VampirismEffect.html">VampirismEffect</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.html">IEntityEffect</a></div>
+    <div><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_Start_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">IncumbentEffect.Start(EntityEffectManager, DaggerfallEntityBehaviour)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_Resume_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_EffectSaveData_v1_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">IncumbentEffect.Resume(EntityEffectManager.EffectSaveData_v1, EntityEffectManager, DaggerfallEntityBehaviour)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_IsIncumbent">IncumbentEffect.IsIncumbent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_ResignAsIncumbent">IncumbentEffect.ResignAsIncumbent()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_BecomeIncumbent">IncumbentEffect.BecomeIncumbent()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_textDatabase">BaseEntityEffect.textDatabase</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_properties">BaseEntityEffect.properties</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_settings">BaseEntityEffect.settings</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_potionProperties">BaseEntityEffect.potionProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_caster">BaseEntityEffect.caster</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_manager">BaseEntityEffect.manager</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_variantCount">BaseEntityEffect.variantCount</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_currentVariant">BaseEntityEffect.currentVariant</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_bypassSavingThrows">BaseEntityEffect.bypassSavingThrows</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_Properties">BaseEntityEffect.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_Settings">BaseEntityEffect.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_EnchantmentParam">BaseEntityEffect.EnchantmentParam</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_PotionProperties">BaseEntityEffect.PotionProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_Caster">BaseEntityEffect.Caster</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ChanceSuccess">BaseEntityEffect.ChanceSuccess</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_StatMods">BaseEntityEffect.StatMods</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_StatMaxMods">BaseEntityEffect.StatMaxMods</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SkillMods">BaseEntityEffect.SkillMods</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ResistanceMods">BaseEntityEffect.ResistanceMods</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_Key">BaseEntityEffect.Key</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_DisplayName">BaseEntityEffect.DisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ParentBundle">BaseEntityEffect.ParentBundle</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_HasEnded">BaseEntityEffect.HasEnded</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_VariantCount">BaseEntityEffect.VariantCount</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_CurrentVariant">BaseEntityEffect.CurrentVariant</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_BypassSavingThrows">BaseEntityEffect.BypassSavingThrows</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetProperties">BaseEntityEffect.SetProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetPotionProperties">BaseEntityEffect.SetPotionProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetEnchantmentSettings">BaseEntityEffect.GetEnchantmentSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetEnchantmentSettings_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam_">BaseEntityEffect.GetEnchantmentSettings(EnchantmentParam)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_HasItemMakerFlags_DaggerfallWorkshop_Game_MagicAndEffects_ItemMakerFlags_">BaseEntityEffect.HasItemMakerFlags(ItemMakerFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_HasEnchantmentPayloadFlags_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentPayloadFlags_">BaseEntityEffect.HasEnchantmentPayloadFlags(EnchantmentPayloadFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_EnchantmentPayloadCallback_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentPayloadFlags_System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Int32_">BaseEntityEffect.EnchantmentPayloadCallback(EnchantmentPayloadFlags, Nullable&lt;EnchantmentParam&gt;, DaggerfallEntityBehaviour, DaggerfallEntityBehaviour, DaggerfallUnityItem, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_IsEnchantmentExclusiveTo_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentSettings___System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__">BaseEntityEffect.IsEnchantmentExclusiveTo(EnchantmentSettings[], Nullable&lt;EnchantmentParam&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetForcedEnchantments_System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__">BaseEntityEffect.GetForcedEnchantments(Nullable&lt;EnchantmentParam&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_End">BaseEntityEffect.End()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ConstantEffect">BaseEntityEffect.ConstantEffect()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_MagicRound">BaseEntityEffect.MagicRound()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetAttributeMod_DaggerfallConnect_DFCareer_Stats_">BaseEntityEffect.GetAttributeMod(DFCareer.Stats)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetAttributeMaximumMod_DaggerfallConnect_DFCareer_Stats_">BaseEntityEffect.GetAttributeMaximumMod(DFCareer.Stats)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetSkillMod_DaggerfallConnect_DFCareer_Skills_">BaseEntityEffect.GetSkillMod(DFCareer.Skills)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_HealAttributeDamage_DaggerfallConnect_DFCareer_Stats_System_Int32_">BaseEntityEffect.HealAttributeDamage(DFCareer.Stats, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_HealSkillDamage_DaggerfallConnect_DFCareer_Skills_System_Int32_">BaseEntityEffect.HealSkillDamage(DFCareer.Skills, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_AllAttributesHealed">BaseEntityEffect.AllAttributesHealed()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_AllSkillsHealed">BaseEntityEffect.AllSkillsHealed()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ChanceValue">BaseEntityEffect.ChanceValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RollChance">BaseEntityEffect.RollChance()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetPeeredEntityBehaviour_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_">BaseEntityEffect.GetPeeredEntityBehaviour(EntityEffectManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetMagnitude_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">BaseEntityEffect.GetMagnitude(DaggerfallEntityBehaviour)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_PlayerAggro">BaseEntityEffect.PlayerAggro()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetStatMod_DaggerfallConnect_DFCareer_Stats_System_Int32_">BaseEntityEffect.SetStatMod(DFCareer.Stats, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetStatMaxMod_DaggerfallConnect_DFCareer_Stats_System_Int32_">BaseEntityEffect.SetStatMaxMod(DFCareer.Stats, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ChangeStatMod_DaggerfallConnect_DFCareer_Stats_System_Int32_">BaseEntityEffect.ChangeStatMod(DFCareer.Stats, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ChangeStatMaxMod_DaggerfallConnect_DFCareer_Stats_System_Int32_">BaseEntityEffect.ChangeStatMaxMod(DFCareer.Stats, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetSkillMod_DaggerfallConnect_DFCareer_Skills_System_Int32_">BaseEntityEffect.SetSkillMod(DFCareer.Skills, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ChangeSkillMod_DaggerfallConnect_DFCareer_Skills_System_Int32_">BaseEntityEffect.ChangeSkillMod(DFCareer.Skills, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetResistanceMod_DaggerfallConnect_DFCareer_Elements_System_Int32_">BaseEntityEffect.SetResistanceMod(DFCareer.Elements, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ChanceResistanceMod_DaggerfallConnect_DFCareer_Elements_System_Int32_">BaseEntityEffect.ChanceResistanceMod(DFCareer.Elements, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_AssignPotionRecipes_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe___">BaseEntityEffect.AssignPotionRecipes(PotionRecipe[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_DefaultEffectSettings">BaseEntityEffect.DefaultEffectSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetEffectDuration_DaggerfallWorkshop_Game_MagicAndEffects_EffectSettings_System_Int32_System_Int32_System_Int32_">BaseEntityEffect.SetEffectDuration(EffectSettings, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetEffectChance_DaggerfallWorkshop_Game_MagicAndEffects_EffectSettings_System_Int32_System_Int32_System_Int32_">BaseEntityEffect.SetEffectChance(EffectSettings, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_SetEffectMagnitude_DaggerfallWorkshop_Game_MagicAndEffects_EffectSettings_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">BaseEntityEffect.SetEffectMagnitude(EffectSettings, Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_MakeClassicKey_System_Byte_System_Byte_DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ClassicEffectFamily_">BaseEntityEffect.MakeClassicKey(Byte, Byte, BaseEntityEffect.ClassicEffectFamily)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ReverseClasicKey_System_Int32_System_Byte__System_Byte__DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ClassicEffectFamily__">BaseEntityEffect.ReverseClasicKey(Int32, Byte, Byte, BaseEntityEffect.ClassicEffectFamily)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_MakeEffectCosts_System_Single_System_Single_System_Single_">BaseEntityEffect.MakeEffectCosts(Single, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetSaveData">BaseEntityEffect.GetSaveData()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RestoreSaveData_System_Object_">BaseEntityEffect.RestoreSaveData(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetMacroDataSource">BaseEntityEffect.GetMacroDataSource()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.html">DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class RacialOverrideEffect : IncumbentEffect, IEntityEffect, IMacroContextProvider</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_forcedRoundsRemaining.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.forcedRoundsRemaining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L30">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_forcedRoundsRemaining" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.forcedRoundsRemaining">forcedRoundsRemaining</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int forcedRoundsRemaining</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_racesTextDatabase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.racesTextDatabase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L28">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_racesTextDatabase" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.racesTextDatabase">racesTextDatabase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string racesTextDatabase = &quot;Races&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CustomRace.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CustomRace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L206">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CustomRace_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CustomRace*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CustomRace" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CustomRace">CustomRace</h4>
+  <div class="markdown level1 summary"><p>Gets custom race exposed by this override</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract RaceTemplate CustomRace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.RaceTemplate.html">RaceTemplate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_RoundsRemaining.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.RoundsRemaining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L73">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_RoundsRemaining_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.RoundsRemaining*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_RoundsRemaining" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.RoundsRemaining">RoundsRemaining</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int RoundsRemaining { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RoundsRemaining">BaseEntityEffect.RoundsRemaining</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressCrime.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressCrime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L55">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressCrime_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressCrime*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressCrime" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressCrime">SuppressCrime</h4>
+  <div class="markdown level1 summary"><p>Allows racial override to suppress crimes by player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SuppressCrime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressOptionalCombatVoices.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressOptionalCombatVoices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L39">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressOptionalCombatVoices_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressOptionalCombatVoices*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressOptionalCombatVoices" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressOptionalCombatVoices">SuppressOptionalCombatVoices</h4>
+  <div class="markdown level1 summary"><p>Allow racial override to suppress Combat Voices option as required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SuppressOptionalCombatVoices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressPaperDollBodyAndItems.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressPaperDollBodyAndItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressPaperDollBodyAndItems_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressPaperDollBodyAndItems*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressPaperDollBodyAndItems" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressPaperDollBodyAndItems">SuppressPaperDollBodyAndItems</h4>
+  <div class="markdown level1 summary"><p>Allow racial override to suppress paper doll body and items to show background only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SuppressPaperDollBodyAndItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressPopulationSpawns.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressPopulationSpawns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L63">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressPopulationSpawns_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressPopulationSpawns*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SuppressPopulationSpawns" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SuppressPopulationSpawns">SuppressPopulationSpawns</h4>
+  <div class="markdown level1 summary"><p>Allows racial override to suppress population spawns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SuppressPopulationSpawns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_AddState_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.AddState(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_AddState_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.AddState*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_AddState_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.AddState(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)">AddState(IncumbentEffect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void AddState(IncumbentEffect incumbent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html">IncumbentEffect</a></td>
+        <td><span class="parametername">incumbent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_AddState_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_">IncumbentEffect.AddState(IncumbentEffect)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CheckFastTravel_DaggerfallWorkshop_Game_Entity_PlayerEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CheckFastTravel(DaggerfallWorkshop.Game.Entity.PlayerEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L139">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CheckFastTravel_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CheckFastTravel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CheckFastTravel_DaggerfallWorkshop_Game_Entity_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CheckFastTravel(DaggerfallWorkshop.Game.Entity.PlayerEntity)">CheckFastTravel(PlayerEntity)</h4>
+  <div class="markdown level1 summary"><p>Checks if custom race can initiate fast travel.
+Return true to allow fast travel or false to block it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CheckFastTravel(PlayerEntity playerEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CheckStartRest_DaggerfallWorkshop_Game_Entity_PlayerEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CheckStartRest(DaggerfallWorkshop.Game.Entity.PlayerEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L148">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CheckStartRest_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CheckStartRest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_CheckStartRest_DaggerfallWorkshop_Game_Entity_PlayerEntity_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.CheckStartRest(DaggerfallWorkshop.Game.Entity.PlayerEntity)">CheckStartRest(PlayerEntity)</h4>
+  <div class="markdown level1 summary"><p>Checks if custom race can initiate rest.
+Return true to allow rest or false to block it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CheckStartRest(PlayerEntity playerEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomHeadImageData_DaggerfallWorkshop_Game_Entity_PlayerEntity_DaggerfallWorkshop_ImageData__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomHeadImageData(DaggerfallWorkshop.Game.Entity.PlayerEntity%2CDaggerfallWorkshop.ImageData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L112">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomHeadImageData_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomHeadImageData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomHeadImageData_DaggerfallWorkshop_Game_Entity_PlayerEntity_DaggerfallWorkshop_ImageData__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomHeadImageData(DaggerfallWorkshop.Game.Entity.PlayerEntity,DaggerfallWorkshop.ImageData@)">GetCustomHeadImageData(PlayerEntity, out ImageData)</h4>
+  <div class="markdown level1 summary"><p>Gets custom head ImageData for this override.
+Return false to just use standard head.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetCustomHeadImageData(PlayerEntity playerEntity, out ImageData imageDataOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.ImageData.html">ImageData</a></td>
+        <td><span class="parametername">imageDataOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomPaperDollBackgroundTexture_DaggerfallWorkshop_Game_Entity_PlayerEntity_UnityEngine_Texture2D__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomPaperDollBackgroundTexture(DaggerfallWorkshop.Game.Entity.PlayerEntity%2CUnityEngine.Texture2D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L102">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomPaperDollBackgroundTexture_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomPaperDollBackgroundTexture*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomPaperDollBackgroundTexture_DaggerfallWorkshop_Game_Entity_PlayerEntity_UnityEngine_Texture2D__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomPaperDollBackgroundTexture(DaggerfallWorkshop.Game.Entity.PlayerEntity,UnityEngine.Texture2D@)">GetCustomPaperDollBackgroundTexture(PlayerEntity, out Texture2D)</h4>
+  <div class="markdown level1 summary"><p>Gets custom paper doll background texture for this override.
+Return false to use standard background for race.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetCustomPaperDollBackgroundTexture(PlayerEntity playerEntity, out Texture2D textureOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td><span class="parametername">textureOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomRaceGenderAttackSoundData_DaggerfallWorkshop_Game_Entity_PlayerEntity_DaggerfallWorkshop_SoundClips__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomRaceGenderAttackSoundData(DaggerfallWorkshop.Game.Entity.PlayerEntity%2CDaggerfallWorkshop.SoundClips%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L121">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomRaceGenderAttackSoundData_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomRaceGenderAttackSoundData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetCustomRaceGenderAttackSoundData_DaggerfallWorkshop_Game_Entity_PlayerEntity_DaggerfallWorkshop_SoundClips__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetCustomRaceGenderAttackSoundData(DaggerfallWorkshop.Game.Entity.PlayerEntity,DaggerfallWorkshop.SoundClips@)">GetCustomRaceGenderAttackSoundData(PlayerEntity, out SoundClips)</h4>
+  <div class="markdown level1 summary"><p>Gets custom attack sound clip for race and gender.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetCustomRaceGenderAttackSoundData(PlayerEntity playerEntity, out SoundClips soundClipOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SoundClips.html">SoundClips</a></td>
+        <td><span class="parametername">soundClipOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetSuppressInventory_System_String__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetSuppressInventory(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L182">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetSuppressInventory_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetSuppressInventory*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetSuppressInventory_System_String__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetSuppressInventory(System.String@)">GetSuppressInventory(out String)</h4>
+  <div class="markdown level1 summary"><p>Allow racial override to suppress inventory UI.
+Some care might need to be taken by other systems this does not crash game like classic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetSuppressInventory(out string suppressInventoryMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">suppressInventoryMessage</span></td>
+        <td><p>Optional message to display when inventory suppressed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if inventory should be suppressed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetSuppressTalk_System_String__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetSuppressTalk(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L193">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetSuppressTalk_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetSuppressTalk*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_GetSuppressTalk_System_String__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.GetSuppressTalk(System.String@)">GetSuppressTalk(out String)</h4>
+  <div class="markdown level1 summary"><p>Allow racial overrides to suppress talk UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetSuppressTalk(out string suppressTalkMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">suppressTalkMessage</span></td>
+        <td><p>Optional message to display when talk suppressed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if talk should be suppressed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_IsLikeKind_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.IsLikeKind(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L84">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_IsLikeKind_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.IsLikeKind*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_IsLikeKind_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.IsLikeKind(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)">IsLikeKind(IncumbentEffect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsLikeKind(IncumbentEffect other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html">IncumbentEffect</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_IsLikeKind_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_">IncumbentEffect.IsLikeKind(IncumbentEffect)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_OnWeaponHitEntity_DaggerfallWorkshop_Game_Entity_PlayerEntity_DaggerfallWorkshop_Game_Entity_DaggerfallEntity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.OnWeaponHitEntity(DaggerfallWorkshop.Game.Entity.PlayerEntity%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L131">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_OnWeaponHitEntity_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.OnWeaponHitEntity*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_OnWeaponHitEntity_DaggerfallWorkshop_Game_Entity_PlayerEntity_DaggerfallWorkshop_Game_Entity_DaggerfallEntity_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.OnWeaponHitEntity(DaggerfallWorkshop.Game.Entity.PlayerEntity,DaggerfallWorkshop.Game.Entity.DaggerfallEntity)">OnWeaponHitEntity(PlayerEntity, DaggerfallEntity)</h4>
+  <div class="markdown level1 summary"><p>Called by WeaponManager when player hits an entity with a weapon (includes hand-to-hand).
+Target entity may be null, racial overrides should handle this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnWeaponHitEntity(PlayerEntity playerEntity, DaggerfallEntity targetEntity = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.PlayerEntity.html">PlayerEntity</a></td>
+        <td><span class="parametername">playerEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html">DaggerfallEntity</a></td>
+        <td><span class="parametername">targetEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_RemoveRound.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.RemoveRound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_RemoveRound_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.RemoveRound*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_RemoveRound" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.RemoveRound">RemoveRound()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int RemoveRound()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RemoveRound">BaseEntityEffect.RemoveRound()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SetFPSWeapon_DaggerfallWorkshop_Game_FPSWeapon_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SetFPSWeapon(DaggerfallWorkshop.Game.FPSWeapon)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L171">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SetFPSWeapon_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SetFPSWeapon*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_SetFPSWeapon_DaggerfallWorkshop_Game_FPSWeapon_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.SetFPSWeapon(DaggerfallWorkshop.Game.FPSWeapon)">SetFPSWeapon(FPSWeapon)</h4>
+  <div class="markdown level1 summary"><p>Set state of current FPS weapon from WeaponManager.
+Allows the racial override to set a unique weapon type such as wereclaws.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SetFPSWeapon(FPSWeapon target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.FPSWeapon.html">FPSWeapon</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Target FPSWeapon to change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if weapon changed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_StartQuest_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.StartQuest(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L161">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_StartQuest_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.StartQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect_StartQuest_System_Boolean_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect.StartQuest(System.Boolean)">StartQuest(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Starts custom racial quest.</p>
+<ul>
+<li>Called every 38 days with isCureQuest = false</li>
+<li>Called every 84 days with isCureQuest = true
+Mainly used by vampirism and lycanthropy in core.
+Custom racial override effects can ignore this virtual to start and manage quests however they like.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StartQuest(bool isCureQuest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isCureQuest</span></td>
+        <td><p>True when this should start cure quest.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.html">IEntityEffect</a>
+  </div>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_RacialOverrideEffect.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.RacialOverrideEffect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Special/RacialOverrideEffect.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

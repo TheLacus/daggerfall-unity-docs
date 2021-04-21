@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DaggerfallBankingWindow
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DaggerfallBankingWindow
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow" class="text-break">Class DaggerfallBankingWindow
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html">UserInterfaceWindow</a></div>
+    <div class="level2"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html">DaggerfallBaseWindow</a></div>
+    <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html">DaggerfallPopupWindow</a></div>
+    <div class="level4"><span class="xref">DaggerfallBankingWindow</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></div>
+    <div><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_ScreenDimColor">DaggerfallPopupWindow.ScreenDimColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_AllowCancel">DaggerfallPopupWindow.AllowCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Cancelled">DaggerfallPopupWindow.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_PreviousWindow">DaggerfallPopupWindow.PreviousWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Draw">DaggerfallPopupWindow.Draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_CancelWindow">DaggerfallPopupWindow.CancelWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_OnCancel">DaggerfallPopupWindow.OnCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_exitKey">DaggerfallBaseWindow.exitKey</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_defaultToolTip">DaggerfallBaseWindow.defaultToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_DaggerfallUnity">DaggerfallBaseWindow.DaggerfallUnity</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_IsSetup">DaggerfallBaseWindow.IsSetup</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_NativePanel">DaggerfallBaseWindow.NativePanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_parentPanel">UserInterfaceWindow.parentPanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_uiManager">UserInterfaceWindow.uiManager</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_enabled">UserInterfaceWindow.enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_pauseWhileOpened">UserInterfaceWindow.pauseWhileOpened</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_focusControl">UserInterfaceWindow.focusControl</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_Value">UserInterfaceWindow.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_Enabled">UserInterfaceWindow.Enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_ParentPanel">UserInterfaceWindow.ParentPanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_FocusControl">UserInterfaceWindow.FocusControl</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_ProcessMessages">UserInterfaceWindow.ProcessMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnReturn">UserInterfaceWindow.OnReturn()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_CloseWindow">UserInterfaceWindow.CloseWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_PopWindow">UserInterfaceWindow.PopWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_PauseWhileOpen">UserInterfaceWindow.PauseWhileOpen</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_SetFocus_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_">UserInterfaceWindow.SetFocus(BaseScreenComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnClose">UserInterfaceWindow.OnClose</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_RaiseOnCloseHandler">UserInterfaceWindow.RaiseOnCloseHandler()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DaggerfallBankingWindow : DaggerfallPopupWindow, IUserInterfaceWindow, IMacroContextProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.%23ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager%2CDaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L54">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.#ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager,DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow)">DaggerfallBankingWindow(IUserInterfaceManager, DaggerfallBaseWindow)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallBankingWindow(IUserInterfaceManager uiManager, DaggerfallBaseWindow previous = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a></td>
+        <td><span class="parametername">uiManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html">DaggerfallBaseWindow</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_regionIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.regionIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L51">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_regionIndex" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.regionIndex">regionIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int regionIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_CreateBankingStatusBox_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.CreateBankingStatusBox(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L508">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_CreateBankingStatusBox_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.CreateBankingStatusBox*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_CreateBankingStatusBox_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.CreateBankingStatusBox(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)">CreateBankingStatusBox(IUserInterfaceWindow)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DaggerfallMessageBox CreateBankingStatusBox(IUserInterfaceWindow previous = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.html">DaggerfallMessageBox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GeneratePurchaseHousePopup_DaggerfallWorkshop_BuildingSummary_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GeneratePurchaseHousePopup(DaggerfallWorkshop.BuildingSummary)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L233">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GeneratePurchaseHousePopup_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GeneratePurchaseHousePopup*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GeneratePurchaseHousePopup_DaggerfallWorkshop_BuildingSummary_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GeneratePurchaseHousePopup(DaggerfallWorkshop.BuildingSummary)">GeneratePurchaseHousePopup(BuildingSummary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GeneratePurchaseHousePopup(BuildingSummary house)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.BuildingSummary.html">BuildingSummary</a></td>
+        <td><span class="parametername">house</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GeneratePurchaseShipPopup_DaggerfallWorkshop_Game_Banking_ShipType_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GeneratePurchaseShipPopup(DaggerfallWorkshop.Game.Banking.ShipType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L228">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GeneratePurchaseShipPopup_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GeneratePurchaseShipPopup*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GeneratePurchaseShipPopup_DaggerfallWorkshop_Game_Banking_ShipType_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GeneratePurchaseShipPopup(DaggerfallWorkshop.Game.Banking.ShipType)">GeneratePurchaseShipPopup(ShipType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GeneratePurchaseShipPopup(ShipType shipType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Banking.ShipType.html">ShipType</a></td>
+        <td><span class="parametername">shipType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GetMacroDataSource.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GetMacroDataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L477">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GetMacroDataSource_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GetMacroDataSource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_GetMacroDataSource" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.GetMacroDataSource">GetMacroDataSource()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MacroDataSource GetMacroDataSource()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.MacroDataSource.html">MacroDataSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnPop.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnPop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L205">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnPop_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnPop*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnPop" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnPop">OnPop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPop()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnPop">UserInterfaceWindow.OnPop()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnPush.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnPush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L198">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnPush_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnPush*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnPush" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnPush">OnPush()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPush()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnPush">UserInterfaceWindow.OnPush()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnTransactionEventHandler_DaggerfallWorkshop_Game_Banking_TransactionType_DaggerfallWorkshop_Game_Banking_TransactionResult_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnTransactionEventHandler(DaggerfallWorkshop.Game.Banking.TransactionType%2CDaggerfallWorkshop.Game.Banking.TransactionResult%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L468">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnTransactionEventHandler_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnTransactionEventHandler*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_OnTransactionEventHandler_DaggerfallWorkshop_Game_Banking_TransactionType_DaggerfallWorkshop_Game_Banking_TransactionResult_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.OnTransactionEventHandler(DaggerfallWorkshop.Game.Banking.TransactionType,DaggerfallWorkshop.Game.Banking.TransactionResult,System.Int32)">OnTransactionEventHandler(TransactionType, TransactionResult, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTransactionEventHandler(TransactionType type, TransactionResult result, int amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Banking.TransactionType.html">TransactionType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Banking.TransactionResult.html">TransactionResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_Setup.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.Setup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L59">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_Setup_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.Setup*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_Setup" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.Setup">Setup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Setup()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Setup">DaggerfallPopupWindow.Setup()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_Update.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L211">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_Update_" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.Update*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow_Update" data-uid="DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Update">DaggerfallPopupWindow.Update()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a>
+  </div>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_DaggerfallBankingWindow.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.DaggerfallBankingWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallBankingWindow.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1101 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MultiFormatTextLabel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MultiFormatTextLabel
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel" class="text-break">Class MultiFormatTextLabel
+  </h1>
+  <div class="markdown level0 summary"><p>A multi-format text label supporting variable pixel fonts and layouts.
+Designed for Daggerfall's formatted text records such as books and status popups.
+This class will be improved over time as needed.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></div>
+    <div class="level2"><span class="xref">MultiFormatTextLabel</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_rectRestrictedRenderArea">BaseScreenComponent.rectRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_restrictedRenderAreaCustomParent">BaseScreenComponent.restrictedRenderAreaCustomParent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_restrictedRenderAreaCoordinateType">BaseScreenComponent.restrictedRenderAreaCoordinateType</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_backgroundTexture">BaseScreenComponent.backgroundTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_animatedBackgroundTextures">BaseScreenComponent.animatedBackgroundTextures</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_backgroundTextureLayout">BaseScreenComponent.backgroundTextureLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseEnter">BaseScreenComponent.OnMouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseLeave">BaseScreenComponent.OnMouseLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseMove">BaseScreenComponent.OnMouseMove</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseDown">BaseScreenComponent.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseUp">BaseScreenComponent.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseClick">BaseScreenComponent.OnMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseDoubleClick">BaseScreenComponent.OnMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseDown">BaseScreenComponent.OnRightMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseUp">BaseScreenComponent.OnRightMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseClick">BaseScreenComponent.OnRightMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseDoubleClick">BaseScreenComponent.OnRightMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseDown">BaseScreenComponent.OnMiddleMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseUp">BaseScreenComponent.OnMiddleMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseClick">BaseScreenComponent.OnMiddleMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseDoubleClick">BaseScreenComponent.OnMiddleMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseScrollUp">BaseScreenComponent.OnMouseScrollUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseScrollDown">BaseScreenComponent.OnMouseScrollDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Enabled">BaseScreenComponent.Enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UseFocus">BaseScreenComponent.UseFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Name">BaseScreenComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Tag">BaseScreenComponent.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Position">BaseScreenComponent.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Size">BaseScreenComponent.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RootSize">BaseScreenComponent.RootSize</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Parent">BaseScreenComponent.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Rectangle">BaseScreenComponent.Rectangle</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_HorizontalAlignment">BaseScreenComponent.HorizontalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_VerticalAlignment">BaseScreenComponent.VerticalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RestrictedRenderAreaCoordinateType">BaseScreenComponent.RestrictedRenderAreaCoordinateType</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RectRestrictedRenderArea">BaseScreenComponent.RectRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RestrictedRenderAreaCustomParent">BaseScreenComponent.RestrictedRenderAreaCustomParent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UseRestrictedRenderArea">BaseScreenComponent.UseRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_CustomMousePosition">BaseScreenComponent.CustomMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MousePosition">BaseScreenComponent.MousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LastMousePosition">BaseScreenComponent.LastMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScaledMousePosition">BaseScreenComponent.ScaledMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundColor">BaseScreenComponent.BackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseOverBackgroundColor">BaseScreenComponent.MouseOverBackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundColorTexture">BaseScreenComponent.BackgroundColorTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundTexture">BaseScreenComponent.BackgroundTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundCroppedRect">BaseScreenComponent.BackgroundCroppedRect</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AnimatedBackgroundTextures">BaseScreenComponent.AnimatedBackgroundTextures</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AnimationDelayInSeconds">BaseScreenComponent.AnimationDelayInSeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundTextureLayout">BaseScreenComponent.BackgroundTextureLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_InteriorWidth">BaseScreenComponent.InteriorWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_InteriorHeight">BaseScreenComponent.InteriorHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Scale">BaseScreenComponent.Scale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AutoSize">BaseScreenComponent.AutoSize</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LocalScale">BaseScreenComponent.LocalScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ToolTip">BaseScreenComponent.ToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ToolTipText">BaseScreenComponent.ToolTipText</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SuppressToolTip">BaseScreenComponent.SuppressToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MinAutoScale">BaseScreenComponent.MinAutoScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MaxAutoScale">BaseScreenComponent.MaxAutoScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseOverComponent">BaseScreenComponent.MouseOverComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_TopMargin">BaseScreenComponent.TopMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BottomMargin">BaseScreenComponent.BottomMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LeftMargin">BaseScreenComponent.LeftMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMargin">BaseScreenComponent.RightMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Update">BaseScreenComponent.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScreenToLocal_UnityEngine_Vector2_">BaseScreenComponent.ScreenToLocal(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScreenToLocal_UnityEngine_Rect_">BaseScreenComponent.ScreenToLocal(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_GotFocus">BaseScreenComponent.GotFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LostFocus">BaseScreenComponent.LostFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_TriggerMouseClick">BaseScreenComponent.TriggerMouseClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseClick_UnityEngine_Vector2_">BaseScreenComponent.MouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMouseClick_UnityEngine_Vector2_">BaseScreenComponent.RightMouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MiddleMouseClick_UnityEngine_Vector2_">BaseScreenComponent.MiddleMouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.MouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.RightMouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MiddleMouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.MiddleMouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseEnter">BaseScreenComponent.MouseEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseLeave_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_">BaseScreenComponent.MouseLeave(BaseScreenComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseMove_System_Int32_System_Int32_">BaseScreenComponent.MouseMove(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseScrollUp">BaseScreenComponent.MouseScrollUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseScrollDown">BaseScreenComponent.MouseScrollDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Dispose">BaseScreenComponent.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SetMargins_DaggerfallWorkshop_Game_UserInterface_Margins_System_Int32_">BaseScreenComponent.SetMargins(Margins, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OffsetFrom_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_DaggerfallWorkshop_Game_UserInterface_Sides_System_Int32_">BaseScreenComponent.OffsetFrom(BaseScreenComponent, Sides, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SetFocus">BaseScreenComponent.SetFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_HasFocus">BaseScreenComponent.HasFocus()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultiFormatTextLabel : BaseScreenComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ExtraLeading.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ExtraLeading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L98">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ExtraLeading_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ExtraLeading*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ExtraLeading" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ExtraLeading">ExtraLeading</h4>
+  <div class="markdown level1 summary"><p>Gets or sets extra leading between rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExtraLeading { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Font.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Font%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L53">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Font_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Font*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Font" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Font">Font</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallFont Font { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.html">DaggerfallFont</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_HighlightColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.HighlightColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L116">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_HighlightColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.HighlightColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_HighlightColor" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.HighlightColor">HighlightColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color HighlightColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_LineCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.LineCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L139">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_LineCount_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.LineCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_LineCount" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.LineCount">LineCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LineCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_LineHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.LineHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L259">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_LineHeight_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.LineHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_LineHeight" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.LineHeight">LineHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LineHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_MaxTextWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.MaxTextWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L71">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_MaxTextWidth_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.MaxTextWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_MaxTextWidth" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.MaxTextWidth">MaxTextWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxTextWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_MinTextureDimTextLabel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.MinTextureDimTextLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L80">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_MinTextureDimTextLabel_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.MinTextureDimTextLabel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_MinTextureDimTextLabel" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.MinTextureDimTextLabel">MinTextureDimTextLabel</h4>
+  <div class="markdown level1 summary"><p>used to set min texture dims of textlabel to higher values if there would be aspect or scaling issues with small texts otherwise (e.g. some single-lined textlabels in inventory infopanel)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinTextureDimTextLabel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ShadowColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ShadowColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L122">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ShadowColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ShadowColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ShadowColor" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ShadowColor">ShadowColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ShadowColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ShadowPosition.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ShadowPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L104">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ShadowPosition_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ShadowPosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ShadowPosition" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ShadowPosition">ShadowPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ShadowPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextAlignment.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextAlignment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L128">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextAlignment_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextAlignment*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextAlignment" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextAlignment">TextAlignment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorizontalAlignment TextAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.HorizontalAlignment.html">HorizontalAlignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L110">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextColor" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextColor">TextColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color TextColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextLabels.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextLabels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L144">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextLabels_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextLabels*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextLabels" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextLabels">TextLabels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TextLabel&gt; TextLabels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.UserInterface.TextLabel.html">TextLabel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextScale.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextScale_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextScale*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_TextScale" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.TextScale">TextScale</h4>
+  <div class="markdown level1 summary"><p>set text scale factor - 1.0f is default value, 0.5f is half sized text, 2.0f double sized text and so on</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TextScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_WrapText.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.WrapText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L59">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_WrapText_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.WrapText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_WrapText" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.WrapText">WrapText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WrapText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_WrapWords.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.WrapWords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L65">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_WrapWords_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.WrapWords*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_WrapWords" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.WrapWords">WrapWords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WrapWords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_AddTextLabel_System_String_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.AddTextLabel(System.String%2CDaggerfallWorkshop.Game.UserInterface.DaggerfallFont%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L199">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_AddTextLabel_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.AddTextLabel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_AddTextLabel_System_String_DaggerfallWorkshop_Game_UserInterface_DaggerfallFont_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.AddTextLabel(System.String,DaggerfallWorkshop.Game.UserInterface.DaggerfallFont,UnityEngine.Color)">AddTextLabel(String, DaggerfallFont, Color)</h4>
+  <div class="markdown level1 summary"><p>Adds a single text item.
+Each subsequent text item will be appended to the previous text item position.
+Call NewLine() to start a new line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextLabel AddTextLabel(string text, DaggerfallFont font, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Text for this label.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.DaggerfallFont.html">DaggerfallFont</a></td>
+        <td><span class="parametername">font</span></td>
+        <td><p>Font for this label.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Text color for this label.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.TextLabel.html">TextLabel</a></td>
+        <td><p>TextLabel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Clear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L250">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Clear_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Clear" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears current labels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Draw.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Draw%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L149">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Draw_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Draw*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_Draw" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.Draw">Draw()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Draw">BaseScreenComponent.Draw()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_NewLine.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.NewLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L240">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_NewLine_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.NewLine*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_NewLine" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.NewLine">NewLine()</h4>
+  <div class="markdown level1 summary"><p>Start a new line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NewLine()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ResizeY_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ResizeY(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L134">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ResizeY_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ResizeY*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_ResizeY_System_Single_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.ResizeY(System.Single)">ResizeY(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResizeY(float newSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">newSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetRowLeading_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetRowLeading(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L269">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetRowLeading_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetRowLeading*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetRowLeading_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetRowLeading(System.Int32)">SetRowLeading(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetRowLeading(int amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetText_DaggerfallConnect_Arena2_TextFile_Token___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetText(DaggerfallConnect.Arena2.TextFile.Token%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L166">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetText_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetText_DaggerfallConnect_Arena2_TextFile_Token___" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetText(DaggerfallConnect.Arena2.TextFile.Token[])">SetText(TextFile.Token[])</h4>
+  <div class="markdown level1 summary"><p>Adds formatted text labels from a RSC token array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetText(TextFile.Token[] tokens)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td><span class="parametername">tokens</span></td>
+        <td><p>Daggerfall RSC token array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetText_UnityEngine_TextAsset_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetText(UnityEngine.TextAsset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L176">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetText_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel_SetText_UnityEngine_TextAsset_" data-uid="DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel.SetText(UnityEngine.TextAsset)">SetText(TextAsset)</h4>
+  <div class="markdown level1 summary"><p>Adds formatted text labels from a TextAsset.
+Currently only supports newlines, not tabs or other formatting characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetText(TextAsset textAsset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.TextAsset</span></td>
+        <td><span class="parametername">textAsset</span></td>
+        <td><p>Source TextAsset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_MultiFormatTextLabel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.MultiFormatTextLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/MultiFormatTextLabel.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

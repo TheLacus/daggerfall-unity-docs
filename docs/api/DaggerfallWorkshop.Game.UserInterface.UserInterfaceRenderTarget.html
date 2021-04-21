@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserInterfaceRenderTarget
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserInterfaceRenderTarget
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget" class="text-break">Class UserInterfaceRenderTarget
+  </h1>
+  <div class="markdown level0 summary"><p>Manages the render target texture for UI systems and provides helpers for drawing UI components.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">UserInterfaceRenderTarget</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserInterfaceRenderTarget : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_EnableCustomStack.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.EnableCustomStack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L24">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_EnableCustomStack" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.EnableCustomStack">EnableCustomStack</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableCustomStack</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_OutputImage.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.OutputImage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L23">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_OutputImage" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.OutputImage">OutputImage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RawImage OutputImage</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.RawImage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_ClearColor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.ClearColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L86">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_ClearColor_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.ClearColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_ClearColor" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.ClearColor">ClearColor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets custom clear colour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ClearColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_CustomHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.CustomHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L68">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_CustomHeight_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.CustomHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_CustomHeight" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.CustomHeight">CustomHeight</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a custom height for target texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CustomHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_CustomWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.CustomWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L59">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_CustomWidth_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.CustomWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_CustomWidth" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.CustomWidth">CustomWidth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a custom width for target texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CustomWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_FilterMode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.FilterMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_FilterMode_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.FilterMode*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_FilterMode" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.FilterMode">FilterMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets render texture filter mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilterMode FilterMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.FilterMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_ParentPanel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.ParentPanel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L78">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_ParentPanel_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.ParentPanel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_ParentPanel" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.ParentPanel">ParentPanel</h4>
+  <div class="markdown level1 summary"><p>Gets custom parent panel for adding custom own UI controls.
+This will be set to custom width/height dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Panel ParentPanel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html">Panel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_TargetSize.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.TargetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L51">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_TargetSize_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.TargetSize*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_TargetSize" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.TargetSize">TargetSize</h4>
+  <div class="markdown level1 summary"><p>Gets size of target texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 TargetSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_TargetTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.TargetTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L43">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_TargetTexture_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.TargetTexture*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_TargetTexture" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.TargetTexture">TargetTexture</h4>
+  <div class="markdown level1 summary"><p>Gets current render target texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture TargetTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RenderTexture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_Clear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L150">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_Clear_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_Clear" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_Clear_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.Clear(UnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L155">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_Clear_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_Clear_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.Clear(UnityEngine.Color)">Clear(Color)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear(Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTexture_UnityEngine_Rect_UnityEngine_Texture2D_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTexture(UnityEngine.Rect%2CUnityEngine.Texture2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L160">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTexture_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTexture*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTexture_UnityEngine_Rect_UnityEngine_Texture2D_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTexture(UnityEngine.Rect,UnityEngine.Texture2D)">DrawTexture(Rect, Texture2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTexture(Rect position, Texture2D image)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTexture_UnityEngine_Rect_UnityEngine_Texture2D_UnityEngine_ScaleMode_System_Boolean_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTexture(UnityEngine.Rect%2CUnityEngine.Texture2D%2CUnityEngine.ScaleMode%2CSystem.Boolean%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L168">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTexture_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTexture*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTexture_UnityEngine_Rect_UnityEngine_Texture2D_UnityEngine_ScaleMode_System_Boolean_System_Single_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTexture(UnityEngine.Rect,UnityEngine.Texture2D,UnityEngine.ScaleMode,System.Boolean,System.Single)">DrawTexture(Rect, Texture2D, ScaleMode, Boolean, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTexture(Rect position, Texture2D image, ScaleMode scaleMode, bool alphaBlend = true, float imageAspect = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.ScaleMode</span></td>
+        <td><span class="parametername">scaleMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">alphaBlend</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">imageAspect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTextureWithTexCoords_UnityEngine_Rect_UnityEngine_Texture_UnityEngine_Rect_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTextureWithTexCoords(UnityEngine.Rect%2CUnityEngine.Texture%2CUnityEngine.Rect%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L176">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTextureWithTexCoords_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTextureWithTexCoords*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_DrawTextureWithTexCoords_UnityEngine_Rect_UnityEngine_Texture_UnityEngine_Rect_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect,System.Boolean)">DrawTextureWithTexCoords(Rect, Texture, Rect, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTextureWithTexCoords(Rect position, Texture image, Rect texCoords, bool alphaBlend = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture</span></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">texCoords</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">alphaBlend</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_RaiseOnCreateTargetTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.RaiseOnCreateTargetTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L237">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_RaiseOnCreateTargetTexture_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.RaiseOnCreateTargetTexture*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_RaiseOnCreateTargetTexture" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.RaiseOnCreateTargetTexture">RaiseOnCreateTargetTexture()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnCreateTargetTexture()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_OnCreateTargetTexture.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.OnCreateTargetTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L236">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget_OnCreateTargetTexture" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.OnCreateTargetTexture">OnCreateTargetTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UserInterfaceRenderTarget.OnCreateTargetTextureEventHandler OnCreateTargetTexture</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget.OnCreateTargetTextureEventHandler.html">UserInterfaceRenderTarget.OnCreateTargetTextureEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceRenderTarget.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceRenderTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceRenderTarget.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

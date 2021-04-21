@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace DaggerfallWorkshop
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace DaggerfallWorkshop
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop">
+  
+  <h1 id="DaggerfallWorkshop" data-uid="DaggerfallWorkshop" class="text-break">Namespace DaggerfallWorkshop
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallAction.html">DaggerfallAction</a></h4>
+      <section><p>Defines and executes Daggerfall action records.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallActionCollision.html">DaggerfallActionCollision</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallActionDoor.html">DaggerfallActionDoor</a></h4>
+      <section><p>Specialised action component for hinged doors in buildings interiors and dungeons.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallActionDoorSpecial.html">DaggerfallActionDoorSpecial</a></h4>
+      <section><p>This door component is assigned when linked action calls for a door, but no normal door record found.
+Usually found on super-secret doors the player is never intended to open manually and must find a lever.
+Player cannot open, bash, pick, or cast their way through this type of door.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallAudioSource.html">DaggerfallAudioSource</a></h4>
+      <section><p>Load sound effects from Daggerfall into a normal AudioSource.
+This component loads clips procedurally in editor and at runtime.
+Can preview clips by index, ID, or enum directly from editor window.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallBillboard.html">DaggerfallBillboard</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallBillboardBatch.html">DaggerfallBillboardBatch</a></h4>
+      <section><p>Draws a large number of atlased billboards using a single mesh and custom geometry shader.
+Supports animated billboards with a random start frame, but only one animation timer per batch.
+Currently used for exterior billboards only (origin = centre-bottom).
+Support for interior/dungeon billboards will be added later (origin = centre).
+Tries to not recreate Mesh and Material where possible.
+Generates some garbage when rebuilding mesh layout. This can probably be improved.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallBookshelf.html">DaggerfallBookshelf</a></h4>
+      <section><p>Bookshelves in building interiors which allow reading books.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallCityGate.html">DaggerfallCityGate</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallDungeon.html">DaggerfallDungeon</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallEnemy.html">DaggerfallEnemy</a></h4>
+      <section><p>Stores enemy settings for serialization and other tasks.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallGroundPlane.html">DaggerfallGroundPlane</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallInterior.html">DaggerfallInterior</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallLadder.html">DaggerfallLadder</a></h4>
+      <section><p>Moves player up an down ladders in building interiors.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallLight.html">DaggerfallLight</a></h4>
+      <section><p>Attached to point lights to create animated effect.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallLocation.html">DaggerfallLocation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallLoot.html">DaggerfallLoot</a></h4>
+      <section><p>Enables a world object to be lootable by player.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallLootDataTables.html">DaggerfallLootDataTables</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallMesh.html">DaggerfallMesh</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallMobileUnit.html">DaggerfallMobileUnit</a></h4>
+      <section><p>A billboard class for classic Daggerfall mobile sprites with 8 orientations.
+Handles loading resources and rendering billboard based on orientation and state.
+Will rotate and scale based on camera angle and texture, so this component should
+only be attached to a child GameObject.
+Uses parent GameObject to determine actual facing in world.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallRDBBlock.html">DaggerfallRDBBlock</a></h4>
+      <section><p>Attached to dungeon blocks.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallRMBBlock.html">DaggerfallRMBBlock</a></h4>
+      <section><p>This is back to a placeholder component for now.
+Building lookup has been moved to DaggerfallLocation object by way of BuildingDirectory.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallSky.html">DaggerfallSky</a></h4>
+      <section><p>Implementation of Daggerfall's sky backgrounds. Works in both forward and deferred rendering paths.
+Uses two cameras and OnPostRender in local camera for sky drawing (uses normal camera solid colour clear).
+Sets own camera depth to MainCamera.depth-1 so sky is drawn first.</p>
+<p>DO NOT ATTACH THIS SCRIPT TO MAINCAMERA GAMEOBJECT.
+Attach to an empty GameObject or use the prefab provided.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallSongPlayer.html">DaggerfallSongPlayer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallSongPlayer.MyMemoryFile.html">DaggerfallSongPlayer.MyMemoryFile</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallStaticBuildings.html">DaggerfallStaticBuildings</a></h4>
+      <section><p>Stores an array of buildings inside a block object.
+This provides the bridge between live scene data and game data.
+Used to hit-test buildings for identification and to locate in scene.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallStaticDoors.html">DaggerfallStaticDoors</a></h4>
+      <section><p>Stores an array of static doors.
+Exposes helpers to check doors in correct world space.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallTerrain.html">DaggerfallTerrain</a></h4>
+      <section><p>Partners with a Unity Terrain for use by StreamingWorld.
+Each terrain is &quot;self-assembling&quot; based on position in world (1000x500 map pixels).
+Also serializes additional information about neighbour terrains.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallUnity.html">DaggerfallUnity</a></h4>
+      <section><p>DaggerfallUnity main class.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DefaultTerrainSampler.html">DefaultTerrainSampler</a></h4>
+      <section><p>Default TerrainSampler for StreamingWorld.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DFRandom.html">DFRandom</a></h4>
+      <section><p>Reimplementing key parts of Daggerfall's random library.
+This ensures critical random number sequences (e.g. building names)
+will match Daggerfall's output across all platforms.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DungeonTextureTables.html">DungeonTextureTables</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.GenerateDiagLog.html">GenerateDiagLog</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.JobA.html">JobA</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.JobRand.html">JobRand</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MaterialReader.html">MaterialReader</a></h4>
+      <section><p>Imports Daggerfall images into Unity.
+Should only be attached to DaggerfallUnity singleton (for which it is a required component).
+Note: Texture loading methods have been moved to TextureReader class.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MeshReader.html">MeshReader</a></h4>
+      <section><p>Imports Daggerfall models into Unity as Mesh objects.
+Should only be attached to DaggerfallUnity (for which it is a required component).</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobilePersonBillboard.html">MobilePersonBillboard</a></h4>
+      <section><p>Billboard class for classic wandering NPCs found in town environments.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.NoiseTerrainSampler.html">NoiseTerrainSampler</a></h4>
+      <section><p>A sampler to produce rolling noise-based terrain.
+Does not use Daggerfall map data so usual coastlines and elevations not present.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.html">PlayerGPS</a></h4>
+      <section><p>Tracks player position in virtual world space.
+Provides information about world around the player.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SettingsManager.html">SettingsManager</a></h4>
+      <section><p>Settings manager for reading game configuration from INI file.
+Deploys new settings from Resources/defaults.ini to persistentDataPath/settings.ini.
+Settings no longer present in defaults.ini are removed from settings.ini.
+Reads on start to public property cache. This prevents expensive string parsing if property checked every frame.
+Transfers settings from public property cache back to ini data on save.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SimpleTerrainSampler.html">SimpleTerrainSampler</a></h4>
+      <section><p>A minimal terrain sampler to create perfectly flat terrain.
+Does not create any ocean or terrain features.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SoundReader.html">SoundReader</a></h4>
+      <section><p>Imports Daggerfall sounds into Unity as AudioClip objects.
+Should only be attached to DaggerfallUnity (for which it is a required component).</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.html">StreamingWorld</a></h4>
+      <section><p>Manages terrains for streaming world at runtime.
+At runtime only coordinates from LocalPlayerGPS will be used. Be sure to apply desired preview to PlayerGPS.
+Terrain tiles are spread outwards from a centre tile up to TerrainDistance around player.
+Terrains will be marked inactive once they pass beyond TerrainDistance.
+Inactive terrains greater than TerrainDistance+1 from player will be recycled.
+Locations and other loose objects greater than TerrainDistance+1 from player will be destroyed.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.TerrainHelper.html">TerrainHelper</a></h4>
+      <section><p>Helper methods for terrain generation.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.TerrainSampler.html">TerrainSampler</a></h4>
+      <section><p>Base TerrainSampler for transforming heightmap samples.
+This class and interface will be expanded on later.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.TerrainTexturing.html">TerrainTexturing</a></h4>
+      <section><p>Generates texture tiles for terrains and uses marching squares for tile transitions.
+These features are very much in early stages of development.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.html">WorldTime</a></h4>
+      <section><p>A simple clock component to raise current world time at runtime.
+Provides some events for time milestones. Be careful using events in combination
+with very high timescales. This can cause events to fire too often or be skipped entirely.
+For large-scale time changes (hundreds to thousands of objects) a better performance
+pattern is to simply check the DaggerfallUnity.Singleton.WorldTime.Now in Update() of each object.
+See DaggerfallLight.cs for an example of reading time directly for lights on/off.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Border-1.html">Border&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.BuildingSummary.html">BuildingSummary</a></h4>
+      <section><p>Detailed information about a building for directory lookups.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.CachedMaterial.html">CachedMaterial</a></h4>
+      <section><p>Defines a single cached material and related properties.
+Marked as serializable but not currently serialized.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.CareerStartingSpells.html">CareerStartingSpells</a></h4>
+      <section><p>List of starting spells for a specific career.
+Custom careers use the same starting spells as Spellsword (CareerIndex=1) if any primary or major skills are a magic skill)</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ClimateTextureInfo.html">ClimateTextureInfo</a></h4>
+      <section><p>Some information about a climate texture, returned by climate parser.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallBillboard.BillboardSummary.html">DaggerfallBillboard.BillboardSummary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallDungeon.DungeonSummary.html">DaggerfallDungeon.DungeonSummary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallGroundPlane.GroundSummary.html">DaggerfallGroundPlane.GroundSummary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallInterior.InteriorEditorMarker.html">DaggerfallInterior.InteriorEditorMarker</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallLocation.LocationSummary.html">DaggerfallLocation.LocationSummary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallMobileUnit.MobileUnitSummary.html">DaggerfallMobileUnit.MobileUnitSummary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallSky.SkyColors.html">DaggerfallSky.SkyColors</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallTextureIndex.html">DaggerfallTextureIndex</a></h4>
+      <section><p>Index of a single Daggerfall texture.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.FaceDetails.html">FaceDetails</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.GetTextureResults.html">GetTextureResults</a></h4>
+      <section><p>Results out for GetTexture methods.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.GetTextureSettings.html">GetTextureSettings</a></h4>
+      <section><p>Settings in for GetTexture methods.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.GlobalVar.html">GlobalVar</a></h4>
+      <section><p>A single global variable.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ImageData.html">ImageData</a></h4>
+      <section><p>Data package returned by ImageHelper.GetImageData() methods.
+Supplied Texture2D will always be readable.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.LootChanceMatrix.html">LootChanceMatrix</a></h4>
+      <section><p>Used to create matrix of chances by loot table key.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MapPixelData.html">MapPixelData</a></h4>
+      <section><p>Information about a single map pixel for streaming world.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileAnimation.html">MobileAnimation</a></h4>
+      <section><p>Defines animation setup for mobile enemies.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileEnemy.html">MobileEnemy</a></h4>
+      <section><p>Defines basic properties of mobile enemies.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ModelData.html">ModelData</a></h4>
+      <section><p>Defines model data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ModelData.SubMeshData.html">ModelData.SubMeshData</a></h4>
+      <section><p>Defines submesh data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ModelDoor.html">ModelDoor</a></h4>
+      <section><p>Defines a door found in model data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.DiscoveredBuilding.html">PlayerGPS.DiscoveredBuilding</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.DiscoveredLocation.html">PlayerGPS.DiscoveredLocation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.NearbyObject.html">PlayerGPS.NearbyObject</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.QuestMarker.html">QuestMarker</a></h4>
+      <section><p>Describes a single quest marker for NPC, item, etc.
+These markers are used to place quest resources like Person, Foe, Item, etc.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.RandomEncounterTable.html">RandomEncounterTable</a></h4>
+      <section><p>Defines a list of random encounters based on dungeon type (Crypt, Orc Stronghold, etc.).</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.RecordIndex.html">RecordIndex</a></h4>
+      <section><p>A record index for cached materials.
+Used to align indices in atlased textures.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SiteDetails.html">SiteDetails</a></h4>
+      <section><p>Full details of a quest site generated by Place resource.
+A site has different meanings based on type:</p>
+<ul>
+<li>Town - Exterior arrangement of RMB blocks. Can be fixed or random.</li>
+<li>Dungeon - Interior arrangement of RDB blocks. Can be fixed or random.</li>
+<li>Building - Interior of a specific RMB block record. Random based on building type.</li>
+</ul>
+<p>NOTES:</p>
+<ul>
+<li>All available quest Spawn and Item markers are stored in SiteDetails for lookups.</li>
+<li>Only a single marker will be selected based on first resource placed to site and what markers are available.</li>
+<li>If an Item resource is placed first it will select a random Item marker.</li>
+<li>If a Foe or Person resource is placed first it will select a random Spawn marker.</li>
+<li>Future placements will be added to selected marker.</li>
+<li>If site has only a Spawn or Item marker available, the best available marker type will be used.</li>
+<li>Will continue to refine this design as quest system progresses.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SiteLink.html">SiteLink</a></h4>
+      <section><p>Site links are reserved by &quot;create npc at&quot; action.
+Creates a bridge between world and quest markers for layout classes.
+For example, quest NPCs might need to be injected to a certain building or dungeon interior.
+The same mechanism is used to place quest items and foes for the player.
+SiteLink contains enough information for external classes to determine if they belong to that site.
+If layout classes find a matching SiteLink, they will deploy any assigned QuestMarkers assigned to site.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StartingSpell.html">StartingSpell</a></h4>
+      <section><p>A single starting spell.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StaticBuilding.html">StaticBuilding</a></h4>
+      <section><p>Defines a static building for hit tests inside scene.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a></h4>
+      <section><p>Defines a static door for hit tests inside a scene.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.TerrainDesc.html">StreamingWorld.TerrainDesc</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WeaponAnimation.html">WeaponAnimation</a></h4>
+      <section><p>Defines animation setup for weapons.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.IMapSamplesResource.html">IMapSamplesResource</a></h4>
+      <section><p>Interface to map samples resource for StreamingWorld.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ITerrainSampler.html">ITerrainSampler</a></h4>
+      <section><p>Interface to TerrainSampler.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.ActionState.html">ActionState</a></h4>
+      <section><p>States for action doors and other objects.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.AudioPresets.html">AudioPresets</a></h4>
+      <section><p>Quick AudioSource presets for DaggerfallAudioSource.
+These make minor changes to peer AudioSource component.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.CharacterHands.html">CharacterHands</a></h4>
+      <section><p>Defines character's hands.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ClimateBases.html">ClimateBases</a></h4>
+      <section><p>Base types for climate-aware texture sets.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ClimateNatureSets.html">ClimateNatureSets</a></h4>
+      <section><p>Texture sets for nature flats.
+Note: Snow sets are only assigned by climate processing.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ClimateSeason.html">ClimateSeason</a></h4>
+      <section><p>Climate season modifiers.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallAction.TriggerTypes.html">DaggerfallAction.TriggerTypes</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallInterior.InteriorMarkerTypes.html">DaggerfallInterior.InteriorMarkerTypes</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallRegions.html">DaggerfallRegions</a></h4>
+      <section><p>Regions across the game world.
+Values maps to zero-based region index.
+Not all regions used in game.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DoorTypes.html">DoorTypes</a></h4>
+      <section><p>Door types found around locations.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DungeonTextureUse.html">DungeonTextureUse</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DyeColors.html">DyeColors</a></h4>
+      <section><p>Available dye colours for armour, weapons, and clothing.
+Values match known Daggerfall colour indices.
+May change at a later date with new research.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DyeTargets.html">DyeTargets</a></h4>
+      <section><p>Supported targets for dye changes.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.EditorFlatTypes.html">EditorFlatTypes</a></h4>
+      <section><p>Sub-types of editor flats.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.EntityTypes.html">EntityTypes</a></h4>
+      <section><p>Defines various types of living entities in the world.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.FlatTypes.html">FlatTypes</a></h4>
+      <section><p>Types of billboard flats in Daggerfall blocks.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Handedness.html">Handedness</a></h4>
+      <section><p>Controls how weapons are held in the player's hands.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ImageTypes.html">ImageTypes</a></h4>
+      <section><p>Supported ImageReader file types.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.InventoryContainerImages.html">InventoryContainerImages</a></h4>
+      <section><p>Various container images for inventory management.
+Not sure if all of these are used.
+May change at a later date.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.ItemHands.html">ItemHands</a></h4>
+      <section><p>Defines how an item is held.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.LocationClimateUse.html">LocationClimateUse</a></h4>
+      <section><p>Location climate usage options.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.LootContainerTypes.html">LootContainerTypes</a></h4>
+      <section><p>Supported loot containers in world.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.LunarPhases.html">LunarPhases</a></h4>
+      <section><p>Phases of the moons.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.LycanthropyTypes.html">LycanthropyTypes</a></h4>
+      <section><p>Lycanthropy variants.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MacroTypes.html">MacroTypes</a></h4>
+      <section><p>Text macros used by various systems (quest messages, items, stats, etc.).
+Macro output depends on the characters wrapping symbol name.
+Not all objects support all macro types.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MarkerTypes.html">MarkerTypes</a></h4>
+      <section><p>Types of markers in a location from TEXTURE.199.
+Only used for quest resource placement right now.
+Will be expanded later to include additional marker types (rest, ladders, etc.)</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MaterialReader.CustomBlendMode.html">MaterialReader.CustomBlendMode</a></h4>
+      <section><p>Standard shader blend modes.
+Using a custom enum as Unity does not expose outside of editor GUI.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MaterialReader.CustomSmoothnessMapChannel.html">MaterialReader.CustomSmoothnessMapChannel</a></h4>
+      <section><p>Standard shader smoothness map channel setting.
+Using a custom enum as Unity does not expose outside of editor GUI.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MetalTypes.html">MetalTypes</a></h4>
+      <section><p>Various metal types in Daggerfall.
+This is a Daggerfall Unity enum.
+For enum matching native data see Items/ItemEnums.cs.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileAffinity.html">MobileAffinity</a></h4>
+      <section><p>Mobile affinity for resists/weaknesses, grouping, etc.
+This could be extended into a set of flags for multi-affinity creatures.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileBehaviour.html">MobileBehaviour</a></h4>
+      <section><p>Mobile enemy behaviour groups.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileCombatFlags.html">MobileCombatFlags</a></h4>
+      <section><p>Basic combat flags for mobiles.
+Every mobile has a basic melee attack available.
+This can be extended to create more diverse foes with
+a wider range of behaviours.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileGender.html">MobileGender</a></h4>
+      <section><p>Mobile gender.
+All monsters have an unspecified gender and no male/female variations.
+When specifying gender for humanoids, a value of unspecified will randomly choose between male/female.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileReactions.html">MobileReactions</a></h4>
+      <section><p>Reaction settings for mobiles.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileStates.html">MobileStates</a></h4>
+      <section><p>Mobile animation states.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileTeams.html">MobileTeams</a></h4>
+      <section><p>Mobile teams.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.MobileTypes.html">MobileTypes</a></h4>
+      <section><p>A list of mobile enemy types with ID range 0-42 (monsters) and 128-146 (humanoids).
+Do not extend this enum.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerActivateModes.html">PlayerActivateModes</a></h4>
+      <section><p>Modes for user when activating central object.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.NearbyObjectFlags.html">PlayerGPS.NearbyObjectFlags</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SiteTypes.html">SiteTypes</a></h4>
+      <section><p>Types of sites player can be sent to for quests.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SongFiles.html">SongFiles</a></h4>
+      <section><p>All songs in MIDI.BSA.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SoundClips.html">SoundClips</a></h4>
+      <section><p>Enum for Daggerfall sound clips.
+This will be filled out over time.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.RepositionMethods.html">StreamingWorld.RepositionMethods</a></h4>
+      <section><p>Methods for auto-reposition logic.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.SupportedAlphaTextureFormats.html">SupportedAlphaTextureFormats</a></h4>
+      <section><p>Supported alpha texture formats for texure reader.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.VampireClans.html">VampireClans</a></h4>
+      <section><p>Vampire clans.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WeaponAlignment.html">WeaponAlignment</a></h4>
+      <section><p>Defines how a weapon is aligned.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WeaponStates.html">WeaponStates</a></h4>
+      <section><p>Weapon animation states.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WeaponTypes.html">WeaponTypes</a></h4>
+      <section><p>Generic weapon types in Daggerfall.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WeatherStyle.html">WeatherStyle</a></h4>
+      <section><p>Weather texture modifiers.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WindowStyle.html">WindowStyle</a></h4>
+      <section><p>Window textures modifiers.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldContext.html">WorldContext</a></h4>
+      <section><p>Basic context of world object, such as dropped loot.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallAction.OnTeleportActionEventHandler.html">DaggerfallAction.OnTeleportActionEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallTerrain.OnInstantiateTerrainEventHandler.html">DaggerfallTerrain.OnInstantiateTerrainEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallTerrain.OnPromoteTerrainDataEventHandler.html">DaggerfallTerrain.OnPromoteTerrainDataEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallUnity.OnReadyEventHandler.html">DaggerfallUnity.OnReadyEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallUnity.OnSetArena2SourceEventHandler.html">DaggerfallUnity.OnSetArena2SourceEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallUnity.OnSetTerrainSamplerEventHandler.html">DaggerfallUnity.OnSetTerrainSamplerEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.DaggerfallUnity.OnSetTextProviderEventHandler.html">DaggerfallUnity.OnSetTextProviderEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.OnClimateIndexChangedEventHandler.html">PlayerGPS.OnClimateIndexChangedEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.OnEnterLocationRectEventHandler.html">PlayerGPS.OnEnterLocationRectEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.OnExitLocationRectEventHandler.html">PlayerGPS.OnExitLocationRectEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.OnMapPixelChangedEventHandler.html">PlayerGPS.OnMapPixelChangedEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.OnPoliticIndexChangedEventHandler.html">PlayerGPS.OnPoliticIndexChangedEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.PlayerGPS.OnRegionIndexChangedEventHandler.html">PlayerGPS.OnRegionIndexChangedEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnAvailableLocationGameObjectHandler.html">StreamingWorld.OnAvailableLocationGameObjectHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnClearStreamingWorldEventHandler.html">StreamingWorld.OnClearStreamingWorldEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnCreateLocationGameObjectEventHandler.html">StreamingWorld.OnCreateLocationGameObjectEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnFloatingOriginChangeEventHandler.html">StreamingWorld.OnFloatingOriginChangeEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnInitWorldEventHandler.html">StreamingWorld.OnInitWorldEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnPreInitWorldEventHandler.html">StreamingWorld.OnPreInitWorldEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnReadyEventHandler.html">StreamingWorld.OnReadyEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnTeleportToCoordinatesEventHandler.html">StreamingWorld.OnTeleportToCoordinatesEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnUpdateLocationGameObjectEventHandler.html">StreamingWorld.OnUpdateLocationGameObjectEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsEndEventHandler.html">StreamingWorld.OnUpdateTerrainsEndEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsStartEventHandler.html">StreamingWorld.OnUpdateTerrainsStartEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnCityLightsOffEventHandler.html">WorldTime.OnCityLightsOffEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnCityLightsOnEventHandler.html">WorldTime.OnCityLightsOnEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnDawnEventHandler.html">WorldTime.OnDawnEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnDuskEventHandler.html">WorldTime.OnDuskEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnMiddayEventHandler.html">WorldTime.OnMiddayEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnMidnightEventHandler.html">WorldTime.OnMidnightEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnNewDayEventHandler.html">WorldTime.OnNewDayEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnNewHourEventHandler.html">WorldTime.OnNewHourEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnNewMonthEventHandler.html">WorldTime.OnNewMonthEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.WorldTime.OnNewYearEventHandler.html">WorldTime.OnNewYearEventHandler</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

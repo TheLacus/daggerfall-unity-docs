@@ -1,0 +1,1573 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SaveLoadManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SaveLoadManager
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager" class="text-break">Class SaveLoadManager
+  </h1>
+  <div class="markdown level0 summary"><p>Implements save/load logic.
+Games are saved in PersistentDataPath\Saves.
+Each save game will have a screenshot and multiple files.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">SaveLoadManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Serialization.html">DaggerfallWorkshop.Game.Serialization</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SaveLoadManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CharacterCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CharacterCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L94">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CharacterCount_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CharacterCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CharacterCount" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CharacterCount">CharacterCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CharacterCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CharacterNames.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CharacterNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L99">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CharacterNames_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CharacterNames*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CharacterNames" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CharacterNames">CharacterNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] CharacterNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DaggerfallSavePath.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DaggerfallSavePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DaggerfallSavePath_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DaggerfallSavePath*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DaggerfallSavePath" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DaggerfallSavePath">DaggerfallSavePath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DaggerfallSavePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_HasInstance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.HasInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L127">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_HasInstance_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.HasInstance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_HasInstance" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.HasInstance">HasInstance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasInstance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Instance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L114">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Instance_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Instance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Instance" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SaveLoadManager Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.html">SaveLoadManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_LatestSaveVersion.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.LatestSaveVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_LatestSaveVersion_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.LatestSaveVersion*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_LatestSaveVersion" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.LatestSaveVersion">LatestSaveVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LatestSaveVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_LoadInProgress.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.LoadInProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L104">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_LoadInProgress_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.LoadInProgress*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_LoadInProgress" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.LoadInProgress">LoadInProgress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadInProgress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_StateManager.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.StateManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L74">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_StateManager_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.StateManager*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_StateManager" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.StateManager">StateManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SerializableStateManager StateManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SerializableStateManager.html">SerializableStateManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_UnitySavePath.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.UnitySavePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L84">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_UnitySavePath_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.UnitySavePath*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_UnitySavePath" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.UnitySavePath">UnitySavePath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UnitySavePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CacheScene_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CacheScene(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L481">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CacheScene_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CacheScene*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_CacheScene_System_String_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.CacheScene(System.String)">CacheScene(String)</h4>
+  <div class="markdown level1 summary"><p>Stores the current scene in the SerializableStateManager cache using the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CacheScene(string sceneName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_ClearSceneCache_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.ClearSceneCache(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L508">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_ClearSceneCache_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.ClearSceneCache*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_ClearSceneCache_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.ClearSceneCache(System.Boolean)">ClearSceneCache(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Clears the SerializableStateManager scene cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearSceneCache(bool start)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>True if starting a new or loaded game, so also clear permanent scene list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeleteSaveFolder_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeleteSaveFolder(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L300">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeleteSaveFolder_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeleteSaveFolder*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeleteSaveFolder_System_Int32_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeleteSaveFolder(System.Int32)">DeleteSaveFolder(Int32)</h4>
+  <div class="markdown level1 summary"><p>Deletes save folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteSaveFolder(int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Save key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeregisterAllSerializableGameObjects_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeregisterAllSerializableGameObjects(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L471">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeregisterAllSerializableGameObjects_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeregisterAllSerializableGameObjects*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeregisterAllSerializableGameObjects_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeregisterAllSerializableGameObjects(System.Boolean)">DeregisterAllSerializableGameObjects(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Force deregister all ISerializableGameObject instances from SerializableStateManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeregisterAllSerializableGameObjects(bool keepPlayer = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">keepPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeregisterSerializableGameObject_DaggerfallWorkshop_Game_Serialization_ISerializableGameObject_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeregisterSerializableGameObject(DaggerfallWorkshop.Game.Serialization.ISerializableGameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L461">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeregisterSerializableGameObject_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeregisterSerializableGameObject*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_DeregisterSerializableGameObject_DaggerfallWorkshop_Game_Serialization_ISerializableGameObject_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.DeregisterSerializableGameObject(DaggerfallWorkshop.Game.Serialization.ISerializableGameObject)">DeregisterSerializableGameObject(ISerializableGameObject)</h4>
+  <div class="markdown level1 summary"><p>Deregister ISerializableGameObject from SerializableStateManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeregisterSerializableGameObject(ISerializableGameObject serializableObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.ISerializableGameObject.html">ISerializableGameObject</a></td>
+        <td><span class="parametername">serializableObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Deserialize_System_Type_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Deserialize(System.Type%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L530">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Deserialize_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Deserialize*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Deserialize_System_Type_System_String_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Deserialize(System.Type,System.String)">Deserialize(Type, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Deserialize(Type type, string serializedState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serializedState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_EnumerateSaves.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.EnumerateSaves%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L182">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_EnumerateSaves_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.EnumerateSaves*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_EnumerateSaves" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.EnumerateSaves">EnumerateSaves()</h4>
+  <div class="markdown level1 summary"><p>Updates save game enumerations.
+Must call this before working with existing saves.
+For example, this is called in save UI every time window pushed to stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnumerateSaves()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindMostRecentSave.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindMostRecentSave%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L280">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindMostRecentSave_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindMostRecentSave*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindMostRecentSave" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindMostRecentSave">FindMostRecentSave()</h4>
+  <div class="markdown level1 summary"><p>Finds most recent save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindMostRecentSave()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Save key of most recent save, or -1 if no saves found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindSaveFolderByNames_System_String_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindSaveFolderByNames(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L260">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindSaveFolderByNames_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindSaveFolderByNames*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindSaveFolderByNames_System_String_System_String_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindSaveFolderByNames(System.String,System.String)">FindSaveFolderByNames(String, String)</h4>
+  <div class="markdown level1 summary"><p>Finds existing save folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindSaveFolderByNames(string characterName, string saveName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">characterName</span></td>
+        <td><p>Name of character to match.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">saveName</span></td>
+        <td><p>Name of save to match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Save key or -1 if save not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindSingleton_DaggerfallWorkshop_Game_Serialization_SaveLoadManager__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindSingleton(DaggerfallWorkshop.Game.Serialization.SaveLoadManager%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L442">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindSingleton_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindSingleton*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_FindSingleton_DaggerfallWorkshop_Game_Serialization_SaveLoadManager__" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.FindSingleton(DaggerfallWorkshop.Game.Serialization.SaveLoadManager@)">FindSingleton(out SaveLoadManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindSingleton(out SaveLoadManager singletonOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.html">SaveLoadManager</a></td>
+        <td><span class="parametername">singletonOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetCharacterNames.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetCharacterNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L202">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetCharacterNames_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetCharacterNames*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetCharacterNames" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetCharacterNames">GetCharacterNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetCharacterNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetCharacterSaveKeys_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetCharacterSaveKeys(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L194">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetCharacterSaveKeys_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetCharacterSaveKeys*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetCharacterSaveKeys_System_String_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetCharacterSaveKeys(System.String)">GetCharacterSaveKeys(String)</h4>
+  <div class="markdown level1 summary"><p>Gets array of save keys for the specified character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetCharacterSaveKeys(string characterName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">characterName</span></td>
+        <td><p>Name of character.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>Array of save keys, excluding</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveFolder_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveFolder(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L218">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveFolder_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveFolder*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveFolder_System_Int32_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveFolder(System.Int32)">GetSaveFolder(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets folder containing save by key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSaveFolder(int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Save key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Path to save folder or empty string if key not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveInfo_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveInfo(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L231">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveInfo_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveInfo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveInfo_System_Int32_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveInfo(System.Int32)">GetSaveInfo(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets save information by key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveInfo_v1 GetSaveInfo(int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Save key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveInfo_v1.html">SaveInfo_v1</a></td>
+        <td><p>SaveInfo populated with save details, or empty struct if save not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveScreenshot_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveScreenshot(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L239">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveScreenshot_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveScreenshot*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_GetSaveScreenshot_System_Int32_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.GetSaveScreenshot(System.Int32)">GetSaveScreenshot(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D GetSaveScreenshot(int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Texture2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_HasQuickSave_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.HasQuickSave(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L429">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_HasQuickSave_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.HasQuickSave*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_HasQuickSave_System_String_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.HasQuickSave(System.String)">HasQuickSave(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if quick save folder exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasQuickSave(string characterName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">characterName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if quick save exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_IsReady.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L169">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_IsReady_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.IsReady*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_IsReady" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.IsReady">IsReady()</h4>
+  <div class="markdown level1 summary"><p>Checks if save/load system is ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if ready.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Load_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Load(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L364">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Load_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Load*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Load_System_Int32_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Load(System.Int32)">Load(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Load_System_String_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Load(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L390">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Load_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Load*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Load_System_String_System_String_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Load(System.String,System.String)">Load(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(string characterName, string saveName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">characterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">saveName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_QuickLoad.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.QuickLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L420">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_QuickLoad_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.QuickLoad*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_QuickLoad" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.QuickLoad">QuickLoad()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QuickLoad()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_QuickSave_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.QuickSave(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L358">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_QuickSave_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.QuickSave*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_QuickSave_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.QuickSave(System.Boolean)">QuickSave(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QuickSave(bool instantReload = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">instantReload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnLoadEvent_DaggerfallWorkshop_Game_Serialization_SaveData_v1_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnLoadEvent(DaggerfallWorkshop.Game.Serialization.SaveData_v1)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L1308">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnLoadEvent_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnLoadEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnLoadEvent_DaggerfallWorkshop_Game_Serialization_SaveData_v1_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnLoadEvent(DaggerfallWorkshop.Game.Serialization.SaveData_v1)">RaiseOnLoadEvent(SaveData_v1)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnLoadEvent(SaveData_v1 saveData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveData_v1.html">SaveData_v1</a></td>
+        <td><span class="parametername">saveData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnSaveEvent_DaggerfallWorkshop_Game_Serialization_SaveData_v1_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnSaveEvent(DaggerfallWorkshop.Game.Serialization.SaveData_v1)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L1290">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnSaveEvent_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnSaveEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnSaveEvent_DaggerfallWorkshop_Game_Serialization_SaveData_v1_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnSaveEvent(DaggerfallWorkshop.Game.Serialization.SaveData_v1)">RaiseOnSaveEvent(SaveData_v1)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnSaveEvent(SaveData_v1 saveData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveData_v1.html">SaveData_v1</a></td>
+        <td><span class="parametername">saveData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnStartLoadEvent_DaggerfallWorkshop_Game_Serialization_SaveData_v1_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnStartLoadEvent(DaggerfallWorkshop.Game.Serialization.SaveData_v1)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L1299">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnStartLoadEvent_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnStartLoadEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RaiseOnStartLoadEvent_DaggerfallWorkshop_Game_Serialization_SaveData_v1_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RaiseOnStartLoadEvent(DaggerfallWorkshop.Game.Serialization.SaveData_v1)">RaiseOnStartLoadEvent(SaveData_v1)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnStartLoadEvent(SaveData_v1 saveData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveData_v1.html">SaveData_v1</a></td>
+        <td><span class="parametername">saveData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RegisterSerializableGameObject_DaggerfallWorkshop_Game_Serialization_ISerializableGameObject_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RegisterSerializableGameObject(DaggerfallWorkshop.Game.Serialization.ISerializableGameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L451">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RegisterSerializableGameObject_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RegisterSerializableGameObject*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RegisterSerializableGameObject_DaggerfallWorkshop_Game_Serialization_ISerializableGameObject_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RegisterSerializableGameObject(DaggerfallWorkshop.Game.Serialization.ISerializableGameObject)">RegisterSerializableGameObject(ISerializableGameObject)</h4>
+  <div class="markdown level1 summary"><p>Register ISerializableGameObject with SerializableStateManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterSerializableGameObject(ISerializableGameObject serializableObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.ISerializableGameObject.html">ISerializableGameObject</a></td>
+        <td><span class="parametername">serializableObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RestoreCachedScene_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RestoreCachedScene(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L490">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RestoreCachedScene_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RestoreCachedScene*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_RestoreCachedScene_System_String_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.RestoreCachedScene(System.String)">RestoreCachedScene(String)</h4>
+  <div class="markdown level1 summary"><p>Restores the current scene from the SerializableStateManager cache using the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RestoreCachedScene(string sceneName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Save_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Save(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L344">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Save_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Save*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Save_System_String_System_String_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Save(System.String,System.String,System.Boolean)">Save(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string characterName, string saveName, bool instantReload = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">characterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">saveName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">instantReload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Serialize_System_Type_System_Object_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Serialize(System.Type%2CSystem.Object%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L520">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Serialize_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Serialize*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_Serialize_System_Type_System_Object_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.Serialize(System.Type,System.Object,System.Boolean)">Serialize(Type, Object, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Serialize(Type type, object value, bool pretty = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">pretty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_OnLoad.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L1307">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_OnLoad" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnLoad">OnLoad</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SaveLoadManager.OnLoadEventHandler OnLoad</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnLoadEventHandler.html">SaveLoadManager.OnLoadEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_OnSave.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnSave%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L1289">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_OnSave" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnSave">OnSave</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SaveLoadManager.OnSaveEventHandler OnSave</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnSaveEventHandler.html">SaveLoadManager.OnSaveEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager_OnStartLoad.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnStartLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L1298">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Serialization_SaveLoadManager_OnStartLoad" data-uid="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnStartLoad">OnStartLoad</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SaveLoadManager.OnStartLoadEventHandler OnStartLoad</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.SaveLoadManager.OnStartLoadEventHandler.html">SaveLoadManager.OnStartLoadEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Serialization_SaveLoadManager.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Serialization.SaveLoadManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Serialization/SaveLoadManager.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

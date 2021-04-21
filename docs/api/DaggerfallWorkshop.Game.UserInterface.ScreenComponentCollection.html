@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScreenComponentCollection
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScreenComponentCollection
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection" class="text-break">Class ScreenComponentCollection
+  </h1>
+  <div class="markdown level0 summary"><p>A list of screen components with events.
+The order components are added in determines the order they are updated and drawn.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ScreenComponentCollection</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScreenComponentCollection : IEnumerable&lt;BaseScreenComponent&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection__ctor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L59">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection__ctor" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.#ctor">ScreenComponentCollection()</h4>
+  <div class="markdown level1 summary"><p>Constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScreenComponentCollection()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection__ctor_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.%23ctor(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L68">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection__ctor_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.#ctor(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)">ScreenComponentCollection(BaseScreenComponent)</h4>
+  <div class="markdown level1 summary"><p>Constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScreenComponentCollection(BaseScreenComponent parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Base component hosting this collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Count.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L37">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Count_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Count*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Count" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of components contained in collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Item_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Item_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Item*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Item_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Gets component at index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseScreenComponent this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><p>Reference to component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Add_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Add(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L82">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Add_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Add*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Add_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Add(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)">Add(BaseScreenComponent)</h4>
+  <div class="markdown level1 summary"><p>Adds a component to collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(BaseScreenComponent component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">component</span></td>
+        <td><p>Component to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Clear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L98">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Clear_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Clear" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_GetEnumerator.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L111">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_GetEnumerator_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.GetEnumerator*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_GetEnumerator" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;BaseScreenComponent&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_RaiseComponentAddedEvent_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.RaiseComponentAddedEvent(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L152">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_RaiseComponentAddedEvent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.RaiseComponentAddedEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_RaiseComponentAddedEvent_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.RaiseComponentAddedEvent(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)">RaiseComponentAddedEvent(BaseScreenComponent)</h4>
+  <div class="markdown level1 summary"><p>Raise component added event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseComponentAddedEvent(BaseScreenComponent component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_RaiseComponentRemovedEvent_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.RaiseComponentRemovedEvent(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L171">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_RaiseComponentRemovedEvent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.RaiseComponentRemovedEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_RaiseComponentRemovedEvent_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.RaiseComponentRemovedEvent(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)">RaiseComponentRemovedEvent(BaseScreenComponent)</h4>
+  <div class="markdown level1 summary"><p>Raise component removed event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseComponentRemovedEvent(BaseScreenComponent component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Remove_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Remove(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Remove_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Remove*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_Remove_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.Remove(DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent)">Remove(BaseScreenComponent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(BaseScreenComponent component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_OnComponentAdded.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.OnComponentAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L132">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_OnComponentAdded" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.OnComponentAdded">OnComponentAdded</h4>
+  <div class="markdown level1 summary"><p>This event is fired whenever a component is added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ScreenComponentCollection.ComponentAddedEventHandler OnComponentAdded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.ComponentAddedEventHandler.html">ScreenComponentCollection.ComponentAddedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_OnComponentRemoved.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.OnComponentRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L138">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection_OnComponentRemoved" data-uid="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.OnComponentRemoved">OnComponentRemoved</h4>
+  <div class="markdown level1 summary"><p>This event is fired whenever a component is removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ScreenComponentCollection.ComponentAddedEventHandler OnComponentRemoved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection.ComponentAddedEventHandler.html">ScreenComponentCollection.ComponentAddedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_ScreenComponentCollection.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.ScreenComponentCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/ScreenComponentCollection.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

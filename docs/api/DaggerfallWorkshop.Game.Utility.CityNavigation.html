@@ -1,0 +1,1369 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CityNavigation
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CityNavigation
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Utility_CityNavigation" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation" class="text-break">Class CityNavigation
+  </h1>
+  <div class="markdown level0 summary"><p>Utility class to help with mobile spawning and navigation in town environments.
+The navigation component is intended to be used by wandering NPCs.
+Mobile enemies will use normal steering behaviour to follow player.
+Combines inverse of automap to carve out navgrid then sets weighting by tile type.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">CityNavigation</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Utility.html">DaggerfallWorkshop.Game.Utility</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Utility_CityNavigation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(DaggerfallLocation))]
+public class CityNavigation : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_DaggerfallUnitsPerTile.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.DaggerfallUnitsPerTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L32">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_DaggerfallUnitsPerTile" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.DaggerfallUnitsPerTile">DaggerfallUnitsPerTile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DaggerfallUnitsPerTile = 64</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_HalfTile.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.HalfTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L33">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_HalfTile" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.HalfTile">HalfTile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float HalfTile = 0.8F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_CityHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.CityHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L78">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_CityHeight_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.CityHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_CityHeight" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.CityHeight">CityHeight</h4>
+  <div class="markdown level1 summary"><p>Gets RMB height of city from format time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CityHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_CityWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.CityWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L70">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_CityWidth_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.CityWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_CityWidth" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.CityWidth">CityWidth</h4>
+  <div class="markdown level1 summary"><p>Gets RMB width of city from format time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CityWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_LocationName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.LocationName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L62">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_LocationName_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.LocationName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_LocationName" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.LocationName">LocationName</h4>
+  <div class="markdown level1 summary"><p>Gets location name of this navgrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LocationName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L94">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridHeight_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridHeight" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridHeight">NavGridHeight</h4>
+  <div class="markdown level1 summary"><p>Gets navgrid height in tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NavGridHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L86">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridWidth_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridWidth" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridWidth">NavGridWidth</h4>
+  <div class="markdown level1 summary"><p>Gets navgrid width in tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NavGridWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_RegionName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.RegionName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L54">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_RegionName_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.RegionName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_RegionName" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.RegionName">RegionName</h4>
+  <div class="markdown level1 summary"><p>Gets region name of this navgrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RegionName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_ClearFlags_DaggerfallConnect_Utility_DFPosition_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.ClearFlags(DaggerfallConnect.Utility.DFPosition%2CDaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L452">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_ClearFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.ClearFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_ClearFlags_DaggerfallConnect_Utility_DFPosition_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.ClearFlags(DaggerfallConnect.Utility.DFPosition,DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)">ClearFlags(DFPosition, CityNavigation.TileFlags)</h4>
+  <div class="markdown level1 summary"><p>Clear navgrid tile flags.
+Does nothing if outside navgrid area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearFlags(DFPosition localPosition, CityNavigation.TileFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td><p>Local navgrid position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags.html">CityNavigation.TileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Flags to unset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_ClearFlags_System_Int32_System_Int32_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.ClearFlags(System.Int32%2CSystem.Int32%2CDaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L464">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_ClearFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.ClearFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_ClearFlags_System_Int32_System_Int32_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.ClearFlags(System.Int32,System.Int32,DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)">ClearFlags(Int32, Int32, CityNavigation.TileFlags)</h4>
+  <div class="markdown level1 summary"><p>Clears navgrid tile flags.
+Does nothing if outside navgrid area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearFlags(int x, int y, CityNavigation.TileFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X position inside navgrid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y position inside navgrid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags.html">CityNavigation.TileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Flags to unset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_FormatNavigation_System_String_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.FormatNavigation(System.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L189">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_FormatNavigation_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.FormatNavigation*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_FormatNavigation_System_String_System_String_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.FormatNavigation(System.String,System.String,System.Int32,System.Int32)">FormatNavigation(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Format the navigation grid based on town width*height in RMB blocks.
+A max-size city like Daggerfall is 8x8 RMB blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FormatNavigation(string regionName, string locationName, int cityWidth, int cityHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">regionName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">locationName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cityWidth</span></td>
+        <td><p>City RMB blocks wide. Range 1-8.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cityHeight</span></td>
+        <td><p>City RMB blocks high. Range 1-8.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridUV_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridUV(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L366">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridUV_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridUV*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridUV_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridUV(DaggerfallConnect.Utility.DFPosition)">GetNavGridUV(DFPosition)</h4>
+  <div class="markdown level1 summary"><p>Gets UV coordinates of world position inside navgrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetNavGridUV(DFPosition worldPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">worldPosition</span></td>
+        <td><p>World coordinates to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><p>UV coordinates inside navgrid - will be clamped to 0-1 range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightLocal_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightLocal(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L397">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightLocal_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightLocal*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightLocal_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightLocal(DaggerfallConnect.Utility.DFPosition)">GetNavGridWeightLocal(DFPosition)</h4>
+  <div class="markdown level1 summary"><p>Gets weight of tile at local DFPosition inside navgrid array.
+Safe to query outside navgrid area, will just return 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNavGridWeightLocal(DFPosition localPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td><p>Local navgrid position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Weight of position or 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightLocal_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightLocal(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L409">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightLocal_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightLocal*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightLocal_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightLocal(System.Int32,System.Int32)">GetNavGridWeightLocal(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets weight of tile at local X, Y position inside navgrid array.
+Safe to query outside navgrid area, will just return 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNavGridWeightLocal(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X position inside navgrid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y position inside navgrid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Weight of position or 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightWorld_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightWorld(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L384">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightWorld_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightWorld*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetNavGridWeightWorld_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetNavGridWeightWorld(DaggerfallConnect.Utility.DFPosition)">GetNavGridWeightWorld(DFPosition)</h4>
+  <div class="markdown level1 summary"><p>Gets weight of tile at world position inside navgrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNavGridWeightWorld(DFPosition worldPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">worldPosition</span></td>
+        <td><p>World position to test.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Weight of tile inside navgrid - will be clamped to valid range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_GetRandomSpawnPosition_DaggerfallConnect_Utility_DFPosition_DaggerfallConnect_Utility_DFPosition__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.GetRandomSpawnPosition(DaggerfallConnect.Utility.DFPosition%2CDaggerfallConnect.Utility.DFPosition%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L512">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetRandomSpawnPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetRandomSpawnPosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetRandomSpawnPosition_DaggerfallConnect_Utility_DFPosition_DaggerfallConnect_Utility_DFPosition__System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetRandomSpawnPosition(DaggerfallConnect.Utility.DFPosition,DaggerfallConnect.Utility.DFPosition@,System.Int32,System.Int32)">GetRandomSpawnPosition(DFPosition, out DFPosition, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a random navgrid spawn point up to radius tiles around origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetRandomSpawnPosition(DFPosition origin, out DFPosition positionOut, int radius = 64, int maxAttempts = 10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>Origin point for spawn. Will be clamped inside navgrid area.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">positionOut</span></td>
+        <td><p>Found position. Will be -1,-1 if no position found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td><p>Radius of spawn range around origin.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxAttempts</span></td>
+        <td><p>Maximum attempts to find a valid random spawn point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if position found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_GetRawNavGridValueLocal_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.GetRawNavGridValueLocal(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L543">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetRawNavGridValueLocal_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetRawNavGridValueLocal*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_GetRawNavGridValueLocal_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.GetRawNavGridValueLocal(DaggerfallConnect.Utility.DFPosition)">GetRawNavGridValueLocal(DFPosition)</h4>
+  <div class="markdown level1 summary"><p>Gets raw unclamped tile value at navgrid position.
+Position must be inside valid range or will throw exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRawNavGridValueLocal(DFPosition localPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td><p>Local navgrid position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Raw value from navgrid array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_HasFlags_DaggerfallConnect_Utility_DFPosition_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.HasFlags(DaggerfallConnect.Utility.DFPosition%2CDaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L481">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_HasFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.HasFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_HasFlags_DaggerfallConnect_Utility_DFPosition_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.HasFlags(DaggerfallConnect.Utility.DFPosition,DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)">HasFlags(DFPosition, CityNavigation.TileFlags)</h4>
+  <div class="markdown level1 summary"><p>Checks navgrid tile flags.
+Returns false is outside navgrid area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFlags(DFPosition localPosition, CityNavigation.TileFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td><p>Local navgrid position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags.html">CityNavigation.TileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Flags to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if flags set, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_HasFlags_System_Int32_System_Int32_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.HasFlags(System.Int32%2CSystem.Int32%2CDaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L494">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_HasFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.HasFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_HasFlags_System_Int32_System_Int32_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.HasFlags(System.Int32,System.Int32,DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)">HasFlags(Int32, Int32, CityNavigation.TileFlags)</h4>
+  <div class="markdown level1 summary"><p>Checks navgrid tile flags.
+Returns false is outside navgrid area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFlags(int x, int y, CityNavigation.TileFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X position inside navgrid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y position inside navgrid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags.html">CityNavigation.TileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if flags set, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridToWorldPosition_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridToWorldPosition(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L344">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridToWorldPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridToWorldPosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_NavGridToWorldPosition_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.NavGridToWorldPosition(DaggerfallConnect.Utility.DFPosition)">NavGridToWorldPosition(DFPosition)</h4>
+  <div class="markdown level1 summary"><p>Convert local navgrid position into a world position.
+Precision loss expected converting between world and navgrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFPosition NavGridToWorldPosition(DFPosition localPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td><p>Local position inside navgrid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><p>World DFPosition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_SaveTestRawImage_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.SaveTestRawImage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L551">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_SaveTestRawImage_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SaveTestRawImage*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_SaveTestRawImage_System_String_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SaveTestRawImage(System.String)">SaveTestRawImage(String)</h4>
+  <div class="markdown level1 summary"><p>Save navgrid as a raw image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveTestRawImage(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_SceneToWorldPosition_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.SceneToWorldPosition(UnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L252">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_SceneToWorldPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SceneToWorldPosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_SceneToWorldPosition_UnityEngine_Vector3_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SceneToWorldPosition(UnityEngine.Vector3)">SceneToWorldPosition(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Convert a scene position back into virtual world space.
+This is specific to the peered location due to floating origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFPosition SceneToWorldPosition(Vector3 scenePosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">scenePosition</span></td>
+        <td><p>Scene position to convert to nearest point in world space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><p>World DFPosition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_SetFlags_DaggerfallConnect_Utility_DFPosition_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.SetFlags(DaggerfallConnect.Utility.DFPosition%2CDaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L424">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetFlags_DaggerfallConnect_Utility_DFPosition_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetFlags(DaggerfallConnect.Utility.DFPosition,DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)">SetFlags(DFPosition, CityNavigation.TileFlags)</h4>
+  <div class="markdown level1 summary"><p>Sets navgrid tile flags.
+Does nothing if outside navgrid area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFlags(DFPosition localPosition, CityNavigation.TileFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td><p>Local navgrid position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags.html">CityNavigation.TileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Flags to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_SetFlags_System_Int32_System_Int32_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.SetFlags(System.Int32%2CSystem.Int32%2CDaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L436">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetFlags_System_Int32_System_Int32_DaggerfallWorkshop_Game_Utility_CityNavigation_TileFlags_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetFlags(System.Int32,System.Int32,DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags)">SetFlags(Int32, Int32, CityNavigation.TileFlags)</h4>
+  <div class="markdown level1 summary"><p>Sets navgrid tile flags.
+Does nothing if outside navgrid area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFlags(int x, int y, CityNavigation.TileFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X position inside navgrid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y position inside navgrid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags.html">CityNavigation.TileFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Flags to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_SetRMBData_DaggerfallConnect_DFBlock__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.SetRMBData(DaggerfallConnect.DFBlock%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L211">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetRMBData_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetRMBData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetRMBData_DaggerfallConnect_DFBlock__System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetRMBData(DaggerfallConnect.DFBlock@,System.Int32,System.Int32)">SetRMBData(ref DFBlock, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set block data in navgrid.
+This is done during StreamingWorld location layout when this data is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRMBData(ref DFBlock blockData, int xBlock, int yBlock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBlock.html">DFBlock</a></td>
+        <td><span class="parametername">blockData</span></td>
+        <td><p>RMB block data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">xBlock</span></td>
+        <td><p>X block to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">yBlock</span></td>
+        <td><p>Y block to set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_WorldToNavGridPosition_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.WorldToNavGridPosition(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L328">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_WorldToNavGridPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.WorldToNavGridPosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_WorldToNavGridPosition_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.WorldToNavGridPosition(DaggerfallConnect.Utility.DFPosition)">WorldToNavGridPosition(DFPosition)</h4>
+  <div class="markdown level1 summary"><p>Convert world position to local navgrid position.
+Precision loss expected converting between world and navgrid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFPosition WorldToNavGridPosition(DFPosition worldPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">worldPosition</span></td>
+        <td><p>World position - will be clamped inside location area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><p>Local navgrid DFPosition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation_WorldToScenePosition_DaggerfallConnect_Utility_DFPosition_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation.WorldToScenePosition(DaggerfallConnect.Utility.DFPosition%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L282">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_WorldToScenePosition_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.WorldToScenePosition*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_WorldToScenePosition_DaggerfallConnect_Utility_DFPosition_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.WorldToScenePosition(DaggerfallConnect.Utility.DFPosition,System.Boolean)">WorldToScenePosition(DFPosition, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Convert a virtual world position back into scene space.
+This is specific to the peered location due to floating origin.
+Some precision loss is expected converting back to scene space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 WorldToScenePosition(DFPosition worldPosition, bool refineY = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">worldPosition</span></td>
+        <td><p>World location to convert to nearest point in scene space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">refineY</span></td>
+        <td><p>Attempt to refine Y position to actual terrain data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><p>Scene Vector3 position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_CityNavigation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.CityNavigation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,995 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExteriorAutomap
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExteriorAutomap
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_ExteriorAutomap" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap" class="text-break">Class ExteriorAutomap
+  </h1>
+  <div class="markdown level0 summary"><p>this class provides the automap core functionality like geometry creation and discovery mechanism</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">ExteriorAutomap</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.html">DaggerfallWorkshop.Game</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_ExteriorAutomap_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExteriorAutomap : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_blockSizeHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.blockSizeHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L152">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_blockSizeHeight" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.blockSizeHeight">blockSizeHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int blockSizeHeight = 64</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_blockSizeWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.blockSizeWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L151">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_blockSizeWidth" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.blockSizeWidth">blockSizeWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int blockSizeWidth = 64</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_buildingNameplates.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.buildingNameplates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L78">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_buildingNameplates" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.buildingNameplates">buildingNameplates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExteriorAutomap.BuildingNameplate[] buildingNameplates</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.ExteriorAutomap.BuildingNameplate.html">ExteriorAutomap.BuildingNameplate</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_numMaxBlocksX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.numMaxBlocksX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L154">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_numMaxBlocksX" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.numMaxBlocksX">numMaxBlocksX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int numMaxBlocksX = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_numMaxBlocksY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.numMaxBlocksY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L155">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_numMaxBlocksY" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.numMaxBlocksY">numMaxBlocksY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int numMaxBlocksY = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_BlockSizeHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.BlockSizeHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L226">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_BlockSizeHeight_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.BlockSizeHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_BlockSizeHeight" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.BlockSizeHeight">BlockSizeHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BlockSizeHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_BlockSizeWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.BlockSizeWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L221">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_BlockSizeWidth_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.BlockSizeWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_BlockSizeWidth" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.BlockSizeWidth">BlockSizeWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BlockSizeWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_CameraExteriorAutomap.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.CameraExteriorAutomap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L191">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_CameraExteriorAutomap_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.CameraExteriorAutomap*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_CameraExteriorAutomap" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.CameraExteriorAutomap">CameraExteriorAutomap</h4>
+  <div class="markdown level1 summary"><p>DaggerfallExteriorAutomapWindow script will use this to get automap camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera CameraExteriorAutomap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_ExteriorLayout.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.ExteriorLayout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L201">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_ExteriorLayout_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ExteriorLayout*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_ExteriorLayout" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ExteriorLayout">ExteriorLayout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExteriorAutomap.BlockLayout[] ExteriorLayout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.ExteriorAutomap.BlockLayout.html">ExteriorAutomap.BlockLayout</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_GameobjectPlayerMarkerArrow.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.GameobjectPlayerMarkerArrow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L216">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_GameobjectPlayerMarkerArrow_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.GameobjectPlayerMarkerArrow*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_GameobjectPlayerMarkerArrow" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.GameobjectPlayerMarkerArrow">GameobjectPlayerMarkerArrow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GameobjectPlayerMarkerArrow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_instance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L41">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_instance_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.instance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_instance" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.instance">instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ExteriorAutomap instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.ExteriorAutomap.html">ExteriorAutomap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_LayerAutomap.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.LayerAutomap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L183">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_LayerAutomap_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LayerAutomap*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_LayerAutomap" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LayerAutomap">LayerAutomap</h4>
+  <div class="markdown level1 summary"><p>DaggerfallExteriorAutomapWindow script will use this to get automap layer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LayerAutomap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_LayoutMultiplier.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.LayoutMultiplier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L196">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_LayoutMultiplier_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LayoutMultiplier*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_LayoutMultiplier" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LayoutMultiplier">LayoutMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LayoutMultiplier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_LocationHeight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.LocationHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L211">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_LocationHeight_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LocationHeight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_LocationHeight" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LocationHeight">LocationHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LocationHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_LocationWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.LocationWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L206">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_LocationWidth_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LocationWidth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_LocationWidth" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.LocationWidth">LocationWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LocationWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_NumMaxBlocksX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.NumMaxBlocksX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L231">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_NumMaxBlocksX_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.NumMaxBlocksX*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_NumMaxBlocksX" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.NumMaxBlocksX">NumMaxBlocksX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumMaxBlocksX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_NumMaxBlocksY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.NumMaxBlocksY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L235">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_NumMaxBlocksY_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.NumMaxBlocksY*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_NumMaxBlocksY" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.NumMaxBlocksY">NumMaxBlocksY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumMaxBlocksY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_ResetAutomapSettingsSignalForExternalScript.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.ResetAutomapSettingsSignalForExternalScript%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L243">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_ResetAutomapSettingsSignalForExternalScript_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ResetAutomapSettingsSignalForExternalScript*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_ResetAutomapSettingsSignalForExternalScript" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ResetAutomapSettingsSignalForExternalScript">ResetAutomapSettingsSignalForExternalScript</h4>
+  <div class="markdown level1 summary"><p>DaggerfallExteriorAutomapWindow script will use this to check if it should reset automap settings (and if it does it will erase flag)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResetAutomapSettingsSignalForExternalScript { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_RevealUndiscoveredBuildings.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.RevealUndiscoveredBuildings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L252">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_RevealUndiscoveredBuildings_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.RevealUndiscoveredBuildings*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_RevealUndiscoveredBuildings" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.RevealUndiscoveredBuildings">RevealUndiscoveredBuildings</h4>
+  <div class="markdown level1 summary"><p>property for flag for console debug mode for revealing undiscovered buildings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RevealUndiscoveredBuildings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_TextDatabase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.TextDatabase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L175">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_TextDatabase_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.TextDatabase*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_TextDatabase" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.TextDatabase">TextDatabase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TextDatabase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_ComputeNameplateOffsets.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.ComputeNameplateOffsets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L1069">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_ComputeNameplateOffsets_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ComputeNameplateOffsets*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_ComputeNameplateOffsets" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ComputeNameplateOffsets">ComputeNameplateOffsets()</h4>
+  <div class="markdown level1 summary"><p>this is the main function for computing offsets of nameplates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ComputeNameplateOffsets()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_GetLocationBorderPos_DaggerfallWorkshop_Game_ExteriorAutomap_LocationBorder_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.GetLocationBorderPos(DaggerfallWorkshop.Game.ExteriorAutomap.LocationBorder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L350">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_GetLocationBorderPos_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.GetLocationBorderPos*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_GetLocationBorderPos_DaggerfallWorkshop_Game_ExteriorAutomap_LocationBorder_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.GetLocationBorderPos(DaggerfallWorkshop.Game.ExteriorAutomap.LocationBorder)">GetLocationBorderPos(ExteriorAutomap.LocationBorder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetLocationBorderPos(ExteriorAutomap.LocationBorder locationBorder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.ExteriorAutomap.LocationBorder.html">ExteriorAutomap.LocationBorder</a></td>
+        <td><span class="parametername">locationBorder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_ResetRotationBuildingNameplates.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.ResetRotationBuildingNameplates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L391">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_ResetRotationBuildingNameplates_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ResetRotationBuildingNameplates*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_ResetRotationBuildingNameplates" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.ResetRotationBuildingNameplates">ResetRotationBuildingNameplates()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetRotationBuildingNameplates()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_RotateBuildingNameplates_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.RotateBuildingNameplates(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L373">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_RotateBuildingNameplates_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.RotateBuildingNameplates*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_RotateBuildingNameplates_System_Single_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.RotateBuildingNameplates(System.Single)">RotateBuildingNameplates(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RotateBuildingNameplates(float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_StartGameBehaviour_OnStartGame_System_Object_System_EventArgs_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.StartGameBehaviour_OnStartGame(System.Object%2CSystem.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L1735">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_StartGameBehaviour_OnStartGame_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.StartGameBehaviour_OnStartGame*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_StartGameBehaviour_OnStartGame_System_Object_System_EventArgs_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.StartGameBehaviour_OnStartGame(System.Object,System.EventArgs)">StartGameBehaviour_OnStartGame(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartGameBehaviour_OnStartGame(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeAll.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L335">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeAll_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeAll*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeAll" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeAll">SwitchToExteriorAutomapViewModeAll()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToExteriorAutomapViewModeAll()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeExtra.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeExtra%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L328">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeExtra_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeExtra*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeExtra" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeExtra">SwitchToExteriorAutomapViewModeExtra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToExteriorAutomapViewModeExtra()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeOriginal.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeOriginal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L321">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeOriginal_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeOriginal*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToExteriorAutomapViewModeOriginal" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToExteriorAutomapViewModeOriginal">SwitchToExteriorAutomapViewModeOriginal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToExteriorAutomapViewModeOriginal()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToNextExteriorAutomapViewMode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToNextExteriorAutomapViewMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L300">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToNextExteriorAutomapViewMode_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToNextExteriorAutomapViewMode*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_SwitchToNextExteriorAutomapViewMode" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.SwitchToNextExteriorAutomapViewMode">SwitchToNextExteriorAutomapViewMode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchToNextExteriorAutomapViewMode()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_UpdateAutomapStateOnWindowPop.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.UpdateAutomapStateOnWindowPop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L288">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_UpdateAutomapStateOnWindowPop_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.UpdateAutomapStateOnWindowPop*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_UpdateAutomapStateOnWindowPop" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.UpdateAutomapStateOnWindowPop">UpdateAutomapStateOnWindowPop()</h4>
+  <div class="markdown level1 summary"><p>DaggerfallExteriorAutomapWindow script will use this to signal this script to update when automap window was popped - TODO: check if this can done with an event (if events work with gui windows)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAutomapStateOnWindowPop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap_UpdateAutomapStateOnWindowPush.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap.UpdateAutomapStateOnWindowPush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L266">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_ExteriorAutomap_UpdateAutomapStateOnWindowPush_" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.UpdateAutomapStateOnWindowPush*"></a>
+  <h4 id="DaggerfallWorkshop_Game_ExteriorAutomap_UpdateAutomapStateOnWindowPush" data-uid="DaggerfallWorkshop.Game.ExteriorAutomap.UpdateAutomapStateOnWindowPush">UpdateAutomapStateOnWindowPush()</h4>
+  <div class="markdown level1 summary"><p>DaggerfallExteriorAutomapWindow script will use this to signal this script to update when automap window was pushed - TODO: check if this can done with an event (if events work with gui windows)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAutomapStateOnWindowPush()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_ExteriorAutomap.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.ExteriorAutomap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/ExteriorAutomap.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PotionRecipe
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PotionRecipe
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe" class="text-break">Class PotionRecipe
+  </h1>
+  <div class="markdown level0 summary"><p>Implements a potion recipe to support equality comparison, hashing, and string output.
+Internally the recipe is just an array of item template IDs abstracted to an Ingredient type.
+A recipe can be constructed from any Ingredient[] array or int[] array of item template IDs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PotionRecipe</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.html">DaggerfallWorkshop.Game.MagicAndEffects</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PotionRecipe : IEqualityComparer&lt;PotionRecipe.Ingredient[]&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L87">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor">PotionRecipe()</h4>
+  <div class="markdown level1 summary"><p>Default constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PotionRecipe()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_System_Collections_Generic_List_System_Int32__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.%23ctor(System.Collections.Generic.List%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L112">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_System_Collections_Generic_List_System_Int32__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor(System.Collections.Generic.List{System.Int32})">PotionRecipe(List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Ingredient[] array constructor - for finding and comparisons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PotionRecipe(List&lt;int&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p>Ingredient ids list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_System_String_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectSettings_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.%23ctor(System.String%2CSystem.Int32%2CDaggerfallWorkshop.Game.MagicAndEffects.EffectSettings%2CDaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L99">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_System_String_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectSettings_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor(System.String,System.Int32,DaggerfallWorkshop.Game.MagicAndEffects.EffectSettings,DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient[])">PotionRecipe(String, Int32, EffectSettings, PotionRecipe.Ingredient[])</h4>
+  <div class="markdown level1 summary"><p>Ingredient[] array constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PotionRecipe(string displayName, int price, EffectSettings settings, params PotionRecipe.Ingredient[] ingredients)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">displayName</span></td>
+        <td><p>Potion name to use for this recipe.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">price</span></td>
+        <td><p>Value of potion in gp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectSettings.html">EffectSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Settings for this potion recipe.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient.html">PotionRecipe.Ingredient</a>[]</td>
+        <td><span class="parametername">ingredients</span></td>
+        <td><p>Ingredient array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_System_String_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectSettings_System_Int32___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.%23ctor(System.String%2CSystem.Int32%2CDaggerfallWorkshop.Game.MagicAndEffects.EffectSettings%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L130">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe__ctor_System_String_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectSettings_System_Int32___" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.#ctor(System.String,System.Int32,DaggerfallWorkshop.Game.MagicAndEffects.EffectSettings,System.Int32[])">PotionRecipe(String, Int32, EffectSettings, Int32[])</h4>
+  <div class="markdown level1 summary"><p>int[] array of item template IDs constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PotionRecipe(string displayName, int price, EffectSettings settings, params int[] ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">displayName</span></td>
+        <td><p>Potion name to use for this recipe.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">price</span></td>
+        <td><p>Value of potion in gp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectSettings.html">EffectSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Settings for this potion recipe.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p>Array of item template IDs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_classicRecipeKeys.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.classicRecipeKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L28">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_classicRecipeKeys" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.classicRecipeKeys">classicRecipeKeys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int[] classicRecipeKeys</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_UnknownPowers.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.UnknownPowers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L31">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_UnknownPowers" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.UnknownPowers">UnknownPowers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string UnknownPowers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_DisplayName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L45">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_DisplayName_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.DisplayName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_DisplayName" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.DisplayName">DisplayName</h4>
+  <div class="markdown level1 summary"><p>The display name of this potion recipe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredients.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredients%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L69">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredients_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredients*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredients" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredients">Ingredients</h4>
+  <div class="markdown level1 summary"><p>Gets or sets potion recipe ingredients. Ingredients must be sorted by id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PotionRecipe.Ingredient[] Ingredients { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient.html">PotionRecipe.Ingredient</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Price.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Price%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L50">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Price_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Price*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Price" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Price">Price</h4>
+  <div class="markdown level1 summary"><p>The price of this potion recipe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Price { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_SecondaryEffects.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.SecondaryEffects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L78">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_SecondaryEffects_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.SecondaryEffects*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_SecondaryEffects" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.SecondaryEffects">SecondaryEffects</h4>
+  <div class="markdown level1 summary"><p>Retrieves a list of secondary effect keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; SecondaryEffects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Settings.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Settings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L64">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Settings_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Settings*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Settings" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Settings">Settings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets effect settings for this recipe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EffectSettings Settings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectSettings.html">EffectSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_TextureRecord.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.TextureRecord%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L55">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_TextureRecord_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.TextureRecord*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_TextureRecord" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.TextureRecord">TextureRecord</h4>
+  <div class="markdown level1 summary"><p>The texture record from archive 205 to use for this potion, default = 11.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TextureRecord { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_AddSecondaryEffect_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.AddSecondaryEffect(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L229">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_AddSecondaryEffect_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.AddSecondaryEffect*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_AddSecondaryEffect_System_String_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.AddSecondaryEffect(System.String)">AddSecondaryEffect(String)</h4>
+  <div class="markdown level1 summary"><p>Adds secondary effects to this potion recipe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSecondaryEffect(string effectKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">effectKey</span></td>
+        <td><p>The EffectKey of the effect to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals(DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L241">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals(DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient[])">Equals(PotionRecipe.Ingredient[])</h4>
+  <div class="markdown level1 summary"><p>Compare a recipe with this one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(PotionRecipe.Ingredient[] ingredients)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient.html">PotionRecipe.Ingredient</a>[]</td>
+        <td><span class="parametername">ingredients</span></td>
+        <td><p>Other recipe.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if other recipe equal with this one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals(DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient%5B%5D%2CDaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L252">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals(DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient[],DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient[])">Equals(PotionRecipe.Ingredient[], PotionRecipe.Ingredient[])</h4>
+  <div class="markdown level1 summary"><p>Compare two recipes for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(PotionRecipe.Ingredient[] ingredients1, PotionRecipe.Ingredient[] ingredients2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient.html">PotionRecipe.Ingredient</a>[]</td>
+        <td><span class="parametername">ingredients1</span></td>
+        <td><p>First recipe.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient.html">PotionRecipe.Ingredient</a>[]</td>
+        <td><span class="parametername">ingredients2</span></td>
+        <td><p>Second recipe.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if recipes are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L172">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Equals_System_Object_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Compare another PotionRecipe class with this one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>Other potion recipe class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if both recipes are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_GetHashCode.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L184">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_GetHashCode_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.GetHashCode*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_GetHashCode" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets hash code for this recipe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_GetHashCode_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.GetHashCode(DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L273">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_GetHashCode_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.GetHashCode*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_GetHashCode_DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_Ingredient___" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.GetHashCode(DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient[])">GetHashCode(PotionRecipe.Ingredient[])</h4>
+  <div class="markdown level1 summary"><p>Gets a hash code for recipe from ingredients.
+Note: Using hash code calculation from:
+<a href="https://stackoverflow.com/questions/263400/what-is-the-best-algorithm-for-an-overridden-system-object-gethashcode">https://stackoverflow.com/questions/263400/what-is-the-best-algorithm-for-an-overridden-system-object-gethashcode</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetHashCode(PotionRecipe.Ingredient[] ingredients)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.Ingredient.html">PotionRecipe.Ingredient</a>[]</td>
+        <td><span class="parametername">ingredients</span></td>
+        <td><p>Ingredients.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_HasRecipe.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.HasRecipe%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L220">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_HasRecipe_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.HasRecipe*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_HasRecipe" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.HasRecipe">HasRecipe()</h4>
+  <div class="markdown level1 summary"><p>Checks if recipe is defined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasRecipe()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if recipe has at least one ingredient.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_ToString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L193">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_ToString_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.ToString*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe_ToString" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Gets string listing all ingredients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Ingredient list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_PotionRecipe.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.PotionRecipe%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/PotionRecipe.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

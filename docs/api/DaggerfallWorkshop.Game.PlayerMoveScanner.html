@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PlayerMoveScanner
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PlayerMoveScanner
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_PlayerMoveScanner" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner" class="text-break">Class PlayerMoveScanner
+  </h1>
+  <div class="markdown level0 summary"><p>Detects information about where the player is going to step</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">PlayerMoveScanner</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.html">DaggerfallWorkshop.Game</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_PlayerMoveScanner_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerMoveScanner : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_AboveBehindWall.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.AboveBehindWall%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L90">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_AboveBehindWall_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.AboveBehindWall*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_AboveBehindWall" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.AboveBehindWall">AboveBehindWall</h4>
+  <div class="markdown level1 summary"><p>The wall above and behind the hanging player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdjacentSurface AboveBehindWall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.AdjacentSurface.html">AdjacentSurface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_BelowBehindWall.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.BelowBehindWall%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L102">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_BelowBehindWall_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.BelowBehindWall*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_BelowBehindWall" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.BelowBehindWall">BelowBehindWall</h4>
+  <div class="markdown level1 summary"><p>The wall behind a player that he can rappel down to while walking backwards</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdjacentSurface BelowBehindWall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.AdjacentSurface.html">AdjacentSurface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_FrontUnderCeiling.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.FrontUnderCeiling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L106">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_FrontUnderCeiling_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FrontUnderCeiling*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_FrontUnderCeiling" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FrontUnderCeiling">FrontUnderCeiling</h4>
+  <div class="markdown level1 summary"><p>The ceiling which is underneath the player in front of him while climbing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdjacentSurface FrontUnderCeiling { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.AdjacentSurface.html">AdjacentSurface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_FrontWall.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.FrontWall%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L94">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_FrontWall_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FrontWall*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_FrontWall" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FrontWall">FrontWall</h4>
+  <div class="markdown level1 summary"><p>The wall directly in front of the player if he's hanging</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdjacentSurface FrontWall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.AdjacentSurface.html">AdjacentSurface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_HeadHitDistance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.HeadHitDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L80">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_HeadHitDistance_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HeadHitDistance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_HeadHitDistance" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HeadHitDistance">HeadHitDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HeadHitDistance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_HeadHitRadius.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.HeadHitRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L78">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_HeadHitRadius_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HeadHitRadius*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_HeadHitRadius" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HeadHitRadius">HeadHitRadius</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HeadHitRadius { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_HeadRaycastHit.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.HeadRaycastHit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L81">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_HeadRaycastHit_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HeadRaycastHit*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_HeadRaycastHit" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HeadRaycastHit">HeadRaycastHit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RaycastHit HeadRaycastHit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RaycastHit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_HitSomethingInFront.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.HitSomethingInFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L82">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_HitSomethingInFront_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HitSomethingInFront*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_HitSomethingInFront" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.HitSomethingInFront">HitSomethingInFront</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HitSomethingInFront { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_SideWall.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.SideWall%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L98">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_SideWall_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.SideWall*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_SideWall" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.SideWall">SideWall</h4>
+  <div class="markdown level1 summary"><p>The wall on a side wrapped around an inside corner or outside corner while climbing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdjacentSurface SideWall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.AdjacentSurface.html">AdjacentSurface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_StepHitDistance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.StepHitDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_StepHitDistance_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.StepHitDistance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_StepHitDistance" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.StepHitDistance">StepHitDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float StepHitDistance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_WallDetachedVector.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.WallDetachedVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L86">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_WallDetachedVector_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.WallDetachedVector*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_WallDetachedVector" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.WallDetachedVector">WallDetachedVector</h4>
+  <div class="markdown level1 summary"><p>Saved WallGrab vector after detaching from a wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 WallDetachedVector { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteAboveBehindWallTo_UnityEngine_Vector3__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteAboveBehindWallTo(UnityEngine.Vector3%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L121">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteAboveBehindWallTo_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteAboveBehindWallTo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteAboveBehindWallTo_UnityEngine_Vector3__" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteAboveBehindWallTo(UnityEngine.Vector3@)">CutAndPasteAboveBehindWallTo(ref Vector3)</h4>
+  <div class="markdown level1 summary"><p>Delete Scanner's AboveBehindWall after copying the direction of the wall to it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CutAndPasteAboveBehindWallTo(ref Vector3 WallDirection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">WallDirection</span></td>
+        <td><p>The vector to be copied to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteBelowBehindWallTo_UnityEngine_Vector3__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteBelowBehindWallTo(UnityEngine.Vector3%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L131">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteBelowBehindWallTo_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteBelowBehindWallTo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteBelowBehindWallTo_UnityEngine_Vector3__" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteBelowBehindWallTo(UnityEngine.Vector3@)">CutAndPasteBelowBehindWallTo(ref Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CutAndPasteBelowBehindWallTo(ref Vector3 WallDirection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">WallDirection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteFrontUnderCeilingTo_UnityEngine_Vector3__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteFrontUnderCeilingTo(UnityEngine.Vector3%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L136">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteFrontUnderCeilingTo_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteFrontUnderCeilingTo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteFrontUnderCeilingTo_UnityEngine_Vector3__" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteFrontUnderCeilingTo(UnityEngine.Vector3@)">CutAndPasteFrontUnderCeilingTo(ref Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CutAndPasteFrontUnderCeilingTo(ref Vector3 CeilingDirection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">CeilingDirection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteFrontWallTo_UnityEngine_Vector3__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteFrontWallTo(UnityEngine.Vector3%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L126">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteFrontWallTo_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteFrontWallTo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteFrontWallTo_UnityEngine_Vector3__" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteFrontWallTo(UnityEngine.Vector3@)">CutAndPasteFrontWallTo(ref Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CutAndPasteFrontWallTo(ref Vector3 WallDirection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">WallDirection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteVectorToDetached_UnityEngine_Vector3__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteVectorToDetached(UnityEngine.Vector3%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L141">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteVectorToDetached_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteVectorToDetached*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_CutAndPasteVectorToDetached_UnityEngine_Vector3__" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.CutAndPasteVectorToDetached(UnityEngine.Vector3@)">CutAndPasteVectorToDetached(ref Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CutAndPasteVectorToDetached(ref Vector3 wallGrab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">wallGrab</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_FindAdjacentSurface_UnityEngine_Vector3_UnityEngine_Vector3_DaggerfallWorkshop_Game_PlayerMoveScanner_RotationDirection_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.FindAdjacentSurface(UnityEngine.Vector3%2CUnityEngine.Vector3%2CDaggerfallWorkshop.Game.PlayerMoveScanner.RotationDirection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L218">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_FindAdjacentSurface_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FindAdjacentSurface*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_FindAdjacentSurface_UnityEngine_Vector3_UnityEngine_Vector3_DaggerfallWorkshop_Game_PlayerMoveScanner_RotationDirection_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FindAdjacentSurface(UnityEngine.Vector3,UnityEngine.Vector3,DaggerfallWorkshop.Game.PlayerMoveScanner.RotationDirection)">FindAdjacentSurface(Vector3, Vector3, PlayerMoveScanner.RotationDirection)</h4>
+  <div class="markdown level1 summary"><p>Finds the adjacent surface to the one that the player is on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindAdjacentSurface(Vector3 origin, Vector3 direction, PlayerMoveScanner.RotationDirection turnDirection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>The place from which the scanning ray is cast</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerMoveScanner.RotationDirection.html">PlayerMoveScanner.RotationDirection</a></td>
+        <td><span class="parametername">turnDirection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_FindHeadHit_UnityEngine_Ray_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.FindHeadHit(UnityEngine.Ray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L170">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_FindHeadHit_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FindHeadHit*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_FindHeadHit_UnityEngine_Ray_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FindHeadHit(UnityEngine.Ray)">FindHeadHit(Ray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FindHeadHit(Ray ray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_FindStep_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.FindStep(UnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L151">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_FindStep_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FindStep*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_FindStep_UnityEngine_Vector3_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.FindStep(UnityEngine.Vector3)">FindStep(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Detects information about where the player is going to step via SphereCast downwards, Dispaced toward moveDirection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindStep(Vector3 moveDirection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">moveDirection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner_SetHitSomethingInFront.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner.SetHitSomethingInFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L307">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerMoveScanner_SetHitSomethingInFront_" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.SetHitSomethingInFront*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerMoveScanner_SetHitSomethingInFront" data-uid="DaggerfallWorkshop.Game.PlayerMoveScanner.SetHitSomethingInFront">SetHitSomethingInFront()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHitSomethingInFront()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerMoveScanner.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerMoveScanner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Player/PlayerMoveScanner.cs/#L62" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

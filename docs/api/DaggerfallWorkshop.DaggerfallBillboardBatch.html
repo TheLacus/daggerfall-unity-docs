@@ -1,0 +1,658 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DaggerfallBillboardBatch
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DaggerfallBillboardBatch
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch">
+  
+  
+  <h1 id="DaggerfallWorkshop_DaggerfallBillboardBatch" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch" class="text-break">Class DaggerfallBillboardBatch
+  </h1>
+  <div class="markdown level0 summary"><p>Draws a large number of atlased billboards using a single mesh and custom geometry shader.
+Supports animated billboards with a random start frame, but only one animation timer per batch.
+Currently used for exterior billboards only (origin = centre-bottom).
+Support for interior/dungeon billboards will be added later (origin = centre).
+Tries to not recreate Mesh and Material where possible.
+Generates some garbage when rebuilding mesh layout. This can probably be improved.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">DaggerfallBillboardBatch</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.html">DaggerfallWorkshop</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_DaggerfallBillboardBatch_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(MeshFilter))]
+[RequireComponent(typeof(MeshRenderer))]
+public class DaggerfallBillboardBatch : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_BlockOrigin.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.BlockOrigin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L51">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_BlockOrigin" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.BlockOrigin">BlockOrigin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+[HideInInspector]
+public Vector3 BlockOrigin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_FramesPerSecond.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.FramesPerSecond%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L56">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_FramesPerSecond" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.FramesPerSecond">FramesPerSecond</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0F, 30F)]
+public float FramesPerSecond</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_RandomDepth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.RandomDepth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L62">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_RandomDepth" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.RandomDepth">RandomDepth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(1F, 127F)]
+public int RandomDepth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_RandomSpacing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.RandomSpacing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L63">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_RandomSpacing" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.RandomSpacing">RandomSpacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RandomSpacing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_RandomStartFrame.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.RandomStartFrame%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L57">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_RandomStartFrame" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.RandomStartFrame">RandomStartFrame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RandomStartFrame</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_RandomWidth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.RandomWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L60">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_RandomWidth" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.RandomWidth">RandomWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(1F, 127F)]
+public int RandomWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_ShadowCasting.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.ShadowCasting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L58">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_ShadowCasting" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.ShadowCasting">ShadowCasting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShadowCastingMode ShadowCasting</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rendering.ShadowCastingMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_TextureArchive.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.TextureArchive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L54">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_TextureArchive" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.TextureArchive">TextureArchive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0F, 511F)]
+public int TextureArchive</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_IsCustom.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.IsCustom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L91">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch_IsCustom_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.IsCustom*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_IsCustom" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.IsCustom">IsCustom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCustom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch___EditorClearBillboards.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.__EditorClearBillboards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L365">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch___EditorClearBillboards_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.__EditorClearBillboards*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch___EditorClearBillboards" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.__EditorClearBillboards">__EditorClearBillboards()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void __EditorClearBillboards()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch___EditorRandomLayout.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.__EditorRandomLayout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L371">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch___EditorRandomLayout_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.__EditorRandomLayout*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch___EditorRandomLayout" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.__EditorRandomLayout">__EditorRandomLayout()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void __EditorRandomLayout()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_AddItem_System_Int32_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.AddItem(System.Int32%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L288">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch_AddItem_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.AddItem*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_AddItem_System_Int32_UnityEngine_Vector3_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.AddItem(System.Int32,UnityEngine.Vector3)">AddItem(Int32, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Add a billboard to batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(int record, Vector3 localPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_AddItem_UnityEngine_Rect_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.AddItem(UnityEngine.Rect%2CUnityEngine.Vector2%2CUnityEngine.Vector2%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L329">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch_AddItem_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.AddItem*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_AddItem_UnityEngine_Rect_UnityEngine_Vector2_UnityEngine_Vector2_UnityEngine_Vector3_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.AddItem(UnityEngine.Rect,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector3)">AddItem(Rect, Vector2, Vector2, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Add a billboard to batch.
+Use this overload for custom atlas material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(Rect rect, Vector2 size, Vector2 scale, Vector3 localPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">localPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_Apply.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.Apply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L351">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch_Apply_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.Apply*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_Apply" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.Apply">Apply()</h4>
+  <div class="markdown level1 summary"><p>Apply items to batch.
+Must be called once all items added.
+You can add more items later, but will need to apply again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Apply()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_Clear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L280">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch_Clear_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.Clear*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_Clear" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear all billboards from batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_SetMaterial_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.SetMaterial(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L170">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch_SetMaterial_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.SetMaterial*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_SetMaterial_System_Int32_System_Boolean_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.SetMaterial(System.Int32,System.Boolean)">SetMaterial(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set material all billboards in this batch will share.
+This material is always atlased.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaterial(int archive, bool force = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td><p>Archive index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Force new archive, even if already set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch_SetMaterial_UnityEngine_Material_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch.SetMaterial(UnityEngine.Material)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L258">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallBillboardBatch_SetMaterial_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.SetMaterial*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallBillboardBatch_SetMaterial_UnityEngine_Material_" data-uid="DaggerfallWorkshop.DaggerfallBillboardBatch.SetMaterial(UnityEngine.Material)">SetMaterial(Material)</h4>
+  <div class="markdown level1 summary"><p>Directly set custom atlas material all billboards in batch will share.
+Custom material allows you to directly set item rects in batch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaterial(Material material)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Material</span></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallBillboardBatch.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallBillboardBatch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallBillboardBatch.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

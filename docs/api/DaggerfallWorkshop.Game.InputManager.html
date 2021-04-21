@@ -1,0 +1,1224 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InputManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InputManager
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.InputManager">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_InputManager" data-uid="DaggerfallWorkshop.Game.InputManager" class="text-break">Class InputManager
+  </h1>
+  <div class="markdown level0 summary"><p>InputManager singleton class for Daggerfall-specific game actions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">InputManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.html">DaggerfallWorkshop.Game</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_InputManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InputManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_maxAcceleration.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.maxAcceleration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L32">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_maxAcceleration" data-uid="DaggerfallWorkshop.Game.InputManager.maxAcceleration">maxAcceleration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float maxAcceleration = 10F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_minAcceleration.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.minAcceleration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L31">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_minAcceleration" data-uid="DaggerfallWorkshop.Game.InputManager.minAcceleration">minAcceleration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float minAcceleration = 1F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_CurrentActions.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.CurrentActions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L85">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_CurrentActions_" data-uid="DaggerfallWorkshop.Game.InputManager.CurrentActions*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_CurrentActions" data-uid="DaggerfallWorkshop.Game.InputManager.CurrentActions">CurrentActions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputManager.Actions[] CurrentActions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_HasInstance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.HasInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L214">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_HasInstance_" data-uid="DaggerfallWorkshop.Game.InputManager.HasInstance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_HasInstance" data-uid="DaggerfallWorkshop.Game.InputManager.HasInstance">HasInstance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasInstance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_Horizontal.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.Horizontal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L122">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_Horizontal_" data-uid="DaggerfallWorkshop.Game.InputManager.Horizontal*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_Horizontal" data-uid="DaggerfallWorkshop.Game.InputManager.Horizontal">Horizontal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Horizontal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_Instance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L197">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_Instance_" data-uid="DaggerfallWorkshop.Game.InputManager.Instance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_Instance" data-uid="DaggerfallWorkshop.Game.InputManager.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputManager Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.html">InputManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_InvertLookX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.InvertLookX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L110">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_InvertLookX_" data-uid="DaggerfallWorkshop.Game.InputManager.InvertLookX*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_InvertLookX" data-uid="DaggerfallWorkshop.Game.InputManager.InvertLookX">InvertLookX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InvertLookX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_InvertLookY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.InvertLookY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L116">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_InvertLookY_" data-uid="DaggerfallWorkshop.Game.InputManager.InvertLookY*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_InvertLookY" data-uid="DaggerfallWorkshop.Game.InputManager.InvertLookY">InvertLookY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InvertLookY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_IsPaused.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.IsPaused%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L74">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_IsPaused_" data-uid="DaggerfallWorkshop.Game.InputManager.IsPaused*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_IsPaused" data-uid="DaggerfallWorkshop.Game.InputManager.IsPaused">IsPaused</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPaused { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_LookX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.LookX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L100">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_LookX_" data-uid="DaggerfallWorkshop.Game.InputManager.LookX*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_LookX" data-uid="DaggerfallWorkshop.Game.InputManager.LookX">LookX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LookX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_LookY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.LookY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L105">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_LookY_" data-uid="DaggerfallWorkshop.Game.InputManager.LookY*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_LookY" data-uid="DaggerfallWorkshop.Game.InputManager.LookY">LookY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LookY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_MouseX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.MouseX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L90">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_MouseX_" data-uid="DaggerfallWorkshop.Game.InputManager.MouseX*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_MouseX" data-uid="DaggerfallWorkshop.Game.InputManager.MouseX">MouseX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MouseX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_MouseY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.MouseY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_MouseY_" data-uid="DaggerfallWorkshop.Game.InputManager.MouseY*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_MouseY" data-uid="DaggerfallWorkshop.Game.InputManager.MouseY">MouseY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MouseY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_ReservedKeys.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.ReservedKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L80">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_ReservedKeys_" data-uid="DaggerfallWorkshop.Game.InputManager.ReservedKeys*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_ReservedKeys" data-uid="DaggerfallWorkshop.Game.InputManager.ReservedKeys">ReservedKeys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyCode[] ReservedKeys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_Vertical.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.Vertical%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L127">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_Vertical_" data-uid="DaggerfallWorkshop.Game.InputManager.Vertical*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_Vertical" data-uid="DaggerfallWorkshop.Game.InputManager.Vertical">Vertical</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Vertical { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_ActionComplete_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.ActionComplete(DaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L374">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_ActionComplete_" data-uid="DaggerfallWorkshop.Game.InputManager.ActionComplete*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_ActionComplete_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.ActionComplete(DaggerfallWorkshop.Game.InputManager.Actions)">ActionComplete(InputManager.Actions)</h4>
+  <div class="markdown level1 summary"><p>Returns true when specified action was in progress previous frame but not for current frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ActionComplete(InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_ActionStarted_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.ActionStarted(DaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L366">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_ActionStarted_" data-uid="DaggerfallWorkshop.Game.InputManager.ActionStarted*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_ActionStarted_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.ActionStarted(DaggerfallWorkshop.Game.InputManager.Actions)">ActionStarted(InputManager.Actions)</h4>
+  <div class="markdown level1 summary"><p>Returns true when specified action is in progress for current frame but not for previous frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ActionStarted(InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_AddAction_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.AddAction(DaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L350">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_AddAction_" data-uid="DaggerfallWorkshop.Game.InputManager.AddAction*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_AddAction_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.AddAction(DaggerfallWorkshop.Game.InputManager.Actions)">AddAction(InputManager.Actions)</h4>
+  <div class="markdown level1 summary"><p>Adds an action</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAction(InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_ClearAllActions.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.ClearAllActions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L335">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_ClearAllActions_" data-uid="DaggerfallWorkshop.Game.InputManager.ClearAllActions*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_ClearAllActions" data-uid="DaggerfallWorkshop.Game.InputManager.ClearAllActions">ClearAllActions()</h4>
+  <div class="markdown level1 summary"><p>Clears all queued actions and action state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAllActions()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_ClearBinding_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.ClearBinding(DaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L441">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_ClearBinding_" data-uid="DaggerfallWorkshop.Game.InputManager.ClearBinding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_ClearBinding_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.ClearBinding(DaggerfallWorkshop.Game.InputManager.Actions)">ClearBinding(InputManager.Actions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearBinding(InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_ClearBinding_UnityEngine_KeyCode_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.ClearBinding(UnityEngine.KeyCode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L433">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_ClearBinding_" data-uid="DaggerfallWorkshop.Game.InputManager.ClearBinding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_ClearBinding_UnityEngine_KeyCode_" data-uid="DaggerfallWorkshop.Game.InputManager.ClearBinding(UnityEngine.KeyCode)">ClearBinding(KeyCode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearBinding(KeyCode code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_FindSingleton_DaggerfallWorkshop_Game_InputManager__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.FindSingleton(DaggerfallWorkshop.Game.InputManager%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L527">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_FindSingleton_" data-uid="DaggerfallWorkshop.Game.InputManager.FindSingleton*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_FindSingleton_DaggerfallWorkshop_Game_InputManager__" data-uid="DaggerfallWorkshop.Game.InputManager.FindSingleton(DaggerfallWorkshop.Game.InputManager@)">FindSingleton(out InputManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindSingleton(out InputManager singletonOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.html">InputManager</a></td>
+        <td><span class="parametername">singletonOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_GetBinding_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.GetBinding(DaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L382">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_GetBinding_" data-uid="DaggerfallWorkshop.Game.InputManager.GetBinding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_GetBinding_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.GetBinding(DaggerfallWorkshop.Game.InputManager.Actions)">GetBinding(InputManager.Actions)</h4>
+  <div class="markdown level1 summary"><p>Finds first keycode bound to a specific action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyCode GetBinding(InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_GetBindings_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.GetBindings(DaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L400">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_GetBindings_" data-uid="DaggerfallWorkshop.Game.InputManager.GetBindings*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_GetBindings_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.GetBindings(DaggerfallWorkshop.Game.InputManager.Actions)">GetBindings(InputManager.Actions)</h4>
+  <div class="markdown level1 summary"><p>Finds all keycodes made to a specific action.
+Will return empty array if no bindings found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyCode[] GetBindings(InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_HasAction_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.HasAction(DaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L358">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_HasAction_" data-uid="DaggerfallWorkshop.Game.InputManager.HasAction*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_HasAction_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.HasAction(DaggerfallWorkshop.Game.InputManager.Actions)">HasAction(InputManager.Actions)</h4>
+  <div class="markdown level1 summary"><p>Returns true when specified action is in progress for current frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAction(InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_RaiseLoadedKeyBindsEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.RaiseLoadedKeyBindsEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L769">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_RaiseLoadedKeyBindsEvent_" data-uid="DaggerfallWorkshop.Game.InputManager.RaiseLoadedKeyBindsEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_RaiseLoadedKeyBindsEvent" data-uid="DaggerfallWorkshop.Game.InputManager.RaiseLoadedKeyBindsEvent">RaiseLoadedKeyBindsEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseLoadedKeyBindsEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_RaiseSavedKeyBindsEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.RaiseSavedKeyBindsEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L776">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_RaiseSavedKeyBindsEvent_" data-uid="DaggerfallWorkshop.Game.InputManager.RaiseSavedKeyBindsEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_RaiseSavedKeyBindsEvent" data-uid="DaggerfallWorkshop.Game.InputManager.RaiseSavedKeyBindsEvent">RaiseSavedKeyBindsEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseSavedKeyBindsEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_RaiseUpdatedKeyBindsEvent_UnityEngine_KeyCode_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.RaiseUpdatedKeyBindsEvent(UnityEngine.KeyCode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L784">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_RaiseUpdatedKeyBindsEvent_" data-uid="DaggerfallWorkshop.Game.InputManager.RaiseUpdatedKeyBindsEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_RaiseUpdatedKeyBindsEvent_UnityEngine_KeyCode_" data-uid="DaggerfallWorkshop.Game.InputManager.RaiseUpdatedKeyBindsEvent(UnityEngine.KeyCode)">RaiseUpdatedKeyBindsEvent(KeyCode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseUpdatedKeyBindsEvent(KeyCode code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_ResetDefaults.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.ResetDefaults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L462">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_ResetDefaults_" data-uid="DaggerfallWorkshop.Game.InputManager.ResetDefaults*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_ResetDefaults" data-uid="DaggerfallWorkshop.Game.InputManager.ResetDefaults">ResetDefaults()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDefaults()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_SaveKeyBinds.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.SaveKeyBinds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L450">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_SaveKeyBinds_" data-uid="DaggerfallWorkshop.Game.InputManager.SaveKeyBinds*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_SaveKeyBinds" data-uid="DaggerfallWorkshop.Game.InputManager.SaveKeyBinds">SaveKeyBinds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveKeyBinds()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_SetBinding_UnityEngine_KeyCode_DaggerfallWorkshop_Game_InputManager_Actions_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.SetBinding(UnityEngine.KeyCode%2CDaggerfallWorkshop.Game.InputManager.Actions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L416">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_InputManager_SetBinding_" data-uid="DaggerfallWorkshop.Game.InputManager.SetBinding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_SetBinding_UnityEngine_KeyCode_DaggerfallWorkshop_Game_InputManager_Actions_" data-uid="DaggerfallWorkshop.Game.InputManager.SetBinding(UnityEngine.KeyCode,DaggerfallWorkshop.Game.InputManager.Actions)">SetBinding(KeyCode, InputManager.Actions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBinding(KeyCode code, InputManager.Actions action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.Actions.html">InputManager.Actions</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_OnLoadedKeyBinds.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.OnLoadedKeyBinds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L768">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_OnLoadedKeyBinds" data-uid="DaggerfallWorkshop.Game.InputManager.OnLoadedKeyBinds">OnLoadedKeyBinds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event InputManager.OnLoadSaveKeyBinds OnLoadedKeyBinds</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.OnLoadSaveKeyBinds.html">InputManager.OnLoadSaveKeyBinds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_OnSavedKeyBinds.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.OnSavedKeyBinds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L775">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_OnSavedKeyBinds" data-uid="DaggerfallWorkshop.Game.InputManager.OnSavedKeyBinds">OnSavedKeyBinds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event InputManager.OnLoadSaveKeyBinds OnSavedKeyBinds</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.OnLoadSaveKeyBinds.html">InputManager.OnLoadSaveKeyBinds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager_OnUpdatedKeyBind.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager.OnUpdatedKeyBind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L783">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_InputManager_OnUpdatedKeyBind" data-uid="DaggerfallWorkshop.Game.InputManager.OnUpdatedKeyBind">OnUpdatedKeyBind</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event InputManager.OnUpdateKeyBind OnUpdatedKeyBind</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.InputManager.OnUpdateKeyBind.html">InputManager.OnUpdateKeyBind</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_InputManager.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.InputManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/InputManager.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

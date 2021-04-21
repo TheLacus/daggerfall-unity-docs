@@ -1,0 +1,1295 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IEntityEffect
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IEntityEffect
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect" class="text-break">Interface IEntityEffect
+  </h1>
+  <div class="markdown level0 summary"><p>Interface to an entity effect.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html#DaggerfallWorkshop_Utility_IMacroContextProvider_GetMacroDataSource">IMacroContextProvider.GetMacroDataSource()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.html">DaggerfallWorkshop.Game.MagicAndEffects</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IEntityEffect : IMacroContextProvider</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_BypassSavingThrows.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.BypassSavingThrows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L135">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_BypassSavingThrows_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.BypassSavingThrows*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_BypassSavingThrows" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.BypassSavingThrows">BypassSavingThrows</h4>
+  <div class="markdown level1 summary"><p>True if spell effect always lands regardless of saving throws.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool BypassSavingThrows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Caster.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Caster%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L52">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Caster_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Caster*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Caster" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Caster">Caster</h4>
+  <div class="markdown level1 summary"><p>Gets the caster entity behaviour of this effect (can return null).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DaggerfallEntityBehaviour Caster { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ChanceSuccess.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ChanceSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L75">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ChanceSuccess_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ChanceSuccess*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ChanceSuccess" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ChanceSuccess">ChanceSuccess</h4>
+  <div class="markdown level1 summary"><p>Gets flag stating if effect passed a chance check on start.
+If always false if effect does not support chance component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChanceSuccess { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_CurrentVariant.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.CurrentVariant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L130">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_CurrentVariant_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.CurrentVariant*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_CurrentVariant" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.CurrentVariant">CurrentVariant</h4>
+  <div class="markdown level1 summary"><p>Sets current variant for multi-effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int CurrentVariant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_DisplayName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L64">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_DisplayName_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.DisplayName*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_DisplayName" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.DisplayName">DisplayName</h4>
+  <div class="markdown level1 summary"><p>Gets display name from properties or construct one from Group+SubGroup text in properties.
+This allows effects to set a custom display name or just roll with automatic names.
+Daggerfall appears to use first token of spellmaker/spellbook description, but we want more control for effect mods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DisplayName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_EnchantmentParam.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.EnchantmentParam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L42">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_EnchantmentParam_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.EnchantmentParam*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_EnchantmentParam" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.EnchantmentParam">EnchantmentParam</h4>
+  <div class="markdown level1 summary"><p>Gets or sets enchantment param for enchantment effects.
+If this property is null then effect is not a live enchantment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EnchantmentParam? EnchantmentParam { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam.html">EnchantmentParam</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasEnded.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasEnded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L120">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasEnded_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasEnded*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasEnded" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasEnded">HasEnded</h4>
+  <div class="markdown level1 summary"><p>True if effect has ended by calling End();</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasEnded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Key.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Key%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L57">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Key_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Key*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Key" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Key">Key</h4>
+  <div class="markdown level1 summary"><p>Gets key from properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Key { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ParentBundle.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ParentBundle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L115">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ParentBundle_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ParentBundle*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ParentBundle" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ParentBundle">ParentBundle</h4>
+  <div class="markdown level1 summary"><p>Gets or sets parent bundle for this effect.
+Will be null for template effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LiveEffectBundle ParentBundle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.LiveEffectBundle.html">LiveEffectBundle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_PotionProperties.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.PotionProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_PotionProperties_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.PotionProperties*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_PotionProperties" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.PotionProperties">PotionProperties</h4>
+  <div class="markdown level1 summary"><p>Gets effect potion properties (if any).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PotionProperties PotionProperties { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PotionProperties.html">PotionProperties</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Properties.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L31">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Properties_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Properties*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Properties" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Properties">Properties</h4>
+  <div class="markdown level1 summary"><p>Gets effect properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EffectProperties Properties { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectProperties.html">EffectProperties</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ResistanceMods.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ResistanceMods%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L109">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ResistanceMods_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ResistanceMods*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ResistanceMods" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ResistanceMods">ResistanceMods</h4>
+  <div class="markdown level1 summary"><p>Gets array DaggerfallResistances.Count items wide.
+Array items represent Fire, Cold, Poison/Disease, Shock, Magic.
+Effect implementation should set modifier values for resistances when part of payload.
+For example, a &quot;Resist Fire&quot; effect would set the current modifier for Fire resistance (such as +30 to Fire resistance).
+Use (int)DFCareer.Resistances.ResistanceName to get index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] ResistanceMods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RoundsRemaining.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RoundsRemaining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L69">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RoundsRemaining_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RoundsRemaining*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RoundsRemaining" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RoundsRemaining">RoundsRemaining</h4>
+  <div class="markdown level1 summary"><p>Gets or sets number of magic rounds remaining.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int RoundsRemaining { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Settings.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Settings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L36">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Settings_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Settings*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Settings" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Settings">Settings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets current effect settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EffectSettings Settings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EffectSettings.html">EffectSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_SkillMods.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.SkillMods%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L100">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_SkillMods_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.SkillMods*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_SkillMods" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.SkillMods">SkillMods</h4>
+  <div class="markdown level1 summary"><p>Get array DaggerfallSkills.Count items wide.
+Array items represent Medical, Etiquette, Streetwise, etc.
+Effect implementation should set modifier values for skills when part of payload.
+For example, a &quot;Tongues&quot; effect would set the current modifier for all language skills (such as +5 to Dragonish, +5 to Giantish, and so on).
+Use (int)DFCareer.Skills.SkillName to get index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] SkillMods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_StatMaxMods.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.StatMaxMods%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L91">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_StatMaxMods_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.StatMaxMods*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_StatMaxMods" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.StatMaxMods">StatMaxMods</h4>
+  <div class="markdown level1 summary"><p>Gets array DaggerfallStats.Count items wide.
+Array items represent Strength, Intelligence, Willpower, etc.
+Allows an effect to temporarily override stat maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] StatMaxMods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_StatMods.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.StatMods%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L84">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_StatMods_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.StatMods*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_StatMods" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.StatMods">StatMods</h4>
+  <div class="markdown level1 summary"><p>Gets array DaggerfallStats.Count items wide.
+Array items represent Strength, Intelligence, Willpower, etc.
+Effect implementation should set modifier values for stats when part of payload.
+For example, a &quot;Damage Strength&quot; effect would set the current modifier for Strength (such as -5 to Strength).
+Use (int)DFCareer.State.StatName to get index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] StatMods { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_VariantCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.VariantCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L125">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_VariantCount_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.VariantCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_VariantCount" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.VariantCount">VariantCount</h4>
+  <div class="markdown level1 summary"><p>Gets total number of variants for multi-effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int VariantCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ConstantEffect.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ConstantEffect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L151">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ConstantEffect_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ConstantEffect*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_ConstantEffect" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.ConstantEffect">ConstantEffect()</h4>
+  <div class="markdown level1 summary"><p>Use this for work performed every frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ConstantEffect()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_EnchantmentPayloadCallback_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentPayloadFlags_System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.EnchantmentPayloadCallback(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentPayloadFlags%2CSystem.Nullable%7BDaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam%7D%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour%2CDaggerfallWorkshop.Game.Items.DaggerfallUnityItem%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L197">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_EnchantmentPayloadCallback_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.EnchantmentPayloadCallback*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_EnchantmentPayloadCallback_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentPayloadFlags_System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Int32_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.EnchantmentPayloadCallback(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentPayloadFlags,System.Nullable{DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam},DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour,DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour,DaggerfallWorkshop.Game.Items.DaggerfallUnityItem,System.Int32)">EnchantmentPayloadCallback(EnchantmentPayloadFlags, Nullable&lt;EnchantmentParam&gt;, DaggerfallEntityBehaviour, DaggerfallEntityBehaviour, DaggerfallUnityItem, Int32)</h4>
+  <div class="markdown level1 summary"><p>Enchantment payload callback for enchantment to perform custom execution based on context.
+These callbacks are performed directly from template, not from a live instance of effect. Do not store state in effect during callbacks.
+Not used by EnchantmentPayloadFlags.Held - rather, an effect instance bundle is assigned to entity's effect manager to execute as normal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PayloadCallbackResults? EnchantmentPayloadCallback(EnchantmentPayloadFlags context, EnchantmentParam? param = default(EnchantmentParam? ), DaggerfallEntityBehaviour sourceEntity = null, DaggerfallEntityBehaviour targetEntity = null, DaggerfallUnityItem sourceItem = null, int sourceDamage = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentPayloadFlags.html">EnchantmentPayloadFlags</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam.html">EnchantmentParam</a>&gt;</td>
+        <td><span class="parametername">param</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">sourceEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">targetEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Items.DaggerfallUnityItem.html">DaggerfallUnityItem</a></td>
+        <td><span class="parametername">sourceItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceDamage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.PayloadCallbackResults.html">PayloadCallbackResults</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_End.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L162">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_End_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.End*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_End" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.End">End()</h4>
+  <div class="markdown level1 summary"><p>Called when bundle lifetime is at an end.
+Use this for any wrap-up work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void End()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetEnchantmentSettings.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetEnchantmentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L174">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetEnchantmentSettings_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetEnchantmentSettings*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetEnchantmentSettings" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetEnchantmentSettings">GetEnchantmentSettings()</h4>
+  <div class="markdown level1 summary"><p>Gets array of enchantment settings supported by this effect.
+Can return a null or empty array, especially if effect not an enchantment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EnchantmentSettings[] GetEnchantmentSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentSettings.html">EnchantmentSettings</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetEnchantmentSettings_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetEnchantmentSettings(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L180">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetEnchantmentSettings_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetEnchantmentSettings*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetEnchantmentSettings_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetEnchantmentSettings(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam)">GetEnchantmentSettings(EnchantmentParam)</h4>
+  <div class="markdown level1 summary"><p>Helper to get a specific enchantment setting based on param.
+Can return null if enchantment with param not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EnchantmentSettings? GetEnchantmentSettings(EnchantmentParam param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam.html">EnchantmentParam</a></td>
+        <td><span class="parametername">param</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentSettings.html">EnchantmentSettings</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetForcedEnchantments_System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetForcedEnchantments(System.Nullable%7BDaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L204">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetForcedEnchantments_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetForcedEnchantments*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetForcedEnchantments_System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetForcedEnchantments(System.Nullable{DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam})">GetForcedEnchantments(Nullable&lt;EnchantmentParam&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets related enchantments that will be forced onto item along with this enchantment.
+Only used by Soul Bound in classic gameplay.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ForcedEnchantmentSet? GetForcedEnchantments(EnchantmentParam? param = default(EnchantmentParam? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam.html">EnchantmentParam</a>&gt;</td>
+        <td><span class="parametername">param</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ForcedEnchantmentSet.html">ForcedEnchantmentSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L215">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetSaveData_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_GetSaveData" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.GetSaveData">GetSaveData()</h4>
+  <div class="markdown level1 summary"><p>Get effect state data to serialize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object GetSaveData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasEnchantmentPayloadFlags_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentPayloadFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasEnchantmentPayloadFlags(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentPayloadFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L190">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasEnchantmentPayloadFlags_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasEnchantmentPayloadFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasEnchantmentPayloadFlags_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentPayloadFlags_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasEnchantmentPayloadFlags(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentPayloadFlags)">HasEnchantmentPayloadFlags(EnchantmentPayloadFlags)</h4>
+  <div class="markdown level1 summary"><p>Helper to check if properties contain the specified enchantment payload flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasEnchantmentPayloadFlags(EnchantmentPayloadFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentPayloadFlags.html">EnchantmentPayloadFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasItemMakerFlags_DaggerfallWorkshop_Game_MagicAndEffects_ItemMakerFlags_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasItemMakerFlags(DaggerfallWorkshop.Game.MagicAndEffects.ItemMakerFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L185">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasItemMakerFlags_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasItemMakerFlags*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_HasItemMakerFlags_DaggerfallWorkshop_Game_MagicAndEffects_ItemMakerFlags_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.HasItemMakerFlags(DaggerfallWorkshop.Game.MagicAndEffects.ItemMakerFlags)">HasItemMakerFlags(ItemMakerFlags)</h4>
+  <div class="markdown level1 summary"><p>Helper to check if properties contain the specified item maker flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasItemMakerFlags(ItemMakerFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.ItemMakerFlags.html">ItemMakerFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_IsEnchantmentExclusiveTo_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentSettings___System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.IsEnchantmentExclusiveTo(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentSettings%5B%5D%2CSystem.Nullable%7BDaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L210">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_IsEnchantmentExclusiveTo_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.IsEnchantmentExclusiveTo*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_IsEnchantmentExclusiveTo_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentSettings___System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.IsEnchantmentExclusiveTo(DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentSettings[],System.Nullable{DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam})">IsEnchantmentExclusiveTo(EnchantmentSettings[], Nullable&lt;EnchantmentParam&gt;)</h4>
+  <div class="markdown level1 summary"><p>Enchantment can flag that it is exclusive to one or more enchantments in array provided.
+Used by enchanting window to prevent certain enchantments from being selected together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsEnchantmentExclusiveTo(EnchantmentSettings[] settingsToTest, EnchantmentParam? comparerParam = default(EnchantmentParam? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentSettings.html">EnchantmentSettings</a>[]</td>
+        <td><span class="parametername">settingsToTest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EnchantmentParam.html">EnchantmentParam</a>&gt;</td>
+        <td><span class="parametername">comparerParam</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_MagicRound.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.MagicRound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L156">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_MagicRound_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.MagicRound*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_MagicRound" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.MagicRound">MagicRound()</h4>
+  <div class="markdown level1 summary"><p>Use this for any work performed every magic round.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MagicRound()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RestoreSaveData_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RestoreSaveData(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L220">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RestoreSaveData_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RestoreSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RestoreSaveData_System_Object_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RestoreSaveData(System.Object)">RestoreSaveData(Object)</h4>
+  <div class="markdown level1 summary"><p>Restore effect state from serialized data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RestoreSaveData(object dataIn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">dataIn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Resume_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_EffectSaveData_v1_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Resume(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1%2CDaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L146">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Resume_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Resume*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Resume_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_EffectSaveData_v1_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Resume(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1,DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager,DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">Resume(EntityEffectManager.EffectSaveData_v1, EntityEffectManager, DaggerfallEntityBehaviour)</h4>
+  <div class="markdown level1 summary"><p>Called by an EntityEffect manage when parent bundle is resumed from save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Resume(EntityEffectManager.EffectSaveData_v1 effectData, EntityEffectManager manager, DaggerfallEntityBehaviour caster = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1.html">EntityEffectManager.EffectSaveData_v1</a></td>
+        <td><span class="parametername">effectData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.html">EntityEffectManager</a></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">caster</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RollChance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RollChance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L168">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RollChance_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RollChance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_RollChance" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.RollChance">RollChance()</h4>
+  <div class="markdown level1 summary"><p>Perform a chance roll on this effect based on chance settings.
+Can be used by custom chance effects that need to roll chance other than at start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RollChance()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Start_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Start(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L141">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Start_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Start*"></a>
+  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_Start_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.Start(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager,DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">Start(EntityEffectManager, DaggerfallEntityBehaviour)</h4>
+  <div class="markdown level1 summary"><p>Called by an EntityEffectManager when parent bundle is attached to host entity.
+Use this for setup or immediate work performed only once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start(EntityEffectManager manager, DaggerfallEntityBehaviour caster = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.html">EntityEffectManager</a></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">caster</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/EntityEffect.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

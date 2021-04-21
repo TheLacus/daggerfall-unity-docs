@@ -1,0 +1,1036 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DaggerfallMessageBox
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DaggerfallMessageBox
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox" class="text-break">Class DaggerfallMessageBox
+  </h1>
+  <div class="markdown level0 summary"><p>Implements a Daggerfal popup message box dialog with variable buttons.
+Designed to take Daggerfall multiline text resource records.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html">UserInterfaceWindow</a></div>
+    <div class="level2"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html">DaggerfallBaseWindow</a></div>
+    <div class="level3"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html">DaggerfallPopupWindow</a></div>
+    <div class="level4"><span class="xref">DaggerfallMessageBox</span></div>
+      <div class="level5"><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.CreateCharGenderSelect.html">CreateCharGenderSelect</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_ScreenDimColor">DaggerfallPopupWindow.ScreenDimColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_AllowCancel">DaggerfallPopupWindow.AllowCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Cancelled">DaggerfallPopupWindow.Cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_PreviousWindow">DaggerfallPopupWindow.PreviousWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Draw">DaggerfallPopupWindow.Draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_CancelWindow">DaggerfallPopupWindow.CancelWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_OnCancel">DaggerfallPopupWindow.OnCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_exitKey">DaggerfallBaseWindow.exitKey</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_defaultToolTip">DaggerfallBaseWindow.defaultToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_DaggerfallUnity">DaggerfallBaseWindow.DaggerfallUnity</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_IsSetup">DaggerfallBaseWindow.IsSetup</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallBaseWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallBaseWindow_NativePanel">DaggerfallBaseWindow.NativePanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_parentPanel">UserInterfaceWindow.parentPanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_uiManager">UserInterfaceWindow.uiManager</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_enabled">UserInterfaceWindow.enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_pauseWhileOpened">UserInterfaceWindow.pauseWhileOpened</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_focusControl">UserInterfaceWindow.focusControl</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_Value">UserInterfaceWindow.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_Enabled">UserInterfaceWindow.Enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_ParentPanel">UserInterfaceWindow.ParentPanel</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_FocusControl">UserInterfaceWindow.FocusControl</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_ProcessMessages">UserInterfaceWindow.ProcessMessages()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnReturn">UserInterfaceWindow.OnReturn()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_CloseWindow">UserInterfaceWindow.CloseWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_PopWindow">UserInterfaceWindow.PopWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_PauseWhileOpen">UserInterfaceWindow.PauseWhileOpen</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_SetFocus_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_">UserInterfaceWindow.SetFocus(BaseScreenComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnClose">UserInterfaceWindow.OnClose</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_RaiseOnCloseHandler">UserInterfaceWindow.RaiseOnCloseHandler()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.html">DaggerfallWorkshop.Game.UserInterfaceWindows</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DaggerfallMessageBox : DaggerfallPopupWindow, IUserInterfaceWindow</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.%23ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager%2CDaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L117">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_System_Boolean_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager,DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow,System.Boolean,System.Int32)">DaggerfallMessageBox(IUserInterfaceManager, IUserInterfaceWindow, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallMessageBox(IUserInterfaceManager uiManager, IUserInterfaceWindow previous = null, bool wrapText = false, int posY = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a></td>
+        <td><span class="parametername">uiManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">wrapText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">posY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_CommonMessageBoxButtons_DaggerfallConnect_Arena2_TextFile_Token___DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_DaggerfallWorkshop_Utility_IMacroContextProvider_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.%23ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager%2CDaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons%2CDaggerfallConnect.Arena2.TextFile.Token%5B%5D%2CDaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow%2CDaggerfallWorkshop.Utility.IMacroContextProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L132">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_CommonMessageBoxButtons_DaggerfallConnect_Arena2_TextFile_Token___DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_DaggerfallWorkshop_Utility_IMacroContextProvider_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager,DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons,DaggerfallConnect.Arena2.TextFile.Token[],DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow,DaggerfallWorkshop.Utility.IMacroContextProvider)">DaggerfallMessageBox(IUserInterfaceManager, DaggerfallMessageBox.CommonMessageBoxButtons, TextFile.Token[], IUserInterfaceWindow, IMacroContextProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallMessageBox(IUserInterfaceManager uiManager, DaggerfallMessageBox.CommonMessageBoxButtons buttons, TextFile.Token[] tokens, IUserInterfaceWindow previous = null, IMacroContextProvider mcp = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a></td>
+        <td><span class="parametername">uiManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons.html">DaggerfallMessageBox.CommonMessageBoxButtons</a></td>
+        <td><span class="parametername">buttons</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td><span class="parametername">tokens</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></td>
+        <td><span class="parametername">mcp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_CommonMessageBoxButtons_System_Int32_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_DaggerfallWorkshop_Utility_IMacroContextProvider_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.%23ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager%2CDaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons%2CSystem.Int32%2CDaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow%2CDaggerfallWorkshop.Utility.IMacroContextProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L138">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_CommonMessageBoxButtons_System_Int32_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_DaggerfallWorkshop_Utility_IMacroContextProvider_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager,DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons,System.Int32,DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow,DaggerfallWorkshop.Utility.IMacroContextProvider)">DaggerfallMessageBox(IUserInterfaceManager, DaggerfallMessageBox.CommonMessageBoxButtons, Int32, IUserInterfaceWindow, IMacroContextProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallMessageBox(IUserInterfaceManager uiManager, DaggerfallMessageBox.CommonMessageBoxButtons buttons, int textId, IUserInterfaceWindow previous = null, IMacroContextProvider mcp = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a></td>
+        <td><span class="parametername">uiManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons.html">DaggerfallMessageBox.CommonMessageBoxButtons</a></td>
+        <td><span class="parametername">buttons</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">textId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></td>
+        <td><span class="parametername">mcp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_CommonMessageBoxButtons_System_String_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.%23ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager%2CDaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons%2CSystem.String%2CDaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L144">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox__ctor_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceManager_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_CommonMessageBoxButtons_System_String_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.#ctor(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager,DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons,System.String,DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)">DaggerfallMessageBox(IUserInterfaceManager, DaggerfallMessageBox.CommonMessageBoxButtons, String, IUserInterfaceWindow)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallMessageBox(IUserInterfaceManager uiManager, DaggerfallMessageBox.CommonMessageBoxButtons buttons, string text, IUserInterfaceWindow previous = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a></td>
+        <td><span class="parametername">uiManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.CommonMessageBoxButtons.html">DaggerfallMessageBox.CommonMessageBoxButtons</a></td>
+        <td><span class="parametername">buttons</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ButtonSpacing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ButtonSpacing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L83">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ButtonSpacing_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ButtonSpacing*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ButtonSpacing" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ButtonSpacing">ButtonSpacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ButtonSpacing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ButtonTextDistance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ButtonTextDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L89">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ButtonTextDistance_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ButtonTextDistance*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ButtonTextDistance" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ButtonTextDistance">ButtonTextDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ButtonTextDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ClickAnywhereToClose.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ClickAnywhereToClose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L100">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ClickAnywhereToClose_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ClickAnywhereToClose*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ClickAnywhereToClose" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ClickAnywhereToClose">ClickAnywhereToClose</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClickAnywhereToClose { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ExtraProceedBinding.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ExtraProceedBinding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L106">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ExtraProceedBinding_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ExtraProceedBinding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ExtraProceedBinding" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ExtraProceedBinding">ExtraProceedBinding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyCode ExtraProceedBinding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ImagePanel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ImagePanel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L112">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ImagePanel_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ImagePanel*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_ImagePanel" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.ImagePanel">ImagePanel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Panel ImagePanel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html">Panel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SelectedButton.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SelectedButton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SelectedButton_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SelectedButton*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SelectedButton" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SelectedButton">SelectedButton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallMessageBox.MessageBoxButtons SelectedButton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.MessageBoxButtons.html">DaggerfallMessageBox.MessageBoxButtons</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_AddButton_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_MessageBoxButtons_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.AddButton(DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.MessageBoxButtons%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L256">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_AddButton_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.AddButton*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_AddButton_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_MessageBoxButtons_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.AddButton(DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.MessageBoxButtons,System.Boolean)">AddButton(DaggerfallMessageBox.MessageBoxButtons, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Button AddButton(DaggerfallMessageBox.MessageBoxButtons messageBoxButton, bool defaultButton = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.MessageBoxButtons.html">DaggerfallMessageBox.MessageBoxButtons</a></td>
+        <td><span class="parametername">messageBoxButton</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">defaultButton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Button.html">Button</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_AddNextMessageBox_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.AddNextMessageBox(DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L210">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_AddNextMessageBox_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.AddNextMessageBox*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_AddNextMessageBox_DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.AddNextMessageBox(DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox)">AddNextMessageBox(DaggerfallMessageBox)</h4>
+  <div class="markdown level1 summary"><p>Adds another nested message box to be displayed next when click detected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNextMessageBox(DaggerfallMessageBox nextMessageBox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.html">DaggerfallMessageBox</a></td>
+        <td><span class="parametername">nextMessageBox</span></td>
+        <td><p>Next message box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_GetDefaultButton.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.GetDefaultButton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L292">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_GetDefaultButton_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.GetDefaultButton*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_GetDefaultButton" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.GetDefaultButton">GetDefaultButton()</h4>
+  <div class="markdown level1 summary"><p>Gets default button (if any).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Button GetDefaultButton()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Button.html">Button</a></td>
+        <td><p>Default Button reference, or null if no default button defined.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnPop.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnPop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L191">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnPop_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnPop*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnPop" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnPop">OnPop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPop()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnPop">UserInterfaceWindow.OnPop()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnPush.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnPush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L185">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnPush_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnPush*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnPush" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnPush">OnPush()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPush()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.UserInterfaceWindow.html#DaggerfallWorkshop_Game_UserInterface_UserInterfaceWindow_OnPush">UserInterfaceWindow.OnPush()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetHighlightColor_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetHighlightColor(UnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L353">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetHighlightColor_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetHighlightColor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetHighlightColor_UnityEngine_Color_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetHighlightColor(UnityEngine.Color)">SetHighlightColor(Color)</h4>
+  <div class="markdown level1 summary"><p>Must be set before text otherwise layout has already occurred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHighlightColor(Color highlightColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">highlightColor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetText_System_String_DaggerfallWorkshop_Utility_IMacroContextProvider_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetText(System.String%2CDaggerfallWorkshop.Utility.IMacroContextProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L303">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetText_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetText_System_String_DaggerfallWorkshop_Utility_IMacroContextProvider_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetText(System.String,DaggerfallWorkshop.Utility.IMacroContextProvider)">SetText(String, IMacroContextProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetText(string text, IMacroContextProvider mcp = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></td>
+        <td><span class="parametername">mcp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetText_System_String___DaggerfallWorkshop_Utility_IMacroContextProvider_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetText(System.String%5B%5D%2CDaggerfallWorkshop.Utility.IMacroContextProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L308">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetText_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetText_System_String___DaggerfallWorkshop_Utility_IMacroContextProvider_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetText(System.String[],DaggerfallWorkshop.Utility.IMacroContextProvider)">SetText(String[], IMacroContextProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetText(string[] rows, IMacroContextProvider mcp = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></td>
+        <td><span class="parametername">mcp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetTextTokens_DaggerfallConnect_Arena2_TextFile_Token___DaggerfallWorkshop_Utility_IMacroContextProvider_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetTextTokens(DaggerfallConnect.Arena2.TextFile.Token%5B%5D%2CDaggerfallWorkshop.Utility.IMacroContextProvider%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L330">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetTextTokens_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetTextTokens*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetTextTokens_DaggerfallConnect_Arena2_TextFile_Token___DaggerfallWorkshop_Utility_IMacroContextProvider_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetTextTokens(DaggerfallConnect.Arena2.TextFile.Token[],DaggerfallWorkshop.Utility.IMacroContextProvider,System.Boolean)">SetTextTokens(TextFile.Token[], IMacroContextProvider, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextTokens(TextFile.Token[] tokens, IMacroContextProvider mcp = null, bool expandMacros = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td><span class="parametername">tokens</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></td>
+        <td><span class="parametername">mcp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">expandMacros</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetTextTokens_System_Int32_DaggerfallWorkshop_Utility_IMacroContextProvider_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetTextTokens(System.Int32%2CDaggerfallWorkshop.Utility.IMacroContextProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L341">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetTextTokens_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetTextTokens*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_SetTextTokens_System_Int32_DaggerfallWorkshop_Utility_IMacroContextProvider_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.SetTextTokens(System.Int32,DaggerfallWorkshop.Utility.IMacroContextProvider)">SetTextTokens(Int32, IMacroContextProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextTokens(int id, IMacroContextProvider mcp = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.IMacroContextProvider.html">IMacroContextProvider</a></td>
+        <td><span class="parametername">mcp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Setup.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Setup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L150">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Setup_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Setup*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Setup" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Setup">Setup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Setup()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Setup">DaggerfallPopupWindow.Setup()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Show.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Show%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L215">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Show_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Show*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Show" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Show">Show()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Update.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L224">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Update_" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Update*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_Update" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallPopupWindow.html#DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallPopupWindow_Update">DaggerfallPopupWindow.Update()</a></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnButtonClick.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnButtonClick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L479">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox_OnButtonClick" data-uid="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnButtonClick">OnButtonClick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event DaggerfallMessageBox.OnButtonClickHandler OnButtonClick</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox.OnButtonClickHandler.html">DaggerfallMessageBox.OnButtonClickHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterfaceWindows_DaggerfallMessageBox.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterfaceWindows.DaggerfallMessageBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterfaceWindows/DaggerfallMessageBox.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

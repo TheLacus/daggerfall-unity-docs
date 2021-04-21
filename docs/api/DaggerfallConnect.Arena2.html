@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace DaggerfallConnect.Arena2
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace DaggerfallConnect.Arena2
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallConnect.Arena2">
+  
+  <h1 id="DaggerfallConnect_Arena2" data-uid="DaggerfallConnect.Arena2" class="text-break">Namespace DaggerfallConnect.Arena2
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.Arch3dFile.html">Arch3dFile</a></h4>
+      <section><p>Connects to ARCH3D.BSA to enumerate and extract 3D mesh data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html">BaseImageFile</a></h4>
+      <section><p>Provides base image handling for all Daggerfall image files.
+This class is inherited from and extended by Arena2.TextureFile, Arena2.ImgFile, etc.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BioFile.html">BioFile</a></h4>
+      <section><p>Connects to a Daggerfall BIO.DAT file and extracts the player biography text.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BiogFile.html">BiogFile</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BiogFile.Answer.html">BiogFile.Answer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BiogFile.Question.html">BiogFile.Question</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BlocksFile.html">BlocksFile</a></h4>
+      <section><p>Connects to BLOCKS.BSA to enumerate and extract city and dungeon blocks.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BookFile.html">BookFile</a></h4>
+      <section><p>Reads a Daggerfall book file.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BsaFile.html">BsaFile</a></h4>
+      <section><p>Connects to a Daggerfall BSA file and extracts records as binary data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BssFile.html">BssFile</a></h4>
+      <section><p>Connects to *.BSS files to extract image data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.CfaFile.html">CfaFile</a></h4>
+      <section><p>Connects to *.CFA files to extract image data.
+CFA is a legacy Arena image file format that is largely unused in Daggerfall.
+Most significant usage is first-person horse and cart transport modes.
+Notes:
+This implementation is limited in that it only supports 8-bit wide indexed pixels without muxing.
+Thanks to creator of WinArena for releasing source to decode Arena CFA files.
+This made it significantly easier to research Daggerfall's CFA files for DFTFU.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.CifRciFile.html">CifRciFile</a></h4>
+      <section><p>Connects to a *.CIF or *.RCI file to enumerate and extract image data.
+Each CIF file may contain one or more images, including animated records with multiple frames.
+Each RCI file may contain one or more images, but never animated records.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.ClassFile.html">ClassFile</a></h4>
+      <section><p>Reads a CLASS*.CFG file or a stream to another CFG file (e.g. ENEMY*.CFG in a MONSTER.BSA record).</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.html">FactionFile</a></h4>
+      <section><p>Connects to FACTION.TXT and reads faction data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlatsFile.html">FlatsFile</a></h4>
+      <section><p>Connects to FLATS.CFG and reads flats data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlcFile.html">FlcFile</a></h4>
+      <section><p>Connects to a *.FLC or *.CEL file to extract animation frames.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FntFile.html">FntFile</a></h4>
+      <section><p>Opens FONT000*.FNT files and reads glyph data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.GfxFile.html">GfxFile</a></h4>
+      <section><p>Connects to *.GFX files to extract image data.
+The only GFX files in Daggerfall are SCRL00I0.GFX and SCRL01I0.GFX.
+Combined thse make a total of 16 frames of scrolling parchment used exclusively by class questions UI.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.ImgFile.html">ImgFile</a></h4>
+      <section><p>Connects to a *.IMG file to enumerate and extract image data. Each IMG file contains a single image.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.MagicItemsFile.html">MagicItemsFile</a></h4>
+      <section><p>Simple reader class to extract MAGIC.DEF item data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.MapsFile.html">MapsFile</a></h4>
+      <section><p>Connects to MAPS.BSA to enumerate locations within a specific region and extract their layouts.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.MonsterFile.html">MonsterFile</a></h4>
+      <section><p>Connects to MONSTER.BSA to enumerate and extract monster data.
+NOTE: This is a work in progress and is not complete.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.PaintFile.html">PaintFile</a></h4>
+      <section><p>Reads data from PAINT.DAT.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.PakFile.html">PakFile</a></h4>
+      <section><p>Connects to CLIMATE.PAK or POLITIC.PAK to extract and read meta-data about the Daggerfall world map.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.RumorFile.html">RumorFile</a></h4>
+      <section><p>Connects to a Daggerfall RUMOR.DAT file and extracts rumor records.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.SkyFile.html">SkyFile</a></h4>
+      <section><p>Connects to a SKY??.DAT file to enumerate and extract image data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.SndFile.html">SndFile</a></h4>
+      <section><p>Connects to DAGGER.SND to enumerate and extract sound data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.TextFile.html">TextFile</a></h4>
+      <section><p>Connects to and reads text from the TEXT.RSC file.
+Also provides helpers for other classes using the text resource format.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.TextureFile.html">TextureFile</a></h4>
+      <section><p>Connects to a TEXTURE.??? file to enumerate and extract image data.
+Each texture file may contain one or more images, including animated records with multiple frames.
+Textures will only be converted from the source binary file when needed. This allows you to extract
+individual records and frames without the overhead of converting unwanted images.
+Combine this with a texture caching scheme when loading large 3D scenes to avoid unnecessary load time.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.VidFile.html">VidFile</a></h4>
+      <section><p>Opens and reads a Daggerfall VID file.
+Unlike most API classes, this one uses the UnityEngine namespace to
+directly decode image data to a Color32[] frame buffer for efficiency.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.WoodsFile.html">WoodsFile</a></h4>
+      <section><p>Reads data from WOODS.WLD.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BookFile.BookHeader.html">BookFile.BookHeader</a></h4>
+      <section><p>Defines a book file header.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.FactionData.html">FactionFile.FactionData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.FlatData.html">FactionFile.FlatData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlatsFile.FlatData.html">FlatsFile.FlatData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlcFile.ChunkHeader.html">FlcFile.ChunkHeader</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlcFile.FLICHeader.html">FlcFile.FLICHeader</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlcFile.FrameHeader.html">FlcFile.FrameHeader</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FntFile.FileHeader.html">FntFile.FileHeader</a></h4>
+      <section><p>FNT header data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FntFile.FntFileData.html">FntFile.FntFileData</a></h4>
+      <section><p>Structured FNT file data.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FntFile.GlyphTableEntry.html">FntFile.GlyphTableEntry</a></h4>
+      <section><p>Glyph table entry.
+Each glyph has 32-bytes of data in 16-bit bitfield format.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.MonsterFile.MonsterANC.html">MonsterFile.MonsterANC</a></h4>
+      <section><p>Defines a monster ANC record.
+Name is in format ASCR0000.ASC, where 0000 is monster ID.
+Likely to be animation settings for monsters.
+Format currently unknown and not researched.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.RumorFile.DaggerfallRumor.html">RumorFile.DaggerfallRumor</a></h4>
+      <section><p>Represents a rumor.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.TextFile.TextRecord.html">TextFile.TextRecord</a></h4>
+      <section><p>Stores a specially parsed text record with all control bytes in format [0x00-0xFF].
+Otherwise, text is returned in original format with all control bytes intact.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a></h4>
+      <section><p>Stores a single text or formatting token.
+This makes it possible remix localized strings with original formatting.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.VidAudioIncrementalFrame.html">VidAudioIncrementalFrame</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.VidAudioStartFrame.html">VidAudioStartFrame</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.VidHeader.html">VidHeader</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.BsaFile.DirectoryTypes.html">BsaFile.DirectoryTypes</a></h4>
+      <section><p>Possible directory types enumeration.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.FactionIDs.html">FactionFile.FactionIDs</a></h4>
+      <section><p>Faction IDs in Daggerfall's FACTION.TXT file.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.FactionRaces.html">FactionFile.FactionRaces</a></h4>
+      <section><p>Faction race value does not map to usual race ID.
+Instead it selects from a smaller pool as below.
+For example:</p>
+<ul>
+<li>&quot;Daggerfall&quot;, and most others, have a race of 3 (Breton)</li>
+<li>&quot;Sentinel&quot; has a race of 2 (Redguard)</li>
+<li>This is likely involved in how Daggerfall assigns the race of wandering NPCs in towns</li>
+<li>When selecting a random face for escorts, it is assigned by the dominant race of region</li>
+<li>Not all races found in FACTION.TXT are present here - unsure if these are even used in game</li>
+</ul>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.FactionTypes.html">FactionFile.FactionTypes</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.Flags.html">FactionFile.Flags</a></h4>
+      <section><p>Faction flags bitmask values.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.GuildGroups.html">FactionFile.GuildGroups</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FactionFile.SocialGroups.html">FactionFile.SocialGroups</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlcFile.ChunkType.html">FlcFile.ChunkType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlcFile.CinematicSpeed.html">FlcFile.CinematicSpeed</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.FlcFile.FLIC_Format.html">FlcFile.FLIC_Format</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.MapsFile.Climates.html">MapsFile.Climates</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.RumorFile.RumorTypes.html">RumorFile.RumorTypes</a></h4>
+      <section><p>Rumor types.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Formatting.html">TextFile.Formatting</a></h4>
+      <section><p>Special Text Resource formatting bytes.
+<a href="http://www.uesp.net/wiki/Daggerfall:Text_Record_Format">http://www.uesp.net/wiki/Daggerfall:Text_Record_Format</a>
+This is a work in progress.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.TextureFile.SolidTypes.html">TextureFile.SolidTypes</a></h4>
+      <section><p>Solid types enumeration.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallConnect.Arena2.VidBlockTypes.html">VidBlockTypes</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

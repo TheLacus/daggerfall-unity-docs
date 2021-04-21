@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserInterfaceManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserInterfaceManager
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager" class="text-break">Class UserInterfaceManager
+  </h1>
+  <div class="markdown level0 summary"><p>Manages a stack of user interface windows.
+Provides a simple window messaging system for passing information and events via string.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UserInterfaceManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserInterfaceManager : IUserInterfaceManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager__ctor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager__ctor" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.#ctor">UserInterfaceManager()</h4>
+  <div class="markdown level1 summary"><p>Constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserInterfaceManager()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_MessageCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.MessageCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L62">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_MessageCount_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.MessageCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_MessageCount" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.MessageCount">MessageCount</h4>
+  <div class="markdown level1 summary"><p>Number of messages in stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MessageCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_TopWindow.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.TopWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L54">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_TopWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.TopWindow*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_TopWindow" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.TopWindow">TopWindow</h4>
+  <div class="markdown level1 summary"><p>Peeks window at top of stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserInterfaceWindow TopWindow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_WindowCount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.WindowCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L70">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_WindowCount_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.WindowCount*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_WindowCount" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.WindowCount">WindowCount</h4>
+  <div class="markdown level1 summary"><p>Number of windows in stack (not including HUD)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WindowCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_BuildParamDict_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.BuildParamDict(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L218">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_BuildParamDict_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.BuildParamDict*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_BuildParamDict_System_String_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.BuildParamDict(System.String)">BuildParamDict(String)</h4>
+  <div class="markdown level1 summary"><p>Builds a parameter dictionary from message string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, string&gt; BuildParamDict(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_ChangeWindow_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.ChangeWindow(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L119">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_ChangeWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.ChangeWindow*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_ChangeWindow_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.ChangeWindow(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)">ChangeWindow(IUserInterfaceWindow)</h4>
+  <div class="markdown level1 summary"><p>Replace entire stack with a new window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeWindow(IUserInterfaceWindow window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>New window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_ContainsWindow_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.ContainsWindow(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L110">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_ContainsWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.ContainsWindow*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_ContainsWindow_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.ContainsWindow(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)">ContainsWindow(IUserInterfaceWindow)</h4>
+  <div class="markdown level1 summary"><p>Checks stack for a specific window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsWindow(IUserInterfaceWindow window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>Window to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if window exists on stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_GetMessage.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.GetMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L153">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_GetMessage_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.GetMessage*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_GetMessage" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.GetMessage">GetMessage()</h4>
+  <div class="markdown level1 summary"><p>Get message at front of queue and remove message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetMessage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PeekMessage.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PeekMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L164">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PeekMessage_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PeekMessage*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PeekMessage" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PeekMessage">PeekMessage()</h4>
+  <div class="markdown level1 summary"><p>Peek message at front of queue without removing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PeekMessage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PopWindow.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PopWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PopWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PopWindow*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PopWindow" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PopWindow">PopWindow()</h4>
+  <div class="markdown level1 summary"><p>Pop a window from the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopWindow()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PostMessage_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PostMessage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L135">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PostMessage_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PostMessage*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PostMessage_System_String_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PostMessage(System.String)">PostMessage(String)</h4>
+  <div class="markdown level1 summary"><p>Post message to end of queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PostMessage(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PushWindow_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PushWindow(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PushWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PushWindow*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_PushWindow_DaggerfallWorkshop_Game_UserInterface_IUserInterfaceWindow_" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.PushWindow(DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow)">PushWindow(IUserInterfaceWindow)</h4>
+  <div class="markdown level1 summary"><p>Push a new window onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushWindow(IUserInterfaceWindow window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceWindow.html">IUserInterfaceWindow</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>New window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_OnWindowChange.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.OnWindowChange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L42">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager_OnWindowChange" data-uid="DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager.OnWindowChange">OnWindowChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler OnWindowChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.IUserInterfaceManager.html">IUserInterfaceManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_UserInterfaceManager.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.UserInterfaceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/UserInterfaceManager.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

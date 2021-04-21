@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace DaggerfallWorkshop.Game.Utility
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace DaggerfallWorkshop.Game.Utility
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Utility">
+  
+  <h1 id="DaggerfallWorkshop_Game_Utility" data-uid="DaggerfallWorkshop.Game.Utility" class="text-break">Namespace DaggerfallWorkshop.Game.Utility
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.html">CityNavigation</a></h4>
+      <section><p>Utility class to help with mobile spawning and navigation in town environments.
+The navigation component is intended to be used by wandering NPCs.
+Mobile enemies will use normal steering behaviour to follow player.
+Combines inverse of automap to carve out navgrid then sets weighting by tile type.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.DaggerfallDistance.html">DaggerfallDistance</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.Dice100.html">Dice100</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.EditDistance.html">EditDistance</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.FoeSpawner.html">FoeSpawner</a></h4>
+      <section><p>Spawn one or more enemies near player.
+Will attempt to start placing spawns after game objects are set and spawn count greater than 0.
+This is a generic spawn helper not tied to any specific system.
+NOTES:</p>
+<ul>
+<li>Spawns foes immediately. Be careful spawning multiple foes as they are likely to become stuck on each other.</li>
+<li>The spawner will self-destroy once all foes spawned. Do not attach to anything you want to remain in scene.</li>
+<li>There is a prefab carrying this component in Prefabs/Scene for easy spawner setups.</li>
+<li>Will attempt to find best parent at time if none specified (e.g. dungeon, interior).</li>
+<li>Might need to reduce MinDistance if expecting to spawn in tigt confines like small interiors.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.NameHelper.html">NameHelper</a></h4>
+      <section><p>Generates names for Daggerfall NPCs and locations.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.PaperDollRenderer.html">PaperDollRenderer</a></h4>
+      <section><p>Render paper doll at higher pixel densities using custom layer flags.
+Maintains layout data to sample equip index of item texture under mouse.
+Replacement paper doll textures must be readable.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.PopulationManager.html">PopulationManager</a></h4>
+      <section><p>Manages a pool of civilian mobiles (wandering NPCs) for the local town environment.
+Attached to the same GameObject as DaggerfallLocation and CityNavigation by environment layout process in StreamingWorld.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.SceneControl.html">SceneControl</a></h4>
+      <section><p>Launches game or startup scene based on path validation.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.StartGameBehaviour.html">StartGameBehaviour</a></h4>
+      <section><p>Game startup and shutdown helper.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.TravelTimeCalculator.html">TravelTimeCalculator</a></h4>
+      <section><p>Helper to calculate overland travel time for travel map and Clock resource.
+Travel time needs to be coordinated between these systems for quests to provide a
+realistic amount of time for player to complete quest.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.DistanceMatch.html">DistanceMatch</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.NameHelper.NameBank.html">NameHelper.NameBank</a></h4>
+      <section><p>A bank is an array of sets.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.NameHelper.NameSet.html">NameHelper.NameSet</a></h4>
+      <section><p>A set is an array of string parts.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.PopulationManager.PoolItem.html">PopulationManager.PoolItem</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.IDistance.html">IDistance</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileFlags.html">CityNavigation.TileFlags</a></h4>
+      <section><p>Tile flags.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.TileTypes.html">CityNavigation.TileTypes</a></h4>
+      <section><p>Tile types examined for weightings.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.NameHelper.BankTypes.html">NameHelper.BankTypes</a></h4>
+      <section><p>Name banks available for generation.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.PaperDollRenderer.LayerFlags.html">PaperDollRenderer.LayerFlags</a></h4>
+      <section><p>These flags determine which parts of paper doll build are rendered into output texture.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.StartGameBehaviour.StartMethods.html">StartGameBehaviour.StartMethods</a></h4>
+      <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Utility.StartGameBehaviour.OnNewGameEventHandler.html">StartGameBehaviour.OnNewGameEventHandler</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

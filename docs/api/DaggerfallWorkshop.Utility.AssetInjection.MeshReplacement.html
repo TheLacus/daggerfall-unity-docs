@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MeshReplacement
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MeshReplacement
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement">
+  
+  
+  <h1 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement" class="text-break">Class MeshReplacement
+  </h1>
+  <div class="markdown level0 summary"><p>Handles import and injection of GamObjects with the purpose of providing modding support.
+Daggerfall meshes and billboards can be replaced with a prefab imported from mods.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MeshReplacement</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.html">DaggerfallWorkshop.Utility.AssetInjection</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MeshReplacement</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_GetTreeColorCallback.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.GetTreeColorCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L52">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_GetTreeColorCallback_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.GetTreeColorCallback*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_GetTreeColorCallback" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.GetTreeColorCallback">GetTreeColorCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;Color32&gt; GetTreeColorCallback { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">UnityEngine.Color32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_GetTreeScaleCallback.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.GetTreeScaleCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_GetTreeScaleCallback_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.GetTreeScaleCallback*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_GetTreeScaleCallback" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.GetTreeScaleCallback">GetTreeScaleCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;float&gt; GetTreeScaleCallback { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_SetTreesSettingsCallback.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.SetTreesSettingsCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L57">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_SetTreesSettingsCallback_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.SetTreesSettingsCallback*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_SetTreesSettingsCallback" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.SetTreesSettingsCallback">SetTreesSettingsCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;Terrain&gt; SetTreesSettingsCallback { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">UnityEngine.Terrain</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ClearNatureGameObjects_UnityEngine_Terrain_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ClearNatureGameObjects(UnityEngine.Terrain)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L211">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ClearNatureGameObjects_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ClearNatureGameObjects*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ClearNatureGameObjects_UnityEngine_Terrain_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ClearNatureGameObjects(UnityEngine.Terrain)">ClearNatureGameObjects(Terrain)</h4>
+  <div class="markdown level1 summary"><p>Remove all tree instances from terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearNatureGameObjects(Terrain terrain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Terrain</span></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportCustomFlatGameobject_System_Int32_System_Int32_UnityEngine_Vector3_UnityEngine_Transform_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportCustomFlatGameobject(System.Int32%2CSystem.Int32%2CUnityEngine.Vector3%2CUnityEngine.Transform%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L104">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportCustomFlatGameobject_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportCustomFlatGameobject*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportCustomFlatGameobject_System_Int32_System_Int32_UnityEngine_Vector3_UnityEngine_Transform_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportCustomFlatGameobject(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Transform,System.Boolean)">ImportCustomFlatGameobject(Int32, Int32, Vector3, Transform, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Seek and import a GameObject from mods to replace a Daggerfall billboard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject ImportCustomFlatGameobject(int archive, int record, Vector3 position, Transform parent, bool inDungeon = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td><p>Texture archive for original billboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Texture record for original billboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to assign to GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Parent to assign to GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inDungeon</span></td>
+        <td><p>Fix position for dungeon models.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><p>Returns the imported model or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportCustomGameobject_System_UInt32_UnityEngine_Transform_UnityEngine_Matrix4x4_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportCustomGameobject(System.UInt32%2CUnityEngine.Transform%2CUnityEngine.Matrix4x4)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportCustomGameobject_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportCustomGameobject*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportCustomGameobject_System_UInt32_UnityEngine_Transform_UnityEngine_Matrix4x4_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportCustomGameobject(System.UInt32,UnityEngine.Transform,UnityEngine.Matrix4x4)">ImportCustomGameobject(UInt32, Transform, Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Seek and import a GameObject from mods to replace a Daggerfall mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject ImportCustomGameobject(uint modelID, Transform parent, Matrix4x4 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">modelID</span></td>
+        <td><p>Daggerfall model ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Parent to assign to GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Matrix4x4</span></td>
+        <td><span class="parametername">matrix</span></td>
+        <td><p>Matrix with position and rotation of GameObject.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><p>Returns the imported model or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportNatureGameObject_System_Int32_System_Int32_UnityEngine_Terrain_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportNatureGameObject(System.Int32%2CSystem.Int32%2CUnityEngine.Terrain%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L173">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportNatureGameObject_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportNatureGameObject*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_ImportNatureGameObject_System_Int32_System_Int32_UnityEngine_Terrain_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.ImportNatureGameObject(System.Int32,System.Int32,UnityEngine.Terrain,System.Int32,System.Int32)">ImportNatureGameObject(Int32, Int32, Terrain, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Import a gameobject from mods to use with the terrain system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ImportNatureGameObject(int archive, int record, Terrain terrain, int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td><p>Texture archive for original billboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Texture record for original billboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Terrain</span></td>
+        <td><span class="parametername">terrain</span></td>
+        <td><p>Unity terrain.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X coordinate on terrain.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y coordinate on terrain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if gameobject is found and imported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_RetryAssetImports.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.RetryAssetImports%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L66">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_RetryAssetImports_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.RetryAssetImports*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_RetryAssetImports" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.RetryAssetImports">RetryAssetImports()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RetryAssetImports()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_SwapCustomFlatGameobject_System_Int32_System_Int32_UnityEngine_Transform_UnityEngine_Vector3_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.SwapCustomFlatGameobject(System.Int32%2CSystem.Int32%2CUnityEngine.Transform%2CUnityEngine.Vector3%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L147">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_SwapCustomFlatGameobject_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.SwapCustomFlatGameobject*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement_SwapCustomFlatGameobject_System_Int32_System_Int32_UnityEngine_Transform_UnityEngine_Vector3_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement.SwapCustomFlatGameobject(System.Int32,System.Int32,UnityEngine.Transform,UnityEngine.Vector3,System.Boolean)">SwapCustomFlatGameobject(Int32, Int32, Transform, Vector3, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the requested imported model is assigned to the given transform and is positioned correctly.
+If archive and record mismatch, the requested prefab is imported while currently loaded gameobject is destroyed.
+This has a similar purpose to <see cref="!:DaggerfallBillboard.SetMaterial()"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject SwapCustomFlatGameobject(int archive, int record, Transform parent, Vector3 position, bool inDungeon = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archive</span></td>
+        <td><p>Texture archive for original billboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Texture record for original billboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Parent to assign to GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to assign to GameObject.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inDungeon</span></td>
+        <td><p>Fix position for dungeon models.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><p>Returns the imported model or null if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_MeshReplacement.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.MeshReplacement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/MeshReplacement.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

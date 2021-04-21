@@ -1,0 +1,659 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StatsRollout
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StatsRollout
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout" class="text-break">Class StatsRollout
+  </h1>
+  <div class="markdown level0 summary"><p>Implements control to distribute bonus stats.
+Used on the &quot;add bonus points&quot; stats window, the
+end summary window of character creation and on
+the character sheet when leveling.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html">BaseScreenComponent</a></div>
+    <div class="level2"><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html">Panel</a></div>
+    <div class="level3"><span class="xref">StatsRollout</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_Components">Panel.Components</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_EnableBorder">Panel.EnableBorder</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_HasFocusOutlineColor">Panel.HasFocusOutlineColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_LostFocusOutlineColor">Panel.LostFocusOutlineColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_Outline">Panel.Outline</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_Update">Panel.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_Draw">Panel.Draw()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_SetBorderTextures_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_Texture2D_UnityEngine_FilterMode_System_Nullable_DaggerfallWorkshop_Border_UnityEngine_Vector2Int___">Panel.SetBorderTextures(Texture2D, Texture2D, Texture2D, Texture2D, Texture2D, Texture2D, Texture2D, Texture2D, Texture2D, FilterMode, Nullable&lt;Border&lt;Vector2Int&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_GotFocus">Panel.GotFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.Panel.html#DaggerfallWorkshop_Game_UserInterface_Panel_LostFocus">Panel.LostFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_rectRestrictedRenderArea">BaseScreenComponent.rectRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_restrictedRenderAreaCustomParent">BaseScreenComponent.restrictedRenderAreaCustomParent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_restrictedRenderAreaCoordinateType">BaseScreenComponent.restrictedRenderAreaCoordinateType</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_backgroundTexture">BaseScreenComponent.backgroundTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_animatedBackgroundTextures">BaseScreenComponent.animatedBackgroundTextures</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_backgroundTextureLayout">BaseScreenComponent.backgroundTextureLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseEnter">BaseScreenComponent.OnMouseEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseLeave">BaseScreenComponent.OnMouseLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseMove">BaseScreenComponent.OnMouseMove</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseDown">BaseScreenComponent.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseUp">BaseScreenComponent.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseClick">BaseScreenComponent.OnMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseDoubleClick">BaseScreenComponent.OnMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseDown">BaseScreenComponent.OnRightMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseUp">BaseScreenComponent.OnRightMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseClick">BaseScreenComponent.OnRightMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnRightMouseDoubleClick">BaseScreenComponent.OnRightMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseDown">BaseScreenComponent.OnMiddleMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseUp">BaseScreenComponent.OnMiddleMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseClick">BaseScreenComponent.OnMiddleMouseClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMiddleMouseDoubleClick">BaseScreenComponent.OnMiddleMouseDoubleClick</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseScrollUp">BaseScreenComponent.OnMouseScrollUp</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OnMouseScrollDown">BaseScreenComponent.OnMouseScrollDown</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Enabled">BaseScreenComponent.Enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UseFocus">BaseScreenComponent.UseFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Name">BaseScreenComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Tag">BaseScreenComponent.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Position">BaseScreenComponent.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Size">BaseScreenComponent.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RootSize">BaseScreenComponent.RootSize</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Parent">BaseScreenComponent.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Rectangle">BaseScreenComponent.Rectangle</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_HorizontalAlignment">BaseScreenComponent.HorizontalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_VerticalAlignment">BaseScreenComponent.VerticalAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RestrictedRenderAreaCoordinateType">BaseScreenComponent.RestrictedRenderAreaCoordinateType</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RectRestrictedRenderArea">BaseScreenComponent.RectRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RestrictedRenderAreaCustomParent">BaseScreenComponent.RestrictedRenderAreaCustomParent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_UseRestrictedRenderArea">BaseScreenComponent.UseRestrictedRenderArea</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_CustomMousePosition">BaseScreenComponent.CustomMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MousePosition">BaseScreenComponent.MousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LastMousePosition">BaseScreenComponent.LastMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScaledMousePosition">BaseScreenComponent.ScaledMousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundColor">BaseScreenComponent.BackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseOverBackgroundColor">BaseScreenComponent.MouseOverBackgroundColor</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundColorTexture">BaseScreenComponent.BackgroundColorTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundTexture">BaseScreenComponent.BackgroundTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundCroppedRect">BaseScreenComponent.BackgroundCroppedRect</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AnimatedBackgroundTextures">BaseScreenComponent.AnimatedBackgroundTextures</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AnimationDelayInSeconds">BaseScreenComponent.AnimationDelayInSeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BackgroundTextureLayout">BaseScreenComponent.BackgroundTextureLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_InteriorWidth">BaseScreenComponent.InteriorWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_InteriorHeight">BaseScreenComponent.InteriorHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Scale">BaseScreenComponent.Scale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_AutoSize">BaseScreenComponent.AutoSize</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LocalScale">BaseScreenComponent.LocalScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ToolTip">BaseScreenComponent.ToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ToolTipText">BaseScreenComponent.ToolTipText</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SuppressToolTip">BaseScreenComponent.SuppressToolTip</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MinAutoScale">BaseScreenComponent.MinAutoScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MaxAutoScale">BaseScreenComponent.MaxAutoScale</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseOverComponent">BaseScreenComponent.MouseOverComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_TopMargin">BaseScreenComponent.TopMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_BottomMargin">BaseScreenComponent.BottomMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_LeftMargin">BaseScreenComponent.LeftMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMargin">BaseScreenComponent.RightMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScreenToLocal_UnityEngine_Vector2_">BaseScreenComponent.ScreenToLocal(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_ScreenToLocal_UnityEngine_Rect_">BaseScreenComponent.ScreenToLocal(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_TriggerMouseClick">BaseScreenComponent.TriggerMouseClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseClick_UnityEngine_Vector2_">BaseScreenComponent.MouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMouseClick_UnityEngine_Vector2_">BaseScreenComponent.RightMouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MiddleMouseClick_UnityEngine_Vector2_">BaseScreenComponent.MiddleMouseClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.MouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_RightMouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.RightMouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MiddleMouseDoubleClick_UnityEngine_Vector2_">BaseScreenComponent.MiddleMouseDoubleClick(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseEnter">BaseScreenComponent.MouseEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseLeave_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_">BaseScreenComponent.MouseLeave(BaseScreenComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseMove_System_Int32_System_Int32_">BaseScreenComponent.MouseMove(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseScrollUp">BaseScreenComponent.MouseScrollUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_MouseScrollDown">BaseScreenComponent.MouseScrollDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_Dispose">BaseScreenComponent.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SetMargins_DaggerfallWorkshop_Game_UserInterface_Margins_System_Int32_">BaseScreenComponent.SetMargins(Margins, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_OffsetFrom_DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_DaggerfallWorkshop_Game_UserInterface_Sides_System_Int32_">BaseScreenComponent.OffsetFrom(BaseScreenComponent, Sides, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_SetFocus">BaseScreenComponent.SetFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.BaseScreenComponent.html#DaggerfallWorkshop_Game_UserInterface_BaseScreenComponent_HasFocus">BaseScreenComponent.HasFocus()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.UserInterface.html">DaggerfallWorkshop.Game.UserInterface</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StatsRollout : Panel, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout__ctor_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout.%23ctor(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L71">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_StatsRollout__ctor_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout__ctor_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.#ctor(System.Boolean,System.Boolean)">StatsRollout(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatsRollout(bool onCharacterSheet = false, bool freeEdit = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">onCharacterSheet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">freeEdit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout_BonusPool.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout.BonusPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L65">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_BonusPool_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.BonusPool*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_BonusPool" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.BonusPool">BonusPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BonusPool { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout_StartingStats.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout.StartingStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L53">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_StartingStats_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.StartingStats*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_StartingStats" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.StartingStats">StartingStats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallStats StartingStats { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallStats.html">DaggerfallStats</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout_WorkingStats.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout.WorkingStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L59">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_WorkingStats_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.WorkingStats*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_WorkingStats" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.WorkingStats">WorkingStats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallStats WorkingStats { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallStats.html">DaggerfallStats</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout_Reroll_DaggerfallConnect_DFCareer_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout.Reroll(DaggerfallConnect.DFCareer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L146">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_Reroll_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.Reroll*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_Reroll_DaggerfallConnect_DFCareer_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.Reroll(DaggerfallConnect.DFCareer)">Reroll(DFCareer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reroll(DFCareer dfClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFCareer.html">DFCareer</a></td>
+        <td><span class="parametername">dfClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout_SetStats_DaggerfallWorkshop_Game_Entity_DaggerfallStats_DaggerfallWorkshop_Game_Entity_DaggerfallStats_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout.SetStats(DaggerfallWorkshop.Game.Entity.DaggerfallStats%2CDaggerfallWorkshop.Game.Entity.DaggerfallStats%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L183">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_SetStats_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.SetStats*"></a>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_SetStats_DaggerfallWorkshop_Game_Entity_DaggerfallStats_DaggerfallWorkshop_Game_Entity_DaggerfallStats_System_Int32_" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.SetStats(DaggerfallWorkshop.Game.Entity.DaggerfallStats,DaggerfallWorkshop.Game.Entity.DaggerfallStats,System.Int32)">SetStats(DaggerfallStats, DaggerfallStats, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStats(DaggerfallStats startingStats, DaggerfallStats workingStats, int bonusPool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallStats.html">DaggerfallStats</a></td>
+        <td><span class="parametername">startingStats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallStats.html">DaggerfallStats</a></td>
+        <td><span class="parametername">workingStats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">bonusPool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout_OnStatChanged.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout.OnStatChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L288">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_UserInterface_StatsRollout_OnStatChanged" data-uid="DaggerfallWorkshop.Game.UserInterface.StatsRollout.OnStatChanged">OnStatChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event StatsRollout.OnStatChangedEventHandler OnStatChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.UserInterface.StatsRollout.OnStatChangedEventHandler.html">StatsRollout.OnStatChangedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_UserInterface_StatsRollout.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.UserInterface.StatsRollout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/UserInterface/StatsRollout.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

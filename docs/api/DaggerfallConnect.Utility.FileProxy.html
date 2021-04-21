@@ -1,0 +1,1418 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileProxy
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileProxy
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallConnect.Utility.FileProxy">
+  
+  
+  <h1 id="DaggerfallConnect_Utility_FileProxy" data-uid="DaggerfallConnect.Utility.FileProxy" class="text-break">Class FileProxy
+  </h1>
+  <div class="markdown level0 summary"><p>This class abstracts a disk file or memory buffer to an object that can be emitted and read using binary streams.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileProxy</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallConnect.Utility.html">DaggerfallConnect.Utility</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallConnect_Utility_FileProxy_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileProxy</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy__ctor.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L83">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy__ctor_" data-uid="DaggerfallConnect.Utility.FileProxy.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy__ctor" data-uid="DaggerfallConnect.Utility.FileProxy.#ctor">FileProxy()</h4>
+  <div class="markdown level1 summary"><p>Default constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileProxy()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy__ctor_System_Byte___System_String_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.%23ctor(System.Byte%5B%5D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L104">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy__ctor_" data-uid="DaggerfallConnect.Utility.FileProxy.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy__ctor_System_Byte___System_String_" data-uid="DaggerfallConnect.Utility.FileProxy.#ctor(System.Byte[],System.String)">FileProxy(Byte[], String)</h4>
+  <div class="markdown level1 summary"><p>Assign byte array constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileProxy(byte[] data, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Byte array to assign (usage will be set to FileUsage.useMemory).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name, filename, or path  to describe memory buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy__ctor_System_String_DaggerfallConnect_FileUsage_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.%23ctor(System.String%2CDaggerfallConnect.FileUsage%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L94">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy__ctor_" data-uid="DaggerfallConnect.Utility.FileProxy.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy__ctor_System_String_DaggerfallConnect_FileUsage_System_Boolean_" data-uid="DaggerfallConnect.Utility.FileProxy.#ctor(System.String,DaggerfallConnect.FileUsage,System.Boolean)">FileProxy(String, FileUsage, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileProxy(string filePath, FileUsage usage, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_Buffer.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.Buffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L183">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_Buffer_" data-uid="DaggerfallConnect.Utility.FileProxy.Buffer*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_Buffer" data-uid="DaggerfallConnect.Utility.FileProxy.Buffer">Buffer</h4>
+  <div class="markdown level1 summary"><p>Gets byte array when using FileUsage.UseMemory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Buffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_Directory.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.Directory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L151">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_Directory_" data-uid="DaggerfallConnect.Utility.FileProxy.Directory*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_Directory" data-uid="DaggerfallConnect.Utility.FileProxy.Directory">Directory</h4>
+  <div class="markdown level1 summary"><p>Get directory path of managed file without filename.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Directory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_FileName.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.FileName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L143">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_FileName_" data-uid="DaggerfallConnect.Utility.FileProxy.FileName*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_FileName" data-uid="DaggerfallConnect.Utility.FileProxy.FileName">FileName</h4>
+  <div class="markdown level1 summary"><p>Get filename of managed file without path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_FilePath.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.FilePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L135">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_FilePath_" data-uid="DaggerfallConnect.Utility.FileProxy.FilePath*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_FilePath" data-uid="DaggerfallConnect.Utility.FileProxy.FilePath">FilePath</h4>
+  <div class="markdown level1 summary"><p>Get full path and filename of managed file. Derived from filename for disk files, or specified at construction for managed files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FilePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_FileStream.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.FileStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L191">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_FileStream_" data-uid="DaggerfallConnect.Utility.FileProxy.FileStream*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_FileStream" data-uid="DaggerfallConnect.Utility.FileProxy.FileStream">FileStream</h4>
+  <div class="markdown level1 summary"><p>Gets file stream when using FileUsage.UseDisk</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStream FileStream { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileStream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_LastException.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.LastException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L175">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_LastException_" data-uid="DaggerfallConnect.Utility.FileProxy.LastException*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_LastException" data-uid="DaggerfallConnect.Utility.FileProxy.LastException">LastException</h4>
+  <div class="markdown level1 summary"><p>Gets last exception thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception LastException { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_Length.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L116">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_Length_" data-uid="DaggerfallConnect.Utility.FileProxy.Length*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_Length" data-uid="DaggerfallConnect.Utility.FileProxy.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Length of managed file in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_ReadOnly.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.ReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L167">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_ReadOnly_" data-uid="DaggerfallConnect.Utility.FileProxy.ReadOnly*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_ReadOnly" data-uid="DaggerfallConnect.Utility.FileProxy.ReadOnly">ReadOnly</h4>
+  <div class="markdown level1 summary"><p>Access allowed to file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_Usage.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.Usage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L159">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_Usage_" data-uid="DaggerfallConnect.Utility.FileProxy.Usage*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_Usage" data-uid="DaggerfallConnect.Utility.FileProxy.Usage">Usage</h4>
+  <div class="markdown level1 summary"><p>Get the file usage in effect for this managed file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileUsage Usage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_beReadInt16_System_IO_BinaryReader_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.beReadInt16(System.IO.BinaryReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L436">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_beReadInt16_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadInt16*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_beReadInt16_System_IO_BinaryReader_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadInt16(System.IO.BinaryReader)">beReadInt16(BinaryReader)</h4>
+  <div class="markdown level1 summary"><p>Reads next 2 bytes as a big-endian Int16.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short beReadInt16(BinaryReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><p>Big-endian Int16</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_beReadInt32_System_IO_BinaryReader_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.beReadInt32(System.IO.BinaryReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L456">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_beReadInt32_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadInt32*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_beReadInt32_System_IO_BinaryReader_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadInt32(System.IO.BinaryReader)">beReadInt32(BinaryReader)</h4>
+  <div class="markdown level1 summary"><p>Reads next 4 bytes as a big-endian Int32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int beReadInt32(BinaryReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Big-endian Int32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_beReadUInt16_System_IO_BinaryReader_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.beReadUInt16(System.IO.BinaryReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L446">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_beReadUInt16_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadUInt16*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_beReadUInt16_System_IO_BinaryReader_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadUInt16(System.IO.BinaryReader)">beReadUInt16(BinaryReader)</h4>
+  <div class="markdown level1 summary"><p>Reads next 2 bytes as a big-endian UInt16.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort beReadUInt16(BinaryReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><p>Big-endian UInt16.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_beReadUInt32_System_IO_BinaryReader_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.beReadUInt32(System.IO.BinaryReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L466">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_beReadUInt32_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadUInt32*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_beReadUInt32_System_IO_BinaryReader_" data-uid="DaggerfallConnect.Utility.FileProxy.beReadUInt32(System.IO.BinaryReader)">beReadUInt32(BinaryReader)</h4>
+  <div class="markdown level1 summary"><p>Reads next 4 bytes as a big-endian UInt32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint beReadUInt32(BinaryReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Big-endian Int32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_Close.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L251">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_Close_" data-uid="DaggerfallConnect.Utility.FileProxy.Close*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_Close" data-uid="DaggerfallConnect.Utility.FileProxy.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Close open file and free memory used for buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_endianSwapUInt16_System_UInt16_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.endianSwapUInt16(System.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L476">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_endianSwapUInt16_" data-uid="DaggerfallConnect.Utility.FileProxy.endianSwapUInt16*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_endianSwapUInt16_System_UInt16_" data-uid="DaggerfallConnect.Utility.FileProxy.endianSwapUInt16(System.UInt16)">endianSwapUInt16(UInt16)</h4>
+  <div class="markdown level1 summary"><p>Swaps an unsigned 16-bit big-endian value to little-endian.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort endianSwapUInt16(ushort value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><p>Little-endian UInt16.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_endianSwapUInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.endianSwapUInt32(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L486">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_endianSwapUInt32_" data-uid="DaggerfallConnect.Utility.FileProxy.endianSwapUInt32*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_endianSwapUInt32_System_UInt32_" data-uid="DaggerfallConnect.Utility.FileProxy.endianSwapUInt32(System.UInt32)">endianSwapUInt32(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Swaps an unsigned 32-bit big-endian value to little-endian.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint endianSwapUInt32(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Little-endian UInt32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_FindString_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.FindString(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L416">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_FindString_" data-uid="DaggerfallConnect.Utility.FileProxy.FindString*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_FindString_System_String_System_Int32_" data-uid="DaggerfallConnect.Utility.FileProxy.FindString(System.String,System.Int32)">FindString(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Find a string pattern inside file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindString(string pattern, int position = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pattern</span></td>
+        <td><p>String pattern to search for. Converted to UTF8 and is case sensitive.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to begin search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Index of pattern found or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_GetBytes.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.GetBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L288">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_GetBytes_" data-uid="DaggerfallConnect.Utility.FileProxy.GetBytes*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_GetBytes" data-uid="DaggerfallConnect.Utility.FileProxy.GetBytes">GetBytes()</h4>
+  <div class="markdown level1 summary"><p>Gets a byte array from file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_GetBytes_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.GetBytes(System.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L302">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_GetBytes_" data-uid="DaggerfallConnect.Utility.FileProxy.GetBytes*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_GetBytes_System_Int64_System_Int32_" data-uid="DaggerfallConnect.Utility.FileProxy.GetBytes(System.Int64,System.Int32)">GetBytes(Int64, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a byte array from file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytes(long position, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Start position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Read length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_GetReader.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.GetReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L271">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_GetReader_" data-uid="DaggerfallConnect.Utility.FileProxy.GetReader*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_GetReader" data-uid="DaggerfallConnect.Utility.FileProxy.GetReader">GetReader()</h4>
+  <div class="markdown level1 summary"><p>Gets a binary reader to managed file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryReader GetReader()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><p>BinaryReader to managed file with UTF8 encoding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_GetReader_System_Int64_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.GetReader(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L316">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_GetReader_" data-uid="DaggerfallConnect.Utility.FileProxy.GetReader*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_GetReader_System_Int64_" data-uid="DaggerfallConnect.Utility.FileProxy.GetReader(System.Int64)">GetReader(Int64)</h4>
+  <div class="markdown level1 summary"><p>Get a binary reader to managed file starting at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryReader GetReader(long position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to start in stream (number of bytes from start of file).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><p>BinaryReader to managed file with UTF8 encoding and set to specified position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_GetWriter.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.GetWriter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L329">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_GetWriter_" data-uid="DaggerfallConnect.Utility.FileProxy.GetWriter*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_GetWriter" data-uid="DaggerfallConnect.Utility.FileProxy.GetWriter">GetWriter()</h4>
+  <div class="markdown level1 summary"><p>Gets a binary writer to managed file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryWriter GetWriter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><p>BinaryReader to managed file with UTF8 encoding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_GetWriter_System_Int64_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.GetWriter(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L347">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_GetWriter_" data-uid="DaggerfallConnect.Utility.FileProxy.GetWriter*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_GetWriter_System_Int64_" data-uid="DaggerfallConnect.Utility.FileProxy.GetWriter(System.Int64)">GetWriter(Int64)</h4>
+  <div class="markdown level1 summary"><p>Get a binary writer to managed file starting at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BinaryWriter GetWriter(long position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to start in stream (number of bytes from start of file).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><p>BinaryReader to managed file with UTF8 encoding and set to specified position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_Load_System_Byte___System_String_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.Load(System.Byte%5B%5D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L241">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_Load_" data-uid="DaggerfallConnect.Utility.FileProxy.Load*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_Load_System_Byte___System_String_" data-uid="DaggerfallConnect.Utility.FileProxy.Load(System.Byte[],System.String)">Load(Byte[], String)</h4>
+  <div class="markdown level1 summary"><p>Load a binary array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(byte[] data, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Byte array to assign (usage will be set to FileUsage.useMemory).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name, filename, or path  to describe memory buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.Load(System.String%2CDaggerfallConnect.FileUsage%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L207">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_Load_" data-uid="DaggerfallConnect.Utility.FileProxy.Load*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_" data-uid="DaggerfallConnect.Utility.FileProxy.Load(System.String,DaggerfallConnect.FileUsage,System.Boolean)">Load(String, FileUsage, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Load(string filePath, FileUsage usage = FileUsage.UseMemory, bool readOnly = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_ReadCString_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.ReadCString(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L362">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_ReadCString_" data-uid="DaggerfallConnect.Utility.FileProxy.ReadCString*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_ReadCString_System_Int32_System_Int32_" data-uid="DaggerfallConnect.Utility.FileProxy.ReadCString(System.Int32,System.Int32)">ReadCString(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads a UTF8 string of bytes from the managed file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadCString(int position, int readLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position to start reading in file (number of bytes from start of file).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">readLength</span></td>
+        <td><p>Number of bytes to read (length=0 for null-terminated.)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String composed from bytes read (all NULLs are discarded).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_ReadCString_System_IO_BinaryReader_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.ReadCString(System.IO.BinaryReader%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L380">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_ReadCString_" data-uid="DaggerfallConnect.Utility.FileProxy.ReadCString*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_ReadCString_System_IO_BinaryReader_System_Int32_" data-uid="DaggerfallConnect.Utility.FileProxy.ReadCString(System.IO.BinaryReader,System.Int32)">ReadCString(BinaryReader, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads a UTF8 string of length bytes from the binary reader.
+String may or may not be null terminated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadCString(BinaryReader reader, int readLength = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">readLength</span></td>
+        <td><p>Number of bytes to read (0 for null-terminated).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String composed from bytes read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy_ReadCStringSkip_System_IO_BinaryReader_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy.ReadCStringSkip(System.IO.BinaryReader%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L401">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Utility_FileProxy_ReadCStringSkip_" data-uid="DaggerfallConnect.Utility.FileProxy.ReadCStringSkip*"></a>
+  <h4 id="DaggerfallConnect_Utility_FileProxy_ReadCStringSkip_System_IO_BinaryReader_System_Int32_System_Int32_" data-uid="DaggerfallConnect.Utility.FileProxy.ReadCStringSkip(System.IO.BinaryReader,System.Int32,System.Int32)">ReadCStringSkip(BinaryReader, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads a UTF8 string from binary reader then sets reader position to start + skipLength.
+Handles a special case where string may be null terminated but still require fixed byte stride.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadCStringSkip(BinaryReader reader, int readLength, int skipLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Source reader.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">readLength</span></td>
+        <td><p>Number of bytes to read (0 for null-terminated).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skipLength</span></td>
+        <td><p>Number of bytes to skip from start position after read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String composed from bytes read (all NULLs are discarded).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Utility_FileProxy.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Utility.FileProxy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/FileProxy.cs/#L42" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

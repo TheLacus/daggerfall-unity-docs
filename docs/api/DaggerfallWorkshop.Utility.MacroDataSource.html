@@ -1,0 +1,3650 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MacroDataSource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MacroDataSource
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Utility.MacroDataSource">
+  
+  
+  <h1 id="DaggerfallWorkshop_Utility_MacroDataSource" data-uid="DaggerfallWorkshop.Utility.MacroDataSource" class="text-break">Class MacroDataSource
+  </h1>
+  <div class="markdown level0 summary"><p>Macro data source base class. Extend this to provide context for macros.
+This abstract class provides default implementations so that only applicable
+handlers need to be implemented.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MacroDataSource</span></div>
+      <div class="level2"><a class="xref" href="DaggerfallWorkshop.Game.Guilds.Guild.GuildMacroDataSource.html">Guild.GuildMacroDataSource</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Utility.html">DaggerfallWorkshop.Utility</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Utility_MacroDataSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MacroDataSource</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_AFactionInNews.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.AFactionInNews%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L251">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_AFactionInNews_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.AFactionInNews*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_AFactionInNews" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.AFactionInNews">AFactionInNews()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string AFactionInNews()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Agi.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Agi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L82">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Agi_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Agi*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Agi" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Agi">Agi()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Agi()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Amount.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Amount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L57">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Amount_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Amount*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Amount" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Amount">Amount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Amount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_AnotherFactionInNews.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.AnotherFactionInNews%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L256">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_AnotherFactionInNews_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.AnotherFactionInNews*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_AnotherFactionInNews" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.AnotherFactionInNews">AnotherFactionInNews()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string AnotherFactionInNews()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ArmourMod.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ArmourMod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L143">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ArmourMod_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ArmourMod*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ArmourMod" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ArmourMod">ArmourMod()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ArmourMod()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ArtistName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ArtistName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L157">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ArtistName_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ArtistName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ArtistName" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ArtistName">ArtistName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ArtistName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_AttributeRating.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.AttributeRating%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L103">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_AttributeRating_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.AttributeRating*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_AttributeRating" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.AttributeRating">AttributeRating()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string AttributeRating()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_BookAuthor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.BookAuthor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L148">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_BookAuthor_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.BookAuthor*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_BookAuthor" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.BookAuthor">BookAuthor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string BookAuthor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ChanceBase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ChanceBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L332">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ChanceBase_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ChanceBase*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ChanceBase" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ChanceBase">ChanceBase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ChanceBase()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ChancePerLevel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ChancePerLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L344">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ChancePerLevel_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ChancePerLevel*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ChancePerLevel" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ChancePerLevel">ChancePerLevel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ChancePerLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ChancePlus.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ChancePlus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L338">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ChancePlus_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ChancePlus*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ChancePlus" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ChancePlus">ChancePlus()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ChancePlus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_CommonersRep.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.CommonersRep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L380">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_CommonersRep_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.CommonersRep*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_CommonersRep" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.CommonersRep">CommonersRep()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CommonersRep()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Condition.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Condition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L123">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Condition_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Condition*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Condition" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Condition">Condition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Condition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Daedra.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Daedra%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L231">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Daedra_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Daedra*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Daedra" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Daedra">Daedra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Daedra()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_DialogHint.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.DialogHint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L241">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_DialogHint_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DialogHint*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_DialogHint" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DialogHint">DialogHint()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DialogHint()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_DialogHint2.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.DialogHint2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L246">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_DialogHint2_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DialogHint2*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_DialogHint2" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DialogHint2">DialogHint2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DialogHint2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Direction.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Direction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L236">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Direction_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Direction*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Direction" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Direction">Direction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Direction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Dungeon.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Dungeon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L52">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Dungeon_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Dungeon*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Dungeon" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Dungeon">Dungeon()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Dungeon()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_DurationBase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.DurationBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L314">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_DurationBase_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DurationBase*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_DurationBase" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DurationBase">DurationBase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DurationBase()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_DurationPerLevel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.DurationPerLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L326">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_DurationPerLevel_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DurationPerLevel*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_DurationPerLevel" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DurationPerLevel">DurationPerLevel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DurationPerLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_DurationPlus.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.DurationPlus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L320">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_DurationPlus_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DurationPlus*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_DurationPlus" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.DurationPlus">DurationPlus()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DurationPlus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_End.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L86">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_End_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.End*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_End" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.End">End()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string End()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_FactionName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.FactionName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L47">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_FactionName_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.FactionName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_FactionName" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.FactionName">FactionName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FactionName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_FactionOrderName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.FactionOrderName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L32">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_FactionOrderName_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.FactionOrderName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_FactionOrderName" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.FactionOrderName">FactionOrderName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FactionOrderName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_FactionPC.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.FactionPC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L37">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_FactionPC_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.FactionPC*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_FactionPC" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.FactionPC">FactionPC()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FactionPC()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_GeographicalFeature.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.GeographicalFeature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L416">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_GeographicalFeature_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GeographicalFeature*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_GeographicalFeature" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GeographicalFeature">GeographicalFeature()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GeographicalFeature()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_God.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.God%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L226">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_God_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.God*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_God" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.God">God()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string God()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_GodDesc.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.GodDesc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L221">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_GodDesc_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GodDesc*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_GodDesc" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GodDesc">GodDesc()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GodDesc()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_GuildNPC.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.GuildNPC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L42">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_GuildNPC_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GuildNPC*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_GuildNPC" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GuildNPC">GuildNPC()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GuildNPC()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_GuildTitle.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.GuildTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L27">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_GuildTitle_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GuildTitle*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_GuildTitle" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.GuildTitle">GuildTitle()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GuildTitle()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_HeldSoul.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.HeldSoul%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L174">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_HeldSoul_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.HeldSoul*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_HeldSoul" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.HeldSoul">HeldSoul()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string HeldSoul()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_HomeProvinceName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.HomeProvinceName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L410">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_HomeProvinceName_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.HomeProvinceName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_HomeProvinceName" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.HomeProvinceName">HomeProvinceName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string HomeProvinceName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_HomeRegion.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.HomeRegion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L216">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_HomeRegion_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.HomeRegion*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_HomeRegion" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.HomeRegion">HomeRegion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string HomeRegion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Honorific.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Honorific%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L201">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Honorific_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Honorific*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Honorific" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Honorific">Honorific()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Honorific()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Int.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Int%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L74">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Int_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Int*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Int" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Int">Int()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Int()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ItemName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ItemName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L108">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ItemName_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ItemName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ItemName" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ItemName">ItemName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ItemName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_LordOfFaction1.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.LordOfFaction1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L266">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_LordOfFaction1_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.LordOfFaction1*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_LordOfFaction1" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.LordOfFaction1">LordOfFaction1()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string LordOfFaction1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_LordOfFaction2.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.LordOfFaction2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L271">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_LordOfFaction2_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.LordOfFaction2*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_LordOfFaction2" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.LordOfFaction2">LordOfFaction2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string LordOfFaction2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Luck.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Luck%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L98">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Luck_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Luck*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Luck" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Luck">Luck()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Luck()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MagicPowers_DaggerfallConnect_Arena2_TextFile_Formatting_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MagicPowers(DaggerfallConnect.Arena2.TextFile.Formatting)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L309">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MagicPowers_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagicPowers*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MagicPowers_DaggerfallConnect_Arena2_TextFile_Formatting_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagicPowers(DaggerfallConnect.Arena2.TextFile.Formatting)">MagicPowers(TextFile.Formatting)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextFile.Token[] MagicPowers(TextFile.Formatting format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Formatting.html">TextFile.Formatting</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MagnitudeBaseMax.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MagnitudeBaseMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L356">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudeBaseMax_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudeBaseMax*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudeBaseMax" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudeBaseMax">MagnitudeBaseMax()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string MagnitudeBaseMax()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MagnitudeBaseMin.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MagnitudeBaseMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L350">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudeBaseMin_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudeBaseMin*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudeBaseMin" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudeBaseMin">MagnitudeBaseMin()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string MagnitudeBaseMin()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePerLevel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePerLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L374">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePerLevel_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePerLevel*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePerLevel" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePerLevel">MagnitudePerLevel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string MagnitudePerLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePlusMax.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePlusMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L368">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePlusMax_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePlusMax*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePlusMax" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePlusMax">MagnitudePlusMax()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string MagnitudePlusMax()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePlusMin.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePlusMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L362">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePlusMin_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePlusMin*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MagnitudePlusMin" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MagnitudePlusMin">MagnitudePlusMin()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string MagnitudePlusMin()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Material.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Material%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L118">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Material_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Material*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Material" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Material">Material()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Material()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MaxLoan.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MaxLoan%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L65">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MaxLoan_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MaxLoan*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MaxLoan" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MaxLoan">MaxLoan()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string MaxLoan()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_MerchantsRep.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.MerchantsRep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L386">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_MerchantsRep_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MerchantsRep*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_MerchantsRep" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.MerchantsRep">MerchantsRep()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string MerchantsRep()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Name.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L22">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Name_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Name*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Name" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Name">Name()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Name()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_NobilityRep.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.NobilityRep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L398">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_NobilityRep_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.NobilityRep*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_NobilityRep" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.NobilityRep">NobilityRep()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string NobilityRep()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Oath.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Oath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L211">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Oath_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Oath*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Oath" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Oath">Oath()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Oath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_OldLeaderFate.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.OldLeaderFate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L281">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_OldLeaderFate_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.OldLeaderFate*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_OldLeaderFate" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.OldLeaderFate">OldLeaderFate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string OldLeaderFate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_OldLordOfFaction1.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.OldLordOfFaction1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L261">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_OldLordOfFaction1_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.OldLordOfFaction1*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_OldLordOfFaction1" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.OldLordOfFaction1">OldLordOfFaction1()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string OldLordOfFaction1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_PaintingAdjective.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.PaintingAdjective%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L153">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingAdjective_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingAdjective*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingAdjective" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingAdjective">PaintingAdjective()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string PaintingAdjective()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_PaintingPrefix1.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.PaintingPrefix1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L161">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingPrefix1_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingPrefix1*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingPrefix1" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingPrefix1">PaintingPrefix1()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string PaintingPrefix1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_PaintingPrefix2.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.PaintingPrefix2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L165">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingPrefix2_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingPrefix2*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingPrefix2" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingPrefix2">PaintingPrefix2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string PaintingPrefix2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_PaintingSubject.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.PaintingSubject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L169">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingSubject_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingSubject*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_PaintingSubject" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PaintingSubject">PaintingSubject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string PaintingSubject()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Per.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Per%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L90">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Per_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Per*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Per" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Per">Per()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Per()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_PotentialQuestorLocation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.PotentialQuestorLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L297">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_PotentialQuestorLocation_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PotentialQuestorLocation*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_PotentialQuestorLocation" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PotentialQuestorLocation">PotentialQuestorLocation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string PotentialQuestorLocation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_PotentialQuestorName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.PotentialQuestorName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L291">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_PotentialQuestorName_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PotentialQuestorName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_PotentialQuestorName" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PotentialQuestorName">PotentialQuestorName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string PotentialQuestorName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Potion.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Potion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L179">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Potion_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Potion*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Potion" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Potion">Potion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Potion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_PotionRecipeIngredients_DaggerfallConnect_Arena2_TextFile_Formatting_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.PotionRecipeIngredients(DaggerfallConnect.Arena2.TextFile.Formatting)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L304">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_PotionRecipeIngredients_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PotionRecipeIngredients*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_PotionRecipeIngredients_DaggerfallConnect_Arena2_TextFile_Formatting_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.PotionRecipeIngredients(DaggerfallConnect.Arena2.TextFile.Formatting)">PotionRecipeIngredients(TextFile.Formatting)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TextFile.Token[] PotionRecipeIngredients(TextFile.Formatting format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Formatting.html">TextFile.Formatting</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextFile.Token.html">TextFile.Token</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Pronoun.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Pronoun%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L184">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun">Pronoun()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Pronoun()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Pronoun2.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Pronoun2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L188">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun2_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun2*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun2" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun2">Pronoun2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Pronoun2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Pronoun2self.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Pronoun2self%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L192">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun2self_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun2self*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun2self" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun2self">Pronoun2self()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Pronoun2self()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Pronoun3.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Pronoun3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L196">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun3_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun3*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Pronoun3" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Pronoun3">Pronoun3()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Pronoun3()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q1.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L427">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q1_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q1*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q1" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q1">Q1()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q10.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q10%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L481">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q10_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q10*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q10" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q10">Q10()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q10()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q10a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q10a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L553">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q10a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q10a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q10a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q10a">Q10a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q10a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q10b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q10b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L625">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q10b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q10b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q10b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q10b">Q10b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q10b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q11.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q11%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L487">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q11_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q11*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q11" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q11">Q11()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q11()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q11a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q11a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L559">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q11a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q11a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q11a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q11a">Q11a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q11a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q11b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q11b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L631">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q11b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q11b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q11b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q11b">Q11b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q11b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q12.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q12%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L493">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q12_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q12*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q12" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q12">Q12()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q12()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q12a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q12a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L565">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q12a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q12a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q12a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q12a">Q12a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q12a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q12b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q12b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L637">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q12b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q12b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q12b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q12b">Q12b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q12b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q1a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q1a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L499">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q1a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q1a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q1a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q1a">Q1a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q1a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q1b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q1b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L571">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q1b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q1b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q1b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q1b">Q1b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q1b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q2.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L433">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q2_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q2*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q2" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q2">Q2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q2a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q2a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L505">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q2a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q2a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q2a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q2a">Q2a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q2a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q2b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q2b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L577">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q2b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q2b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q2b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q2b">Q2b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q2b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q3.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L439">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q3_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q3*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q3" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q3">Q3()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q3()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q3a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q3a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L511">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q3a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q3a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q3a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q3a">Q3a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q3a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q3b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q3b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L583">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q3b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q3b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q3b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q3b">Q3b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q3b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q4.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q4%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L445">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q4_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q4*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q4" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q4">Q4()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q4()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q4a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q4a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L517">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q4a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q4a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q4a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q4a">Q4a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q4a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q4b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q4b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L589">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q4b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q4b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q4b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q4b">Q4b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q4b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q5.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q5%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L451">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q5_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q5*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q5" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q5">Q5()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q5()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q5a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q5a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L523">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q5a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q5a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q5a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q5a">Q5a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q5a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q5b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q5b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L595">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q5b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q5b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q5b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q5b">Q5b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q5b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q6.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q6%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L457">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q6_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q6*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q6" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q6">Q6()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q6()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q6a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q6a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L529">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q6a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q6a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q6a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q6a">Q6a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q6a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q6b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q6b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L601">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q6b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q6b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q6b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q6b">Q6b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q6b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q7.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q7%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L463">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q7_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q7*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q7" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q7">Q7()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q7()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q7a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q7a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L535">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q7a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q7a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q7a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q7a">Q7a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q7a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q7b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q7b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L607">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q7b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q7b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q7b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q7b">Q7b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q7b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q8.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q8%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L469">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q8_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q8*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q8" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q8">Q8()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q8()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q8a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q8a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L541">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q8a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q8a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q8a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q8a">Q8a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q8a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q8b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q8b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L613">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q8b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q8b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q8b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q8b">Q8b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q8b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q9.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q9%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L475">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q9_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q9*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q9" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q9">Q9()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q9()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q9a.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q9a%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L547">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q9a_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q9a*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q9a" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q9a">Q9a()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q9a()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Q9b.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Q9b%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L619">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Q9b_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q9b*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Q9b" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Q9b">Q9b()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Q9b()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_QuestDate.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.QuestDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L206">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_QuestDate_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.QuestDate*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_QuestDate" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.QuestDate">QuestDate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QuestDate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_RoomHoursLeft.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.RoomHoursLeft%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L286">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_RoomHoursLeft_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.RoomHoursLeft*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_RoomHoursLeft" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.RoomHoursLeft">RoomHoursLeft()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string RoomHoursLeft()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ScholarsRep.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ScholarsRep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L392">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ScholarsRep_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ScholarsRep*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ScholarsRep" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ScholarsRep">ScholarsRep()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ScholarsRep()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_ShopName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.ShopName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L61">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_ShopName_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ShopName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_ShopName" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.ShopName">ShopName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ShopName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Spd.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Spd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L94">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Spd_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Spd*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Spd" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Spd">Spd()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Spd()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Str.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Str%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L70">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Str_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Str*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Str" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Str">Str()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Str()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_TitleOfLordOfFaction1.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.TitleOfLordOfFaction1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L276">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_TitleOfLordOfFaction1_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.TitleOfLordOfFaction1*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_TitleOfLordOfFaction1" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.TitleOfLordOfFaction1">TitleOfLordOfFaction1()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string TitleOfLordOfFaction1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_UnderworldRep.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.UnderworldRep%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L404">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_UnderworldRep_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.UnderworldRep*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_UnderworldRep" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.UnderworldRep">UnderworldRep()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string UnderworldRep()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_VampireNpcClan.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.VampireNpcClan%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L422">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_VampireNpcClan_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.VampireNpcClan*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_VampireNpcClan" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.VampireNpcClan">VampireNpcClan()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string VampireNpcClan()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Weapon.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Weapon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L138">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Weapon_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Weapon*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Weapon" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Weapon">Weapon()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Weapon()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_WeaponDamage.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.WeaponDamage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L133">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_WeaponDamage_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.WeaponDamage*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_WeaponDamage" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.WeaponDamage">WeaponDamage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string WeaponDamage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Weight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Weight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L128">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Weight_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Weight*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Weight" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Weight">Weight()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Weight()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Wil.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Wil%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L78">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Wil_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Wil*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Wil" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Wil">Wil()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Wil()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource_Worth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource.Worth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L113">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_MacroDataSource_Worth_" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Worth*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_MacroDataSource_Worth" data-uid="DaggerfallWorkshop.Utility.MacroDataSource.Worth">Worth()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Worth()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_MacroDataSource.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.MacroDataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/MacroDataSource.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

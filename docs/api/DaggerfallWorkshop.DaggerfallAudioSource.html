@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DaggerfallAudioSource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DaggerfallAudioSource
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.DaggerfallAudioSource">
+  
+  
+  <h1 id="DaggerfallWorkshop_DaggerfallAudioSource" data-uid="DaggerfallWorkshop.DaggerfallAudioSource" class="text-break">Class DaggerfallAudioSource
+  </h1>
+  <div class="markdown level0 summary"><p>Load sound effects from Daggerfall into a normal AudioSource.
+This component loads clips procedurally in editor and at runtime.
+Can preview clips by index, ID, or enum directly from editor window.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">DaggerfallAudioSource</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.html">DaggerfallWorkshop</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_DaggerfallAudioSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(AudioSource))]
+public class DaggerfallAudioSource : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_Preset.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.Preset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L34">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_Preset" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.Preset">Preset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioPresets Preset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.AudioPresets.html">AudioPresets</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_SoundIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.SoundIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L35">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_SoundIndex" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.SoundIndex">SoundIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SoundIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_AudioSource.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.AudioSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L69">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_AudioSource_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.AudioSource*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_AudioSource" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.AudioSource">AudioSource</h4>
+  <div class="markdown level1 summary"><p>Gets peer AudioSource component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource AudioSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AudioSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_IsReady.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L61">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_IsReady_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.IsReady*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_IsReady" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.IsReady">IsReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_GetAudioClip_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.GetAudioClip(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L229">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_GetAudioClip_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.GetAudioClip*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_GetAudioClip_System_Int32_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.GetAudioClip(System.Int32)">GetAudioClip(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get AudioClip from sound index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip GetAudioClip(int soundIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">soundIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AudioClip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_IsPlaying.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.IsPlaying%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L221">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_IsPlaying_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.IsPlaying*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_IsPlaying" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.IsPlaying">IsPlaying()</h4>
+  <div class="markdown level1 summary"><p>Check if AudioSource is playing a clip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlaying()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_DaggerfallWorkshop_SoundClips_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot(DaggerfallWorkshop.SoundClips%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L204">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_DaggerfallWorkshop_SoundClips_System_Single_System_Single_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot(DaggerfallWorkshop.SoundClips,System.Single,System.Single)">PlayOneShot(SoundClips, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays sound clip once without changing clip on AudioSource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(SoundClips soundClip, float spatialBlend = 1F, float volumeScale = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SoundClips.html">SoundClips</a></td>
+        <td><span class="parametername">soundClip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spatialBlend</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_System_Int32_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot(System.Int32%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L188">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_System_Int32_System_Single_System_Single_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot(System.Int32,System.Single,System.Single)">PlayOneShot(Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays sound index once without changing clip on AudioSource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(int soundIndex, float spatialBlend = 1F, float volumeScale = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">soundIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spatialBlend</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_System_UInt32_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot(System.UInt32%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L212">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_PlayOneShot_System_UInt32_System_Single_System_Single_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.PlayOneShot(System.UInt32,System.Single,System.Single)">PlayOneShot(UInt32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays sound ID once without changing clip on AudioSource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(uint soundID, float spatialBlend = 1F, float volumeScale = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">soundID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spatialBlend</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_SetSound_DaggerfallWorkshop_SoundClips_DaggerfallWorkshop_AudioPresets_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.SetSound(DaggerfallWorkshop.SoundClips%2CDaggerfallWorkshop.AudioPresets%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L164">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_SetSound_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.SetSound*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_SetSound_DaggerfallWorkshop_SoundClips_DaggerfallWorkshop_AudioPresets_System_Single_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.SetSound(DaggerfallWorkshop.SoundClips,DaggerfallWorkshop.AudioPresets,System.Single)">SetSound(SoundClips, AudioPresets, Single)</h4>
+  <div class="markdown level1 summary"><p>Quick set from clip name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSound(SoundClips soundClip, AudioPresets preset = AudioPresets.OnDemand, float spatialBlend = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.SoundClips.html">SoundClips</a></td>
+        <td><span class="parametername">soundClip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.AudioPresets.html">AudioPresets</a></td>
+        <td><span class="parametername">preset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spatialBlend</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_SetSound_System_Int32_DaggerfallWorkshop_AudioPresets_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.SetSound(System.Int32%2CDaggerfallWorkshop.AudioPresets%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L154">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_SetSound_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.SetSound*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_SetSound_System_Int32_DaggerfallWorkshop_AudioPresets_System_Single_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.SetSound(System.Int32,DaggerfallWorkshop.AudioPresets,System.Single)">SetSound(Int32, AudioPresets, Single)</h4>
+  <div class="markdown level1 summary"><p>Quick set from index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSound(int soundIndex, AudioPresets preset = AudioPresets.OnDemand, float spatialBlend = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">soundIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.AudioPresets.html">AudioPresets</a></td>
+        <td><span class="parametername">preset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spatialBlend</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource_SetSound_System_UInt32_DaggerfallWorkshop_AudioPresets_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource.SetSound(System.UInt32%2CDaggerfallWorkshop.AudioPresets%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L174">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallAudioSource_SetSound_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.SetSound*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallAudioSource_SetSound_System_UInt32_DaggerfallWorkshop_AudioPresets_System_Single_" data-uid="DaggerfallWorkshop.DaggerfallAudioSource.SetSound(System.UInt32,DaggerfallWorkshop.AudioPresets,System.Single)">SetSound(UInt32, AudioPresets, Single)</h4>
+  <div class="markdown level1 summary"><p>Quick set from ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSound(uint soundID, AudioPresets preset = AudioPresets.OnDemand, float spatialBlend = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">soundID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.AudioPresets.html">AudioPresets</a></td>
+        <td><span class="parametername">preset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">spatialBlend</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallAudioSource.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallAudioSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallAudioSource.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

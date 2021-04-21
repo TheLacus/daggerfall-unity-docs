@@ -1,0 +1,1103 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EnemyEntity
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EnemyEntity
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Entity_EnemyEntity" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity" class="text-break">Class EnemyEntity
+  </h1>
+  <div class="markdown level0 summary"><p>Implements DaggerfallEntity with properties specific to enemies.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html">DaggerfallEntity</a></div>
+    <div class="level2"><span class="xref">EnemyEntity</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_NumberBodyParts">DaggerfallEntity.NumberBodyParts</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_FatigueMultiplier">DaggerfallEntity.FatigueMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_entityBehaviour">DaggerfallEntity.entityBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_gender">DaggerfallEntity.gender</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_career">DaggerfallEntity.career</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_name">DaggerfallEntity.name</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_level">DaggerfallEntity.level</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_stats">DaggerfallEntity.stats</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_skills">DaggerfallEntity.skills</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_resistances">DaggerfallEntity.resistances</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_items">DaggerfallEntity.items</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_equipTable">DaggerfallEntity.equipTable</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_worldContext">DaggerfallEntity.worldContext</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_maxHealth">DaggerfallEntity.maxHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentHealth">DaggerfallEntity.currentHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentFatigue">DaggerfallEntity.currentFatigue</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentMagicka">DaggerfallEntity.currentMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_maxMagicka">DaggerfallEntity.maxMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentBreath">DaggerfallEntity.currentBreath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_minMetalToHit">DaggerfallEntity.minMetalToHit</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_armorValues">DaggerfallEntity.armorValues</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_team">DaggerfallEntity.team</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_spellbook">DaggerfallEntity.spellbook</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsImmuneToParalysis">DaggerfallEntity.IsImmuneToParalysis</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsImmuneToDisease">DaggerfallEntity.IsImmuneToDisease</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsSilenced">DaggerfallEntity.IsSilenced</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsWaterWalking">DaggerfallEntity.IsWaterWalking</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsWaterBreathing">DaggerfallEntity.IsWaterBreathing</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MagicalConcealmentFlags">DaggerfallEntity.MagicalConcealmentFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsEnhancedClimbing">DaggerfallEntity.IsEnhancedClimbing</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsEnhancedJumping">DaggerfallEntity.IsEnhancedJumping</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsSlowFalling">DaggerfallEntity.IsSlowFalling</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsAbsorbingSpells">DaggerfallEntity.IsAbsorbingSpells</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxMagickaModifier">DaggerfallEntity.MaxMagickaModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxHealthLimiter">DaggerfallEntity.MaxHealthLimiter</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreasedWeightAllowanceMultiplier">DaggerfallEntity.IncreasedWeightAllowanceMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreasedArmorValueModifier">DaggerfallEntity.IncreasedArmorValueModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreasedArmorValueModifier">DaggerfallEntity.DecreasedArmorValueModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ChanceToHitModifier">DaggerfallEntity.ChanceToHitModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ImprovedAcuteHearing">DaggerfallEntity.ImprovedAcuteHearing</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ImprovedAthleticism">DaggerfallEntity.ImprovedAthleticism</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ImprovedAdrenalineRush">DaggerfallEntity.ImprovedAdrenalineRush</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_EntityBehaviour">DaggerfallEntity.EntityBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Quiesce">DaggerfallEntity.Quiesce</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsParalyzed">DaggerfallEntity.IsParalyzed</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingFire">DaggerfallEntity.IsResistingFire</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingFrost">DaggerfallEntity.IsResistingFrost</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingDiseaseOrPoison">DaggerfallEntity.IsResistingDiseaseOrPoison</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingShock">DaggerfallEntity.IsResistingShock</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingMagic">DaggerfallEntity.IsResistingMagic</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsBlending">DaggerfallEntity.IsBlending</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsAShade">DaggerfallEntity.IsAShade</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsInvisible">DaggerfallEntity.IsInvisible</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsMagicallyConcealed">DaggerfallEntity.IsMagicallyConcealed</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsMagicallyConcealedNormalPower">DaggerfallEntity.IsMagicallyConcealedNormalPower</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsMagicallyConcealedTruePower">DaggerfallEntity.IsMagicallyConcealedTruePower</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_WorldContext">DaggerfallEntity.WorldContext</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Gender">DaggerfallEntity.Gender</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Career">DaggerfallEntity.Career</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Name">DaggerfallEntity.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Level">DaggerfallEntity.Level</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Stats">DaggerfallEntity.Stats</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Skills">DaggerfallEntity.Skills</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Resistances">DaggerfallEntity.Resistances</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Items">DaggerfallEntity.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ItemEquipTable">DaggerfallEntity.ItemEquipTable</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxHealth">DaggerfallEntity.MaxHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentHealth">DaggerfallEntity.CurrentHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentHealthPercent">DaggerfallEntity.CurrentHealthPercent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RawMaxHealth">DaggerfallEntity.RawMaxHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxFatigue">DaggerfallEntity.MaxFatigue</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentFatigue">DaggerfallEntity.CurrentFatigue</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxMagicka">DaggerfallEntity.MaxMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RawMaxMagicka">DaggerfallEntity.RawMaxMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentMagicka">DaggerfallEntity.CurrentMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxBreath">DaggerfallEntity.MaxBreath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentBreath">DaggerfallEntity.CurrentBreath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MinMetalToHit">DaggerfallEntity.MinMetalToHit</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ArmorValues">DaggerfallEntity.ArmorValues</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DamageModifier">DaggerfallEntity.DamageModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxEncumbrance">DaggerfallEntity.MaxEncumbrance</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MagicResist">DaggerfallEntity.MagicResist</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ToHitModifier">DaggerfallEntity.ToHitModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HitPointsModifier">DaggerfallEntity.HitPointsModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HealingRateModifier">DaggerfallEntity.HealingRateModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Team">DaggerfallEntity.Team</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreaseHealth_System_Int32_">DaggerfallEntity.IncreaseHealth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreaseHealth_System_Int32_">DaggerfallEntity.DecreaseHealth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreaseFatigue_System_Int32_System_Boolean_">DaggerfallEntity.IncreaseFatigue(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreaseFatigue_System_Int32_System_Boolean_">DaggerfallEntity.DecreaseFatigue(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetFatigue_System_Int32_System_Boolean_">DaggerfallEntity.SetFatigue(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreaseMagicka_System_Int32_">DaggerfallEntity.IncreaseMagicka(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreaseMagicka_System_Int32_">DaggerfallEntity.DecreaseMagicka(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetMagicka_System_Int32_System_Boolean_">DaggerfallEntity.SetMagicka(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ChangeMaxMagickaModifier_System_Int32_">DaggerfallEntity.ChangeMaxMagickaModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetIncreasedWeightAllowanceMultiplier_System_Single_">DaggerfallEntity.SetIncreasedWeightAllowanceMultiplier(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetIncreasedArmorValueModifier_System_Int32_">DaggerfallEntity.SetIncreasedArmorValueModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetDecreasedArmorValueModifier_System_Int32_">DaggerfallEntity.SetDecreasedArmorValueModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ChangeChanceToHitModifier_System_Int32_">DaggerfallEntity.ChangeChanceToHitModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetMaxHealthLimiter_System_Int32_">DaggerfallEntity.SetMaxHealthLimiter(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetBreath_System_Int32_">DaggerfallEntity.SetBreath(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_FillVitalSigns">DaggerfallEntity.FillVitalSigns()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetPrimarySkills">DaggerfallEntity.GetPrimarySkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMajorSkills">DaggerfallEntity.GetMajorSkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMinorSkills">DaggerfallEntity.GetMinorSkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMiscSkills">DaggerfallEntity.GetMiscSkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_TallySkill_DaggerfallConnect_DFCareer_Skills_System_Int16_">DaggerfallEntity.TallySkill(DFCareer.Skills, Int16)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_UpdateEquippedArmorValues_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Boolean_">DaggerfallEntity.UpdateEquippedArmorValues(DaggerfallUnityItem, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HasConcealment_DaggerfallWorkshop_Game_Entity_MagicalConcealmentFlags_">DaggerfallEntity.HasConcealment(MagicalConcealmentFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetResistanceFlag_DaggerfallConnect_DFCareer_Elements_System_Boolean_">DaggerfallEntity.SetResistanceFlag(DFCareer.Elements, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HasResistanceFlag_DaggerfallConnect_DFCareer_Elements_">DaggerfallEntity.HasResistanceFlag(DFCareer.Elements)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetResistanceChance_DaggerfallConnect_DFCareer_Elements_">DaggerfallEntity.GetResistanceChance(DFCareer.Elements)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RaiseResistanceChance_DaggerfallConnect_DFCareer_Elements_System_Int32_">DaggerfallEntity.RaiseResistanceChance(DFCareer.Elements, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SpellbookCount">DaggerfallEntity.SpellbookCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetSpell_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings__">DaggerfallEntity.GetSpell(Int32, EffectBundleSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetSpells">DaggerfallEntity.GetSpells()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SwapSpells_System_Int32_System_Int32_">DaggerfallEntity.SwapSpells(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SortSpellsAlpha">DaggerfallEntity.SortSpellsAlpha()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SortSpellsPointCost">DaggerfallEntity.SortSpellsPointCost()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetSpell_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings_">DaggerfallEntity.SetSpell(Int32, EffectBundleSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_AddSpell_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings_">DaggerfallEntity.AddSpell(EffectBundleSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DeleteSpell_System_Int32_">DaggerfallEntity.DeleteSpell(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DeleteTaggedSpells_System_String_">DaggerfallEntity.DeleteTaggedSpells(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SerializeSpellbook">DaggerfallEntity.SerializeSpellbook()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DeserializeSpellbook_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings___">DaggerfallEntity.DeserializeSpellbook(EffectBundleSettings[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_FixedUpdate">DaggerfallEntity.FixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Update_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">DaggerfallEntity.Update(DaggerfallEntityBehaviour)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ResetEntityState">DaggerfallEntity.ResetEntityState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_OnDeath">DaggerfallEntity.OnDeath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RaiseOnDeathEvent">DaggerfallEntity.RaiseOnDeathEvent()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_OnExhausted">DaggerfallEntity.OnExhausted</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_OnMagickaDepleted">DaggerfallEntity.OnMagickaDepleted</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetClassCareerTemplate_DaggerfallWorkshop_Game_Entity_ClassCareers_">DaggerfallEntity.GetClassCareerTemplate(ClassCareers)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMonsterCareerTemplate_DaggerfallWorkshop_Game_Entity_MonsterCareers_">DaggerfallEntity.GetMonsterCareerTemplate(MonsterCareers)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetRaceGenderAttackSound_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Boolean_">DaggerfallEntity.GetRaceGenderAttackSound(Races, Genders, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetRaceGenderPainSound_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Boolean_">DaggerfallEntity.GetRaceGenderPainSound(Races, Genders, Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Entity.html">DaggerfallWorkshop.Game.Entity</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EnemyEntity : DaggerfallEntity</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity__ctor_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.%23ctor(DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L99">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity__ctor_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity__ctor_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.#ctor(DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">EnemyEntity(DaggerfallEntityBehaviour)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnemyEntity(DaggerfallEntityBehaviour entityBehaviour)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">entityBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_CareerIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.CareerIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L63">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_CareerIndex_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.CareerIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_CareerIndex" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.CareerIndex">CareerIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CareerIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_EntityType.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.EntityType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L58">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_EntityType_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.EntityType*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_EntityType" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.EntityType">EntityType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityTypes EntityType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.EntityTypes.html">EntityTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_MobileEnemy.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.MobileEnemy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L68">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_MobileEnemy_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.MobileEnemy*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_MobileEnemy" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.MobileEnemy">MobileEnemy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MobileEnemy MobileEnemy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileEnemy.html">MobileEnemy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_PickpocketByPlayerAttempted.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.PickpocketByPlayerAttempted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L73">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_PickpocketByPlayerAttempted_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.PickpocketByPlayerAttempted*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_PickpocketByPlayerAttempted" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.PickpocketByPlayerAttempted">PickpocketByPlayerAttempted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PickpocketByPlayerAttempted { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_QuestFoeItemQueueIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.QuestFoeItemQueueIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L85">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_QuestFoeItemQueueIndex_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.QuestFoeItemQueueIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_QuestFoeItemQueueIndex" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.QuestFoeItemQueueIndex">QuestFoeItemQueueIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int QuestFoeItemQueueIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_QuestFoeSpellQueueIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.QuestFoeSpellQueueIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_QuestFoeSpellQueueIndex_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.QuestFoeSpellQueueIndex*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_QuestFoeSpellQueueIndex" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.QuestFoeSpellQueueIndex">QuestFoeSpellQueueIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int QuestFoeSpellQueueIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_SoulTrapActive.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.SoulTrapActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L91">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SoulTrapActive_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SoulTrapActive*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SoulTrapActive" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SoulTrapActive">SoulTrapActive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SoulTrapActive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_WabbajackActive.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.WabbajackActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L93">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_WabbajackActive_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.WabbajackActive*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_WabbajackActive" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.WabbajackActive">WabbajackActive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WabbajackActive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_ClearConstantEffects.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.ClearConstantEffects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L194">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_ClearConstantEffects_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.ClearConstantEffects*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_ClearConstantEffects" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.ClearConstantEffects">ClearConstantEffects()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ClearConstantEffects()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ClearConstantEffects">DaggerfallEntity.ClearConstantEffects()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_GetEnemyGroup.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.GetEnemyGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L522">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_GetEnemyGroup_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.GetEnemyGroup*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_GetEnemyGroup" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.GetEnemyGroup">GetEnemyGroup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFCareer.EnemyGroups GetEnemyGroup()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFCareer.EnemyGroups.html">DFCareer.EnemyGroups</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_GetLanguageSkill.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.GetLanguageSkill%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L580">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_GetLanguageSkill_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.GetLanguageSkill*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_GetLanguageSkill" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.GetLanguageSkill">GetLanguageSkill()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFCareer.Skills GetLanguageSkill()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFCareer.Skills.html">DFCareer.Skills</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_GetWeightInClassicUnits.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.GetWeightInClassicUnits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L649">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_GetWeightInClassicUnits_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.GetWeightInClassicUnits*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_GetWeightInClassicUnits" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.GetWeightInClassicUnits">GetWeightInClassicUnits()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetWeightInClassicUnits()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemyCareer_DaggerfallWorkshop_MobileEnemy_DaggerfallWorkshop_EntityTypes_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemyCareer(DaggerfallWorkshop.MobileEnemy%2CDaggerfallWorkshop.EntityTypes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L203">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemyCareer_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemyCareer*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemyCareer_DaggerfallWorkshop_MobileEnemy_DaggerfallWorkshop_EntityTypes_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemyCareer(DaggerfallWorkshop.MobileEnemy,DaggerfallWorkshop.EntityTypes)">SetEnemyCareer(MobileEnemy, EntityTypes)</h4>
+  <div class="markdown level1 summary"><p>Sets enemy career and prepares entity settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnemyCareer(MobileEnemy mobileEnemy, EntityTypes entityType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileEnemy.html">MobileEnemy</a></td>
+        <td><span class="parametername">mobileEnemy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.EntityTypes.html">EntityTypes</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemyEquipment_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemyEquipment(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L331">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemyEquipment_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemyEquipment*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemyEquipment_System_Int32_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemyEquipment(System.Int32)">SetEnemyEquipment(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnemyEquipment(int variant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">variant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemySpells_System_Byte___.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemySpells(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L489">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemySpells_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemySpells*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEnemySpells_System_Byte___" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEnemySpells(System.Byte[])">SetEnemySpells(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnemySpells(byte[] spellList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">spellList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEntityDefaults.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEntityDefaults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L111">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEntityDefaults_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEntityDefaults*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetEntityDefaults" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetEntityDefaults">SetEntityDefaults()</h4>
+  <div class="markdown level1 summary"><p>Assigns default entity settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetEntityDefaults()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetEntityDefaults">DaggerfallEntity.SetEntityDefaults()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity_SetHealth_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity.SetHealth(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L118">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetHealth_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetHealth*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_EnemyEntity_SetHealth_System_Int32_System_Boolean_" data-uid="DaggerfallWorkshop.Game.Entity.EnemyEntity.SetHealth(System.Int32,System.Boolean)">SetHealth(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Custom handling of SetHealth() for enemies to support soul trap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SetHealth(int amount, bool restoreMode = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">restoreMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetHealth_System_Int32_System_Boolean_">DaggerfallEntity.SetHealth(Int32, Boolean)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_EnemyEntity.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.EnemyEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/EnemyEntity.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

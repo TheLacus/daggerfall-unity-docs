@@ -1,0 +1,2004 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PlayerEnterExit
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PlayerEnterExit
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_PlayerEnterExit" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit" class="text-break">Class PlayerEnterExit
+  </h1>
+  <div class="markdown level0 summary"><p>Assist player controller to enter and exit building interiors and dungeons.
+Should be attached to player object with PlayerGPS for climate tracking.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">PlayerEnterExit</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.html">DaggerfallWorkshop.Game</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_PlayerEnterExit_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerEnterExit : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_blockWaterLevel.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.blockWaterLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L65">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_blockWaterLevel" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.blockWaterLevel">blockWaterLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short blockWaterLevel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_DungeonParent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.DungeonParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L60">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_DungeonParent" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.DungeonParent">DungeonParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject DungeonParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_ExteriorParent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.ExteriorParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L58">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_ExteriorParent" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.ExteriorParent">ExteriorParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject ExteriorParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_InteriorParent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.InteriorParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L59">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_InteriorParent" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.InteriorParent">InteriorParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject InteriorParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OverrideLocation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OverrideLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L61">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OverrideLocation" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OverrideLocation">OverrideLocation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallLocation OverrideLocation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallLocation.html">DaggerfallLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_BuildingDiscoveryData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.BuildingDiscoveryData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L250">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_BuildingDiscoveryData_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.BuildingDiscoveryData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_BuildingDiscoveryData" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.BuildingDiscoveryData">BuildingDiscoveryData</h4>
+  <div class="markdown level1 summary"><p>Gets current building's discovery data.
+Only valid when player is inside a building.
+This is set every time player enters a building and is saved/loaded with each save game.
+Notes:
+Older save games will not carry this data until player exits and enters building again.
+When consuming this property, try to handle empty BuildingDiscoveryData (buildingKey == 0) if possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerGPS.DiscoveredBuilding BuildingDiscoveryData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.PlayerGPS.DiscoveredBuilding.html">PlayerGPS.DiscoveredBuilding</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_BuildingType.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.BuildingType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L229">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_BuildingType_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.BuildingType*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_BuildingType" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.BuildingType">BuildingType</h4>
+  <div class="markdown level1 summary"><p>Gets current building type.
+Only valid when player inside building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFLocation.BuildingTypes BuildingType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.BuildingTypes.html">DFLocation.BuildingTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_Dungeon.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.Dungeon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L202">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_Dungeon_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.Dungeon*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_Dungeon" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.Dungeon">Dungeon</h4>
+  <div class="markdown level1 summary"><p>Gets current player dungeon.
+Only valid when player is inside a dungeon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDungeon Dungeon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallDungeon.html">DaggerfallDungeon</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_DungeonBlock.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.DungeonBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L211">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_DungeonBlock_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.DungeonBlock*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_DungeonBlock" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.DungeonBlock">DungeonBlock</h4>
+  <div class="markdown level1 summary"><p>Gets information about current player dungeon block.
+Only valid when player is inside a dungeon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFLocation.DungeonBlock DungeonBlock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.DungeonBlock.html">DFLocation.DungeonBlock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_ExteriorDoors.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.ExteriorDoors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L260">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_ExteriorDoors_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.ExteriorDoors*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_ExteriorDoors" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.ExteriorDoors">ExteriorDoors</h4>
+  <div class="markdown level1 summary"><p>Gets or sets exterior doors of current interior.
+Returns empty array if player not inside.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StaticDoor[] ExteriorDoors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_FactionID.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.FactionID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L237">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_FactionID_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.FactionID*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_FactionID" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.FactionID">FactionID</h4>
+  <div class="markdown level1 summary"><p>Gets current building's faction ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint FactionID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_Interior.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.Interior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L220">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_Interior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.Interior*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_Interior" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.Interior">Interior</h4>
+  <div class="markdown level1 summary"><p>Gets current building interior.
+Only valid when player inside building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallInterior Interior { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallInterior.html">DaggerfallInterior</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInDarkness.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInDarkness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L173">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInDarkness_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInDarkness*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInDarkness" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInDarkness">IsPlayerInDarkness</h4>
+  <div class="markdown level1 summary"><p>True when player is in darkness.
+Same as !IsPlayerInSunlight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInDarkness { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInHolyPlace.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInHolyPlace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L184">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInHolyPlace_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInHolyPlace*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInHolyPlace" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInHolyPlace">IsPlayerInHolyPlace</h4>
+  <div class="markdown level1 summary"><p>True when player is in a holy place.
+Holy places include all Temples and guildhalls of the Fighter Trainers (faction #849)
+<a href="https://en.uesp.net/wiki/Daggerfall:ClassMaker#Special_Disadvantages">https://en.uesp.net/wiki/Daggerfall:ClassMaker#Special_Disadvantages</a>
+Refreshed once per game minute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInHolyPlace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInside.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInside%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInside_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInside*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInside" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInside">IsPlayerInside</h4>
+  <div class="markdown level1 summary"><p>True when player is inside any structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInside { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideBuilding.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideBuilding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L103">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideBuilding_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideBuilding*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideBuilding" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideBuilding">IsPlayerInsideBuilding</h4>
+  <div class="markdown level1 summary"><p>True only when player is inside a building.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInsideBuilding { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideDungeon.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideDungeon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L111">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideDungeon_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideDungeon*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideDungeon" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideDungeon">IsPlayerInsideDungeon</h4>
+  <div class="markdown level1 summary"><p>True only when player is inside a dungeon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInsideDungeon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideDungeonCastle.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideDungeonCastle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L120">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideDungeonCastle_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideDungeonCastle*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideDungeonCastle" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideDungeonCastle">IsPlayerInsideDungeonCastle</h4>
+  <div class="markdown level1 summary"><p>True only when player inside castle blocks of a dungeon.
+For example, main hall in Daggerfall castle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInsideDungeonCastle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideOpenShop.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideOpenShop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L138">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideOpenShop_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideOpenShop*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideOpenShop" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideOpenShop">IsPlayerInsideOpenShop</h4>
+  <div class="markdown level1 summary"><p>True when player is inside an open shop.
+Set upon entry, so doesn't matter if shop 'closes' with player inside.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInsideOpenShop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideSpecialArea.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideSpecialArea%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L129">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideSpecialArea_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideSpecialArea*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInsideSpecialArea" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInsideSpecialArea">IsPlayerInsideSpecialArea</h4>
+  <div class="markdown level1 summary"><p>True only when player inside special blocks of a dungeon.
+For example, treasure room in Daggerfall castle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInsideSpecialArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInSunlight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInSunlight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L164">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInSunlight_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInSunlight*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerInSunlight" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerInSunlight">IsPlayerInSunlight</h4>
+  <div class="markdown level1 summary"><p>True when player is in sunlight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerInSunlight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerSubmerged.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerSubmerged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L156">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerSubmerged_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerSubmerged*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerSubmerged" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerSubmerged">IsPlayerSubmerged</h4>
+  <div class="markdown level1 summary"><p>True when player is submerged in water.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerSubmerged { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerSwimming.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerSwimming%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L147">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerSwimming_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerSwimming*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsPlayerSwimming" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsPlayerSwimming">IsPlayerSwimming</h4>
+  <div class="markdown level1 summary"><p>True when player is swimming in water.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerSwimming { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_IsRespawning.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.IsRespawning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L193">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_IsRespawning_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsRespawning*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_IsRespawning" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.IsRespawning">IsRespawning</h4>
+  <div class="markdown level1 summary"><p>True when a player respawn is in progress.
+e.g. After loading a game or teleporting back to a marked location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRespawning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_LastInteriorStartFlag.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.LastInteriorStartFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L87">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_LastInteriorStartFlag_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.LastInteriorStartFlag*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_LastInteriorStartFlag" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.LastInteriorStartFlag">LastInteriorStartFlag</h4>
+  <div class="markdown level1 summary"><p>Gets start flag from most recent interior transition.
+Helps inform other systems if first-time load or enter/exit transition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LastInteriorStartFlag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_WorldContext.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.WorldContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L78">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_WorldContext_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.WorldContext*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_WorldContext" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.WorldContext">WorldContext</h4>
+  <div class="markdown level1 summary"><p>Gets player world context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldContext WorldContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.WorldContext.html">WorldContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_DisableAllParents_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.DisableAllParents(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L975">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_DisableAllParents_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.DisableAllParents*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_DisableAllParents_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.DisableAllParents(System.Boolean)">DisableAllParents(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableAllParents(bool cleanup = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cleanup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_EnableDungeonParent_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.EnableDungeonParent(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1033">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_EnableDungeonParent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.EnableDungeonParent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_EnableDungeonParent_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.EnableDungeonParent(System.Boolean)">EnableDungeonParent(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Enable DungeonParent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableDungeonParent(bool cleanup = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cleanup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_EnableExteriorParent_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.EnableExteriorParent(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L994">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_EnableExteriorParent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.EnableExteriorParent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_EnableExteriorParent_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.EnableExteriorParent(System.Boolean)">EnableExteriorParent(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Enable ExteriorParent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableExteriorParent(bool cleanup = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cleanup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_EnableInteriorParent_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.EnableInteriorParent(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1015">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_EnableInteriorParent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.EnableInteriorParent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_EnableInteriorParent_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.EnableInteriorParent(System.Boolean)">EnableInteriorParent(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Enable InteriorParent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableInteriorParent(bool cleanup = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cleanup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_MovePlayerToDungeonStart.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.MovePlayerToDungeonStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1063">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_MovePlayerToDungeonStart_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.MovePlayerToDungeonStart*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_MovePlayerToDungeonStart" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.MovePlayerToDungeonStart">MovePlayerToDungeonStart()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MovePlayerToDungeonStart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_MovePlayerToMarker_UnityEngine_GameObject_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.MovePlayerToMarker(UnityEngine.GameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1048">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_MovePlayerToMarker_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.MovePlayerToMarker*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_MovePlayerToMarker_UnityEngine_GameObject_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.MovePlayerToMarker(UnityEngine.GameObject)">MovePlayerToMarker(GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MovePlayerToMarker(GameObject marker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">marker</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnMovePlayerToDungeonStartEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnMovePlayerToDungeonStartEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1414">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnMovePlayerToDungeonStartEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnMovePlayerToDungeonStartEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnMovePlayerToDungeonStartEvent" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnMovePlayerToDungeonStartEvent">RaiseOnMovePlayerToDungeonStartEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnMovePlayerToDungeonStartEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnPreTransitionEvent_DaggerfallWorkshop_Game_PlayerEnterExit_TransitionType_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnPreTransitionEvent(DaggerfallWorkshop.Game.PlayerEnterExit.TransitionType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1358">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnPreTransitionEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnPreTransitionEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnPreTransitionEvent_DaggerfallWorkshop_Game_PlayerEnterExit_TransitionType_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnPreTransitionEvent(DaggerfallWorkshop.Game.PlayerEnterExit.TransitionType)">RaiseOnPreTransitionEvent(PlayerEnterExit.TransitionType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnPreTransitionEvent(PlayerEnterExit.TransitionType transitionType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionType.html">PlayerEnterExit.TransitionType</a></td>
+        <td><span class="parametername">transitionType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnPreTransitionEvent_DaggerfallWorkshop_Game_PlayerEnterExit_TransitionType_DaggerfallWorkshop_StaticDoor_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnPreTransitionEvent(DaggerfallWorkshop.Game.PlayerEnterExit.TransitionType%2CDaggerfallWorkshop.StaticDoor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1364">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnPreTransitionEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnPreTransitionEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnPreTransitionEvent_DaggerfallWorkshop_Game_PlayerEnterExit_TransitionType_DaggerfallWorkshop_StaticDoor_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnPreTransitionEvent(DaggerfallWorkshop.Game.PlayerEnterExit.TransitionType,DaggerfallWorkshop.StaticDoor)">RaiseOnPreTransitionEvent(PlayerEnterExit.TransitionType, StaticDoor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnPreTransitionEvent(PlayerEnterExit.TransitionType transitionType, StaticDoor staticDoor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionType.html">PlayerEnterExit.TransitionType</a></td>
+        <td><span class="parametername">transitionType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a></td>
+        <td><span class="parametername">staticDoor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnRespawnerCompleteEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnRespawnerCompleteEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1423">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnRespawnerCompleteEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnRespawnerCompleteEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnRespawnerCompleteEvent" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnRespawnerCompleteEvent">RaiseOnRespawnerCompleteEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnRespawnerCompleteEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionDungeonExteriorEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionDungeonExteriorEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1404">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionDungeonExteriorEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionDungeonExteriorEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionDungeonExteriorEvent" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionDungeonExteriorEvent">RaiseOnTransitionDungeonExteriorEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnTransitionDungeonExteriorEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionDungeonInteriorEvent_DaggerfallWorkshop_StaticDoor_DaggerfallWorkshop_DaggerfallDungeon_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionDungeonInteriorEvent(DaggerfallWorkshop.StaticDoor%2CDaggerfallWorkshop.DaggerfallDungeon)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1394">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionDungeonInteriorEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionDungeonInteriorEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionDungeonInteriorEvent_DaggerfallWorkshop_StaticDoor_DaggerfallWorkshop_DaggerfallDungeon_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionDungeonInteriorEvent(DaggerfallWorkshop.StaticDoor,DaggerfallWorkshop.DaggerfallDungeon)">RaiseOnTransitionDungeonInteriorEvent(StaticDoor, DaggerfallDungeon)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnTransitionDungeonInteriorEvent(StaticDoor staticDoor, DaggerfallDungeon daggerfallDungeon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a></td>
+        <td><span class="parametername">staticDoor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallDungeon.html">DaggerfallDungeon</a></td>
+        <td><span class="parametername">daggerfallDungeon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionExteriorEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionExteriorEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1384">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionExteriorEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionExteriorEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionExteriorEvent" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionExteriorEvent">RaiseOnTransitionExteriorEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnTransitionExteriorEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionInteriorEvent_DaggerfallWorkshop_StaticDoor_DaggerfallWorkshop_DaggerfallInterior_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionInteriorEvent(DaggerfallWorkshop.StaticDoor%2CDaggerfallWorkshop.DaggerfallInterior)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1374">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionInteriorEvent_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionInteriorEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RaiseOnTransitionInteriorEvent_DaggerfallWorkshop_StaticDoor_DaggerfallWorkshop_DaggerfallInterior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RaiseOnTransitionInteriorEvent(DaggerfallWorkshop.StaticDoor,DaggerfallWorkshop.DaggerfallInterior)">RaiseOnTransitionInteriorEvent(StaticDoor, DaggerfallInterior)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnTransitionInteriorEvent(StaticDoor staticDoor, DaggerfallInterior daggerfallInterior)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a></td>
+        <td><span class="parametername">staticDoor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallInterior.html">DaggerfallInterior</a></td>
+        <td><span class="parametername">daggerfallInterior</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RespawnPlayer_System_Int32_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RespawnPlayer(System.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L388">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RespawnPlayer_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RespawnPlayer*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RespawnPlayer_System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RespawnPlayer(System.Int32,System.Int32,System.Boolean,System.Boolean)">RespawnPlayer(Int32, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Respawn player at the specified world coordinates, optionally inside dungeon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RespawnPlayer(int worldX, int worldZ, bool insideDungeon = false, bool importEnemies = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">worldX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">worldZ</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">insideDungeon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">importEnemies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RespawnPlayer_System_Int32_System_Int32_System_Boolean_System_Boolean_DaggerfallWorkshop_StaticDoor___System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RespawnPlayer(System.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%2CDaggerfallWorkshop.StaticDoor%5B%5D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L401">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RespawnPlayer_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RespawnPlayer*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RespawnPlayer_System_Int32_System_Int32_System_Boolean_System_Boolean_DaggerfallWorkshop_StaticDoor___System_Boolean_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RespawnPlayer(System.Int32,System.Int32,System.Boolean,System.Boolean,DaggerfallWorkshop.StaticDoor[],System.Boolean,System.Boolean,System.Boolean)">RespawnPlayer(Int32, Int32, Boolean, Boolean, StaticDoor[], Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Respawn player at the specified world coordinates, optionally inside dungeon or building.
+Player can be forced to respawn to closest start marker or origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RespawnPlayer(int worldX, int worldZ, bool insideDungeon, bool insideBuilding, StaticDoor[] exteriorDoors = null, bool forceReposition = false, bool importEnemies = true, bool start = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">worldX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">worldZ</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">insideDungeon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">insideBuilding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a>[]</td>
+        <td><span class="parametername">exteriorDoors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forceReposition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">importEnemies</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_RestorePositionHelper_DaggerfallWorkshop_Game_Serialization_PlayerPositionData_v1_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.RestorePositionHelper(DaggerfallWorkshop.Game.Serialization.PlayerPositionData_v1%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L547">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_RestorePositionHelper_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RestorePositionHelper*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_RestorePositionHelper_DaggerfallWorkshop_Game_Serialization_PlayerPositionData_v1_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.RestorePositionHelper(DaggerfallWorkshop.Game.Serialization.PlayerPositionData_v1,System.Boolean,System.Boolean)">RestorePositionHelper(PlayerPositionData_v1, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Helper to reposition player to anywhere in world either at load or during player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestorePositionHelper(PlayerPositionData_v1 playerPosition, bool start, bool importEnemies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Serialization.PlayerPositionData_v1.html">PlayerPositionData_v1</a></td>
+        <td><span class="parametername">playerPosition</span></td>
+        <td><p>Player position data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>Use true if this is a load/start operation, otherwise false.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">importEnemies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_ShowHolidayText.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.ShowHolidayText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L520">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_ShowHolidayText_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.ShowHolidayText*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_ShowHolidayText" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.ShowHolidayText">ShowHolidayText()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowHolidayText()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_StartBuildingInterior_DaggerfallConnect_DFLocation_DaggerfallWorkshop_StaticDoor_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.StartBuildingInterior(DaggerfallConnect.DFLocation%2CDaggerfallWorkshop.StaticDoor%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L960">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_StartBuildingInterior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.StartBuildingInterior*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_StartBuildingInterior_DaggerfallConnect_DFLocation_DaggerfallWorkshop_StaticDoor_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.StartBuildingInterior(DaggerfallConnect.DFLocation,DaggerfallWorkshop.StaticDoor,System.Boolean)">StartBuildingInterior(DFLocation, StaticDoor, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Starts player inside building with no exterior world.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartBuildingInterior(DFLocation location, StaticDoor exteriorDoor, bool start = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a></td>
+        <td><span class="parametername">exteriorDoor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_StartDungeonInterior_DaggerfallConnect_DFLocation_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.StartDungeonInterior(DaggerfallConnect.DFLocation%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L911">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_StartDungeonInterior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.StartDungeonInterior*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_StartDungeonInterior_DaggerfallConnect_DFLocation_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.StartDungeonInterior(DaggerfallConnect.DFLocation,System.Boolean,System.Boolean)">StartDungeonInterior(DFLocation, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Starts player inside dungeon with no exterior world.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartDungeonInterior(DFLocation location, bool preferEnterMarker = true, bool importEnemies = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">preferEnterMarker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">importEnemies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonExterior_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonExterior(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1071">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonExterior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonExterior*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonExterior_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonExterior(System.Boolean)">TransitionDungeonExterior(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Player is leaving dungeon, transition them back outside.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransitionDungeonExterior(bool doFade = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doFade</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonExteriorImmediate.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonExteriorImmediate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1127">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonExteriorImmediate_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonExteriorImmediate*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonExteriorImmediate" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonExteriorImmediate">TransitionDungeonExteriorImmediate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransitionDungeonExteriorImmediate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonInterior_UnityEngine_Transform_DaggerfallWorkshop_StaticDoor_DaggerfallConnect_DFLocation_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonInterior(UnityEngine.Transform%2CDaggerfallWorkshop.StaticDoor%2CDaggerfallConnect.DFLocation%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L840">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonInterior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonInterior*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionDungeonInterior_UnityEngine_Transform_DaggerfallWorkshop_StaticDoor_DaggerfallConnect_DFLocation_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionDungeonInterior(UnityEngine.Transform,DaggerfallWorkshop.StaticDoor,DaggerfallConnect.DFLocation,System.Boolean)">TransitionDungeonInterior(Transform, StaticDoor, DFLocation, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Transition player through a dungeon entrance door into dungeon interior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransitionDungeonInterior(Transform doorOwner, StaticDoor door, DFLocation location, bool doFade = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">doorOwner</span></td>
+        <td><p>Parent transform owning door array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a></td>
+        <td><span class="parametername">door</span></td>
+        <td><p>Exterior door player clicked on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doFade</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_TransitionExterior_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.TransitionExterior(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L768">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionExterior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionExterior*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionExterior_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionExterior(System.Boolean)">TransitionExterior(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Transition player through an interior door to building exterior. Player must be inside.
+Interior stores information about exterior, no need for extra params.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransitionExterior(bool doFade = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doFade</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_TransitionInterior_UnityEngine_Transform_DaggerfallWorkshop_StaticDoor_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.TransitionInterior(UnityEngine.Transform%2CDaggerfallWorkshop.StaticDoor%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L622">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionInterior_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionInterior*"></a>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_TransitionInterior_UnityEngine_Transform_DaggerfallWorkshop_StaticDoor_System_Boolean_System_Boolean_" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.TransitionInterior(UnityEngine.Transform,DaggerfallWorkshop.StaticDoor,System.Boolean,System.Boolean)">TransitionInterior(Transform, StaticDoor, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Transition player through an exterior door into building interior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransitionInterior(Transform doorOwner, StaticDoor door, bool doFade = false, bool start = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">doorOwner</span></td>
+        <td><p>Parent transform owning door array..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StaticDoor.html">StaticDoor</a></td>
+        <td><span class="parametername">door</span></td>
+        <td><p>Exterior door player clicked on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doFade</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OnMovePlayerToDungeonStart.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OnMovePlayerToDungeonStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1413">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OnMovePlayerToDungeonStart" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OnMovePlayerToDungeonStart">OnMovePlayerToDungeonStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PlayerEnterExit.OnMovePlayerToDungeonStartEventHandler OnMovePlayerToDungeonStart</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.OnMovePlayerToDungeonStartEventHandler.html">PlayerEnterExit.OnMovePlayerToDungeonStartEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OnPreTransition.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OnPreTransition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1357">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OnPreTransition" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OnPreTransition">OnPreTransition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PlayerEnterExit.OnPreTransitionEventHandler OnPreTransition</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.OnPreTransitionEventHandler.html">PlayerEnterExit.OnPreTransitionEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OnRespawnerComplete.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OnRespawnerComplete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1422">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OnRespawnerComplete" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OnRespawnerComplete">OnRespawnerComplete</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PlayerEnterExit.OnRespawnerCompleteEventHandler OnRespawnerComplete</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.OnRespawnerCompleteEventHandler.html">PlayerEnterExit.OnRespawnerCompleteEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionDungeonExterior.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionDungeonExterior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1403">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionDungeonExterior" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionDungeonExterior">OnTransitionDungeonExterior</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PlayerEnterExit.OnTransitionDungeonExteriorEventHandler OnTransitionDungeonExterior</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionDungeonExteriorEventHandler.html">PlayerEnterExit.OnTransitionDungeonExteriorEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionDungeonInterior.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionDungeonInterior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1393">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionDungeonInterior" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionDungeonInterior">OnTransitionDungeonInterior</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PlayerEnterExit.OnTransitionDungeonInteriorEventHandler OnTransitionDungeonInterior</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionDungeonInteriorEventHandler.html">PlayerEnterExit.OnTransitionDungeonInteriorEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionExterior.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionExterior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1383">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionExterior" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionExterior">OnTransitionExterior</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PlayerEnterExit.OnTransitionExteriorEventHandler OnTransitionExterior</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionExteriorEventHandler.html">PlayerEnterExit.OnTransitionExteriorEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionInterior.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionInterior%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L1373">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_PlayerEnterExit_OnTransitionInterior" data-uid="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionInterior">OnTransitionInterior</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PlayerEnterExit.OnTransitionInteriorEventHandler OnTransitionInterior</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.PlayerEnterExit.OnTransitionInteriorEventHandler.html">PlayerEnterExit.OnTransitionInteriorEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_PlayerEnterExit.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.PlayerEnterExit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/PlayerEnterExit.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QuestResourceBehaviour
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QuestResourceBehaviour
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour" class="text-break">Class QuestResourceBehaviour
+  </h1>
+  <div class="markdown level0 summary"><p>Helper behaviour to pass information between GameObjects and Quest system.
+Used to trigger resource events in quest systems like ClickedNpc, InjuredFoe, KilledFoe, etc.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">QuestResourceBehaviour</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Questing.html">DaggerfallWorkshop.Game.Questing</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QuestResourceBehaviour : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_IsAttackableByAI.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.IsAttackableByAI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L114">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_IsAttackableByAI_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.IsAttackableByAI*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_IsAttackableByAI" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.IsAttackableByAI">IsAttackableByAI</h4>
+  <div class="markdown level1 summary"><p>Gets or sets flag allowing enemy resource to be attacked by another mobile AI.
+Never set in core. Must be set by a custom quest action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAttackableByAI { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_IsFoeDead.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.IsFoeDead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L80">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_IsFoeDead_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.IsFoeDead*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_IsFoeDead" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.IsFoeDead">IsFoeDead</h4>
+  <div class="markdown level1 summary"><p>Flag stating if this Foe is dead .</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFoeDead { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_QuestUID.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestUID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L64">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_QuestUID_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestUID*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_QuestUID" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestUID">QuestUID</h4>
+  <div class="markdown level1 summary"><p>Gets assigned Quest UID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong QuestUID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetQuest.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetQuest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L88">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetQuest_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetQuest*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetQuest" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetQuest">TargetQuest</h4>
+  <div class="markdown level1 summary"><p>Gets target Quest object. Can return null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quest TargetQuest { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetResource.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L96">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetResource_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetResource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetResource" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetResource">TargetResource</h4>
+  <div class="markdown level1 summary"><p>Gets target QuestResource object. Can return null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestResource TargetResource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html">QuestResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetSymbol.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetSymbol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L72">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetSymbol_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetSymbol*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_TargetSymbol" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.TargetSymbol">TargetSymbol</h4>
+  <div class="markdown level1 summary"><p>Gets assigned target Symbol.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Symbol TargetSymbol { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Symbol.html">Symbol</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_AddItemQueue_DaggerfallWorkshop_Game_Questing_Foe_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.AddItemQueue(DaggerfallWorkshop.Game.Questing.Foe%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L353">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_AddItemQueue_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.AddItemQueue*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_AddItemQueue_DaggerfallWorkshop_Game_Questing_Foe_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.AddItemQueue(DaggerfallWorkshop.Game.Questing.Foe,DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">AddItemQueue(Foe, DaggerfallEntityBehaviour)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItemQueue(Foe foe, DaggerfallEntityBehaviour enemyEntityBehaviour)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Foe.html">Foe</a></td>
+        <td><span class="parametername">foe</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">enemyEntityBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_AssignResource_DaggerfallWorkshop_Game_Questing_QuestResource_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.AssignResource(DaggerfallWorkshop.Game.Questing.QuestResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L217">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_AssignResource_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.AssignResource*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_AssignResource_DaggerfallWorkshop_Game_Questing_QuestResource_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.AssignResource(DaggerfallWorkshop.Game.Questing.QuestResource)">AssignResource(QuestResource)</h4>
+  <div class="markdown level1 summary"><p>Assign this behaviour a QuestResource object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AssignResource(QuestResource questResource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html">QuestResource</a></td>
+        <td><span class="parametername">questResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_CastSpellQueue_DaggerfallWorkshop_Game_Questing_Foe_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.CastSpellQueue(DaggerfallWorkshop.Game.Questing.Foe%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L293">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_CastSpellQueue_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.CastSpellQueue*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_CastSpellQueue_DaggerfallWorkshop_Game_Questing_Foe_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.CastSpellQueue(DaggerfallWorkshop.Game.Questing.Foe,DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">CastSpellQueue(Foe, DaggerfallEntityBehaviour)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CastSpellQueue(Foe foe, DaggerfallEntityBehaviour enemyEntityBehaviour)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.Foe.html">Foe</a></td>
+        <td><span class="parametername">foe</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">enemyEntityBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_DoClick.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.DoClick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L230">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_DoClick_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.DoClick*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_DoClick" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.DoClick">DoClick()</h4>
+  <div class="markdown level1 summary"><p>Called by PlayerActivate when clicking on this GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoClick()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if this resource was found in any active quests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_GetSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.GetSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L265">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_GetSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.GetSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_GetSaveData" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.GetSaveData">GetSaveData()</h4>
+  <div class="markdown level1 summary"><p>Gets save data for serialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestResourceBehaviour.QuestResourceSaveData_v1 GetSaveData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestResourceSaveData_v1.html">QuestResourceBehaviour.QuestResourceSaveData_v1</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_RaiseOnGameObjectDestroyEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.RaiseOnGameObjectDestroyEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L467">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_RaiseOnGameObjectDestroyEvent_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.RaiseOnGameObjectDestroyEvent*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_RaiseOnGameObjectDestroyEvent" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.RaiseOnGameObjectDestroyEvent">RaiseOnGameObjectDestroyEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RaiseOnGameObjectDestroyEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_RestoreSaveData_DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_QuestResourceSaveData_v1_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.RestoreSaveData(DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestResourceSaveData_v1)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L282">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_RestoreSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.RestoreSaveData*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_RestoreSaveData_DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_QuestResourceSaveData_v1_" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.RestoreSaveData(DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestResourceSaveData_v1)">RestoreSaveData(QuestResourceBehaviour.QuestResourceSaveData_v1)</h4>
+  <div class="markdown level1 summary"><p>Restores deserialized save data.
+Must be called after quest system state restored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreSaveData(QuestResourceBehaviour.QuestResourceSaveData_v1 data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestResourceSaveData_v1.html">QuestResourceBehaviour.QuestResourceSaveData_v1</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_OnGameObjectDestroy.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.OnGameObjectDestroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L466">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour_OnGameObjectDestroy" data-uid="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.OnGameObjectDestroy">OnGameObjectDestroy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event QuestResourceBehaviour.OnGameObjectDestroyHandler OnGameObjectDestroy</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.OnGameObjectDestroyHandler.html">QuestResourceBehaviour.OnGameObjectDestroyHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_QuestResourceBehaviour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Components/QuestResourceBehaviour.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

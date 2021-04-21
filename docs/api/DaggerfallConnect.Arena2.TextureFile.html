@@ -1,0 +1,1033 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TextureFile
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TextureFile
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallConnect.Arena2.TextureFile">
+  
+  
+  <h1 id="DaggerfallConnect_Arena2_TextureFile" data-uid="DaggerfallConnect.Arena2.TextureFile" class="text-break">Class TextureFile
+  </h1>
+  <div class="markdown level0 summary"><p>Connects to a TEXTURE.??? file to enumerate and extract image data.
+Each texture file may contain one or more images, including animated records with multiple frames.
+Textures will only be converted from the source binary file when needed. This allows you to extract
+individual records and frames without the overhead of converting unwanted images.
+Combine this with a texture caching scheme when loading large 3D scenes to avoid unnecessary load time.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html">BaseImageFile</a></div>
+    <div class="level2"><span class="xref">TextureFile</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_myPalette">BaseImageFile.myPalette</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_FilePath">BaseImageFile.FilePath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_FileName">BaseImageFile.FileName</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_Palette">BaseImageFile.Palette</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_LoadPalette_System_String_">BaseImageFile.LoadPalette(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_System_Int32_System_Int32_System_Int32_">BaseImageFile.GetColor32(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_">BaseImageFile.GetColor32(DFBitmap, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_System_Int32_System_Int32_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__">BaseImageFile.GetColor32(Int32, Int32, Int32, Int32, DFSize)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetColor32_DaggerfallConnect_DFBitmap_System_Int32_System_Int32_DaggerfallConnect_Utility_DFSize__">BaseImageFile.GetColor32(DFBitmap, Int32, Int32, DFSize)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetWindowColors32_DaggerfallConnect_DFBitmap_System_Int32_">BaseImageFile.GetWindowColors32(DFBitmap, Int32)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallConnect.Arena2.html">DaggerfallConnect.Arena2</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallConnect_Arena2_TextureFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextureFile : BaseImageFile</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile__ctor.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L153">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile__ctor_" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile__ctor" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor">TextureFile()</h4>
+  <div class="markdown level1 summary"><p>Default constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureFile()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile__ctor_System_String_DaggerfallConnect_FileUsage_DaggerfallConnect_DFPalette_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.%23ctor(System.String%2CDaggerfallConnect.FileUsage%2CDaggerfallConnect.DFPalette%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L175">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile__ctor_" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile__ctor_System_String_DaggerfallConnect_FileUsage_DaggerfallConnect_DFPalette_System_Boolean_" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor(System.String,DaggerfallConnect.FileUsage,DaggerfallConnect.DFPalette,System.Boolean)">TextureFile(String, FileUsage, DFPalette, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load constructor with palette assignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureFile(string filePath, FileUsage usage, DFPalette palette, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to TEXTURE.* file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFPalette.html">DFPalette</a></td>
+        <td><span class="parametername">palette</span></td>
+        <td><p>Palette to use when building images.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile__ctor_System_String_DaggerfallConnect_FileUsage_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.%23ctor(System.String%2CDaggerfallConnect.FileUsage%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L163">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile__ctor_" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile__ctor_System_String_DaggerfallConnect_FileUsage_System_Boolean_" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor(System.String,DaggerfallConnect.FileUsage,System.Boolean)">TextureFile(String, FileUsage, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureFile(string filePath, FileUsage usage, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to TEXTURE.* file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile__ctor_System_String_DaggerfallConnect_FileUsage_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.%23ctor(System.String%2CDaggerfallConnect.FileUsage%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L188">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile__ctor_" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile__ctor_System_String_DaggerfallConnect_FileUsage_System_String_System_Boolean_" data-uid="DaggerfallConnect.Arena2.TextureFile.#ctor(System.String,DaggerfallConnect.FileUsage,System.String,System.Boolean)">TextureFile(String, FileUsage, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Load constructor that also loads a palette.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureFile(string filePath, FileUsage usage, string paletteFilePath, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to TEXTURE.* file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">paletteFilePath</span></td>
+        <td><p>Absolute path to Daggerfall palette file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_Description.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L201">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_Description_" data-uid="DaggerfallConnect.Arena2.TextureFile.Description*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_Description" data-uid="DaggerfallConnect.Arena2.TextureFile.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets description of texture file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_Description">BaseImageFile.Description</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_PaletteName.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.PaletteName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L225">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_PaletteName_" data-uid="DaggerfallConnect.Arena2.TextureFile.PaletteName*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_PaletteName" data-uid="DaggerfallConnect.Arena2.TextureFile.PaletteName">PaletteName</h4>
+  <div class="markdown level1 summary"><p>Gets correct palette name for this file (always ART_PAL.COL for texture files).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string PaletteName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_PaletteName">BaseImageFile.PaletteName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_RecordCount.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.RecordCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L233">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_RecordCount_" data-uid="DaggerfallConnect.Arena2.TextureFile.RecordCount*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_RecordCount" data-uid="DaggerfallConnect.Arena2.TextureFile.RecordCount">RecordCount</h4>
+  <div class="markdown level1 summary"><p>Number of image records in this file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int RecordCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_RecordCount">BaseImageFile.RecordCount</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_SolidType.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.SolidType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L241">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_SolidType_" data-uid="DaggerfallConnect.Arena2.TextureFile.SolidType*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_SolidType" data-uid="DaggerfallConnect.Arena2.TextureFile.SolidType">SolidType</h4>
+  <div class="markdown level1 summary"><p>Gets texture solid type for flat-colour textures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureFile.SolidTypes SolidType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Arena2.TextureFile.SolidTypes.html">TextureFile.SolidTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_UnsupportedFilenames.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.UnsupportedFilenames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L210">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_UnsupportedFilenames_" data-uid="DaggerfallConnect.Arena2.TextureFile.UnsupportedFilenames*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_UnsupportedFilenames" data-uid="DaggerfallConnect.Arena2.TextureFile.UnsupportedFilenames">UnsupportedFilenames</h4>
+  <div class="markdown level1 summary"><p>Gets unsupported filenames. The three texture filenames returned have no image data or are otherwise invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] UnsupportedFilenames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>Array of unsupported filenames.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_GetDFBitmap_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.GetDFBitmap(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L430">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_GetDFBitmap_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetDFBitmap*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_GetDFBitmap_System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetDFBitmap(System.Int32,System.Int32)">GetDFBitmap(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets bitmap data as indexed 8-bit byte array for specified record and frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DFBitmap GetDFBitmap(int record, int frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">frame</span></td>
+        <td><p>Index of frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBitmap.html">DFBitmap</a></td>
+        <td><p>DFBitmap object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetDFBitmap_System_Int32_System_Int32_">BaseImageFile.GetDFBitmap(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_GetFrameCount_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.GetFrameCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L327">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_GetFrameCount_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetFrameCount*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_GetFrameCount_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetFrameCount(System.Int32)">GetFrameCount(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets number of frames in specified record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetFrameCount(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of frames.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetFrameCount_System_Int32_">BaseImageFile.GetFrameCount(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_GetHeight_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.GetHeight(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L411">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_GetHeight_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetHeight*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_GetHeight_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetHeight(System.Int32)">GetHeight(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the height of this image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetHeight(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Height of image in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_GetOffset_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.GetOffset(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L379">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_GetOffset_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetOffset*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_GetOffset_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetOffset(System.Int32)">GetOffset(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the offset value of record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFPosition GetOffset(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><p>Offset values for X and Y in DFSize object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_GetScale_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.GetScale(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L365">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_GetScale_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetScale*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_GetScale_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetScale(System.Int32)">GetScale(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the width and height scale to apply to image in scene. These values are divided by 256
+to obtain a value between -1.0 - 0.0, and presumably 0.0 - 1.0. This is the scale of pixels
+for enlarging or shrinking the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DFSize GetScale(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><p>Scale values for X and Y in DFSize object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_GetSize_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.GetSize(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L345">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_GetSize_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetSize*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_GetSize_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetSize(System.Int32)">GetSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets width and height of specified record. All frames of this record are the same dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DFSize GetSize(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFSize.html">DFSize</a></td>
+        <td><p>DFSize object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_GetSize_System_Int32_">BaseImageFile.GetSize(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_GetWidth_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.GetWidth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L393">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_GetWidth_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetWidth*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_GetWidth_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.GetWidth(System.Int32)">GetWidth(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets width of this image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetWidth(int record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>Index of record.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Width of image in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_IndexToFileName_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.IndexToFileName(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L454">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_IndexToFileName_" data-uid="DaggerfallConnect.Arena2.TextureFile.IndexToFileName*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_IndexToFileName_System_Int32_" data-uid="DaggerfallConnect.Arena2.TextureFile.IndexToFileName(System.Int32)">IndexToFileName(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a TEXTURE.nnn filename based on index.
+This is needed when loading textures for 3D objects that reference textures by index rather than filename.
+If the index is not valid, the returned filename will also be invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string IndexToFileName(int archiveIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">archiveIndex</span></td>
+        <td><p>Index of texture archive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Texture filename in the format TEXTURE.nnn.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_IsFilenameSupported_System_String_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.IsFilenameSupported(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L255">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_IsFilenameSupported_" data-uid="DaggerfallConnect.Arena2.TextureFile.IsFilenameSupported*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_IsFilenameSupported_System_String_" data-uid="DaggerfallConnect.Arena2.TextureFile.IsFilenameSupported(System.String)">IsFilenameSupported(String)</h4>
+  <div class="markdown level1 summary"><p>Tests if a filename is supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFilenameSupported(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Name of TEXTURE.* file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if supported, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile.Load(System.String%2CDaggerfallConnect.FileUsage%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L275">View Source</a>
+  </span>
+  <a id="DaggerfallConnect_Arena2_TextureFile_Load_" data-uid="DaggerfallConnect.Arena2.TextureFile.Load*"></a>
+  <h4 id="DaggerfallConnect_Arena2_TextureFile_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_" data-uid="DaggerfallConnect.Arena2.TextureFile.Load(System.String,DaggerfallConnect.FileUsage,System.Boolean)">Load(String, FileUsage, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a texture file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Load(string filePath, FileUsage usage, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>Absolute path to TEXTURE.* file</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.FileUsage.html">FileUsage</a></td>
+        <td><span class="parametername">usage</span></td>
+        <td><p>Specify if file will be accessed from disk, or loaded into RAM.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td><p>File will be read-only if true, read-write if false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallConnect.Arena2.BaseImageFile.html#DaggerfallConnect_Arena2_BaseImageFile_Load_System_String_DaggerfallConnect_FileUsage_System_Boolean_">BaseImageFile.Load(String, FileUsage, Boolean)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallConnect_Arena2_TextureFile.md&amp;value=---%0Auid%3A%20DaggerfallConnect.Arena2.TextureFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/TextureFile.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

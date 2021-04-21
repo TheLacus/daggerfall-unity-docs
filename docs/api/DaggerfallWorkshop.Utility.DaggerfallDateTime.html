@@ -1,0 +1,2103 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DaggerfallDateTime
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DaggerfallDateTime
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime">
+  
+  
+  <h1 id="DaggerfallWorkshop_Utility_DaggerfallDateTime" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime" class="text-break">Class DaggerfallDateTime
+  </h1>
+  <div class="markdown level0 summary"><p>Time and date implementation for Daggerfall's specific calendar system.
+Daggerfall has fixed 30-day months. See below link for more information.
+<a href="http://www.uesp.net/wiki/Lore:Calendar#Daggerfall_Calendar">http://www.uesp.net/wiki/Lore:Calendar#Daggerfall_Calendar</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DaggerfallDateTime</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Utility.html">DaggerfallWorkshop.Utility</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class DaggerfallDateTime</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L305">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.#ctor">DaggerfallDateTime()</h4>
+  <div class="markdown level1 summary"><p>Default constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor_DaggerfallWorkshop_Utility_DaggerfallDateTime_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.%23ctor(DaggerfallWorkshop.Utility.DaggerfallDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L313">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor_DaggerfallWorkshop_Utility_DaggerfallDateTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.#ctor(DaggerfallWorkshop.Utility.DaggerfallDateTime)">DaggerfallDateTime(DaggerfallDateTime)</h4>
+  <div class="markdown level1 summary"><p>Copy constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime(DaggerfallDateTime source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.html">DaggerfallDateTime</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Source time to copy from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L326">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Single_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">DaggerfallDateTime(Int32, Int32, Int32, Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Construct from time components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime(int year, int month, int day, int hour, int minute, float second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">year</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">month</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">day</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hour</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">second</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DawnHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DawnHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L47">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DawnHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DawnHour">DawnHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DawnHour = 6</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Day.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Day%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L59">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Day" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Day">Day</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Day</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DaysPerMonth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DaysPerMonth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L37">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DaysPerMonth" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DaysPerMonth">DaysPerMonth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DaysPerMonth = 30</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DaysPerWeek.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DaysPerWeek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L36">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DaysPerWeek" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DaysPerWeek">DaysPerWeek</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DaysPerWeek = 7</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DaysPerYear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DaysPerYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L39">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DaysPerYear" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DaysPerYear">DaysPerYear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DaysPerYear = 360</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DuskHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DuskHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L48">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DuskHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DuskHour">DuskHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DuskHour = 18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Hour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Hour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L60">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Hour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Hour">Hour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Hour</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_HoursPerDay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.HoursPerDay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L35">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_HoursPerDay" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.HoursPerDay">HoursPerDay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int HoursPerDay = 24</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_LightsOffHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.LightsOffHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L49">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_LightsOffHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.LightsOffHour">LightsOffHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LightsOffHour = 8</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_LightsOnHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.LightsOnHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L50">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_LightsOnHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.LightsOnHour">LightsOnHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int LightsOnHour = 17</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MidAfternoonHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MidAfternoonHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L54">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MidAfternoonHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MidAfternoonHour">MidAfternoonHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MidAfternoonHour = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MiddayHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MiddayHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L51">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MiddayHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MiddayHour">MiddayHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MiddayHour = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MidMorningHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MidMorningHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L53">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MidMorningHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MidMorningHour">MidMorningHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MidMorningHour = 10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MidnightHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MidnightHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L52">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MidnightHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MidnightHour">MidnightHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MidnightHour = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Minute.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Minute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L61">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Minute" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Minute">Minute</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Minute</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MinutesPerDay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MinutesPerDay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L34">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MinutesPerDay" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MinutesPerDay">MinutesPerDay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MinutesPerDay = 1440</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MinutesPerHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MinutesPerHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L33">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MinutesPerHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MinutesPerHour">MinutesPerHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MinutesPerHour = 60</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Month.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Month%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L58">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Month" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Month">Month</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Month</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthsPerYear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthsPerYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L38">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthsPerYear" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthsPerYear">MonthsPerYear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MonthsPerYear = 12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Second.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Second%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L62">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Second" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Second">Second</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Second</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerDay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerDay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L41">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerDay" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerDay">SecondsPerDay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SecondsPerDay = 86400</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerHour.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L40">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerHour" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerHour">SecondsPerHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SecondsPerHour = 3600</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerMinute.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerMinute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L32">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerMinute" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerMinute">SecondsPerMinute</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SecondsPerMinute = 60</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerMonth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerMonth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L43">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerMonth" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerMonth">SecondsPerMonth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SecondsPerMonth = 2592000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerWeek.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerWeek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L42">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerWeek" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerWeek">SecondsPerWeek</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SecondsPerWeek = 604800</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerYear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L44">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecondsPerYear" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecondsPerYear">SecondsPerYear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int SecondsPerYear = 31104000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Year.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Year%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L57">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Year" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Year">Year</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Year</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_BirthSignName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.BirthSignName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L103">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_BirthSignName_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.BirthSignName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_BirthSignName" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.BirthSignName">BirthSignName</h4>
+  <div class="markdown level1 summary"><p>Gets birth sign name for current month.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BirthSignName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_BirthSignValue.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.BirthSignValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L111">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_BirthSignValue_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.BirthSignValue*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_BirthSignValue" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.BirthSignValue">BirthSignValue</h4>
+  <div class="markdown level1 summary"><p>Gets current birth sign enum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime.BirthSigns BirthSignValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.BirthSigns.html">DaggerfallDateTime.BirthSigns</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DayName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L71">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayName_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayName" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayName">DayName</h4>
+  <div class="markdown level1 summary"><p>Gets current day as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DayName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DayOfMonth.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DayOfMonth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L186">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayOfMonth_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayOfMonth*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayOfMonth" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayOfMonth">DayOfMonth</h4>
+  <div class="markdown level1 summary"><p>Gets day of month 1-30</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DayOfMonth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DayOfYear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DayOfYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L194">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayOfYear_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayOfYear*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayOfYear" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayOfYear">DayOfYear</h4>
+  <div class="markdown level1 summary"><p>Gets day of year 1-360.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DayOfYear { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DayValue.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DayValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L79">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayValue_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayValue*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DayValue" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DayValue">DayValue</h4>
+  <div class="markdown level1 summary"><p>Gets current day enum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime.Days DayValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.Days.html">DaggerfallDateTime.Days</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_IsCityLightsOn.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.IsCityLightsOn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L154">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_IsCityLightsOn_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.IsCityLightsOn*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_IsCityLightsOn" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.IsCityLightsOn">IsCityLightsOn</h4>
+  <div class="markdown level1 summary"><p>True from slightly before dusk until slightly after dawn.
+Daggerfall NPCs never sleep.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCityLightsOn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_IsDay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.IsDay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L162">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_IsDay_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.IsDay*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_IsDay" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.IsDay">IsDay</h4>
+  <div class="markdown level1 summary"><p>True during the day.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDay { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_IsNight.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.IsNight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L170">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_IsNight_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.IsNight*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_IsNight" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.IsNight">IsNight</h4>
+  <div class="markdown level1 summary"><p>True when full night has fallen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MassarLunarPhase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MassarLunarPhase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L136">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MassarLunarPhase_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MassarLunarPhase*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MassarLunarPhase" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MassarLunarPhase">MassarLunarPhase</h4>
+  <div class="markdown level1 summary"><p>Gets current lunar phase for Massar.
+Uses same logic as Enhanced Sky mod so phases should be in sync.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LunarPhases MassarLunarPhase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.LunarPhases.html">LunarPhases</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MinuteOfDay.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MinuteOfDay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L178">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MinuteOfDay_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MinuteOfDay*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MinuteOfDay" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MinuteOfDay">MinuteOfDay</h4>
+  <div class="markdown level1 summary"><p>Gets minute of day 0-1339</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinuteOfDay { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L87">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthName_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthName" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthName">MonthName</h4>
+  <div class="markdown level1 summary"><p>Gets current month as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MonthName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthOfYear.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthOfYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L202">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthOfYear_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthOfYear*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthOfYear" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthOfYear">MonthOfYear</h4>
+  <div class="markdown level1 summary"><p>Gets month of year 1-12.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MonthOfYear { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthValue.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L95">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthValue_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthValue*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MonthValue" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MonthValue">MonthValue</h4>
+  <div class="markdown level1 summary"><p>Gets current month enum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime.Months MonthValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.Months.html">DaggerfallDateTime.Months</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SeasonName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SeasonName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L119">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SeasonName_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SeasonName*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SeasonName" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SeasonName">SeasonName</h4>
+  <div class="markdown level1 summary"><p>Gets current season as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SeasonName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SeasonValue.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SeasonValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L127">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SeasonValue_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SeasonValue*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SeasonValue" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SeasonValue">SeasonValue</h4>
+  <div class="markdown level1 summary"><p>Gets current season enum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime.Seasons SeasonValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.Seasons.html">DaggerfallDateTime.Seasons</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SecundaLunarPhase.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SecundaLunarPhase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L145">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecundaLunarPhase_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecundaLunarPhase*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SecundaLunarPhase" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SecundaLunarPhase">SecundaLunarPhase</h4>
+  <div class="markdown level1 summary"><p>Gets current lunar phase for Secunda.
+Uses same logic as Enhanced Sky mod so phases should be in sync.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LunarPhases SecundaLunarPhase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.LunarPhases.html">LunarPhases</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Clone.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L540">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Clone_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Clone*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Clone" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Clone">Clone()</h4>
+  <div class="markdown level1 summary"><p>Clone time to a new instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallDateTime Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.html">DaggerfallDateTime</a></td>
+        <td><p>DaggerfallDateTime clone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DateString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DateString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L427">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DateString_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DateString*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DateString" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DateString">DateString()</h4>
+  <div class="markdown level1 summary"><p>Get date string in format of Day Name the xth of Month Name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DateString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_DateTimeString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.DateTimeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L418">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DateTimeString_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DateTimeString*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_DateTimeString" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.DateTimeString">DateTimeString()</h4>
+  <div class="markdown level1 summary"><p>Gets a date time string of &quot;HH:MM:SS on xth of MonthName, 3EYYY&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DateTimeString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_Equals_DaggerfallWorkshop_Utility_DaggerfallDateTime_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.Equals(DaggerfallWorkshop.Utility.DaggerfallDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L506">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Equals_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Equals*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_Equals_DaggerfallWorkshop_Utility_DaggerfallDateTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.Equals(DaggerfallWorkshop.Utility.DaggerfallDateTime)">Equals(DaggerfallDateTime)</h4>
+  <div class="markdown level1 summary"><p>True when date times are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DaggerfallDateTime other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.html">DaggerfallDateTime</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_FromClassicDaggerfallTime_System_UInt32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.FromClassicDaggerfallTime(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L490">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_FromClassicDaggerfallTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.FromClassicDaggerfallTime*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_FromClassicDaggerfallTime_System_UInt32_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.FromClassicDaggerfallTime(System.UInt32)">FromClassicDaggerfallTime(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Sets current time from classic Daggerfall minutes (e.g. found in vanilla save files)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FromClassicDaggerfallTime(uint time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_FromSeconds_System_UInt64_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.FromSeconds(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L453">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_FromSeconds_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.FromSeconds*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_FromSeconds_System_UInt64_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.FromSeconds(System.UInt64)">FromSeconds(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Sets the time using a time expressed in seconds since year zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FromSeconds(ulong time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_GreaterThan_DaggerfallWorkshop_Utility_DaggerfallDateTime_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.GreaterThan(DaggerfallWorkshop.Utility.DaggerfallDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L528">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_GreaterThan_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.GreaterThan*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_GreaterThan_DaggerfallWorkshop_Utility_DaggerfallDateTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.GreaterThan(DaggerfallWorkshop.Utility.DaggerfallDateTime)">GreaterThan(DaggerfallDateTime)</h4>
+  <div class="markdown level1 summary"><p>True when this date time is greater than another date time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GreaterThan(DaggerfallDateTime other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.html">DaggerfallDateTime</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_LessThan_DaggerfallWorkshop_Utility_DaggerfallDateTime_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.LessThan(DaggerfallWorkshop.Utility.DaggerfallDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L517">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_LessThan_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.LessThan*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_LessThan_DaggerfallWorkshop_Utility_DaggerfallDateTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.LessThan(DaggerfallWorkshop.Utility.DaggerfallDateTime)">LessThan(DaggerfallDateTime)</h4>
+  <div class="markdown level1 summary"><p>True when this date time is less than another date time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LessThan(DaggerfallDateTime other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.DaggerfallDateTime.html">DaggerfallDateTime</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_LongDateTimeString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.LongDateTimeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L409">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_LongDateTimeString_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.LongDateTimeString*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_LongDateTimeString" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.LongDateTimeString">LongDateTimeString()</h4>
+  <div class="markdown level1 summary"><p>Gets a long date time string of &quot;HH:MM:SS on Dayname, xth of MonthName, 3EYYY&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongDateTimeString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MidDateTimeString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MidDateTimeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L401">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MidDateTimeString_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MidDateTimeString*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MidDateTimeString" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MidDateTimeString">MidDateTimeString()</h4>
+  <div class="markdown level1 summary"><p>Gets a mid time string of HH:MM:SS DD MonthName 3EYYY</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MidDateTimeString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_MinTimeString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.MinTimeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L385">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MinTimeString_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MinTimeString*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_MinTimeString" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.MinTimeString">MinTimeString()</h4>
+  <div class="markdown level1 summary"><p>Gets minimum time string of HH:MM.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MinTimeString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_RaiseTime_System_Single_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.RaiseTime(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L344">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_RaiseTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.RaiseTime*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_RaiseTime_System_Single_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.RaiseTime(System.Single)">RaiseTime(Single)</h4>
+  <div class="markdown level1 summary"><p>Raise time by seconds. Partial seconds are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RaiseTime(float seconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">seconds</span></td>
+        <td><p>Amount in seconds to raise time values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_SetClassicGameStartTime.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.SetClassicGameStartTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L498">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SetClassicGameStartTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SetClassicGameStartTime*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_SetClassicGameStartTime" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.SetClassicGameStartTime">SetClassicGameStartTime()</h4>
+  <div class="markdown level1 summary"><p>Sets the classic game start time of 13:30 4th Morning Star 3E405.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClassicGameStartTime()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_ShortTimeString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.ShortTimeString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L393">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_ShortTimeString_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.ShortTimeString*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_ShortTimeString" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.ShortTimeString">ShortTimeString()</h4>
+  <div class="markdown level1 summary"><p>Gets a short time string of HH:MM:SS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ShortTimeString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_ToClassicDaggerfallTime.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.ToClassicDaggerfallTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L482">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_ToClassicDaggerfallTime_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.ToClassicDaggerfallTime*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_ToClassicDaggerfallTime" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.ToClassicDaggerfallTime">ToClassicDaggerfallTime()</h4>
+  <div class="markdown level1 summary"><p>Gets current time from classic Daggerfall minutes (e.g. found in vanilla save files)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ToClassicDaggerfallTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime_ToSeconds.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime.ToSeconds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L437">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Utility_DaggerfallDateTime_ToSeconds_" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.ToSeconds*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_DaggerfallDateTime_ToSeconds" data-uid="DaggerfallWorkshop.Utility.DaggerfallDateTime.ToSeconds">ToSeconds()</h4>
+  <div class="markdown level1 summary"><p>Gets the current time in seconds since year zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong ToSeconds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_DaggerfallDateTime.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.DaggerfallDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/DaggerfallDateTime.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

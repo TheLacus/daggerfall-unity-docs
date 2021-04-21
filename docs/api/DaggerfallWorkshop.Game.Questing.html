@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace DaggerfallWorkshop.Game.Questing
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace DaggerfallWorkshop.Game.Questing
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Questing">
+  
+  <h1 id="DaggerfallWorkshop_Game_Questing" data-uid="DaggerfallWorkshop.Game.Questing" class="text-break">Namespace DaggerfallWorkshop.Game.Questing
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ActionTemplate.html">ActionTemplate</a></h4>
+      <section><p>Base class template for all quest actions and conditions used by tasks.
+Handles some of the boilerplate of IQuestAction.
+This class can be used to test and factory new action interfaces from itself.
+Actions belong to a task and perform a specific function when task is active and conditions are met.
+An action will persist until task terminates.
+Think of actions as objects with a lifetime rather than a simple unit of one-shot execution.
+For example, the &quot;vengeance&quot; sound played in nighttime Daggerfall is an action that persists until Lysandus is put to rest.
+Currently still unclear on when actions get reset (e.g. when does &quot;play sound 10 times&quot; counter get reset?).</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.AddAsQuestor.html">AddAsQuestor</a></h4>
+      <section><p>Incomplete. Just stubbing out action for now so quest will compile.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.AddDialog.html">AddDialog</a></h4>
+      <section><p>add dialog command used in quests to make talk options available.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastEffectDo.html">CastEffectDo</a></h4>
+      <section><p>Executes target task when player readies a spell containing a single specific effect.
+Matches effect by key, so should support custom effects from mods.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastSpellDo.html">CastSpellDo</a></h4>
+      <section><p>Executes target task when player readies a spell containing specific effects.
+Classic only accepts standard versions of spell, not custom spells created by player.
+Daggerfall Unity makes no distinction between standard or custom spells and will instead match by effects.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastSpellOnFoe.html">CastSpellOnFoe</a></h4>
+      <section><p>Queues a spell to be cast on a Foe resource.
+Can queue multiple spells at once or at different stages of quest.
+If the Foe has not been spawned: All spells currently in queue will be cast on Foe the moment they spawn.
+If the Foe has been spawned: The next spell(s) added to queue will be cast on spawned Foes on next quest tick.
+This allows quest author to cast spells on Foe both before and after spawn or at different stages of quest (e.g. after foe injured).
+Notes:
+-As spells have durations recommend casting spells on &quot;place foe&quot; dungeon foes after being injured or spell will likely expire by the time player locates foe.
+-For &quot;create foe&quot; foes spell can be queued at any time as spell is cast when foe is directly spawned near player.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ChangeReputeWith.html">ChangeReputeWith</a></h4>
+      <section><p>Changes reputation with an NPC by specified amount.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedFoe.html">ClickedFoe</a></h4>
+      <section><p>Handles player clicking on Foe.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedItem.html">ClickedItem</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedNpc.html">ClickedNpc</a></h4>
+      <section><p>Handles player clicking on NPC.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Clock.html">Clock</a></h4>
+      <section><p>A clock is an alarm that that executes a task with the same symbol name.
+Clock must be started and stopped by quest actions.
+Clock runs down in game-time (default is 12x real-time).
+This also means timer is paused when game is paused.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CreateFoe.html">CreateFoe</a></h4>
+      <section><p>Spawn a Foe resource into the world.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DailyFrom.html">DailyFrom</a></h4>
+      <section><p>Raise or lower task state based on time of day.
+Time must be in 24-hour time 00:00 to 23:59.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DestroyNpc.html">DestroyNpc</a></h4>
+      <section><p>NPC will be be soft destroyed (permanently removed from world but othwerwise available for macro resolution).
+This is different to classic that will return BLANK once NPC is destroyed (probably beause resource is hard deleted).
+If there are any emulation issue with soft destruction then will change to hard destruction instead.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DialogLink.html">DialogLink</a></h4>
+      <section><p>dialog link command used in quests.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DropAsQuestor.html">DropAsQuestor</a></h4>
+      <section><p>Incomplete. Just stubbing out action for now so quest will compile.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Enemies.html">Enemies</a></h4>
+      <section><p>Converts a quest item into a permanent item.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Foe.html">Foe</a></h4>
+      <section><p>A quest Foe defines an enemy for player to fight as part of a quest.
+Foes are a 1-to-many resource (1 Foe resource to many entities).
+For example, a quest might send waves of giants at the player.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.HaveItem.html">HaveItem</a></h4>
+      <section><p>Starts a task when player has a particular item resource in their inventory.
+This task continues to run and will start task when item present</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Item.html">Item</a></h4>
+      <section><p>A quest item is something used or granted during quest execution.
+Can contain tags, for example to show a message when used.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ItemUsedDo.html">ItemUsedDo</a></h4>
+      <section><p>Condition that fires when player equips an Item or clicks &quot;Use&quot; on item in inventory window.
+Seen in Sx006 when player equips the robe or in Sx017 when player uses painting.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.LegalRepute.html">LegalRepute</a></h4>
+      <section><p>Legal repute modifies player legal reputation in current region.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.LevelCompleted.html">LevelCompleted</a></h4>
+      <section><p>Triggers when player has reached specified level or higher.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.MakePermanent.html">MakePermanent</a></h4>
+      <section><p>Converts a quest item into a permanent item.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.html">Message</a></h4>
+      <section><p>A message stores text for popups, journal, letters, rumours, etc.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.MuteNpc.html">MuteNpc</a></h4>
+      <section><p>NPC will no longer respond to mouse clicks once muted.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Parser.html">Parser</a></h4>
+      <section><p>Reads a quest source file and generates new quest object.
+Final step of parsing may be handed off to components as text at construction time.
+This allows parser to handle high-level structure while components take care of their own specific needs.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.html">Person</a></h4>
+      <section><p>Defines an NPC involved in a quest.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Place.html">Place</a></h4>
+      <section><p>A site involved in a quest.
+Can be a random local/remote location or a fixed permanent location.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.html">Quest</a></h4>
+      <section><p>Contains live state of quests in play.
+Quests are instantiated from text source and executed inside quest machine.
+Each quest is assigned a unique id (UID) as its possible for same question to be instantiated multiple times,
+such as a basic fetch quest to two different dungeons. The name of quest cannot not be used for unique identification.
+Child resources generally will not care about quest UID, but this is used by quest machine.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestListsManager.html">QuestListsManager</a></h4>
+      <section><p>Manager class for Quest Lists and Quest scripts</p>
+<p>Quest lists are tables of quest names and metadata.
+They are discovered and loaded at startup time. (although loaded at runtime in editor)
+The files must be named: QuestList-{name}.txt</p>
+<p>Quest scripts sit alongside list and must be uniquely named. They are loaded at runtime.</p>
+<p>Get quests by calling one of these methods:
+GetQuest()
+GetGuildQuest()
+GetSocialQuest()</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.html">QuestMachine</a></h4>
+      <section><p>Hosts quests and manages their execution during play.
+Quests are instantiated from a source text template.
+It's possible to have the same quest multiple times (e.g. same fetch quest from two different mage guildhalls).
+Running quests can perform actions in the world (e.g. spawn enemies and play sounds).
+Or they can provide data to external systems like the NPC dialog interface (e.g. 'tell me about' and 'rumors').
+Quest support is considered to be in very early prototype stages and may change at any time.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestMachineData_v1.html">QuestMachine.QuestMachineData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.html">QuestResource</a></h4>
+      <section><p>All quest resources hosted by a quest must inherit from this base class.
+Symbol will be set by inheriting class after parsing source text.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.html">QuestResourceBehaviour</a></h4>
+      <section><p>Helper behaviour to pass information between GameObjects and Quest system.
+Used to trigger resource events in quest systems like ClickedNpc, InjuredFoe, KilledFoe, etc.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ReputeExceedsDo.html">ReputeExceedsDo</a></h4>
+      <section><p>Executes a task when reputation with NPC exceeds value.
+This is not a trigger condition and will not trigger parent task.
+Owning task must be made active before this action starts checking condition each tick.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.RevealLocation.html">RevealLocation</a></h4>
+      <section><p>Reveals location on travelmap</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.RumorMill.html">RumorMill</a></h4>
+      <section><p>add dialog command used in quests to make talk options available.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.StartQuest.html">StartQuest</a></h4>
+      <section><p>Starts another quest. Classic 'start quest' can only start Sx000 value quests.
+Likely to create a Daggerfall Unity specific start quest variant that can start any named quest.
+In canonical quests always lists same quest index twice, e.g. &quot;start quest 1 1&quot;.
+This implementation only uses first index, purpose of second index currently unknown.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Symbol.html">Symbol</a></h4>
+      <section><p>Manages a text symbol used by quest system.
+Symbols are used by resources, tasks, and text replacement.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Task.html">Task</a></h4>
+      <section><p>Tasks are executed by other tasks, clock timeouts, etc. Somewhat like a subroutine.
+Tasks can contain conditions at start that if not met appear to prevent further execution of task.
+Task name can also be used as a symbol to query if task has been triggered or not.
+Provided conditions are met, commands under a task usually run once then end.
+Repeating tasks execute (i.e. each command stays alive) until target task/variable completed.
+Variables are a special task with no conditions or actions, just set/unset.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.TeleportPc.html">TeleportPc</a></h4>
+      <section><p>Partial implementation.
+Teleport player to a dungeon for dungeon traps, or as part of main quest.
+Does not exactly emulate classic for &quot;transfer pc inside&quot; variant. This is only used in Sx016.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenAttributeLevel.html">WhenAttributeLevel</a></h4>
+      <section><p>Triggers when character reaches minimum value for specified attribute.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenNpcIsAvailable.html">WhenNpcIsAvailable</a></h4>
+      <section><p>Triggers when player clicks on an individual NPC that is not currently assigned to another quest.
+This is only used in a small number of canonical quests which refer to special individuals.
+Examples are King Gothryd, Queen Aubk-i, Prince Lhotun, etc.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenReputeWith.html">WhenReputeWith</a></h4>
+      <section><p>Triggers when player reputation with a special named NPC equals or exceeds a minimum value.
+This is only used in a small number of canonical quests which refer to special individuals.
+Examples are King Gothryd, Queen Aubk-i, Prince Lhotun, etc.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenSkillLevel.html">WhenSkillLevel</a></h4>
+      <section><p>Triggers when player has reached specified skill level or higher.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenTask.html">WhenTask</a></h4>
+      <section><p>Handles a when|when not task performed condition chain.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WorldUpdate.html">WorldUpdate</a></h4>
+      <section><p>Updates the world data system to use a specific variant for a given
+place (location, block, building) either for all instances or for a
+particular location.
+Specify a single dash for variant to remove any existing variant.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ActionTemplate.ActionSaveData_v1.html">ActionTemplate.ActionSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.AddAsQuestor.SaveData_v1.html">AddAsQuestor.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.AddDialog.SaveData_v1.html">AddDialog.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastEffectDo.SaveData_v1.html">CastEffectDo.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastSpellDo.SaveData_v1.html">CastSpellDo.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CastSpellOnFoe.SaveData_v1.html">CastSpellOnFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ChangeReputeWith.SaveData_v1.html">ChangeReputeWith.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedFoe.SaveData_v1.html">ClickedFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedItem.SaveData_v1.html">ClickedItem.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedNpc.SaveData_v1.html">ClickedNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Clock.SaveData_v1.html">Clock.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.CreateFoe.SaveData_v1.html">CreateFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DailyFrom.SaveData_v1.html">DailyFrom.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DestroyNpc.SaveData_v1.html">DestroyNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DialogLink.SaveData_v1.html">DialogLink.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.DropAsQuestor.SaveData_v1.html">DropAsQuestor.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Enemies.SaveData_v1.html">Enemies.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Foe.SaveData_v1.html">Foe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.HaveItem.SaveData_v1.html">HaveItem.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Item.SaveData_v1.html">Item.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ItemUsedDo.SaveData_v1.html">ItemUsedDo.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.LegalRepute.SaveData_v1.html">LegalRepute.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.LevelCompleted.SaveData_v1.html">LevelCompleted.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.MakePermanent.SaveData_v1.html">MakePermanent.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.MessageSaveData_v1.html">Message.MessageSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Message.MessageVariant.html">Message.MessageVariant</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.MuteNpc.SaveData_v1.html">MuteNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Person.SaveData_v1.html">Person.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Place.SaveData_v1.html">Place.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.LogEntry.html">Quest.LogEntry</a></h4>
+      <section><p>Stores active log messages as ID only.
+This allows text to be linked/unlinked into log without duplication of text.
+Actual quest UI can decide how to present these messages to user.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.QuestorData.html">Quest.QuestorData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.QuestSaveData_v1.html">Quest.QuestSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Quest.TaskState.html">Quest.TaskState</a></h4>
+      <section><p>Basic information about a single task</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestData.html">QuestData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.StoredException.html">QuestMachine.StoredException</a></h4>
+      <section><p>Stores information about an exception that would result in quest termination.
+This is stored permanently with save data to help with troubleshooting.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.ResourceSaveData_v1.html">QuestResource.ResourceSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.QuestResourceSaveData_v1.html">QuestResourceBehaviour.QuestResourceSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ReputeExceedsDo.SaveData_v1.html">ReputeExceedsDo.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.RevealLocation.SaveData_v1.html">RevealLocation.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.RumorMill.SaveData_v1.html">RumorMill.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.StartQuest.SaveData_v1.html">StartQuest.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Task.TaskSaveData_v1.html">Task.TaskSaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.TeleportPc.SaveData_v1.html">TeleportPc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenAttributeLevel.SaveData_v1.html">WhenAttributeLevel.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenNpcIsAvailable.SaveData_v1.html">WhenNpcIsAvailable.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenReputeWith.SaveData_v1.html">WhenReputeWith.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenSkillLevel.SaveData_v1.html">WhenSkillLevel.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenTask.Evaluation.html">WhenTask.Evaluation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenTask.SaveData_v1.html">WhenTask.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WorldUpdate.SaveData_v1.html">WorldUpdate.SaveData_v1</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.IQuestAction.html">IQuestAction</a></h4>
+      <section><p>Interface to a quest action.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.MembershipStatus.html">MembershipStatus</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Place.Scopes.html">Place.Scopes</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.QuestMessages.html">QuestMachine.QuestMessages</a></h4>
+      <section><p>Fixed quest message constants.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Task.TaskType.html">Task.TaskType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.WhenTask.Operator.html">WhenTask.Operator</a></h4>
+      <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestEndedEventHandler.html">QuestMachine.OnQuestEndedEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestErrorTerminationEventHandler.html">QuestMachine.OnQuestErrorTerminationEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnQuestStartedEventHandler.html">QuestMachine.OnQuestStartedEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnRegisterCustomActionsEventHandler.html">QuestMachine.OnRegisterCustomActionsEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestMachine.OnTickEventHandler.html">QuestMachine.OnTickEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResource.OnDisposeEventHandler.html">QuestResource.OnDisposeEventHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.QuestResourceBehaviour.OnGameObjectDestroyHandler.html">QuestResourceBehaviour.OnGameObjectDestroyHandler</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CivilianEntity
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CivilianEntity
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Entity.CivilianEntity">
+  
+  
+  <h1 id="DaggerfallWorkshop_Game_Entity_CivilianEntity" data-uid="DaggerfallWorkshop.Game.Entity.CivilianEntity" class="text-break">Class CivilianEntity
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html">DaggerfallEntity</a></div>
+    <div class="level2"><span class="xref">CivilianEntity</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_NumberBodyParts">DaggerfallEntity.NumberBodyParts</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_FatigueMultiplier">DaggerfallEntity.FatigueMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_entityBehaviour">DaggerfallEntity.entityBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_gender">DaggerfallEntity.gender</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_career">DaggerfallEntity.career</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_name">DaggerfallEntity.name</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_level">DaggerfallEntity.level</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_stats">DaggerfallEntity.stats</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_skills">DaggerfallEntity.skills</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_resistances">DaggerfallEntity.resistances</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_items">DaggerfallEntity.items</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_equipTable">DaggerfallEntity.equipTable</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_worldContext">DaggerfallEntity.worldContext</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_maxHealth">DaggerfallEntity.maxHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentHealth">DaggerfallEntity.currentHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentFatigue">DaggerfallEntity.currentFatigue</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentMagicka">DaggerfallEntity.currentMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_maxMagicka">DaggerfallEntity.maxMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_currentBreath">DaggerfallEntity.currentBreath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_minMetalToHit">DaggerfallEntity.minMetalToHit</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_armorValues">DaggerfallEntity.armorValues</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_team">DaggerfallEntity.team</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_spellbook">DaggerfallEntity.spellbook</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsImmuneToParalysis">DaggerfallEntity.IsImmuneToParalysis</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsImmuneToDisease">DaggerfallEntity.IsImmuneToDisease</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsSilenced">DaggerfallEntity.IsSilenced</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsWaterWalking">DaggerfallEntity.IsWaterWalking</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsWaterBreathing">DaggerfallEntity.IsWaterBreathing</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MagicalConcealmentFlags">DaggerfallEntity.MagicalConcealmentFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsEnhancedClimbing">DaggerfallEntity.IsEnhancedClimbing</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsEnhancedJumping">DaggerfallEntity.IsEnhancedJumping</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsSlowFalling">DaggerfallEntity.IsSlowFalling</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsAbsorbingSpells">DaggerfallEntity.IsAbsorbingSpells</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxMagickaModifier">DaggerfallEntity.MaxMagickaModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxHealthLimiter">DaggerfallEntity.MaxHealthLimiter</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreasedWeightAllowanceMultiplier">DaggerfallEntity.IncreasedWeightAllowanceMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreasedArmorValueModifier">DaggerfallEntity.IncreasedArmorValueModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreasedArmorValueModifier">DaggerfallEntity.DecreasedArmorValueModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ChanceToHitModifier">DaggerfallEntity.ChanceToHitModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ImprovedAcuteHearing">DaggerfallEntity.ImprovedAcuteHearing</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ImprovedAthleticism">DaggerfallEntity.ImprovedAthleticism</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ImprovedAdrenalineRush">DaggerfallEntity.ImprovedAdrenalineRush</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_EntityBehaviour">DaggerfallEntity.EntityBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Quiesce">DaggerfallEntity.Quiesce</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsParalyzed">DaggerfallEntity.IsParalyzed</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingFire">DaggerfallEntity.IsResistingFire</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingFrost">DaggerfallEntity.IsResistingFrost</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingDiseaseOrPoison">DaggerfallEntity.IsResistingDiseaseOrPoison</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingShock">DaggerfallEntity.IsResistingShock</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsResistingMagic">DaggerfallEntity.IsResistingMagic</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsBlending">DaggerfallEntity.IsBlending</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsAShade">DaggerfallEntity.IsAShade</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsInvisible">DaggerfallEntity.IsInvisible</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsMagicallyConcealed">DaggerfallEntity.IsMagicallyConcealed</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsMagicallyConcealedNormalPower">DaggerfallEntity.IsMagicallyConcealedNormalPower</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IsMagicallyConcealedTruePower">DaggerfallEntity.IsMagicallyConcealedTruePower</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_WorldContext">DaggerfallEntity.WorldContext</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Gender">DaggerfallEntity.Gender</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Career">DaggerfallEntity.Career</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Name">DaggerfallEntity.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Level">DaggerfallEntity.Level</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Stats">DaggerfallEntity.Stats</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Skills">DaggerfallEntity.Skills</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Resistances">DaggerfallEntity.Resistances</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Items">DaggerfallEntity.Items</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ItemEquipTable">DaggerfallEntity.ItemEquipTable</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxHealth">DaggerfallEntity.MaxHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentHealth">DaggerfallEntity.CurrentHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentHealthPercent">DaggerfallEntity.CurrentHealthPercent</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RawMaxHealth">DaggerfallEntity.RawMaxHealth</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxFatigue">DaggerfallEntity.MaxFatigue</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentFatigue">DaggerfallEntity.CurrentFatigue</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxMagicka">DaggerfallEntity.MaxMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RawMaxMagicka">DaggerfallEntity.RawMaxMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentMagicka">DaggerfallEntity.CurrentMagicka</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxBreath">DaggerfallEntity.MaxBreath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_CurrentBreath">DaggerfallEntity.CurrentBreath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MinMetalToHit">DaggerfallEntity.MinMetalToHit</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ArmorValues">DaggerfallEntity.ArmorValues</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DamageModifier">DaggerfallEntity.DamageModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MaxEncumbrance">DaggerfallEntity.MaxEncumbrance</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_MagicResist">DaggerfallEntity.MagicResist</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ToHitModifier">DaggerfallEntity.ToHitModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HitPointsModifier">DaggerfallEntity.HitPointsModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HealingRateModifier">DaggerfallEntity.HealingRateModifier</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Team">DaggerfallEntity.Team</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreaseHealth_System_Int32_">DaggerfallEntity.IncreaseHealth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreaseHealth_System_Int32_">DaggerfallEntity.DecreaseHealth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetHealth_System_Int32_System_Boolean_">DaggerfallEntity.SetHealth(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreaseFatigue_System_Int32_System_Boolean_">DaggerfallEntity.IncreaseFatigue(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreaseFatigue_System_Int32_System_Boolean_">DaggerfallEntity.DecreaseFatigue(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetFatigue_System_Int32_System_Boolean_">DaggerfallEntity.SetFatigue(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_IncreaseMagicka_System_Int32_">DaggerfallEntity.IncreaseMagicka(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DecreaseMagicka_System_Int32_">DaggerfallEntity.DecreaseMagicka(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetMagicka_System_Int32_System_Boolean_">DaggerfallEntity.SetMagicka(Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ChangeMaxMagickaModifier_System_Int32_">DaggerfallEntity.ChangeMaxMagickaModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetIncreasedWeightAllowanceMultiplier_System_Single_">DaggerfallEntity.SetIncreasedWeightAllowanceMultiplier(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetIncreasedArmorValueModifier_System_Int32_">DaggerfallEntity.SetIncreasedArmorValueModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetDecreasedArmorValueModifier_System_Int32_">DaggerfallEntity.SetDecreasedArmorValueModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ChangeChanceToHitModifier_System_Int32_">DaggerfallEntity.ChangeChanceToHitModifier(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetMaxHealthLimiter_System_Int32_">DaggerfallEntity.SetMaxHealthLimiter(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetBreath_System_Int32_">DaggerfallEntity.SetBreath(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_FillVitalSigns">DaggerfallEntity.FillVitalSigns()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetPrimarySkills">DaggerfallEntity.GetPrimarySkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMajorSkills">DaggerfallEntity.GetMajorSkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMinorSkills">DaggerfallEntity.GetMinorSkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMiscSkills">DaggerfallEntity.GetMiscSkills()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_TallySkill_DaggerfallConnect_DFCareer_Skills_System_Int16_">DaggerfallEntity.TallySkill(DFCareer.Skills, Int16)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_UpdateEquippedArmorValues_DaggerfallWorkshop_Game_Items_DaggerfallUnityItem_System_Boolean_">DaggerfallEntity.UpdateEquippedArmorValues(DaggerfallUnityItem, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HasConcealment_DaggerfallWorkshop_Game_Entity_MagicalConcealmentFlags_">DaggerfallEntity.HasConcealment(MagicalConcealmentFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetResistanceFlag_DaggerfallConnect_DFCareer_Elements_System_Boolean_">DaggerfallEntity.SetResistanceFlag(DFCareer.Elements, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_HasResistanceFlag_DaggerfallConnect_DFCareer_Elements_">DaggerfallEntity.HasResistanceFlag(DFCareer.Elements)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetResistanceChance_DaggerfallConnect_DFCareer_Elements_">DaggerfallEntity.GetResistanceChance(DFCareer.Elements)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RaiseResistanceChance_DaggerfallConnect_DFCareer_Elements_System_Int32_">DaggerfallEntity.RaiseResistanceChance(DFCareer.Elements, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SpellbookCount">DaggerfallEntity.SpellbookCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetSpell_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings__">DaggerfallEntity.GetSpell(Int32, EffectBundleSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetSpells">DaggerfallEntity.GetSpells()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SwapSpells_System_Int32_System_Int32_">DaggerfallEntity.SwapSpells(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SortSpellsAlpha">DaggerfallEntity.SortSpellsAlpha()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SortSpellsPointCost">DaggerfallEntity.SortSpellsPointCost()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetSpell_System_Int32_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings_">DaggerfallEntity.SetSpell(Int32, EffectBundleSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_AddSpell_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings_">DaggerfallEntity.AddSpell(EffectBundleSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DeleteSpell_System_Int32_">DaggerfallEntity.DeleteSpell(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DeleteTaggedSpells_System_String_">DaggerfallEntity.DeleteTaggedSpells(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SerializeSpellbook">DaggerfallEntity.SerializeSpellbook()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_DeserializeSpellbook_DaggerfallWorkshop_Game_MagicAndEffects_EffectBundleSettings___">DaggerfallEntity.DeserializeSpellbook(EffectBundleSettings[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_FixedUpdate">DaggerfallEntity.FixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_Update_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">DaggerfallEntity.Update(DaggerfallEntityBehaviour)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ClearConstantEffects">DaggerfallEntity.ClearConstantEffects()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_ResetEntityState">DaggerfallEntity.ResetEntityState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_OnDeath">DaggerfallEntity.OnDeath</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_RaiseOnDeathEvent">DaggerfallEntity.RaiseOnDeathEvent()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_OnExhausted">DaggerfallEntity.OnExhausted</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_OnMagickaDepleted">DaggerfallEntity.OnMagickaDepleted</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetClassCareerTemplate_DaggerfallWorkshop_Game_Entity_ClassCareers_">DaggerfallEntity.GetClassCareerTemplate(ClassCareers)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetMonsterCareerTemplate_DaggerfallWorkshop_Game_Entity_MonsterCareers_">DaggerfallEntity.GetMonsterCareerTemplate(MonsterCareers)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetRaceGenderAttackSound_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Boolean_">DaggerfallEntity.GetRaceGenderAttackSound(Races, Genders, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_GetRaceGenderPainSound_DaggerfallWorkshop_Game_Entity_Races_DaggerfallWorkshop_Game_Entity_Genders_System_Boolean_">DaggerfallEntity.GetRaceGenderPainSound(Races, Genders, Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Entity.html">DaggerfallWorkshop.Game.Entity</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_Game_Entity_CivilianEntity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CivilianEntity : DaggerfallEntity</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_CivilianEntity__ctor_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.CivilianEntity.%23ctor(DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/CivilianEntity.cs/#L16">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_CivilianEntity__ctor_" data-uid="DaggerfallWorkshop.Game.Entity.CivilianEntity.#ctor*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_CivilianEntity__ctor_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.Entity.CivilianEntity.#ctor(DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">CivilianEntity(DaggerfallEntityBehaviour)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CivilianEntity(DaggerfallEntityBehaviour entityBehaviour)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
+        <td><span class="parametername">entityBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_CivilianEntity_SetEntityDefaults.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.CivilianEntity.SetEntityDefaults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/CivilianEntity.cs/#L24">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_Game_Entity_CivilianEntity_SetEntityDefaults_" data-uid="DaggerfallWorkshop.Game.Entity.CivilianEntity.SetEntityDefaults*"></a>
+  <h4 id="DaggerfallWorkshop_Game_Entity_CivilianEntity_SetEntityDefaults" data-uid="DaggerfallWorkshop.Game.Entity.CivilianEntity.SetEntityDefaults">SetEntityDefaults()</h4>
+  <div class="markdown level1 summary"><p>Assigns default entity settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetEntityDefaults()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntity.html#DaggerfallWorkshop_Game_Entity_DaggerfallEntity_SetEntityDefaults">DaggerfallEntity.SetEntityDefaults()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Entity_CivilianEntity.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Entity.CivilianEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Entities/CivilianEntity.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

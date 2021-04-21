@@ -1,0 +1,1945 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StreamingWorld
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StreamingWorld
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.StreamingWorld">
+  
+  
+  <h1 id="DaggerfallWorkshop_StreamingWorld" data-uid="DaggerfallWorkshop.StreamingWorld" class="text-break">Class StreamingWorld
+  </h1>
+  <div class="markdown level0 summary"><p>Manages terrains for streaming world at runtime.
+At runtime only coordinates from LocalPlayerGPS will be used. Be sure to apply desired preview to PlayerGPS.
+Terrain tiles are spread outwards from a centre tile up to TerrainDistance around player.
+Terrains will be marked inactive once they pass beyond TerrainDistance.
+Inactive terrains greater than TerrainDistance+1 from player will be recycled.
+Locations and other loose objects greater than TerrainDistance+1 from player will be destroyed.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">StreamingWorld</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.html">DaggerfallWorkshop</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="DaggerfallWorkshop_StreamingWorld_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StreamingWorld : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_EditorFindLocationString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.EditorFindLocationString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L72">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_EditorFindLocationString" data-uid="DaggerfallWorkshop.StreamingWorld.EditorFindLocationString">EditorFindLocationString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+public string EditorFindLocationString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_LocalPlayerGPS.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.LocalPlayerGPS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L47">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_LocalPlayerGPS" data-uid="DaggerfallWorkshop.StreamingWorld.LocalPlayerGPS">LocalPlayerGPS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerGPS LocalPlayerGPS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.PlayerGPS.html">PlayerGPS</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_MapPixelX.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.MapPixelX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L61">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_MapPixelX" data-uid="DaggerfallWorkshop.StreamingWorld.MapPixelX">MapPixelX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(3F, 998F)]
+public int MapPixelX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_MapPixelY.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.MapPixelY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L63">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_MapPixelY" data-uid="DaggerfallWorkshop.StreamingWorld.MapPixelY">MapPixelY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(3F, 498F)]
+public int MapPixelY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_ShowDebugString.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.ShowDebugString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L77">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_ShowDebugString" data-uid="DaggerfallWorkshop.StreamingWorld.ShowDebugString">ShowDebugString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowDebugString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_streamingTarget.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.streamingTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L75">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_streamingTarget" data-uid="DaggerfallWorkshop.StreamingWorld.streamingTarget">streamingTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject streamingTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_suppressWorld.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.suppressWorld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L76">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_suppressWorld" data-uid="DaggerfallWorkshop.StreamingWorld.suppressWorld">suppressWorld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool suppressWorld</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_TerrainDistance.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.TerrainDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L56">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_TerrainDistance" data-uid="DaggerfallWorkshop.StreamingWorld.TerrainDistance">TerrainDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(1F, 4F)]
+public int TerrainDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_TerrainScale.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.TerrainScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L69">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_TerrainScale" data-uid="DaggerfallWorkshop.StreamingWorld.TerrainScale">TerrainScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(1F, 10F)]
+public float TerrainScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_CurrentPlayerLocationObject.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.CurrentPlayerLocationObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L171">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_CurrentPlayerLocationObject_" data-uid="DaggerfallWorkshop.StreamingWorld.CurrentPlayerLocationObject*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_CurrentPlayerLocationObject" data-uid="DaggerfallWorkshop.StreamingWorld.CurrentPlayerLocationObject">CurrentPlayerLocationObject</h4>
+  <div class="markdown level1 summary"><p>Gets current DaggerfallLocation (if any) for player's current map pixel.
+Will return null for any map pixel in wilderness or if world still being built on init.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DaggerfallLocation CurrentPlayerLocationObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallLocation.html">DaggerfallLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_IsInit.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.IsInit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L126">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_IsInit_" data-uid="DaggerfallWorkshop.StreamingWorld.IsInit*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_IsInit" data-uid="DaggerfallWorkshop.StreamingWorld.IsInit">IsInit</h4>
+  <div class="markdown level1 summary"><p>True if world is currently initialising.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_IsReady.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L121">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_IsReady_" data-uid="DaggerfallWorkshop.StreamingWorld.IsReady*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_IsReady" data-uid="DaggerfallWorkshop.StreamingWorld.IsReady">IsReady</h4>
+  <div class="markdown level1 summary"><p>True if component is ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_PlayerTerrainTransform.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.PlayerTerrainTransform%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L142">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_PlayerTerrainTransform_" data-uid="DaggerfallWorkshop.StreamingWorld.PlayerTerrainTransform*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_PlayerTerrainTransform" data-uid="DaggerfallWorkshop.StreamingWorld.PlayerTerrainTransform">PlayerTerrainTransform</h4>
+  <div class="markdown level1 summary"><p>Gets Transform of central terrain player is standing on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform PlayerTerrainTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_PlayerTileMapIndex.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.PlayerTileMapIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L186">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_PlayerTileMapIndex_" data-uid="DaggerfallWorkshop.StreamingWorld.PlayerTileMapIndex*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_PlayerTileMapIndex" data-uid="DaggerfallWorkshop.StreamingWorld.PlayerTileMapIndex">PlayerTileMapIndex</h4>
+  <div class="markdown level1 summary"><p>Gets index of tile under player at their current world position.
+There are many different tiles a player can stand on, including corner tiles for roads, etc.
+The main tile types in nature are:
+-1 = Nothing/Error
+0 = Water
+1 = Dirt (snow in winter set)
+2 = Grass (snow in winter set)
+3 = Stone (snow in winter set)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PlayerTileMapIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_SceneMapRatio.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.SceneMapRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L152">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_SceneMapRatio_" data-uid="DaggerfallWorkshop.StreamingWorld.SceneMapRatio*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_SceneMapRatio" data-uid="DaggerfallWorkshop.StreamingWorld.SceneMapRatio">SceneMapRatio</h4>
+  <div class="markdown level1 summary"><p>This value is the amount of scene player movement equivalent to 1 native world map unit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SceneMapRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_SceneName.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.SceneName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L131">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_SceneName_" data-uid="DaggerfallWorkshop.StreamingWorld.SceneName*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_SceneName" data-uid="DaggerfallWorkshop.StreamingWorld.SceneName">SceneName</h4>
+  <div class="markdown level1 summary"><p>Gets the scene name for the current map pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SceneName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_StreamingTarget.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.StreamingTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L157">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_StreamingTarget_" data-uid="DaggerfallWorkshop.StreamingWorld.StreamingTarget*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_StreamingTarget" data-uid="DaggerfallWorkshop.StreamingWorld.StreamingTarget">StreamingTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform StreamingTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_TerrainTexturing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.TerrainTexturing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L162">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_TerrainTexturing_" data-uid="DaggerfallWorkshop.StreamingWorld.TerrainTexturing*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_TerrainTexturing" data-uid="DaggerfallWorkshop.StreamingWorld.TerrainTexturing">TerrainTexturing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TerrainTexturing TerrainTexturing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.TerrainTexturing.html">TerrainTexturing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_WorldCompensation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.WorldCompensation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L147">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_WorldCompensation_" data-uid="DaggerfallWorkshop.StreamingWorld.WorldCompensation*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_WorldCompensation" data-uid="DaggerfallWorkshop.StreamingWorld.WorldCompensation">WorldCompensation</h4>
+  <div class="markdown level1 summary"><p>Offset position of world for floating origin logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 WorldCompensation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_ClearStatefulLooseObjects.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.ClearStatefulLooseObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L475">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_ClearStatefulLooseObjects_" data-uid="DaggerfallWorkshop.StreamingWorld.ClearStatefulLooseObjects*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_ClearStatefulLooseObjects" data-uid="DaggerfallWorkshop.StreamingWorld.ClearStatefulLooseObjects">ClearStatefulLooseObjects()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearStatefulLooseObjects()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_CreateTerrainGameObjects_System_Int32_System_Int32_UnityEngine_GameObject__UnityEngine_GameObject__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.CreateTerrainGameObjects(System.Int32%2CSystem.Int32%2CUnityEngine.GameObject%40%2CUnityEngine.GameObject%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1115">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_CreateTerrainGameObjects_" data-uid="DaggerfallWorkshop.StreamingWorld.CreateTerrainGameObjects*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_CreateTerrainGameObjects_System_Int32_System_Int32_UnityEngine_GameObject__UnityEngine_GameObject__" data-uid="DaggerfallWorkshop.StreamingWorld.CreateTerrainGameObjects(System.Int32,System.Int32,UnityEngine.GameObject@,UnityEngine.GameObject@)">CreateTerrainGameObjects(Int32, Int32, out GameObject, out GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateTerrainGameObjects(int mapPixelX, int mapPixelY, out GameObject terrainObject, out GameObject billboardBatchObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">terrainObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">billboardBatchObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_GetCurrentBuildingDirectory.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.GetCurrentBuildingDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L484">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_GetCurrentBuildingDirectory_" data-uid="DaggerfallWorkshop.StreamingWorld.GetCurrentBuildingDirectory*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_GetCurrentBuildingDirectory" data-uid="DaggerfallWorkshop.StreamingWorld.GetCurrentBuildingDirectory">GetCurrentBuildingDirectory()</h4>
+  <div class="markdown level1 summary"><p>Gets the building directory for current player position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuildingDirectory GetCurrentBuildingDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.BuildingDirectory.html">BuildingDirectory</a></td>
+        <td><p>BuildingDirectory or null if player not inside a location map pixel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_GetCurrentCityNavigation.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.GetCurrentCityNavigation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L496">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_GetCurrentCityNavigation_" data-uid="DaggerfallWorkshop.StreamingWorld.GetCurrentCityNavigation*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_GetCurrentCityNavigation" data-uid="DaggerfallWorkshop.StreamingWorld.GetCurrentCityNavigation">GetCurrentCityNavigation()</h4>
+  <div class="markdown level1 summary"><p>Gets the city navigation component for current player position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CityNavigation GetCurrentCityNavigation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.Game.Utility.CityNavigation.html">CityNavigation</a></td>
+        <td><p>CityNavigation or null if player not inside a location map pixel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_GetSceneName_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.GetSceneName(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L134">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_GetSceneName_" data-uid="DaggerfallWorkshop.StreamingWorld.GetSceneName*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_GetSceneName_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.StreamingWorld.GetSceneName(System.Int32,System.Int32)">GetSceneName(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the scene name for the given map pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSceneName(int MapPixelX, int MapPixelY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">MapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">MapPixelY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_GetTerrainFromPixel_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.GetTerrainFromPixel(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L423">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_GetTerrainFromPixel_" data-uid="DaggerfallWorkshop.StreamingWorld.GetTerrainFromPixel*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_GetTerrainFromPixel_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.StreamingWorld.GetTerrainFromPixel(DaggerfallConnect.Utility.DFPosition)">GetTerrainFromPixel(DFPosition)</h4>
+  <div class="markdown level1 summary"><p>Returns terrain GameObject from mapPixel, or null if
+no terrain objects are mapped to that pixel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GetTerrainFromPixel(DFPosition mapPixel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">mapPixel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_GetTerrainFromPixel_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.GetTerrainFromPixel(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L432">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_GetTerrainFromPixel_" data-uid="DaggerfallWorkshop.StreamingWorld.GetTerrainFromPixel*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_GetTerrainFromPixel_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.StreamingWorld.GetTerrainFromPixel(System.Int32,System.Int32)">GetTerrainFromPixel(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns terrain GameObject from mapPixel, or null if
+no terrain objects are mapped to that pixel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GetTerrainFromPixel(int mapPixelX, int mapPixelY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_GetTerrainTransform_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.GetTerrainTransform(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L508">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_GetTerrainTransform_" data-uid="DaggerfallWorkshop.StreamingWorld.GetTerrainTransform*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_GetTerrainTransform_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.StreamingWorld.GetTerrainTransform(System.Int32,System.Int32)">GetTerrainTransform(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets terrain transform at mapPixelX, mapPixelY.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform GetTerrainTransform(int mapPixelX, int mapPixelY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><p>DaggerfallTerrain Transform if found, or null if not currently in world.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OffsetWorldCompensation_UnityEngine_Vector3_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OffsetWorldCompensation(UnityEngine.Vector3%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L411">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_OffsetWorldCompensation_" data-uid="DaggerfallWorkshop.StreamingWorld.OffsetWorldCompensation*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OffsetWorldCompensation_UnityEngine_Vector3_System_Boolean_" data-uid="DaggerfallWorkshop.StreamingWorld.OffsetWorldCompensation(UnityEngine.Vector3,System.Boolean)">OffsetWorldCompensation(Vector3, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Offset world compensation for floating origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OffsetWorldCompensation(Vector3 offset, bool offsetLastPlayerPos = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">offsetLastPlayerPos</span></td>
+        <td><p>Optionally update last known player position so GPS does not change.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnAvailableLocationGameObjectEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnAvailableLocationGameObjectEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1810">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnAvailableLocationGameObjectEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnAvailableLocationGameObjectEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnAvailableLocationGameObjectEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnAvailableLocationGameObjectEvent">RaiseOnAvailableLocationGameObjectEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnAvailableLocationGameObjectEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnClearStreamingWorldEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnClearStreamingWorldEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1783">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnClearStreamingWorldEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnClearStreamingWorldEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnClearStreamingWorldEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnClearStreamingWorldEvent">RaiseOnClearStreamingWorldEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnClearStreamingWorldEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnCreateLocationGameObjectEvent_DaggerfallWorkshop_DaggerfallLocation_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnCreateLocationGameObjectEvent(DaggerfallWorkshop.DaggerfallLocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1792">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnCreateLocationGameObjectEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnCreateLocationGameObjectEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnCreateLocationGameObjectEvent_DaggerfallWorkshop_DaggerfallLocation_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnCreateLocationGameObjectEvent(DaggerfallWorkshop.DaggerfallLocation)">RaiseOnCreateLocationGameObjectEvent(DaggerfallLocation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnCreateLocationGameObjectEvent(DaggerfallLocation dfLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallLocation.html">DaggerfallLocation</a></td>
+        <td><span class="parametername">dfLocation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnFloatingOriginChangeEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnFloatingOriginChangeEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1819">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnFloatingOriginChangeEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnFloatingOriginChangeEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnFloatingOriginChangeEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnFloatingOriginChangeEvent">RaiseOnFloatingOriginChangeEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnFloatingOriginChangeEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnInitWorldEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnInitWorldEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1756">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnInitWorldEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnInitWorldEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnInitWorldEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnInitWorldEvent">RaiseOnInitWorldEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnInitWorldEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnPreInitWorldEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnPreInitWorldEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1747">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnPreInitWorldEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnPreInitWorldEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnPreInitWorldEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnPreInitWorldEvent">RaiseOnPreInitWorldEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnPreInitWorldEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnReadyEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnReadyEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1729">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnReadyEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnReadyEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnReadyEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnReadyEvent">RaiseOnReadyEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnReadyEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnTeleportToCoordinatesEvent_DaggerfallConnect_Utility_DFPosition_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnTeleportToCoordinatesEvent(DaggerfallConnect.Utility.DFPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1738">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnTeleportToCoordinatesEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnTeleportToCoordinatesEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnTeleportToCoordinatesEvent_DaggerfallConnect_Utility_DFPosition_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnTeleportToCoordinatesEvent(DaggerfallConnect.Utility.DFPosition)">RaiseOnTeleportToCoordinatesEvent(DFPosition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnTeleportToCoordinatesEvent(DFPosition worldPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.Utility.DFPosition.html">DFPosition</a></td>
+        <td><span class="parametername">worldPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateLocationGameObjectEvent_UnityEngine_GameObject_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateLocationGameObjectEvent(UnityEngine.GameObject%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1801">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateLocationGameObjectEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateLocationGameObjectEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateLocationGameObjectEvent_UnityEngine_GameObject_System_Boolean_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateLocationGameObjectEvent(UnityEngine.GameObject,System.Boolean)">RaiseOnUpdateLocationGameObjectEvent(GameObject, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnUpdateLocationGameObjectEvent(GameObject locationObject, bool allowYeld)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">locationObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowYeld</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateTerrainsEndEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateTerrainsEndEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1774">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateTerrainsEndEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateTerrainsEndEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateTerrainsEndEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateTerrainsEndEvent">RaiseOnUpdateTerrainsEndEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnUpdateTerrainsEndEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateTerrainsStartEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateTerrainsStartEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1765">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateTerrainsStartEvent_" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateTerrainsStartEvent*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_RaiseOnUpdateTerrainsStartEvent" data-uid="DaggerfallWorkshop.StreamingWorld.RaiseOnUpdateTerrainsStartEvent">RaiseOnUpdateTerrainsStartEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnUpdateTerrainsStartEvent()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_SetAutoReposition_DaggerfallWorkshop_StreamingWorld_RepositionMethods_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.SetAutoReposition(DaggerfallWorkshop.StreamingWorld.RepositionMethods%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L443">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_SetAutoReposition_" data-uid="DaggerfallWorkshop.StreamingWorld.SetAutoReposition*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_SetAutoReposition_DaggerfallWorkshop_StreamingWorld_RepositionMethods_UnityEngine_Vector3_" data-uid="DaggerfallWorkshop.StreamingWorld.SetAutoReposition(DaggerfallWorkshop.StreamingWorld.RepositionMethods,UnityEngine.Vector3)">SetAutoReposition(StreamingWorld.RepositionMethods, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAutoReposition(StreamingWorld.RepositionMethods method, Vector3 offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.RepositionMethods.html">StreamingWorld.RepositionMethods</a></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_TeleportToCoordinates_System_Int32_System_Int32_DaggerfallWorkshop_StreamingWorld_RepositionMethods_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.TeleportToCoordinates(System.Int32%2CSystem.Int32%2CDaggerfallWorkshop.StreamingWorld.RepositionMethods)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L373">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_TeleportToCoordinates_" data-uid="DaggerfallWorkshop.StreamingWorld.TeleportToCoordinates*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_TeleportToCoordinates_System_Int32_System_Int32_DaggerfallWorkshop_StreamingWorld_RepositionMethods_" data-uid="DaggerfallWorkshop.StreamingWorld.TeleportToCoordinates(System.Int32,System.Int32,DaggerfallWorkshop.StreamingWorld.RepositionMethods)">TeleportToCoordinates(Int32, Int32, StreamingWorld.RepositionMethods)</h4>
+  <div class="markdown level1 summary"><p>Teleport to specific map pixel with an optional automatic reposition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TeleportToCoordinates(int mapPixelX, int mapPixelY, StreamingWorld.RepositionMethods autoReposition = StreamingWorld.RepositionMethods.Origin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.RepositionMethods.html">StreamingWorld.RepositionMethods</a></td>
+        <td><span class="parametername">autoReposition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_TeleportToCoordinates_System_Int32_System_Int32_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.TeleportToCoordinates(System.Int32%2CSystem.Int32%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L381">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_TeleportToCoordinates_" data-uid="DaggerfallWorkshop.StreamingWorld.TeleportToCoordinates*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_TeleportToCoordinates_System_Int32_System_Int32_UnityEngine_Vector3_" data-uid="DaggerfallWorkshop.StreamingWorld.TeleportToCoordinates(System.Int32,System.Int32,UnityEngine.Vector3)">TeleportToCoordinates(Int32, Int32, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Teleport to specific map pixel and apply a specific reposition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TeleportToCoordinates(int mapPixelX, int mapPixelY, Vector3 repositionOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">repositionOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_TeleportToWorldCoordinates_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.TeleportToWorldCoordinates(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L389">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_TeleportToWorldCoordinates_" data-uid="DaggerfallWorkshop.StreamingWorld.TeleportToWorldCoordinates*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_TeleportToWorldCoordinates_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.StreamingWorld.TeleportToWorldCoordinates(System.Int32,System.Int32)">TeleportToWorldCoordinates(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Teleport to specific world coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TeleportToWorldCoordinates(int worldPosX, int worldPosZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">worldPosX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">worldPosZ</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_TrackLooseObject_UnityEngine_GameObject_System_Boolean_System_Int32_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.TrackLooseObject(UnityEngine.GameObject%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L458">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_TrackLooseObject_" data-uid="DaggerfallWorkshop.StreamingWorld.TrackLooseObject*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_TrackLooseObject_UnityEngine_GameObject_System_Boolean_System_Int32_System_Int32_System_Boolean_" data-uid="DaggerfallWorkshop.StreamingWorld.TrackLooseObject(UnityEngine.GameObject,System.Boolean,System.Int32,System.Int32,System.Boolean)">TrackLooseObject(GameObject, Boolean, Int32, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Track an exterior object in streaming world.
+Tracked object will be automatically destroyed when outside of range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrackLooseObject(GameObject gameObject, bool statefulObj = false, int mapPixelX = -1, int mapPixelY = -1, bool setParent = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">gameObject</span></td>
+        <td><p>Game object to track.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">statefulObj</span></td>
+        <td><p>True to mark as a stateful game object which is managed by SerializedStateManager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelX</span></td>
+        <td><p>Map pixel X to store gameobject. -1 for player location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mapPixelY</span></td>
+        <td><p>Map pixel Y to store gameobject. -1 for player location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setParent</span></td>
+        <td><p>True to set parent as StreamingTarget.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_UpdateTerrainData_DaggerfallWorkshop_StreamingWorld_TerrainDesc_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.UpdateTerrainData(DaggerfallWorkshop.StreamingWorld.TerrainDesc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1172">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_UpdateTerrainData_" data-uid="DaggerfallWorkshop.StreamingWorld.UpdateTerrainData*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_UpdateTerrainData_DaggerfallWorkshop_StreamingWorld_TerrainDesc_" data-uid="DaggerfallWorkshop.StreamingWorld.UpdateTerrainData(DaggerfallWorkshop.StreamingWorld.TerrainDesc)">UpdateTerrainData(StreamingWorld.TerrainDesc)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTerrainData(StreamingWorld.TerrainDesc terrainDesc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.TerrainDesc.html">StreamingWorld.TerrainDesc</a></td>
+        <td><span class="parametername">terrainDesc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_UpdateTerrainNature_DaggerfallWorkshop_StreamingWorld_TerrainDesc_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.UpdateTerrainNature(DaggerfallWorkshop.StreamingWorld.TerrainDesc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1225">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_StreamingWorld_UpdateTerrainNature_" data-uid="DaggerfallWorkshop.StreamingWorld.UpdateTerrainNature*"></a>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_UpdateTerrainNature_DaggerfallWorkshop_StreamingWorld_TerrainDesc_" data-uid="DaggerfallWorkshop.StreamingWorld.UpdateTerrainNature(DaggerfallWorkshop.StreamingWorld.TerrainDesc)">UpdateTerrainNature(StreamingWorld.TerrainDesc)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTerrainNature(StreamingWorld.TerrainDesc terrainDesc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.TerrainDesc.html">StreamingWorld.TerrainDesc</a></td>
+        <td><span class="parametername">terrainDesc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnAvailableLocationGameObject.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnAvailableLocationGameObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1809">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnAvailableLocationGameObject" data-uid="DaggerfallWorkshop.StreamingWorld.OnAvailableLocationGameObject">OnAvailableLocationGameObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnAvailableLocationGameObjectHandler OnAvailableLocationGameObject</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnAvailableLocationGameObjectHandler.html">StreamingWorld.OnAvailableLocationGameObjectHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnClearStreamingWorld.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnClearStreamingWorld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1782">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnClearStreamingWorld" data-uid="DaggerfallWorkshop.StreamingWorld.OnClearStreamingWorld">OnClearStreamingWorld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnClearStreamingWorldEventHandler OnClearStreamingWorld</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnClearStreamingWorldEventHandler.html">StreamingWorld.OnClearStreamingWorldEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnCreateLocationGameObject.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnCreateLocationGameObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1791">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnCreateLocationGameObject" data-uid="DaggerfallWorkshop.StreamingWorld.OnCreateLocationGameObject">OnCreateLocationGameObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnCreateLocationGameObjectEventHandler OnCreateLocationGameObject</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnCreateLocationGameObjectEventHandler.html">StreamingWorld.OnCreateLocationGameObjectEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnFloatingOriginChange.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnFloatingOriginChange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1818">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnFloatingOriginChange" data-uid="DaggerfallWorkshop.StreamingWorld.OnFloatingOriginChange">OnFloatingOriginChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnFloatingOriginChangeEventHandler OnFloatingOriginChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnFloatingOriginChangeEventHandler.html">StreamingWorld.OnFloatingOriginChangeEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnInitWorld.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnInitWorld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1755">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnInitWorld" data-uid="DaggerfallWorkshop.StreamingWorld.OnInitWorld">OnInitWorld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnInitWorldEventHandler OnInitWorld</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnInitWorldEventHandler.html">StreamingWorld.OnInitWorldEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnPreInitWorld.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnPreInitWorld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1746">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnPreInitWorld" data-uid="DaggerfallWorkshop.StreamingWorld.OnPreInitWorld">OnPreInitWorld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnPreInitWorldEventHandler OnPreInitWorld</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnPreInitWorldEventHandler.html">StreamingWorld.OnPreInitWorldEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnReady.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1728">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnReady" data-uid="DaggerfallWorkshop.StreamingWorld.OnReady">OnReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnReadyEventHandler OnReady</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnReadyEventHandler.html">StreamingWorld.OnReadyEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnTeleportToCoordinates.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnTeleportToCoordinates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1737">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnTeleportToCoordinates" data-uid="DaggerfallWorkshop.StreamingWorld.OnTeleportToCoordinates">OnTeleportToCoordinates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnTeleportToCoordinatesEventHandler OnTeleportToCoordinates</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnTeleportToCoordinatesEventHandler.html">StreamingWorld.OnTeleportToCoordinatesEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnUpdateLocationGameObject.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnUpdateLocationGameObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1800">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnUpdateLocationGameObject" data-uid="DaggerfallWorkshop.StreamingWorld.OnUpdateLocationGameObject">OnUpdateLocationGameObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnUpdateLocationGameObjectEventHandler OnUpdateLocationGameObject</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnUpdateLocationGameObjectEventHandler.html">StreamingWorld.OnUpdateLocationGameObjectEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnUpdateTerrainsEnd.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1773">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnUpdateTerrainsEnd" data-uid="DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsEnd">OnUpdateTerrainsEnd</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnUpdateTerrainsEndEventHandler OnUpdateTerrainsEnd</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsEndEventHandler.html">StreamingWorld.OnUpdateTerrainsEndEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld_OnUpdateTerrainsStart.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L1764">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_StreamingWorld_OnUpdateTerrainsStart" data-uid="DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsStart">OnUpdateTerrainsStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StreamingWorld.OnUpdateTerrainsStartEventHandler OnUpdateTerrainsStart</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.StreamingWorld.OnUpdateTerrainsStartEventHandler.html">StreamingWorld.OnUpdateTerrainsStartEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
+  </div>
+  <div>
+      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_StreamingWorld.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.StreamingWorld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Terrain/StreamingWorld.cs/#L38" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

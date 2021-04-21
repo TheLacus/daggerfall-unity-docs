@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace DaggerfallWorkshop.Game.Questing.Actions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace DaggerfallWorkshop.Game.Questing.Actions
+   ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DaggerfallWorkshop.Game.Questing.Actions">
+  
+  <h1 id="DaggerfallWorkshop_Game_Questing_Actions" data-uid="DaggerfallWorkshop.Game.Questing.Actions" class="text-break">Namespace DaggerfallWorkshop.Game.Questing.Actions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.AddFace.html">AddFace</a></h4>
+      <section><p>Adds an NPC or Foe portrait to HUD which indicates player is escorting this NPC or Foe.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.ClearTask.html">ClearTask</a></h4>
+      <section><p>Unsets 1 or more tasks so they can be triggered again</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpc.html">CreateNpc</a></h4>
+      <section><p>Places a Person to a random building in their home town within current region.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpcAt.html">CreateNpcAt</a></h4>
+      <section><p>Tipton calls this &quot;create npc at&quot; but its true function seems to reserve a quest site
+before linking resources. &quot;create npc at&quot; is usually followed by &quot;place npc&quot;
+but can also be followed by &quot;place item&quot; or &quot;create foe&quot; for example.
+This action likely initiates some book-keeping in Daggerfall's quest system.
+In Daggerfall Unity this creates a SiteLink in QuestMachine.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CurePcDisease.html">CurePcDisease</a></h4>
+      <section><p>Cure specific disease on player through quest system.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.DropFace.html">DropFace</a></h4>
+      <section><p>Drops an NPC or Foe portrait from HUD that player is currently escorting.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.DroppedItemAtPlace.html">DroppedItemAtPlace</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.EndQuest.html">EndQuest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GetItem.html">GetItem</a></h4>
+      <section><p>Give a quest Item to player.
+Currently ignoring &quot;get item from&quot; as it appears to behave identically to &quot;get item&quot;.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GiveItem.html">GiveItem</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GivePc.html">GivePc</a></h4>
+      <section><p>Give a quest Item to player. This has three formats:</p>
+<ul>
+<li>&quot;give pc anItem&quot; - Displays QuestComplete success message and opens loot window with reward. Could probably be called &quot;give quest reward anItem&quot;.</li>
+<li>&quot;give pc nothing&quot; - Also displays QuestComplete success message but does not open loot window as no reward.</li>
+<li>&quot;give pc anItem notify nnnn&quot; - Places item directly into player's inventory and says message ID nnnn.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.HideNpc.html">HideNpc</a></h4>
+      <section><p>Hide NPC from world temporarily.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.InjuredFoe.html">InjuredFoe</a></h4>
+      <section><p>Triggers when a Foe has been injured.
+Will not fire if Foe dies immediately (e.g. player one-shots enemy).</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JournalNote.html">JournalNote</a></h4>
+      <section><p>Displays a prompt which user can click to dismiss.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JuggleAction.html">JuggleAction</a></h4>
+      <section><p>Example action to give contributors a starting point.
+This action simulates the player juggling some number of objects with a chance to drop each frame.
+Inherits from ActionTemplate which implements basics of IQuestAction.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.KilledFoe.html">KilledFoe</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.KillFoe.html">KillFoe</a></h4>
+      <section><p>Kills a specified foe instantly</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.LogMessage.html">LogMessage</a></h4>
+      <section><p>Adds Qrc text message to player journal</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.MakePcDiseased.html">MakePcDiseased</a></h4>
+      <section><p>Inflicts a disease on player through quest system.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PayMoney.html">PayMoney</a></h4>
+      <section><p>Take an amount from player, and start a task depending on if they could pay.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PcAt.html">PcAt</a></h4>
+      <section><p>Condition which checks if player character at a specific place.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PickOneOf.html">PickOneOf</a></h4>
+      <section><p>This action triggers a random task</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceFoe.html">PlaceFoe</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceItem.html">PlaceItem</a></h4>
+      <section><p>Moves item into world at a reserved site.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceNpc.html">PlaceNpc</a></h4>
+      <section><p>Moves NPC to a reserved site.
+Fixed NPCs always starts in their home location but quests can move them around as needed.
+Random NPCs are instantiated to target location only as they don't otherwise exist in world.
+Site must be reserved before moving NPC to that location.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaySound.html">PlaySound</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlayVideo.html">PlayVideo</a></h4>
+      <section><p>Plays one of the ANIMXXXX.VID videos for quest</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Prompt.html">Prompt</a></h4>
+      <section><p>Prompt which displays a yes/no dialog that executes a different task based on user input.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveFoe.html">RemoveFoe</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveLogMessage.html">RemoveLogMessage</a></h4>
+      <section><p>Removes Qrc text message from player journal</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RestoreNpc.html">RestoreNpc</a></h4>
+      <section><p>Restore NPC previously hidden from world.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RestrainFoe.html">RestrainFoe</a></h4>
+      <section><p>Makes a foe non-hostile until player strikes them again.
+Quest authors should also use a popup message to inform player that foe is no longer aggressive.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Say.html">Say</a></h4>
+      <section><p>Displays a prompt which user can click to dismiss.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.StartStopTimer.html">StartStopTimer</a></h4>
+      <section><p>Starts and stops a Clock resource timer.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.StartTask.html">StartTask</a></h4>
+      <section><p>Starts a task by setting it active. Added alternate form &quot;setvar taskname&quot;.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.TakeItem.html">TakeItem</a></h4>
+      <section><p>Remove a quest Item from player.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.html">TotingItemAndClickedNpc</a></h4>
+      <section><p>Condition triggers when player clicks on NPC while holding a quest Item in their inventory.
+Superficially very similar to ClickedNpc but also requires item check to be true.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.UnsetTask.html">UnsetTask</a></h4>
+      <section><p>Unsets one or more tasks.
+Unlike clear, which simply rearms a task, unset will permanently disable that task.</p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.WhenPcEntersExits.html">WhenPcEntersExits</a></h4>
+      <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.AddFace.SaveData_v1.html">AddFace.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.ClearTask.SaveData_v1.html">ClearTask.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpc.SaveData_v1.html">CreateNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpcAt.SaveData_v1.html">CreateNpcAt.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CurePcDisease.SaveData_v1.html">CurePcDisease.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.DropFace.SaveData_v1.html">DropFace.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.DroppedItemAtPlace.SaveData_v1.html">DroppedItemAtPlace.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.EndQuest.SaveData_v1.html">EndQuest.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GetItem.SaveData_v1.html">GetItem.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GiveItem.SaveData_v1.html">GiveItem.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GivePc.SaveData_v1.html">GivePc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.HideNpc.SaveData_v1.html">HideNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.InjuredFoe.SaveData_v1.html">InjuredFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JournalNote.SaveData_v1.html">JournalNote.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.JuggleAction.MySaveData.html">JuggleAction.MySaveData</a></h4>
+      <section><p>Data to serialize action state can be placed in a struct.
+It's a good idea to version struct in case you need to migrate between very different state setups in future.
+For basic changes (e.g. just adding a new field with a sensible default) no migration should be needed.
+See FullSerializer versioning docs for more: <a href="https://github.com/jacobdufault/fullserializer/wiki/Versioning">https://github.com/jacobdufault/fullserializer/wiki/Versioning</a></p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.KilledFoe.SaveData_v1.html">KilledFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.KillFoe.SaveData_v1.html">KillFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.LogMessage.SaveData_v1.html">LogMessage.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.MakePcDiseased.SaveData_v1.html">MakePcDiseased.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PayMoney.SaveData_v1.html">PayMoney.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PcAt.SaveData_v1.html">PcAt.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PickOneOf.SaveData_v1.html">PickOneOf.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceFoe.SaveData_v1.html">PlaceFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceItem.SaveData_v1.html">PlaceItem.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceNpc.SaveData_v1.html">PlaceNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaySound.MySaveData.html">PlaySound.MySaveData</a></h4>
+      <section><p>Data to serialize action state can be placed in a struct.
+It's a good idea to version struct in case you need to migrate between very different state setups in future.
+For basic changes (e.g. just adding a new field with a sensible default) no migration should be needed.
+See FullSerializer versioning docs for more: <a href="https://github.com/jacobdufault/fullserializer/wiki/Versioning">https://github.com/jacobdufault/fullserializer/wiki/Versioning</a></p>
+</section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaySound.SaveData_v1.html">PlaySound.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlayVideo.SaveData_v1.html">PlayVideo.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Prompt.SaveData_v1.html">Prompt.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveFoe.SaveData_v1.html">RemoveFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveLogMessage.SaveData_v1.html">RemoveLogMessage.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RestoreNpc.SaveData_v1.html">RestoreNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RestrainFoe.SaveData_v1.html">RestrainFoe.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Say.SaveData_v1.html">Say.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.StartStopTimer.SaveData_v1.html">StartStopTimer.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.StartTask.SaveData_v1.html">StartTask.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.TakeItem.SaveData_v1.html">TakeItem.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.SaveData_v1.html">TotingItemAndClickedNpc.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.UnsetTask.SaveData_v1.html">UnsetTask.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.WhenPcEntersExits.SaveData_v1.html">WhenPcEntersExits.SaveData_v1</a></h4>
+      <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.GivePc.OnOfferPendingHandler.html">GivePc.OnOfferPendingHandler</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
