@@ -91,7 +91,7 @@ Derive and override GetKeyForItem() to use. If serialization is required use Key
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
   <h5 id="DaggerfallWorkshop_Utility_EnhancedKeyedCollection_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class EnhancedKeyedCollection&lt;T1, T2&gt; : KeyedCollection&lt;T1, T2&gt;, IList&lt;T2&gt;, ICollection&lt;T2&gt;, IEnumerable&lt;T2&gt;, IList, ICollection, IEnumerable where T2 : class</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class EnhancedKeyedCollection&lt;T1, T2&gt; : KeyedCollection&lt;T1, T2&gt;, IList&lt;T2&gt;, ICollection&lt;T2&gt;, IReadOnlyList&lt;T2&gt;, IReadOnlyCollection&lt;T2&gt;, IEnumerable&lt;T2&gt;, IList, ICollection, IEnumerable where T2 : class</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

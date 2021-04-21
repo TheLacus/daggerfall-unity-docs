@@ -1,3 +1,3 @@
 # API Documentation
 
-Daggerfall Unity Alpha 0.10.24
+Daggerfall Unity Alpha 0.10.25
