@@ -73,7 +73,8 @@
   
   <h1 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency" class="text-break">Struct ModDependency
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A set of rules that defines the limits within which a mod is required or otherwise compatible with another one.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.html">DaggerfallWorkshop.Game.Utility.ModSupport</a></h6>
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
@@ -82,6 +83,15 @@
     <pre><code class="lang-csharp hljs">[Serializable]
 public struct ModDependency</code></pre>
   </div>
+  <h5 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>These are all the possible combinations:</p>
+<ul>
+<li>Dependency: must be available, have higher priority and follow specified criteria.</li>
+<li>Optional dependency: if is available it must have higher priority and follow specified criteria.</li>
+<li>Peer dependency: must be available and follow specified criteria but higher priority is not required.</li>
+<li>Optional peer dependency: if is available it must follow specified criteria but higher priority is not required.</li>
+</ul>
+</div>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
@@ -89,7 +99,7 @@ public struct ModDependency</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_IsOptional.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.IsOptional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L121">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L123">View Source</a>
   </span>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_IsOptional" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.IsOptional">IsOptional</h4>
   <div class="markdown level1 summary"><p>If true, target mod doesn't need to be available, but must validate these criteria if it is.</p>
@@ -120,7 +130,7 @@ public bool IsOptional</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_IsPeer.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.IsPeer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L127">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L129">View Source</a>
   </span>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_IsPeer" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.IsPeer">IsPeer</h4>
   <div class="markdown level1 summary"><p>If true, target mod can be positioned anywhere in the load order, otherwise must be positioned above.</p>
@@ -151,7 +161,7 @@ public bool IsPeer</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_Name.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L115">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L117">View Source</a>
   </span>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_Name" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.Name">Name</h4>
   <div class="markdown level1 summary"><p>Name of target mod.</p>
@@ -182,7 +192,7 @@ public string Name</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_Version.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L135">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L137">View Source</a>
   </span>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency_Version" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency.Version">Version</h4>
   <div class="markdown level1 summary"><p>If not null this string is the minimum accepted version with format X.Y.Z.
@@ -221,7 +231,7 @@ public string Version</code></pre>
                     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModDependency.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModDependency%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L108" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModTypes.cs/#L110" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
