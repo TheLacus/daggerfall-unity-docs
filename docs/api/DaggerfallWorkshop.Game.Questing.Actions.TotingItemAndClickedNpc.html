@@ -74,7 +74,12 @@
   <h1 id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc" class="text-break">Class TotingItemAndClickedNpc
   </h1>
   <div class="markdown level0 summary"><p>Condition triggers when player clicks on NPC while holding a quest Item in their inventory.
-Superficially very similar to ClickedNpc but also requires item check to be true.</p>
+Superficially very similar to ClickedNpc but also requires item check to be true.
+NOTES:</p>
+<ul>
+<li>Will clear click after handling if player clicks NPC while holding specified item.</li>
+<li>If used in combination with ClickedNpc on same NPC elsewhere in quest, always call TotingItemAndClickedNpc check BEFORE ClickedNpc.</li>
+</ul>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -203,7 +208,7 @@ Superficially very similar to ClickedNpc but also requires item check to be true
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc__ctor_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.%23ctor(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L35">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L38">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc__ctor_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.#ctor*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc__ctor_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.#ctor(DaggerfallWorkshop.Game.Questing.Quest)">TotingItemAndClickedNpc(Quest)</h4>
@@ -237,7 +242,7 @@ Superficially very similar to ClickedNpc but also requires item check to be true
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_Pattern.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.Pattern%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L28">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L31">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_Pattern_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.Pattern*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_Pattern" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.Pattern">Pattern</h4>
@@ -271,7 +276,7 @@ Superficially very similar to ClickedNpc but also requires item check to be true
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_CheckTrigger_DaggerfallWorkshop_Game_Questing_Task_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.CheckTrigger(DaggerfallWorkshop.Game.Questing.Task)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L65">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L68">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_CheckTrigger_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.CheckTrigger*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_CheckTrigger_DaggerfallWorkshop_Game_Questing_Task_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.CheckTrigger(DaggerfallWorkshop.Game.Questing.Task)">CheckTrigger(Task)</h4>
@@ -320,7 +325,7 @@ Superficially very similar to ClickedNpc but also requires item check to be true
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_CreateNew_System_String_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.CreateNew(System.String%2CDaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L41">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L44">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_CreateNew_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.CreateNew*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_CreateNew_System_String_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.CreateNew(System.String,DaggerfallWorkshop.Game.Questing.Quest)">CreateNew(String, Quest)</h4>
@@ -374,7 +379,7 @@ Superficially very similar to ClickedNpc but also requires item check to be true
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_GetSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.GetSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L109">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L115">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_GetSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.GetSaveData*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_GetSaveData" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.GetSaveData">GetSaveData()</h4>
@@ -406,7 +411,7 @@ Superficially very similar to ClickedNpc but also requires item check to be true
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_RestoreSaveData_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.RestoreSaveData(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L119">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L125">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_RestoreSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.RestoreSaveData*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc_RestoreSaveData_System_Object_" data-uid="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.RestoreSaveData(System.Object)">RestoreSaveData(Object)</h4>
@@ -450,7 +455,7 @@ Superficially very similar to ClickedNpc but also requires item check to be true
                     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_Actions_TotingItemAndClickedNpc.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L22" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/TotingItemAndClickedNpc.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

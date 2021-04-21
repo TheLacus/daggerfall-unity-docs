@@ -83,11 +83,7 @@ Uses parent GameObject to determine actual facing in world.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Object.html">Object</a></div>
-    <div class="level2"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Component.html">Component</a></div>
-    <div class="level3"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Behaviour.html">Behaviour</a></div>
-    <div class="level4"><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
-    <div class="level5"><span class="xref">DaggerfallMobileUnit</span></div>
+    <div class="level1"><span class="xref">DaggerfallMobileUnit</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="DaggerfallWorkshop.html">DaggerfallWorkshop</a></h6>
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
@@ -95,16 +91,46 @@ Uses parent GameObject to determine actual facing in world.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
-public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
+public class DaggerfallMobileUnit : MobileUnit</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_ClassicSpawnDistanceType.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.ClassicSpawnDistanceType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L115">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_ClassicSpawnDistanceType_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ClassicSpawnDistanceType*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_ClassicSpawnDistanceType" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ClassicSpawnDistanceType">ClassicSpawnDistanceType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte ClassicSpawnDistanceType { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_CurrentFrame.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.CurrentFrame%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L69">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L75">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_DaggerfallMobileUnit_CurrentFrame_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.CurrentFrame*"></a>
   <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_CurrentFrame" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.CurrentFrame">CurrentFrame</h4>
@@ -134,7 +160,7 @@ public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_DoMeleeDamage.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.DoMeleeDamage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L74">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L80">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_DaggerfallMobileUnit_DoMeleeDamage_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.DoMeleeDamage*"></a>
   <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_DoMeleeDamage" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.DoMeleeDamage">DoMeleeDamage</h4>
@@ -142,7 +168,7 @@ public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool DoMeleeDamage { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool DoMeleeDamage { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,10 +187,70 @@ public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_Enemy.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.Enemy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L98">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_Enemy_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.Enemy*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_Enemy" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.Enemy">Enemy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MobileEnemy Enemy { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileEnemy.html">MobileEnemy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_EnemyState.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.EnemyState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L104">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_EnemyState_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.EnemyState*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_EnemyState" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.EnemyState">EnemyState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MobileStates EnemyState { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileStates.html">MobileStates</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_FreezeAnims.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.FreezeAnims%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L86">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L92">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_DaggerfallMobileUnit_FreezeAnims_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.FreezeAnims*"></a>
   <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_FreezeAnims" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.FreezeAnims">FreezeAnims</h4>
@@ -172,7 +258,67 @@ public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool FreezeAnims { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool FreezeAnims { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_IsBackFacing.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.IsBackFacing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L110">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_IsBackFacing_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsBackFacing*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_IsBackFacing" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsBackFacing">IsBackFacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBackFacing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_IsSetup.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.IsSetup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L69">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_IsSetup_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsSetup*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_IsSetup" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsSetup">IsSetup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsSetup { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -194,7 +340,7 @@ public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_ShootArrow.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.ShootArrow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L80">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L86">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_DaggerfallMobileUnit_ShootArrow_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ShootArrow*"></a>
   <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_ShootArrow" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ShootArrow">ShootArrow</h4>
@@ -202,7 +348,37 @@ public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ShootArrow { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool ShootArrow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_SpecialTransformationCompleted.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.SpecialTransformationCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L121">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_SpecialTransformationCompleted_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.SpecialTransformationCompleted*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_SpecialTransformationCompleted" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.SpecialTransformationCompleted">SpecialTransformationCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SpecialTransformationCompleted { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,167 +429,18 @@ public class DaggerfallMobileUnit : MonoBehaviour</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_ChangeEnemyState_DaggerfallWorkshop_MobileStates_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.ChangeEnemyState(DaggerfallWorkshop.MobileStates)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_ApplyEnemy_DaggerfallWorkshop_DaggerfallUnity_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.ApplyEnemy(DaggerfallWorkshop.DaggerfallUnity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L183">View Source</a>
   </span>
-  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_ChangeEnemyState_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ChangeEnemyState*"></a>
-  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_ChangeEnemyState_DaggerfallWorkshop_MobileStates_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ChangeEnemyState(DaggerfallWorkshop.MobileStates)">ChangeEnemyState(MobileStates)</h4>
-  <div class="markdown level1 summary"><p>Sets a new enemy state and restarts frame counter.
-Certain states are one-shot only (such as attack and hurt) and return to idle when completed.
-Continuous states (such as move) will keep looping until changed.</p>
-</div>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_ApplyEnemy_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ApplyEnemy*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_ApplyEnemy_DaggerfallWorkshop_DaggerfallUnity_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ApplyEnemy(DaggerfallWorkshop.DaggerfallUnity)">ApplyEnemy(DaggerfallUnity)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float ChangeEnemyState(MobileStates state)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.MobileStates.html">MobileStates</a></td>
-        <td><span class="parametername">state</span></td>
-        <td><p>New state.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><p>Frames per second of new state.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_IsAttacking.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.IsAttacking%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L256">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_IsAttacking_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsAttacking*"></a>
-  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_IsAttacking" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsAttacking">IsAttacking()</h4>
-  <div class="markdown level1 summary"><p>Gets true if playing any attack animation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAttacking()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>True if playing attack animation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_IsPlayingOneShot.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.IsPlayingOneShot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L220">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_IsPlayingOneShot_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsPlayingOneShot*"></a>
-  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_IsPlayingOneShot" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.IsPlayingOneShot">IsPlayingOneShot()</h4>
-  <div class="markdown level1 summary"><p>Gets true if playing a one-shot animation like attack and hurt.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsPlayingOneShot()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>True if playing one-shot animation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_OneShotPauseActionsWhilePlaying.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.OneShotPauseActionsWhilePlaying%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L240">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_OneShotPauseActionsWhilePlaying_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.OneShotPauseActionsWhilePlaying*"></a>
-  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_OneShotPauseActionsWhilePlaying" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.OneShotPauseActionsWhilePlaying">OneShotPauseActionsWhilePlaying()</h4>
-  <div class="markdown level1 summary"><p>Gets true if motor should prevent action state changes while playing current oneshot anim.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool OneShotPauseActionsWhilePlaying()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>True if motor should pause state changes while playing.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_SetEnemy_DaggerfallWorkshop_DaggerfallUnity_DaggerfallWorkshop_MobileEnemy_DaggerfallWorkshop_MobileReactions_System_Byte_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.SetEnemy(DaggerfallWorkshop.DaggerfallUnity%2CDaggerfallWorkshop.MobileEnemy%2CDaggerfallWorkshop.MobileReactions%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L153">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_SetEnemy_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.SetEnemy*"></a>
-  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_SetEnemy_DaggerfallWorkshop_DaggerfallUnity_DaggerfallWorkshop_MobileEnemy_DaggerfallWorkshop_MobileReactions_System_Byte_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.SetEnemy(DaggerfallWorkshop.DaggerfallUnity,DaggerfallWorkshop.MobileEnemy,DaggerfallWorkshop.MobileReactions,System.Byte)">SetEnemy(DaggerfallUnity, MobileEnemy, MobileReactions, Byte)</h4>
-  <div class="markdown level1 summary"><p>Sets new enemy type.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetEnemy(DaggerfallUnity dfUnity, MobileEnemy enemy, MobileReactions reaction, byte classicSpawnDistanceType)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void ApplyEnemy(DaggerfallUnity dfUnity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -428,60 +455,77 @@ Continuous states (such as move) will keep looping until changed.</p>
       <tr>
         <td><a class="xref" href="DaggerfallWorkshop.DaggerfallUnity.html">DaggerfallUnity</a></td>
         <td><span class="parametername">dfUnity</span></td>
-        <td><p>DaggerfallUnity singleton. Required for content readers and settings.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.MobileEnemy.html">MobileEnemy</a></td>
-        <td><span class="parametername">enemy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.MobileReactions.html">MobileReactions</a></td>
-        <td><span class="parametername">reaction</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
-        <td><span class="parametername">classicSpawnDistanceType</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_SetSpecialTransformationCompleted.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.SetSpecialTransformationCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_ApplyEnemyStateChange_DaggerfallWorkshop_MobileStates_DaggerfallWorkshop_MobileStates_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.ApplyEnemyStateChange(DaggerfallWorkshop.MobileStates%2CDaggerfallWorkshop.MobileStates)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L273">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L195">View Source</a>
   </span>
-  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_SetSpecialTransformationCompleted_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.SetSpecialTransformationCompleted*"></a>
-  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_SetSpecialTransformationCompleted" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.SetSpecialTransformationCompleted">SetSpecialTransformationCompleted()</h4>
-  <div class="markdown level1 summary"><p>Set special transformation completed, e.g. Daedra Seducer into winged form.
-Used internally by mobile unit after playing seducer animations.
-Called when restoring save game if unit has raised transformation completed flag.</p>
-</div>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_ApplyEnemyStateChange_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ApplyEnemyStateChange*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_ApplyEnemyStateChange_DaggerfallWorkshop_MobileStates_DaggerfallWorkshop_MobileStates_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.ApplyEnemyStateChange(DaggerfallWorkshop.MobileStates,DaggerfallWorkshop.MobileStates)">ApplyEnemyStateChange(MobileStates, MobileStates)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetSpecialTransformationCompleted()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void ApplyEnemyStateChange(MobileStates currentState, MobileStates newState)</code></pre>
   </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke_UnityEngine_MonoBehaviour_System_Action_System_Single_">MBExtensions.Invoke(MonoBehaviour, Action, Single)</a>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileStates.html">MobileStates</a></td>
+        <td><span class="parametername">currentState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallWorkshop.MobileStates.html">MobileStates</a></td>
+        <td><span class="parametername">newState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_DaggerfallMobileUnit_GetSize.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.DaggerfallMobileUnit.GetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Internal/DaggerfallMobileUnit.cs/#L214">View Source</a>
+  </span>
+  <a id="DaggerfallWorkshop_DaggerfallMobileUnit_GetSize_" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.GetSize*"></a>
+  <h4 id="DaggerfallWorkshop_DaggerfallMobileUnit_GetSize" data-uid="DaggerfallWorkshop.DaggerfallMobileUnit.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector3 GetSize()</code></pre>
   </div>
-  <div>
-      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__1_UnityEngine_MonoBehaviour_System_Action___0____0_System_Single_">MBExtensions.Invoke&lt;T&gt;(MonoBehaviour, Action&lt;T&gt;, T, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__2_UnityEngine_MonoBehaviour_System_Action___0___1____0___1_System_Single_">MBExtensions.Invoke&lt;T1, T2&gt;(MonoBehaviour, Action&lt;T1, T2&gt;, T1, T2, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__3_UnityEngine_MonoBehaviour_System_Action___0___1___2____0___1___2_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3&gt;(MonoBehaviour, Action&lt;T1, T2, T3&gt;, T1, T2, T3, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="Wenzil.Console.MBExtensions.html#Wenzil_Console_MBExtensions_Invoke__4_UnityEngine_MonoBehaviour_System_Action___0___1___2___3____0___1___2___3_System_Single_">MBExtensions.Invoke&lt;T1, T2, T3, T4&gt;(MonoBehaviour, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4, Single)</a>
-  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

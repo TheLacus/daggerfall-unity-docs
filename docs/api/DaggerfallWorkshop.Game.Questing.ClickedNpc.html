@@ -73,7 +73,12 @@
   
   <h1 id="DaggerfallWorkshop_Game_Questing_ClickedNpc" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc" class="text-break">Class ClickedNpc
   </h1>
-  <div class="markdown level0 summary"><p>Handles player clicking on NPC.</p>
+  <div class="markdown level0 summary"><p>Handles player clicking on NPC.
+NOTES:</p>
+<ul>
+<li>Will clear click after handling if player clicks NPC.</li>
+<li>If used in combination with TotingItemAndClickedNpc on same NPC elsewhere in quest, always call TotingItemAndClickedNpc check BEFORE ClickedNpc.</li>
+</ul>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -202,7 +207,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ClickedNpc__ctor_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ClickedNpc.%23ctor(DaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L36">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L39">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_ClickedNpc__ctor_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.#ctor*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_ClickedNpc__ctor_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.#ctor(DaggerfallWorkshop.Game.Questing.Quest)">ClickedNpc(Quest)</h4>
@@ -236,7 +241,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ClickedNpc_Pattern.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ClickedNpc.Pattern%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L28">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L31">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_ClickedNpc_Pattern_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.Pattern*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_ClickedNpc_Pattern" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.Pattern">Pattern</h4>
@@ -270,7 +275,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ClickedNpc_CheckTrigger_DaggerfallWorkshop_Game_Questing_Task_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ClickedNpc.CheckTrigger(DaggerfallWorkshop.Game.Questing.Task)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L69">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L72">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_ClickedNpc_CheckTrigger_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.CheckTrigger*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_ClickedNpc_CheckTrigger_DaggerfallWorkshop_Game_Questing_Task_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.CheckTrigger(DaggerfallWorkshop.Game.Questing.Task)">CheckTrigger(Task)</h4>
@@ -319,7 +324,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ClickedNpc_CreateNew_System_String_DaggerfallWorkshop_Game_Questing_Quest_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ClickedNpc.CreateNew(System.String%2CDaggerfallWorkshop.Game.Questing.Quest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L42">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L45">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_ClickedNpc_CreateNew_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.CreateNew*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_ClickedNpc_CreateNew_System_String_DaggerfallWorkshop_Game_Questing_Quest_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.CreateNew(System.String,DaggerfallWorkshop.Game.Questing.Quest)">CreateNew(String, Quest)</h4>
@@ -373,7 +378,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ClickedNpc_GetSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ClickedNpc.GetSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L122">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L128">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_ClickedNpc_GetSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.GetSaveData*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_ClickedNpc_GetSaveData" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.GetSaveData">GetSaveData()</h4>
@@ -405,7 +410,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ClickedNpc_RestoreSaveData_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ClickedNpc.RestoreSaveData(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L133">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L139">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Questing_ClickedNpc_RestoreSaveData_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.RestoreSaveData*"></a>
   <h4 id="DaggerfallWorkshop_Game_Questing_ClickedNpc_RestoreSaveData_System_Object_" data-uid="DaggerfallWorkshop.Game.Questing.ClickedNpc.RestoreSaveData(System.Object)">RestoreSaveData(Object)</h4>
@@ -449,7 +454,7 @@
                     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Questing_ClickedNpc.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Questing.ClickedNpc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Questing/Actions/ClickedNpc.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

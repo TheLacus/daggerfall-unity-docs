@@ -127,7 +127,12 @@ Notes:
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedItem.html">ClickedItem</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.ClickedNpc.html">ClickedNpc</a></h4>
-      <section><p>Handles player clicking on NPC.</p>
+      <section><p>Handles player clicking on NPC.
+NOTES:</p>
+<ul>
+<li>Will clear click after handling if player clicks NPC.</li>
+<li>If used in combination with TotingItemAndClickedNpc on same NPC elsewhere in quest, always call TotingItemAndClickedNpc check BEFORE ClickedNpc.</li>
+</ul>
 </section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Clock.html">Clock</a></h4>
       <section><p>A clock is an alarm that that executes a task with the same symbol name.
