@@ -4,8 +4,9 @@
       "src": [
         {
           "files": [
-            "src/Assembly-CSharp.csproj"
-          ]
+            "Assembly-CSharp.csproj"
+          ],
+          "src": "../daggerfall-unity"
         }
       ],
       "dest": "api",
