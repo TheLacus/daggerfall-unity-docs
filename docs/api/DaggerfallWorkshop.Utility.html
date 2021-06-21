@@ -111,6 +111,28 @@ Remaining data is read from MONSTER.BSA.</p>
       <section><p>Hastable based collection which can be accessed by index or key.
 Derive and override GetKeyForItem() to use. If serialization is required use KeyedCollectionConverter.</p>
 </section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Utility.FallbackTextProvider.html">FallbackTextProvider</a></h4>
+      <section><p>Base class that allows derived implementations to only override certain text functionality,
+while having the another implementation as a &quot;fallback&quot; for the cases it's not interested in
+For mods, this usually means taking the previous DaggerfallUnity.Instance.TextProvider as the fallback,
+then replacing the game's text provider with their own implementation based on FallbackTextProvider</p>
+<p>Ex:</p>
+<p>class MyModTextProvider : FallbackTextProvider
+{
+public string GetSkillName(DFCareer.Skills skill)
+{
+if(skill == DFCareer.Skills.Mercantile)
+return &quot;Commerce&quot;;
+else
+return FallbackProvider.GetSkillName(skill);
+}
+}</p>
+<p>public void Awake()
+{
+DaggerfallUnity.Instance.TextProvider = new MyModProvider(DaggerfallUnity.Instance.TextProvider);
+}</p>
+<p>This pattern allows multiple mods to add their own functionality to the text provider without conflicting</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Utility.FloatingOrigin.html">FloatingOrigin</a></h4>
       <section><p>Moves world back to origin so central player terrain is at 0,0,0.
 Currently only works on X-Z plane.

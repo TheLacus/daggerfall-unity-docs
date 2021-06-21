@@ -103,10 +103,40 @@ public class CustomDoor : MonoBehaviour</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_DisableClassicDoors.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.DisableClassicDoors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L30">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_DisableClassicDoors" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.DisableClassicDoors">DisableClassicDoors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Disables all classic doors on this building (not only on the gameobject where this component is added).&quot;)]
+public bool DisableClassicDoors</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_DoorTrigger.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.DoorTrigger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L33">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L39">View Source</a>
   </span>
   <h4 id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_DoorTrigger" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.DoorTrigger">DoorTrigger</h4>
   <div class="markdown level1 summary"><p>The trigger for this door.</p>
@@ -114,7 +144,7 @@ public class CustomDoor : MonoBehaviour</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The trigger for this door.&quot;)]
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The trigger for this door. If unset, uses the first box collider found on gameobject.&quot;)]
 public BoxCollider DoorTrigger</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
@@ -132,6 +162,36 @@ public BoxCollider DoorTrigger</code></pre>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_StaticDoorCopied.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.StaticDoorCopied%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L33">View Source</a>
+  </span>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_StaticDoorCopied" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.StaticDoorCopied">StaticDoorCopied</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Choose which of the doors in this model's Static Door array will be copied for this custom door.&quot;)]
+public int StaticDoorCopied</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -139,7 +199,7 @@ public BoxCollider DoorTrigger</code></pre>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_HasHit_UnityEngine_RaycastHit_DaggerfallWorkshop_StaticDoor__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.HasHit(UnityEngine.RaycastHit%2CDaggerfallWorkshop.StaticDoor%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L71">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L93">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_HasHit_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.HasHit*"></a>
   <h4 id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_HasHit_UnityEngine_RaycastHit_DaggerfallWorkshop_StaticDoor__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.HasHit(UnityEngine.RaycastHit,DaggerfallWorkshop.StaticDoor@)">HasHit(RaycastHit, out StaticDoor)</h4>
@@ -196,19 +256,19 @@ This allows to avoid unnecessary seeks on parent/children, which are potentially
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_InitDoors_UnityEngine_GameObject_DaggerfallWorkshop_StaticDoor___System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.InitDoors(UnityEngine.GameObject%2CDaggerfallWorkshop.StaticDoor%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_InitDoors_UnityEngine_GameObject_DaggerfallWorkshop_StaticDoor___System_Int32_System_Boolean__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.InitDoors(UnityEngine.GameObject%2CDaggerfallWorkshop.StaticDoor%5B%5D%2CSystem.Int32%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L49">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/Components/CustomDoor.cs/#L55">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_InitDoors_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.InitDoors*"></a>
-  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_InitDoors_UnityEngine_GameObject_DaggerfallWorkshop_StaticDoor___System_Int32_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.InitDoors(UnityEngine.GameObject,DaggerfallWorkshop.StaticDoor[],System.Int32)">InitDoors(GameObject, StaticDoor[], Int32)</h4>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_CustomDoor_InitDoors_UnityEngine_GameObject_DaggerfallWorkshop_StaticDoor___System_Int32_System_Boolean__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.CustomDoor.InitDoors(UnityEngine.GameObject,DaggerfallWorkshop.StaticDoor[],System.Int32,System.Boolean@)">InitDoors(GameObject, StaticDoor[], Int32, out Boolean)</h4>
   <div class="markdown level1 summary"><p>Set static door data to all doors in the given building gameobject.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void InitDoors(GameObject building, StaticDoor[] staticDoors, int buildingKey)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void InitDoors(GameObject building, StaticDoor[] staticDoors, int buildingKey, out bool dontCreateStaticDoors)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -236,6 +296,12 @@ This allows to avoid unnecessary seeks on parent/children, which are potentially
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">buildingKey</span></td>
         <td><p>The key of the building that owns the doors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">dontCreateStaticDoors</span></td>
+        <td><p>If true, custom door components request to suppress classic doors.</p>
 </td>
       </tr>
     </tbody>

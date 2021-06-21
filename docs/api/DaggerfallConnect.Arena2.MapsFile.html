@@ -1580,13 +1580,13 @@ MapTableData.MapId &amp; 0x000fffff = WorldPixelID.</p>
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/MapsFile.cs/#L786">View Source</a>
   </span>
   <a id="DaggerfallConnect_Arena2_MapsFile_GetRmbBlockName_" data-uid="DaggerfallConnect.Arena2.MapsFile.GetRmbBlockName*"></a>
-  <h4 id="DaggerfallConnect_Arena2_MapsFile_GetRmbBlockName_DaggerfallConnect_DFLocation__System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.MapsFile.GetRmbBlockName(DaggerfallConnect.DFLocation@,System.Int32,System.Int32)">GetRmbBlockName(ref DFLocation, Int32, Int32)</h4>
+  <h4 id="DaggerfallConnect_Arena2_MapsFile_GetRmbBlockName_DaggerfallConnect_DFLocation__System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.MapsFile.GetRmbBlockName(DaggerfallConnect.DFLocation@,System.Int32,System.Int32)">GetRmbBlockName(DFLocation, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Lookup block name for exterior block from location data provided.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetRmbBlockName(ref DFLocation dfLocation, int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetRmbBlockName(in DFLocation dfLocation, int x, int y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2079,13 +2079,13 @@ Region must be loaded before calling this method.</p>
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/MapsFile.cs/#L818">View Source</a>
   </span>
   <a id="DaggerfallConnect_Arena2_MapsFile_ResolveRmbBlockName_" data-uid="DaggerfallConnect.Arena2.MapsFile.ResolveRmbBlockName*"></a>
-  <h4 id="DaggerfallConnect_Arena2_MapsFile_ResolveRmbBlockName_DaggerfallConnect_DFLocation__System_Byte_System_Byte_System_Byte_" data-uid="DaggerfallConnect.Arena2.MapsFile.ResolveRmbBlockName(DaggerfallConnect.DFLocation@,System.Byte,System.Byte,System.Byte)">ResolveRmbBlockName(ref DFLocation, Byte, Byte, Byte)</h4>
+  <h4 id="DaggerfallConnect_Arena2_MapsFile_ResolveRmbBlockName_DaggerfallConnect_DFLocation__System_Byte_System_Byte_System_Byte_" data-uid="DaggerfallConnect.Arena2.MapsFile.ResolveRmbBlockName(DaggerfallConnect.DFLocation@,System.Byte,System.Byte,System.Byte)">ResolveRmbBlockName(DFLocation, Byte, Byte, Byte)</h4>
   <div class="markdown level1 summary"><p>Resolve block name from raw components.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ResolveRmbBlockName(ref DFLocation dfLocation, byte blockIndex, byte blockNumber, byte blockCharacter)</code></pre>
+    <pre><code class="lang-csharp hljs">public string ResolveRmbBlockName(in DFLocation dfLocation, byte blockIndex, byte blockNumber, byte blockCharacter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2147,13 +2147,13 @@ Region must be loaded before calling this method.</p>
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/API/MapsFile.cs/#L799">View Source</a>
   </span>
   <a id="DaggerfallConnect_Arena2_MapsFile_ResolveRmbBlockName_" data-uid="DaggerfallConnect.Arena2.MapsFile.ResolveRmbBlockName*"></a>
-  <h4 id="DaggerfallConnect_Arena2_MapsFile_ResolveRmbBlockName_DaggerfallConnect_DFLocation__System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.MapsFile.ResolveRmbBlockName(DaggerfallConnect.DFLocation@,System.Int32,System.Int32)">ResolveRmbBlockName(ref DFLocation, Int32, Int32)</h4>
+  <h4 id="DaggerfallConnect_Arena2_MapsFile_ResolveRmbBlockName_DaggerfallConnect_DFLocation__System_Int32_System_Int32_" data-uid="DaggerfallConnect.Arena2.MapsFile.ResolveRmbBlockName(DaggerfallConnect.DFLocation@,System.Int32,System.Int32)">ResolveRmbBlockName(DFLocation, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Resolve block name for exterior block from X, Y coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ResolveRmbBlockName(ref DFLocation dfLocation, int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public string ResolveRmbBlockName(in DFLocation dfLocation, int x, int y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -83,6 +83,9 @@
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.ClearTask.html">ClearTask</a></h4>
       <section><p>Unsets 1 or more tasks so they can be triggered again</p>
 </section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Climate.html">Climate</a></h4>
+      <section><p>DFU extension action. Triggers when the player is at a location with the right climate</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpc.html">CreateNpc</a></h4>
       <section><p>Places a Person to a random building in their home town within current region.</p>
 </section>
@@ -172,6 +175,11 @@ Site must be reserved before moving NPC to that location.</p>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Prompt.html">Prompt</a></h4>
       <section><p>Prompt which displays a yes/no dialog that executes a different task based on user input.</p>
 </section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PromptMulti.html">PromptMulti</a></h4>
+      <section><p>Prompt which displays a dialog with 2-4 buttons that each execute a different task based on user selection.</p>
+<p>Example usage:
+promptmulti 1072 4:noChoice <em>dirRand</em> 24:south <em>headS</em> 25:west <em>headW</em> 28:swest <em>headSW</em></p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveFoe.html">RemoveFoe</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveLogMessage.html">RemoveLogMessage</a></h4>
@@ -209,6 +217,9 @@ NOTES:</p>
       <section><p>Unsets one or more tasks.
 Unlike clear, which simply rearms a task, unset will permanently disable that task.</p>
 </section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Weather.html">Weather</a></h4>
+      <section><p>DFU extension action. Triggers when the current weather matches the condition</p>
+</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.WhenPcEntersExits.html">WhenPcEntersExits</a></h4>
       <section><p>Trigger for player entering or exiting an exterior type as defined in places table.</p>
 </section>
@@ -217,6 +228,8 @@ Unlike clear, which simply rearms a task, unset will permanently disable that ta
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.AddFace.SaveData_v1.html">AddFace.SaveData_v1</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.ClearTask.SaveData_v1.html">ClearTask.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Climate.SaveData_v1.html">Climate.SaveData_v1</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.CreateNpc.SaveData_v1.html">CreateNpc.SaveData_v1</a></h4>
       <section></section>
@@ -268,17 +281,13 @@ See FullSerializer versioning docs for more: <a href="https://github.com/jacobdu
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaceNpc.SaveData_v1.html">PlaceNpc.SaveData_v1</a></h4>
       <section></section>
-      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaySound.MySaveData.html">PlaySound.MySaveData</a></h4>
-      <section><p>Data to serialize action state can be placed in a struct.
-It's a good idea to version struct in case you need to migrate between very different state setups in future.
-For basic changes (e.g. just adding a new field with a sensible default) no migration should be needed.
-See FullSerializer versioning docs for more: <a href="https://github.com/jacobdufault/fullserializer/wiki/Versioning">https://github.com/jacobdufault/fullserializer/wiki/Versioning</a></p>
-</section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlaySound.SaveData_v1.html">PlaySound.SaveData_v1</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PlayVideo.SaveData_v1.html">PlayVideo.SaveData_v1</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Prompt.SaveData_v1.html">Prompt.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.PromptMulti.SaveData_v1.html">PromptMulti.SaveData_v1</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.RemoveFoe.SaveData_v1.html">RemoveFoe.SaveData_v1</a></h4>
       <section></section>
@@ -299,6 +308,8 @@ See FullSerializer versioning docs for more: <a href="https://github.com/jacobdu
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.TotingItemAndClickedNpc.SaveData_v1.html">TotingItemAndClickedNpc.SaveData_v1</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.UnsetTask.SaveData_v1.html">UnsetTask.SaveData_v1</a></h4>
+      <section></section>
+      <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.Weather.SaveData_v1.html">Weather.SaveData_v1</a></h4>
       <section></section>
       <h4><a class="xref" href="DaggerfallWorkshop.Game.Questing.Actions.WhenPcEntersExits.SaveData_v1.html">WhenPcEntersExits.SaveData_v1</a></h4>
       <section></section>

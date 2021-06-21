@@ -1161,14 +1161,14 @@ Does nothing if outside navgrid area.</p>
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/Utility/CityNavigation.cs/#L211">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetRMBData_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetRMBData*"></a>
-  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetRMBData_DaggerfallConnect_DFBlock__System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetRMBData(DaggerfallConnect.DFBlock@,System.Int32,System.Int32)">SetRMBData(ref DFBlock, Int32, Int32)</h4>
+  <h4 id="DaggerfallWorkshop_Game_Utility_CityNavigation_SetRMBData_DaggerfallConnect_DFBlock__System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Game.Utility.CityNavigation.SetRMBData(DaggerfallConnect.DFBlock@,System.Int32,System.Int32)">SetRMBData(DFBlock, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Set block data in navgrid.
 This is done during StreamingWorld location layout when this data is available.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetRMBData(ref DFBlock blockData, int xBlock, int yBlock)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetRMBData(in DFBlock blockData, int xBlock, int yBlock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

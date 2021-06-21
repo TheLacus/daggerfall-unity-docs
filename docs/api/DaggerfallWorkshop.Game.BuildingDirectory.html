@@ -548,19 +548,19 @@ Provides helpers to query buildings and link between related systems (automap, q
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_DaggerfallConnect_DFLocation_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.SetLocation(DaggerfallConnect.DFLocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_DaggerfallConnect_DFLocation__DaggerfallConnect_DFBlock____.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.BuildingDirectory.SetLocation(DaggerfallConnect.DFLocation%40%2CDaggerfallConnect.DFBlock%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L84">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/BuildingDirectory.cs/#L85">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.SetLocation*"></a>
-  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_DaggerfallConnect_DFLocation_" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.SetLocation(DaggerfallConnect.DFLocation)">SetLocation(DFLocation)</h4>
+  <h4 id="DaggerfallWorkshop_Game_BuildingDirectory_SetLocation_DaggerfallConnect_DFLocation__DaggerfallConnect_DFBlock____" data-uid="DaggerfallWorkshop.Game.BuildingDirectory.SetLocation(DaggerfallConnect.DFLocation@,DaggerfallConnect.DFBlock[]@)">SetLocation(DFLocation, out DFBlock[])</h4>
   <div class="markdown level1 summary"><p>Setup building directory from specified location.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLocation(DFLocation location)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetLocation(in DFLocation location, out DFBlock[] blocks)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -576,6 +576,12 @@ Provides helpers to query buildings and link between related systems (automap, q
         <td><a class="xref" href="DaggerfallConnect.DFLocation.html">DFLocation</a></td>
         <td><span class="parametername">location</span></td>
         <td><p>Source location data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DaggerfallConnect.DFBlock.html">DFBlock</a>[]</td>
+        <td><span class="parametername">blocks</span></td>
+        <td><p>Exterior blocks.</p>
 </td>
       </tr>
     </tbody>
