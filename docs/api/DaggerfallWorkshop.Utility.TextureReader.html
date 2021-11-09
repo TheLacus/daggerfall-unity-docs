@@ -559,19 +559,19 @@ Path must be set before attempting to load textures.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureReader_GetTerrainAlbedoTextureArray_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureReader.GetTerrainAlbedoTextureArray(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureReader_GetTerrainTextureArray_System_Int32_DaggerfallWorkshop_Utility_AssetInjection_TextureMap_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureReader.GetTerrainTextureArray(System.Int32%2CDaggerfallWorkshop.Utility.AssetInjection.TextureMap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L727">View Source</a>
   </span>
-  <a id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainAlbedoTextureArray_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainAlbedoTextureArray*"></a>
-  <h4 id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainAlbedoTextureArray_System_Int32_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainAlbedoTextureArray(System.Int32,System.Boolean)">GetTerrainAlbedoTextureArray(Int32, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Gets terrain albedo texture array containing each terrain tile in a seperate array slice.</p>
+  <a id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainTextureArray_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainTextureArray*"></a>
+  <h4 id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainTextureArray_System_Int32_DaggerfallWorkshop_Utility_AssetInjection_TextureMap_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainTextureArray(System.Int32,DaggerfallWorkshop.Utility.AssetInjection.TextureMap)">GetTerrainTextureArray(Int32, TextureMap)</h4>
+  <div class="markdown level1 summary"><p>Gets terrain texture array containing each terrain tile texture in a seperate array slice.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Texture2DArray GetTerrainAlbedoTextureArray(int archive, bool stayReadable = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public Texture2DArray GetTerrainTextureArray(int archive, TextureMap textureMap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -590,9 +590,9 @@ Path must be set before attempting to load textures.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">stayReadable</span></td>
-        <td><p>Texture should stay readable.</p>
+        <td><a class="xref" href="DaggerfallWorkshop.Utility.AssetInjection.TextureMap.html">TextureMap</a></td>
+        <td><span class="parametername">textureMap</span></td>
+        <td><p>The texture type.</p>
 </td>
       </tr>
     </tbody>
@@ -608,124 +608,7 @@ Path must be set before attempting to load textures.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Texture2DArray.html">Texture2DArray</a></td>
-        <td><p>Texture2DArray or null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureReader_GetTerrainMetallicGlossMapTextureArray_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureReader.GetTerrainMetallicGlossMapTextureArray(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L869">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainMetallicGlossMapTextureArray_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainMetallicGlossMapTextureArray*"></a>
-  <h4 id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainMetallicGlossMapTextureArray_System_Int32_System_Boolean_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainMetallicGlossMapTextureArray(System.Int32,System.Boolean)">GetTerrainMetallicGlossMapTextureArray(Int32, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Gets terrain metallic gloss map texture array containing each terrain tile in a seperate array slice.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Texture2DArray GetTerrainMetallicGlossMapTextureArray(int archive, bool stayReadable = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">archive</span></td>
-        <td><p>Archive index.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">stayReadable</span></td>
-        <td><p>Texture should stay readable.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Texture2DArray.html">Texture2DArray</a></td>
-        <td><p>Texture2DArray or null</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureReader_GetTerrainNormalMapTextureArray_System_Int32_System_Boolean_DaggerfallWorkshop_SupportedAlphaTextureFormats_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureReader.GetTerrainNormalMapTextureArray(System.Int32%2CSystem.Boolean%2CDaggerfallWorkshop.SupportedAlphaTextureFormats)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L794">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainNormalMapTextureArray_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainNormalMapTextureArray*"></a>
-  <h4 id="DaggerfallWorkshop_Utility_TextureReader_GetTerrainNormalMapTextureArray_System_Int32_System_Boolean_DaggerfallWorkshop_SupportedAlphaTextureFormats_" data-uid="DaggerfallWorkshop.Utility.TextureReader.GetTerrainNormalMapTextureArray(System.Int32,System.Boolean,DaggerfallWorkshop.SupportedAlphaTextureFormats)">GetTerrainNormalMapTextureArray(Int32, Boolean, SupportedAlphaTextureFormats)</h4>
-  <div class="markdown level1 summary"><p>Gets terrain normal map texture array containing each terrain tile in a seperate array slice.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Texture2DArray GetTerrainNormalMapTextureArray(int archive, bool stayReadable = false, SupportedAlphaTextureFormats alphaFormat = SupportedAlphaTextureFormats.ARGB32)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">archive</span></td>
-        <td><p>Archive index.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">stayReadable</span></td>
-        <td><p>Texture should stay readable.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.SupportedAlphaTextureFormats.html">SupportedAlphaTextureFormats</a></td>
-        <td><span class="parametername">alphaFormat</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Texture2DArray.html">Texture2DArray</a></td>
-        <td><p>Texture2DArray or null</p>
+        <td><p>Texture2DArray or null.</p>
 </td>
       </tr>
     </tbody>
@@ -981,7 +864,7 @@ Currently supports one archive per atlas. Super-atlas packing (multiple archives
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureReader_IsChildNPCTexture_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureReader.IsChildNPCTexture(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L1217">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L1046">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_TextureReader_IsChildNPCTexture_" data-uid="DaggerfallWorkshop.Utility.TextureReader.IsChildNPCTexture*"></a>
   <h4 id="DaggerfallWorkshop_Utility_TextureReader_IsChildNPCTexture_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.TextureReader.IsChildNPCTexture(System.Int32,System.Int32)">IsChildNPCTexture(Int32, Int32)</h4>
@@ -1037,7 +920,7 @@ Currently supports one archive per atlas. Super-atlas packing (multiple archives
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureReader_IsEmissive_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureReader.IsEmissive(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L1188">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L1017">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_TextureReader_IsEmissive_" data-uid="DaggerfallWorkshop.Utility.TextureReader.IsEmissive*"></a>
   <h4 id="DaggerfallWorkshop_Utility_TextureReader_IsEmissive_System_Int32_System_Int32_" data-uid="DaggerfallWorkshop.Utility.TextureReader.IsEmissive(System.Int32,System.Int32)">IsEmissive(Int32, Int32)</h4>
@@ -1089,7 +972,7 @@ Currently supports one archive per atlas. Super-atlas packing (multiple archives
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_TextureReader_IsEmissiveArchive_System_Int32_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.TextureReader.IsEmissiveArchive(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L1183">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/TextureReader.cs/#L1012">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_TextureReader_IsEmissiveArchive_" data-uid="DaggerfallWorkshop.Utility.TextureReader.IsEmissiveArchive*"></a>
   <h4 id="DaggerfallWorkshop_Utility_TextureReader_IsEmissiveArchive_System_Int32_" data-uid="DaggerfallWorkshop.Utility.TextureReader.IsEmissiveArchive(System.Int32)">IsEmissiveArchive(Int32)</h4>
