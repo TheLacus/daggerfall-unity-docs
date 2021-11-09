@@ -2549,6 +2549,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DaggerfallWorkshop.AntiAliasingMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DaggerfallWorkshop.AntiAliasingMethods.html",
+          "hash": "u37cCMraNbEoP6C1hzJZHgIIwnVk5SDBY+7IlR5DBlk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DaggerfallWorkshop.AudioPresets.yml",
       "output": {
         ".html": {
@@ -14217,7 +14229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.UserInterfaceWindows.AdvancedSettingsWindow.html",
-          "hash": "NlyfGH5rvwVlkWfZBs6fZ+/gIA3gL3Ooq2zey5WA70c="
+          "hash": "HaCKXlTtoXUxB4IM7wfaUPcthZ5xs/adzXQIKWmzz+U="
         }
       },
       "is_incremental": false,
@@ -16293,7 +16305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Utility.StartGameBehaviour.OnNewGameEventHandler.html",
-          "hash": "Z2kcSNlgsnDjhnhZ48n1XNSrr2dLfOdOi7qaVhWE7wo="
+          "hash": "fk5ox6qjcFT6fJbxXge3+Sy/lFXZLQPz8YpGVmfsF6w="
         }
       },
       "is_incremental": false,
@@ -16305,7 +16317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Utility.StartGameBehaviour.PlayerStartingEquipment.html",
-          "hash": "thFog6k/ph4g9J89PINJQNUyuFf1JDHwF7YdxhWd/r0="
+          "hash": "eAdCPJt6Dv4v4Mz+H8M9blfVv3b6eXz59Wl7EoFr0jw="
         }
       },
       "is_incremental": false,
@@ -16317,7 +16329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Utility.StartGameBehaviour.PlayerStartingSpells.html",
-          "hash": "E9HtGJR5YqIA7M/6vDZHFVL44Mb8DJ5YJD9Pas602a4="
+          "hash": "iNVo5D3gh9qoZGwZez7B8tC+7QqjaMqtMcuzSPMqmZU="
         }
       },
       "is_incremental": false,
@@ -16329,7 +16341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Utility.StartGameBehaviour.StartMethods.html",
-          "hash": "XUn87zuSwM+MMRMQkezlj2brc/Es4E/6FcYiUhCCtsU="
+          "hash": "uITmubZX9mHXOzFVPjJyLagcHkBXyLYxx4yRX2I6TTY="
         }
       },
       "is_incremental": false,
@@ -16341,7 +16353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.Game.Utility.StartGameBehaviour.html",
-          "hash": "f7tnslFTtUbRfPG+GymvZ6eJ/9Q/zpF8s4lDc0FmsY8="
+          "hash": "VihL7ocXUgmR1xlxK9nTZEyECQBAKT1z18dUicl8Ezo="
         }
       },
       "is_incremental": false,
@@ -17373,7 +17385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.SettingsManager.html",
-          "hash": "gXiinPYQpXd4KTrdFWV2OxIeX2WutVi1ft8F1wvwdFk="
+          "hash": "dO92XwQGmI9R1wYATcRxY1wVVE9SIY1/jWQP4Pjh5Eg="
         }
       },
       "is_incremental": false,
@@ -18993,7 +19005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DaggerfallWorkshop.html",
-          "hash": "cm7LUEsY/6niVE8KhuXusZ58KGPjpvHHAG9hS0dcQfM="
+          "hash": "Jt5yFrwRMyZioSz/EU3gCZi0lXVT81koSr8V2yj8n0c="
         }
       },
       "is_incremental": false,
@@ -19005,7 +19017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.VersionInfo.html",
-          "hash": "gAbSdLx2RgZQc+JSh5lQxPi2aHEyVpETgT3nLI37bqc="
+          "hash": "nyrHA4cvWkZTVg9qaUwwBrvUxOhZnM4jKtZeX5CkM1Q="
         }
       },
       "is_incremental": false,
@@ -19173,7 +19185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Iy9OvrhbY9PvcnZDx40ZKblvbHaKQPa0V/u710Rm2+U="
+          "hash": "h0TLvikAferdt/ZStZUqDqrwCLEjaqdUizO+E+NsPU8="
         }
       },
       "is_incremental": false,
@@ -19222,8 +19234,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 1596,
-          "skipped_file_count": 1596
+          "total_file_count": 1597,
+          "skipped_file_count": 1587
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
