@@ -771,19 +771,19 @@ If this texture has an emission map the material is considered emissive and all 
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_TextureReplacement_GetStaticBillboardMaterial_UnityEngine_GameObject_System_Int32_System_Int32_DaggerfallWorkshop_DaggerfallBillboard_BillboardSummary__UnityEngine_Vector2__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.TextureReplacement.GetStaticBillboardMaterial(UnityEngine.GameObject%2CSystem.Int32%2CSystem.Int32%2CDaggerfallWorkshop.DaggerfallBillboard.BillboardSummary%40%2CUnityEngine.Vector2%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Utility_AssetInjection_TextureReplacement_GetStaticBillboardMaterial_UnityEngine_GameObject_System_Int32_System_Int32_DaggerfallWorkshop_BillboardSummary__UnityEngine_Vector2__.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Utility.AssetInjection.TextureReplacement.GetStaticBillboardMaterial(UnityEngine.GameObject%2CSystem.Int32%2CSystem.Int32%2CDaggerfallWorkshop.BillboardSummary%40%2CUnityEngine.Vector2%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Utility/AssetInjection/TextureReplacement.cs/#L464">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Utility_AssetInjection_TextureReplacement_GetStaticBillboardMaterial_" data-uid="DaggerfallWorkshop.Utility.AssetInjection.TextureReplacement.GetStaticBillboardMaterial*"></a>
-  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_TextureReplacement_GetStaticBillboardMaterial_UnityEngine_GameObject_System_Int32_System_Int32_DaggerfallWorkshop_DaggerfallBillboard_BillboardSummary__UnityEngine_Vector2__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.TextureReplacement.GetStaticBillboardMaterial(UnityEngine.GameObject,System.Int32,System.Int32,DaggerfallWorkshop.DaggerfallBillboard.BillboardSummary@,UnityEngine.Vector2@)">GetStaticBillboardMaterial(GameObject, Int32, Int32, ref DaggerfallBillboard.BillboardSummary, out Vector2)</h4>
+  <h4 id="DaggerfallWorkshop_Utility_AssetInjection_TextureReplacement_GetStaticBillboardMaterial_UnityEngine_GameObject_System_Int32_System_Int32_DaggerfallWorkshop_BillboardSummary__UnityEngine_Vector2__" data-uid="DaggerfallWorkshop.Utility.AssetInjection.TextureReplacement.GetStaticBillboardMaterial(UnityEngine.GameObject,System.Int32,System.Int32,DaggerfallWorkshop.BillboardSummary@,UnityEngine.Vector2@)">GetStaticBillboardMaterial(GameObject, Int32, Int32, ref BillboardSummary, out Vector2)</h4>
   <div class="markdown level1 summary"><p>Gets a custom material for a static billboard with textures and configuration imported from mods.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Material GetStaticBillboardMaterial(GameObject go, int archive, int record, ref DaggerfallBillboard.BillboardSummary summary, out Vector2 scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Material GetStaticBillboardMaterial(GameObject go, int archive, int record, ref BillboardSummary summary, out Vector2 scale)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -814,7 +814,7 @@ If this texture has an emission map the material is considered emissive and all 
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.DaggerfallBillboard.BillboardSummary.html">DaggerfallBillboard.BillboardSummary</a></td>
+        <td><a class="xref" href="DaggerfallWorkshop.BillboardSummary.html">BillboardSummary</a></td>
         <td><span class="parametername">summary</span></td>
         <td><p>Summary data of the billboard object.</p>
 </td>
@@ -843,7 +843,7 @@ If this texture has an emission map the material is considered emissive and all 
       </tr>
     </tbody>
   </table>
-  <h5 id="DaggerfallWorkshop_Utility_AssetInjection_TextureReplacement_GetStaticBillboardMaterial_UnityEngine_GameObject_System_Int32_System_Int32_DaggerfallWorkshop_DaggerfallBillboard_BillboardSummary__UnityEngine_Vector2___remarks">Remarks</h5>
+  <h5 id="DaggerfallWorkshop_Utility_AssetInjection_TextureReplacement_GetStaticBillboardMaterial_UnityEngine_GameObject_System_Int32_System_Int32_DaggerfallWorkshop_BillboardSummary__UnityEngine_Vector2___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Seek the texture for the first frame of the given record. If found, it imports all other frames.
 Always creates an emission map for textures marked as emissive by TextureReader, import emission maps for others only if available.</p>
 </div>

@@ -377,7 +377,7 @@ See <a class="xref" href="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.
   <a id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_CombinePaths_" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.CombinePaths*"></a>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_CombinePaths_System_String___" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.CombinePaths(System.String[])">CombinePaths(String[])</h4>
   <div class="markdown level1 summary"><p>Combines an array of strings into a path.
-This is a substitute of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.path.combine#System_IO_Path_Combine_System_String___">Combine(String[])</a>, which was not available with previously used .NET version.</p>
+This is a substitute of <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.path.combine#system-io-path-combine(system-string())">Combine(String[])</a>, which was not available with previously used .NET version.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -479,7 +479,7 @@ public static string CombinePaths(params string[] paths)</code></pre>
   <a id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_EnumerateModsReverse_" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.EnumerateModsReverse*"></a>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_EnumerateModsReverse" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.EnumerateModsReverse">EnumerateModsReverse()</h4>
   <div class="markdown level1 summary"><p>Enumerates all mods with reverse load order.
-Unlike <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.enumerable.reverse#System_Linq_Enumerable_Reverse__1_System_Collections_Generic_IEnumerable___0__">Reverse&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>, this method doesn't allocate memory for a new collection.</p>
+Unlike <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.enumerable.reverse#system-linq-enumerable-reverse-1(system-collections-generic-ienumerable((-0)))">Reverse&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</a>, this method doesn't allocate memory for a new collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1541,7 +1541,7 @@ For example <code>&quot;Assets/Texture.png&quot;</code> to <code>&quot;texture.p
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_StateManager_OnStateChange_DaggerfallWorkshop_Game_StateManager_StateTypes_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.StateManager_OnStateChange(DaggerfallWorkshop.Game.StateManager.StateTypes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L1282">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L1285">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_StateManager_OnStateChange_" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.StateManager_OnStateChange*"></a>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_StateManager_OnStateChange_DaggerfallWorkshop_Game_StateManager_StateTypes_" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.StateManager_OnStateChange(DaggerfallWorkshop.Game.StateManager.StateTypes)">StateManager_OnStateChange(StateManager.StateTypes)</h4>
@@ -1771,7 +1771,7 @@ If chosen mod contains multiple assets, priority is defined by order of names li
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_OnLoadAssetEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.OnLoadAssetEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L1257">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L1260">View Source</a>
   </span>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_OnLoadAssetEvent" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.OnLoadAssetEvent">OnLoadAssetEvent</h4>
   <div class="markdown level1 summary"><p>An event that is raised when an asset is loaded from an <a class="xref" href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/AssetBundle.html">AssetBundle</a> and is cached.
@@ -1802,7 +1802,7 @@ It's not raised again if the asset is cloned and instantiated multiple times.</p
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_OnUnloadModEvent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.OnUnloadModEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L1268">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Game/Addons/ModSupport/ModManager.cs/#L1271">View Source</a>
   </span>
   <h4 id="DaggerfallWorkshop_Game_Utility_ModSupport_ModManager_OnUnloadModEvent" data-uid="DaggerfallWorkshop.Game.Utility.ModSupport.ModManager.OnUnloadModEvent">OnUnloadModEvent</h4>
   <div class="markdown level1 summary"><p>An event that is raised when a mod is removed and its AssetBundle is unloaded.</p>
