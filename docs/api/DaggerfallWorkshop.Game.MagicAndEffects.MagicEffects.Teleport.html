@@ -80,8 +80,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html">BaseEntityEffect</a></div>
-    <div class="level2"><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html">IncumbentEffect</a></div>
-    <div class="level3"><span class="xref">Teleport</span></div>
+    <div class="level2"><span class="xref">Teleport</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -90,12 +89,6 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_IsIncumbent">IncumbentEffect.IsIncumbent</a>
-    </div>
-    <div>
-      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_ResignAsIncumbent">IncumbentEffect.ResignAsIncumbent()</a>
-    </div>
     <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_properties">BaseEntityEffect.properties</a>
     </div>
@@ -134,6 +127,9 @@
     </div>
     <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_Caster">BaseEntityEffect.Caster</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RoundsRemaining">BaseEntityEffect.RoundsRemaining</a>
     </div>
     <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ChanceSuccess">BaseEntityEffect.ChanceSuccess</a>
@@ -199,10 +195,16 @@
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetForcedEnchantments_System_Nullable_DaggerfallWorkshop_Game_MagicAndEffects_EnchantmentParam__">BaseEntityEffect.GetForcedEnchantments(Nullable&lt;EnchantmentParam&gt;)</a>
     </div>
     <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_Resume_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_EffectSaveData_v1_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">BaseEntityEffect.Resume(EntityEffectManager.EffectSaveData_v1, EntityEffectManager, DaggerfallEntityBehaviour)</a>
+    </div>
+    <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_ConstantEffect">BaseEntityEffect.ConstantEffect()</a>
     </div>
     <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_MagicRound">BaseEntityEffect.MagicRound()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RemoveRound">BaseEntityEffect.RemoveRound()</a>
     </div>
     <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetAttributeMod_DaggerfallConnect_DFCareer_Stats_">BaseEntityEffect.GetAttributeMod(DFCareer.Stats)</a>
@@ -236,6 +238,9 @@
     </div>
     <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RollChance">BaseEntityEffect.RollChance()</a>
+    </div>
+    <div>
+      <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_CompareSettings_DaggerfallWorkshop_Game_MagicAndEffects_IEntityEffect_">BaseEntityEffect.CompareSettings(IEntityEffect)</a>
     </div>
     <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetPeeredEntityBehaviour_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_">BaseEntityEffect.GetPeeredEntityBehaviour(EntityEffectManager)</a>
@@ -302,7 +307,7 @@
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
   <h5 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Teleport : IncumbentEffect, IEntityEffect, IMacroContextProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public class Teleport : BaseEntityEffect, IEntityEffect, IMacroContextProvider</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -371,38 +376,6 @@
   <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GroupName">BaseEntityEffect.GroupName</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RoundsRemaining.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RoundsRemaining%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L68">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RoundsRemaining_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RoundsRemaining*"></a>
-  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RoundsRemaining" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RoundsRemaining">RoundsRemaining</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int RoundsRemaining { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RoundsRemaining">BaseEntityEffect.RoundsRemaining</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_SpellBookDescription.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.SpellBookDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -469,61 +442,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_AddState_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.AddState(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L96">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_AddState_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.AddState*"></a>
-  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_AddState_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.AddState(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)">AddState(IncumbentEffect)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void AddState(IncumbentEffect incumbent)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html">IncumbentEffect</a></td>
-        <td><span class="parametername">incumbent</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_AddState_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_">IncumbentEffect.AddState(IncumbentEffect)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_BecomeIncumbent.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.BecomeIncumbent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L90">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_BecomeIncumbent_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.BecomeIncumbent*"></a>
-  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_BecomeIncumbent" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.BecomeIncumbent">BecomeIncumbent()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void BecomeIncumbent()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_BecomeIncumbent">IncumbentEffect.BecomeIncumbent()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_End.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L102">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L70">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_End_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.End*"></a>
   <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_End" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.End">End()</h4>
@@ -540,7 +462,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_GetSaveData.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.GetSaveData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L320">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L290">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_GetSaveData_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.GetSaveData*"></a>
   <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_GetSaveData" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.GetSaveData">GetSaveData()</h4>
@@ -569,91 +491,10 @@
   <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_GetSaveData">BaseEntityEffect.GetSaveData()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_IsLikeKind_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.IsLikeKind(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L73">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_IsLikeKind_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.IsLikeKind*"></a>
-  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_IsLikeKind_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.IsLikeKind(DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect)">IsLikeKind(IncumbentEffect)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override bool IsLikeKind(IncumbentEffect other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html">IncumbentEffect</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_IsLikeKind_DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_">IncumbentEffect.IsLikeKind(IncumbentEffect)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RemoveRound.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RemoveRound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L63">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RemoveRound_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RemoveRound*"></a>
-  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RemoveRound" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RemoveRound">RemoveRound()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override int RemoveRound()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RemoveRound">BaseEntityEffect.RemoveRound()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RestoreSaveData_System_Object_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RestoreSaveData(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L330">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L298">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RestoreSaveData_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RestoreSaveData*"></a>
   <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_RestoreSaveData_System_Object_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.RestoreSaveData(System.Object)">RestoreSaveData(Object)</h4>
@@ -684,50 +525,6 @@
   <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_RestoreSaveData_System_Object_">BaseEntityEffect.RestoreSaveData(Object)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_Resume_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_EffectSaveData_v1_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.Resume(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1%2CDaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L84">View Source</a>
-  </span>
-  <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_Resume_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.Resume*"></a>
-  <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_Resume_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_EffectSaveData_v1_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.Resume(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1,DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager,DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">Resume(EntityEffectManager.EffectSaveData_v1, EntityEffectManager, DaggerfallEntityBehaviour)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Resume(EntityEffectManager.EffectSaveData_v1 effectData, EntityEffectManager manager, DaggerfallEntityBehaviour caster = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.EffectSaveData_v1.html">EntityEffectManager.EffectSaveData_v1</a></td>
-        <td><span class="parametername">effectData</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager.html">EntityEffectManager</a></td>
-        <td><span class="parametername">manager</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour.html">DaggerfallEntityBehaviour</a></td>
-        <td><span class="parametername">caster</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_Resume_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_EffectSaveData_v1_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">IncumbentEffect.Resume(EntityEffectManager.EffectSaveData_v1, EntityEffectManager, DaggerfallEntityBehaviour)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_SetProperties.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.SetProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -748,7 +545,7 @@
     <a href="https://github.com/TheLacus/daggerfall-unity-docs/new/master/apidoc/new?filename=DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_Start_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_.md&amp;value=---%0Auid%3A%20DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.Start(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager%2CDaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L78">View Source</a>
+    <a href="https://github.com/Interkarma/daggerfall-unity/blob/master/Assets/Scripts/Game/MagicAndEffects/Effects/Mysticism/Teleport.cs/#L63">View Source</a>
   </span>
   <a id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_Start_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.Start*"></a>
   <h4 id="DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_Teleport_Start_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_" data-uid="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.Teleport.Start(DaggerfallWorkshop.Game.MagicAndEffects.EntityEffectManager,DaggerfallWorkshop.Game.Entity.DaggerfallEntityBehaviour)">Start(EntityEffectManager, DaggerfallEntityBehaviour)</h4>
@@ -781,7 +578,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.MagicEffects.IncumbentEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_MagicEffects_IncumbentEffect_Start_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">IncumbentEffect.Start(EntityEffectManager, DaggerfallEntityBehaviour)</a></div>
+  <div><a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.BaseEntityEffect.html#DaggerfallWorkshop_Game_MagicAndEffects_BaseEntityEffect_Start_DaggerfallWorkshop_Game_MagicAndEffects_EntityEffectManager_DaggerfallWorkshop_Game_Entity_DaggerfallEntityBehaviour_">BaseEntityEffect.Start(EntityEffectManager, DaggerfallEntityBehaviour)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="DaggerfallWorkshop.Game.MagicAndEffects.IEntityEffect.html">IEntityEffect</a>
