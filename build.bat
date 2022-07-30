@@ -23,7 +23,7 @@ for /f %%i in ('git describe --exact-match %commit%') do set tag=%%i
 
 echo.
 echo Updating C# solution...
-"C:\Program Files\Unity\Hub\Editor\2019.4.28f1\Editor\Unity.exe" -batchmode -projectPath=%src% -executeMethod "UnityEditor.SyncVS.SyncSolution" -quit
+"C:\Program Files\Unity\Hub\Editor\2019.4.40f1\Editor\Unity.exe" -batchmode -projectPath=%src% -executeMethod "UnityEditor.SyncVS.SyncSolution" -quit
 
 cd %docs%
 
